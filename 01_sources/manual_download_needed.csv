@@ -1,0 +1,13 @@
+id,category,title,priority,manual_download_when,notes
+NYDFS_STABLECOIN_GUIDANCE,law,NYDFS Guidance on U.S. Dollar-Backed Stablecoins,high,only_if_external_fetch_fails,Needed for RLUSD/GUSD/NYDFS law matrix; original guidance missing from archive
+MICA_ORIGINAL_REGULATION,law,Regulation (EU) 2023/1114 MiCA official text,high,only_if_external_fetch_fails,Needed for definitive EU matrix; EBA derivative documents already present
+ESMA_MICA_OVERVIEW,law,ESMA MiCA overview / CASP guidance,medium,only_if_external_fetch_fails,Needed for CASP and market infrastructure analysis
+BOE_SYSTEMIC_STABLECOIN_CONSULTATION,law,Bank of England systemic stablecoin consultation,medium,only_if_external_fetch_fails,"BoE FSR/FPC present, but consultation missing"
+IMF_STABLECOIN_CORE_PAPERS,central_bank,"IMF stablecoin papers: statistics, payments, risks",high,only_if_external_fetch_fails,IMF folder is empty in uploaded archive
+FED_STABLECOIN_PAPERS_SPEECHES,central_bank,Federal Reserve stablecoin papers / speeches,high,only_if_external_fetch_fails,Fed folder is empty in uploaded archive
+VISA_ONCHAIN_ANALYTICS,market_data,Visa Onchain Analytics stablecoin dashboard/export,high,only_if_external_fetch_fails,Needed for adjusted volume and payment/trading distinction
+DEFILLAMA_STABLECOINS,market_data,DeFiLlama stablecoin supply data,high,only_if_external_fetch_fails,Needed for supply and chain distribution
+CAMBRIDGE_DIGITAL_MONEY_DASHBOARD,market_data,Cambridge Digital Money Dashboard,medium,only_if_external_fetch_fails,Needed for market data triangulation
+ARTEMIS_STABLECOIN_DATA,market_data,Artemis stablecoin metrics,medium,only_if_external_fetch_fails,Needed for chain and activity analysis
+USDPT_PRODUCT_TERMS,issuer,"Western Union USDPT/UDSPT product page, terms, reserve report",high,only_if_external_fetch_fails,Needed before making strong product-level claims
+USDP_MONTHLY_RESERVE_REPORT,issuer,USDP specific monthly reserve report PDF,medium,only_if_external_fetch_fails,Transparency page exists; concrete monthly PDF not in archive

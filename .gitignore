@@ -1,0 +1,19 @@
+# Raw documents — keep outside Git, track via source_registry.csv
+raw_sources/
+*.pdf
+*.zip
+*.docx
+*.pptx
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp

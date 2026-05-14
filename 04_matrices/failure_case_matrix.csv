@@ -1,0 +1,6 @@
+case,stablecoin_type,current_source_coverage,action_needed,research_use
+Terra UST,algorithmic stablecoin,not included,High-priority external source needed,Used to contrast fiat-backed vs algorithmic failure mechanisms
+Iron Finance,partially collateralized / algorithmic,not included,External source needed,Useful for reflexive redemption/depeg dynamics
+USDC SVB depeg,fiat-backed reserve bank risk,not included,External source needed,Useful for bank deposit/custody concentration risk
+USDT reserve controversy,reserve opacity/history,"partially covered by Tether docs, but historical controversy sources missing",External source needed,Useful for transparency and attestation vs audit analysis
+DAI / USDS collateral episodes,crypto/RWA collateral risk,"Maker/Sky docs included, event sources missing",External source needed,Useful for collateral composition and governance risk

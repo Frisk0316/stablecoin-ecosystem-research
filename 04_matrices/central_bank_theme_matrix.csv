@@ -1,0 +1,13 @@
+source,institution,theme,claim_or_use,source_ids,confidence,notes
+BIS AER 2025,BIS,singleness / elasticity / integrity,Stablecoins fall short as backbone of monetary system under these tests,BIS_001,high,Core conceptual frame
+BIS Papers 170,BIS,international monetary system / dollarisation,"Stablecoins may affect private store-of-value and medium-of-exchange roles, especially in EMDEs",BIS_002,high,Good for digital dollarization chapter
+BIS WP 1270,BIS,safe asset prices,"Stablecoin inflows may compress short-term T-bill yields, especially in scarcity regimes",BIS_003,high,Core for reserve/T-bill chapter
+ECB FSR Nov 2025,ECB,financial stability / spillovers,Stablecoins still small in euro area but spillover risks loom,ECB_001,medium,Use specific Box 5 extraction later
+ECB Stablecoins and Monetary Sovereignty,ECB,monetary sovereignty / use-case decomposition,Stablecoin activity is concentrated in crypto/DeFi/exchange liquidity; payment and treasury use remains small in the presentation snapshot,ECB_002,high,Useful to avoid conflating chain volume with payments
+ECB WP 3174,ECB,global safe asset channel,USD stablecoins link private digital money and global payment needs to U.S. public debt,ECB_003,high,Useful macro-financial channel
+ECB WP 3199,ECB,bank deposits / monetary policy transmission,Stablecoin adoption can create deposit substitution and alter bank funding / monetary policy transmission,ECB_004,high,Core bank-disintermediation source
+FSB GSC Recommendations 2023,FSB,global stablecoin supervision,"High-level recommendations for regulation, supervision, oversight, redemption, reserves and disclosure",FSB_001,high,Global regulatory baseline
+FSB 2025 Thematic Review,FSB,implementation gaps,"Implementation of GSC frameworks remains uneven, fragmented, and incomplete",FSB_003,high,Useful for regulatory arbitrage section
+Taiwan CBC materials,CBC,NTD stablecoins / monetary statistics / FX management,"CBC discusses NTD stablecoin, USD stablecoin, monetary attributes, credit creation, and FX monitoring issues",CBC_001; CBC_002; CBC_003; CBC_004,high,Core Taiwan-specific chapter
+IMF pending,IMF,statistics / payments / stability,IMF folder missing in archive,IMF_PENDING,low,External fetch needed
+Federal Reserve pending,Federal Reserve,banking / payment stablecoins / dollar demand,Fed folder missing in archive,FED_PENDING,low,External fetch needed

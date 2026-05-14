@@ -1,0 +1,83 @@
+﻿id,category,publisher,title,asset,year,document_type,local_path,status,priority
+UNKNOWN_001,project_management,Unknown,stablecoin doc downloader fixed,Stablecoins,,download_script,stablecoin_doc_downloader_fixed.ps1,download_script,low
+UNKNOWN_002,project_management,Unknown,stablecoin reg centralbank downloader,Stablecoins,,download_script,stablecoin_reg_centralbank_downloader.ps1,download_script,low
+USDC_001,issuer,Circle,Circle 2025 Annual Report 2026,USDC,2026,annual_report_or_sec_filing,stablecoin_research_docs/01_circle_usdc/Circle_2025_Annual_Report_2026.pdf,downloaded,high
+USDC_002,issuer,Circle,Circle 2025 Form 10-K SEC,USDC,2025,annual_report_or_sec_filing,stablecoin_research_docs/01_circle_usdc/Circle_2025_Form_10-K_SEC.pdf,downloaded,high
+USDC_003,issuer,Circle,Circle MiCA USDC whitepaper,USDC,,whitepaper,stablecoin_research_docs/01_circle_usdc/Circle_MiCA_USDC_whitepaper.html,html_saved,high
+USDC_004,issuer,Circle,Circle USDC Reserve Report Mar 2026,USDC,2026,reserve_report_or_attestation,stablecoin_research_docs/01_circle_usdc/Circle_USDC_Reserve_Report_Mar_2026.pdf,downloaded,high
+USDC_005,issuer,Circle,Circle USDC terms,USDC,,terms,stablecoin_research_docs/01_circle_usdc/Circle_USDC_terms.html,html_saved,high
+USDC_006,issuer,Circle,Circle transparency page,USDC,,html_page,stablecoin_research_docs/01_circle_usdc/Circle_transparency_page.html,html_saved,high
+MICA_001,law,EBA / ESAs,EBA ESAs Crypto Assets Factsheet MiCA 2025,Stablecoins,2025,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/eu_mica/EBA_ESAs_Crypto_Assets_Factsheet_MiCA_2025.pdf,downloaded,high
+MICA_002,law,EBA / ESAs,EBA Final Report ITS ART EMT Reporting MiCAR 2024,Stablecoins,2024,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/eu_mica/EBA_Final_Report_ITS_ART_EMT_Reporting_MiCAR_2024.pdf,downloaded,high
+MICA_003,law,EBA / ESAs,EBA Opinion PSD2 MiCA Interplay 2025,Stablecoins,2025,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/eu_mica/EBA_Opinion_PSD2_MiCA_Interplay_2025.pdf,downloaded,high
+BOE_001,law,Bank of England,BoE FPC Record December 2025,Stablecoins,2025,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/uk_boe/BoE_FPC_Record_December_2025.pdf,downloaded,high
+BOE_002,law,Bank of England,BoE Financial Stability Report December 2025,Stablecoins,2025,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/uk_boe/BoE_Financial_Stability_Report_December_2025.pdf,downloaded,high
+CLARITY_001,law,US Congress,US CLARITY Act HR3633 reported bill 2025,Stablecoins,2025,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_clarity_act/US_CLARITY_Act_HR3633_reported_bill_2025.pdf,downloaded,high
+CLARITY_002,law,US Congress,US CLARITY Act House Report 119-168 part1,Stablecoins,,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_clarity_act/US_CLARITY_Act_House_Report_119-168_part1.pdf,downloaded,high
+GENIUS_001,law,US Treasury / Federal Register,FR GENIUS PPSI AML CFT 2026-06963,Stablecoins,2026,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/FR_GENIUS_PPSI_AML_CFT_2026-06963.pdf,downloaded,high
+GENIUS_002,law,US Treasury / Federal Register,FR GENIUS PPSI BSA 2026-07033,Stablecoins,2026,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/FR_GENIUS_PPSI_BSA_2026-07033.pdf,downloaded,high
+GENIUS_003,law,US Treasury / Federal Register,FinCEN GENIUS PPSI AML CFT Fact Sheet 2026,Stablecoins,2026,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/FinCEN_GENIUS_PPSI_AML_CFT_Fact_Sheet_2026.pdf,downloaded,high
+GENIUS_004,law,OCC,OCC GENIUS Act NPRM 2026,Stablecoins,2026,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/OCC_GENIUS_Act_NPRM_2026.pdf,downloaded,high
+GENIUS_005,law,US Treasury / Federal Register,Treasury GENIUS State Level Regime Principles 2026,Stablecoins,2026,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/Treasury_GENIUS_State_Level_Regime_Principles_2026.pdf,downloaded,high
+GENIUS_006,law,GovInfo / US Congress,US GENIUS Act Public Law 119-27 govinfo,Stablecoins,,law_regulatory_document,stablecoin_research_docs/02_laws_and_regulation/us_genius_act/US_GENIUS_Act_Public_Law_119-27_govinfo.pdf,downloaded,high
+USDT_001,issuer,Tether,Tether Relevant Information Document 2026,USDT,2026,research_paper,stablecoin_research_docs/02_tether_usdt/Tether_Relevant_Information_Document_2026.pdf,downloaded,high
+USDT_002,issuer,Tether,Tether USDT Reserve Report Q1 2026,USDT,2026,reserve_report_or_attestation,stablecoin_research_docs/02_tether_usdt/Tether_USDT_Reserve_Report_Q1_2026.pdf,downloaded,high
+USDT_003,issuer,Tether,Tether USDT whitepaper,USDT,,whitepaper,stablecoin_research_docs/02_tether_usdt/Tether_USDT_whitepaper.pdf,downloaded,high
+USDT_004,issuer,Tether,Tether transparency reports page,USDT,,html_page,stablecoin_research_docs/02_tether_usdt/Tether_transparency_reports_page.html,html_saved,high
+USDT_005,issuer,Tether,Tether whitepaper landing page,USDT,,whitepaper,stablecoin_research_docs/02_tether_usdt/Tether_whitepaper_landing_page.html,html_saved,high
+BIS_001,central_bank,BIS / CPMI,BIS AER 2025 Chapter 3 Next Generation Monetary System,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/bis/BIS_AER_2025_Chapter_3_Next_Generation_Monetary_System.pdf,downloaded,high
+BIS_002,central_bank,BIS / CPMI,BIS Papers 170 Stablecoins International Monetary System 2026,Stablecoins,2026,research_paper,stablecoin_research_docs/03_central_bank_and_academic/bis/BIS_Papers_170_Stablecoins_International_Monetary_System_2026.pdf,downloaded,high
+BIS_003,central_bank,BIS / CPMI,BIS Working Paper 1270 Stablecoins and Safe Asset Prices,Stablecoins,,research_paper,stablecoin_research_docs/03_central_bank_and_academic/bis/BIS_Working_Paper_1270_Stablecoins_and_Safe_Asset_Prices.pdf,downloaded,high
+ECB_001,central_bank,ECB,ECB Financial Stability Review Nov 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/ecb/ECB_Financial_Stability_Review_Nov_2025.pdf,downloaded,high
+ECB_002,central_bank,ECB,ECB Stablecoins and Monetary Sovereignty 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/ecb/ECB_Stablecoins_and_Monetary_Sovereignty_2025.pdf,downloaded,high
+ECB_003,central_bank,ECB,ECB WP 3174 Private Money Public Debt US Stablecoins,Stablecoins,,research_paper,stablecoin_research_docs/03_central_bank_and_academic/ecb/ECB_WP_3174_Private_Money_Public_Debt_US_Stablecoins.pdf,downloaded,high
+ECB_004,central_bank,ECB,ECB WP 3199 Stablecoins and Monetary Policy Transmission,Stablecoins,,research_paper,stablecoin_research_docs/03_central_bank_and_academic/ecb/ECB_WP_3199_Stablecoins_and_Monetary_Policy_Transmission.pdf,downloaded,high
+FSB_001,central_bank,FSB,FSB Global Stablecoin Recommendations 2023,Stablecoins,2023,research_paper,stablecoin_research_docs/03_central_bank_and_academic/fsb/FSB_Global_Stablecoin_Recommendations_2023.pdf,downloaded,high
+FSB_002,central_bank,FSB,FSB IOSCO Implementation Progress Report 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/fsb/FSB_IOSCO_Implementation_Progress_Report_2025.pdf,downloaded,high
+FSB_003,central_bank,FSB,FSB Thematic Review Crypto Stablecoin Framework 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/fsb/FSB_Thematic_Review_Crypto_Stablecoin_Framework_2025.pdf,downloaded,high
+CBC_001,central_bank,Taiwan CBC,CBC Board Meeting Stablecoin Related Issues 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/taiwan_cbc/CBC_Board_Meeting_Stablecoin_Related_Issues_2025.pdf,downloaded,high
+CBC_002,central_bank,Taiwan CBC,CBC Deposit Tokens Stablecoins CBDC Role 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/taiwan_cbc/CBC_Deposit_Tokens_Stablecoins_CBDC_Role_2025.pdf,downloaded,high
+CBC_003,central_bank,Taiwan CBC,CBC Monetary Attributes Credit Creation Risks Stablecoins,Stablecoins,,research_paper,stablecoin_research_docs/03_central_bank_and_academic/taiwan_cbc/CBC_Monetary_Attributes_Credit_Creation_Risks_Stablecoins.pdf,downloaded,high
+CBC_004,central_bank,Taiwan CBC,CBC USD Stablecoins and NTD Stablecoins 2025,Stablecoins,2025,research_paper,stablecoin_research_docs/03_central_bank_and_academic/taiwan_cbc/CBC_USD_Stablecoins_and_NTD_Stablecoins_2025.pdf,downloaded,high
+PYUSD_001,issuer,Paxos,PYUSD product page,PYUSD,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/PYUSD_product_page.html,html_saved,high
+PYUSD_002,issuer,Paxos,PYUSD transparency reports page,PYUSD,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/PYUSD_transparency_reports_page.html,html_saved,high
+PYUSD_003,issuer,PayPal,PayPal PYUSD 70 markets news release 2026,PYUSD,2026,research_paper,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/PayPal_PYUSD_70_markets_news_release_2026.pdf,downloaded,high
+PYUSD_004,issuer,PayPal,PayPal crypto terms and conditions,PYUSD,,terms,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/PayPal_crypto_terms_and_conditions.html,html_saved,high
+USDG_003,issuer,Paxos,USDG EU whitepaper,USDG,,whitepaper,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDG_EU_whitepaper.html,html_saved,high
+USDG_001,issuer,Paxos,USDG about page,USDG,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDG_about_page.html,html_saved,high
+USDG_002,issuer,Paxos,USDG transparency reports page,USDG,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDG_transparency_reports_page.html,html_saved,high
+USDG_004,issuer,Paxos,USDG whitepaper 2024,USDG,2024,whitepaper,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDG_whitepaper_2024.pdf,downloaded,high
+USDP_001,issuer,Paxos,USDP product page,USDP,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDP_product_page.html,html_saved,high
+USDP_002,issuer,Paxos,USDP transparency reports page,USDP,,html_page,stablecoin_research_docs/03_paxos_pyusd_usdp_usdg/USDP_transparency_reports_page.html,html_saved,high
+BIS_004,payment_settlement,BIS / CPMI,BIS CPMI Correspondent Banking 2016,Stablecoins,2016,research_paper,stablecoin_research_docs/04_payment_and_settlement/swift_correspondent_banking/BIS_CPMI_Correspondent_Banking_2016.pdf,downloaded,high
+BIS_005,payment_settlement,BIS / CPMI,BIS CPMI Cross Border Retail Payments 2018,Stablecoins,2018,research_paper,stablecoin_research_docs/04_payment_and_settlement/swift_correspondent_banking/BIS_CPMI_Cross_Border_Retail_Payments_2018.pdf,downloaded,high
+RLUSD_001,issuer,Ripple / Standard Custody & Trust,RLUSD Attestation Report Mar 2026,RLUSD,2026,reserve_report_or_attestation,stablecoin_research_docs/04_ripple_rlusd/RLUSD_Attestation_Report_Mar_2026.pdf,downloaded,high
+RLUSD_002,issuer,Ripple / Standard Custody & Trust,RLUSD product page,RLUSD,,html_page,stablecoin_research_docs/04_ripple_rlusd/RLUSD_product_page.html,html_saved,high
+RLUSD_003,issuer,Ripple / Standard Custody & Trust,RLUSD transparency page,RLUSD,,html_page,stablecoin_research_docs/04_ripple_rlusd/RLUSD_transparency_page.html,html_saved,high
+FDUSD_001,issuer,First Digital / FD121 (BVI) Limited,FDUSD ISAE3000 Attestation Report Mar 2026,FDUSD,2026,reserve_report_or_attestation,stablecoin_research_docs/05_first_digital_fdusd/FDUSD_ISAE3000_Attestation_Report_Mar_2026.pdf,downloaded,high
+FDUSD_002,issuer,First Digital / FD121 (BVI) Limited,FDUSD Reserve Accounts Report Mar 2026,FDUSD,2026,reserve_report_or_attestation,stablecoin_research_docs/05_first_digital_fdusd/FDUSD_Reserve_Accounts_Report_Mar_2026.pdf,downloaded,high
+GUSD_001,issuer,Gemini,GUSD Reserves Report Feb 2026,GUSD,2026,reserve_report_or_attestation,stablecoin_research_docs/06_gemini_gusd/GUSD_Reserves_Report_Feb_2026.pdf,downloaded,high
+GUSD_002,issuer,Gemini,GUSD Reserves Report Jan 2026,GUSD,2026,reserve_report_or_attestation,stablecoin_research_docs/06_gemini_gusd/GUSD_Reserves_Report_Jan_2026.pdf,downloaded,high
+GUSD_003,issuer,Gemini,GUSD product page,GUSD,,html_page,stablecoin_research_docs/06_gemini_gusd/GUSD_product_page.html,html_saved,high
+GUSD_004,issuer,Gemini,GUSD whitepaper,GUSD,,whitepaper,stablecoin_research_docs/06_gemini_gusd/GUSD_whitepaper.pdf,downloaded,high
+GUSD_005,issuer,Gemini,geminispacestationinc x2026,GUSD,2026,annual_report_or_sec_filing,stablecoin_research_docs/06_gemini_gusd/geminispacestationinc_x2026.pdf,downloaded,high
+DAI_USDS_001,issuer,MakerDAO / Sky,DAI original whitepaper 2017,DAI/USDS,2017,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/DAI_original_whitepaper_2017.pdf,downloaded,high
+DAI_USDS_002,issuer,MakerDAO / Sky,MakerDAO Multi Collateral DAI whitepaper 2020,DAI/USDS,2020,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/MakerDAO_Multi_Collateral_DAI_whitepaper_2020.pdf,downloaded,high
+DAI_USDS_003,issuer,MakerDAO / Sky,Sky Protocol technical whitepaper 2025,DAI/USDS,2025,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/Sky_Protocol_technical_whitepaper_2025.pdf,downloaded,high
+DAI_USDS_004,issuer,MakerDAO / Sky,Sky money product page,DAI/USDS,,html_page,stablecoin_research_docs/07_maker_sky_dai_usds/Sky_money_product_page.html,html_saved,high
+USDE_001,issuer,Ethena,Ethena LlamaRisk PoR page,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/Ethena_LlamaRisk_PoR_page.html,html_saved,high
+USDE_002,issuer,Ethena,Ethena audits,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/Ethena_audits.html,html_saved,high
+USDE_003,issuer,Ethena,Ethena docs home,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/Ethena_docs_home.html,html_saved,high
+USDE_004,issuer,Ethena,How USDe works,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/How_USDe_works.html,html_saved,high
+USDE_005,issuer,Ethena,USDe custodian attestations page,USDe,,reserve_report_or_attestation,stablecoin_research_docs/08_ethena_usde/USDe_custodian_attestations_page.html,html_saved,high
+USDE_006,issuer,Ethena,USDe overview,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/USDe_overview.html,html_saved,high
+USDE_007,issuer,Ethena,USDe reserve fund,USDe,,reserve_report_or_attestation,stablecoin_research_docs/08_ethena_usde/USDe_reserve_fund.html,html_saved,high
+UNKNOWN_003,archive_reference,Unknown,BUSD transparency reports page,Stablecoins,,html_page,stablecoin_research_docs/09_archive_deprecated_or_reference/BUSD_transparency_reports_page.html,html_saved,low
+USDPT_001,issuer,Western Union,WU 2025 annual report 2026 proxy,USDPT / UDSPT,2026,annual_report_or_sec_filing,stablecoin_usdpt_research/01_western_union_usdpt/WU_2025_annual_report_2026_proxy.pdf,downloaded,high
+USDPT_002,issuer,Western Union,WU investor day 2025,USDPT / UDSPT,2025,research_paper,stablecoin_usdpt_research/01_western_union_usdpt/WU_investor_day_2025.pdf,downloaded,high
+USDPT_003,issuer,Anchorage Digital Bank,Anchorage OCC GENIUS Act comment letter 2026,USDPT / UDSPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/Anchorage_OCC_GENIUS_Act_comment_letter_2026.pdf,downloaded,high
+USDPT_004,law,OCC,OCC GENIUS Act NPRM 2026,USDPT / UDSPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/OCC_GENIUS_Act_NPRM_2026.pdf,downloaded,high
+BIS_004_DUP,payment_settlement,BIS / CPMI,BIS CPMI correspondent banking 2016,Cross-border payments,2016,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_correspondent_banking_2016.pdf,downloaded,high
+BIS_005_DUP,payment_settlement,BIS / CPMI,BIS CPMI cross border retail payments 2018,Cross-border payments,2018,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_cross_border_retail_payments_2018.pdf,downloaded,high
+FEDWIRE_001,payment_settlement,Federal Reserve / Fedwire,Fedwire Funds PFMI Disclosure,Fedwire,,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/Fedwire_Funds_PFMI_Disclosure.pdf,downloaded,high
+WB_RPW_001,payment_settlement,World Bank,WorldBank RPW Q3 2025 report annex,Remittance,2025,research_paper,stablecoin_usdpt_research/04_remittance_cost_data/WorldBank_RPW_Q3_2025_report_annex.pdf,downloaded,high

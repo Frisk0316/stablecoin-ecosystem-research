@@ -1,0 +1,7 @@
+topic,primary_source,function,research_use,source_ids,confidence,notes
+Correspondent banking,CPMI 2016,Cross-border payments via bank relationships,"Defines respondent/correspondent bank model; discusses relationship reduction, compliance costs, concentration",BIS_004,high,Use to correct misconception that SWIFT itself settles funds
+Cross-border retail payments,CPMI 2018,Retail/remittance/business cross-border payment frictions,"Explains slow, costly, opaque cross-border retail payments and reliance on correspondent banks for settlement/FX",BIS_005,high,Baseline for stablecoin improvement claims
+Fedwire Funds,Fedwire PFMI disclosure,Wholesale USD settlement infrastructure,"Needed to distinguish message, clearing and settlement layers",FEDWIRE_001,medium,Present in USDPT research archive
+World Bank RPW Q3 2025,World Bank,Remittance price data,Needed for remittance cost benchmarking and corridor analysis,WB_RPW_001,medium,Present in USDPT research archive
+Western Union traditional model,Western Union annual report / investor day,"Agent network, consumer payments, settlement model",Needed for USDPT impact analysis,WU_001; WU_002,medium,Need page-level extraction
+USDPT / UDSPT,Anchorage + WU docs,Stablecoin-based settlement proposal,Current evidence is indirect; Anchorage comment letter says ADB expects to issue UDSPT with Western Union as brand partner,USDPT_003,medium-low,Product terms/reserve report still missing
