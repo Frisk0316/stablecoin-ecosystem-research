@@ -1,5 +1,120 @@
 # Changelog
 
+## v0.3 slide script — 2026-05-15 (full speaker script)
+
+Full speaker script for the 2026-06-27 reading-group session, expanded
+from the v0.3 slide outline. Self-contained file at
+`07_final_report/slide_script_v0_3.md`.
+
+Content:
+
+- 49 main slides + 3 appendix slides (52 slide entries total), grouped into
+  9 sections (Part 0 Opening through Part 8 Closing plus Appendix).
+- Each slide includes bilingual title, Chinese slide body (the text intended
+  to appear on the rendered slide), bilingual speaker notes (English
+  analytical content + Chinese delivery prompt), `CLAIM_XXX` source claim
+  references, and `KF_XXX` key-figure references where applicable.
+- Visual notes flagged for slides where a flow diagram or custom chart is
+  recommended (Slides 14, 15, 17, 18, 38).
+- Audience: academic-leaning reading-group members; rendered slides in
+  Traditional Chinese; written documents in English.
+
+Coverage statistics:
+
+- 1,379 lines total
+- 73 distinct `CLAIM_XXX` IDs cited (out of 106 claims in the table)
+- 31 distinct `KF_XXX` IDs cited (out of 34 in `key_figures.csv`)
+- MD032 lint clean (no heading-to-list adjacency)
+
+Speaker checklist at end of file flags eight pre-session decisions: title
+slide attribution, custom visual completeness, USDC reserve composition
+data source, DAI/USDS and USDe flow diagrams (not yet in
+`06_flow_diagrams/`), USDPT four-layer swim-lane Mermaid reuse, slide-cut
+options for under-60-minute and over-90-minute sessions, and appendix
+gating.
+
+Remaining v0.4 candidates after this delivery: CLARITY Act stablecoin-
+specific extraction, central-bank Taiwan synthesis, MiCA EMT
+Articles 51 / 52 / 55, and (if obtainable) USDPT product layer plus
+adjusted on-chain volume.
+
+## v0.3 slide prep extended — 2026-05-15 (key figures + chapter 8 + comparison tables)
+
+Three further slide-prep deliverables ahead of the speaker-script
+expansion step.
+
+- `07_final_report/key_figures.csv` (34 entries) extracts every
+  slide-citable numerical figure from the claim base with the columns
+  `figure_id, topic, figure, value, unit, as_of_date, source_id, claim_id,
+  slide_relevance, notes`. Covers USDT reserve composition, GENIUS Act
+  thresholds, MiCA ART/EMT thresholds, BoE backing splits and holding
+  limits, NYDFS T+2, GUSD timely-redemption commitment, Ethena Reserve
+  Fund size and multi-sig, sUSDe / BTC / ETH funding rate averages, Sky
+  Savings Rate quotes, IMF event-study 18% / $300bn, ESMA CASP scrutiny
+  thresholds, and project-state counters.
+- `05_chapter_drafts/chapter_08_failure_cases.md` rewritten from a 23-line
+  v0.1 skeleton to a 206-line v0.3 module. The risk taxonomy (8 categories)
+  is now anchored to v0.3 claims; the specific case-study layer (Terra UST,
+  Iron Finance, USDC SVB depeg, Tether reserve controversy, DAI Black
+  Thursday) is explicitly marked as open and is **not** in the v0.3 source
+  archive. v0.4 candidates are listed for prioritisation if the project is
+  taken further.
+- `07_final_report/comparison_table_slide_31.md` and
+  `07_final_report/comparison_table_slide_32.md` export the chapter-4
+  six-dimension cross-jurisdiction comparison table as two slide-ready
+  tables (top half: eligible issuer / reserve composition / redemption
+  right; bottom half: insolvency / holder yield / significant-token
+  threshold), each with bilingual speaker notes and visual notes for the
+  design step. Slide 32 also includes a combined six-row reference table
+  for the case where a single-slide layout is preferred.
+
+Slide outline updated:
+
+- `07_final_report/slide_outline_v0_3.md` slides 44/45 reframed: failure
+  cases now described as "risk taxonomy anchored to v0.3 evidence" and
+  "lessons preserved as guardrails", with an explicit note that the
+  case-study layer remains v0.4 open work.
+- Markdown linting fix: blank lines inserted between every slide heading
+  and its bullet list (MD032 compliance) across all 52 slide headings.
+
+## v0.3 slide prep — 2026-05-15 (slide outline + flow diagram sync)
+
+Prep deliverables for the upcoming Chinese-language slide deck for the
+2026-06-27 reading-group session.
+
+New artifact:
+
+- `07_final_report/slide_outline_v0_3.md` — bilingual 49-slide + 3-appendix
+  outline, with English / Chinese title pairs, one-line Chinese takeaways,
+  and `CLAIM_XXX` source-claim references per slide. Structured in 8 parts
+  (Opening, Issuer ecosystem, Reserves, Law and regulation, Central-bank
+  framing, USDPT, On-chain data, Closing) plus appendix slides for claim
+  map / disclaimer / source registry.
+
+Flow diagram v0.3 sync pass:
+
+- `06_flow_diagrams/tokenized_money_system_flow.md` redrawn to make the
+  three product categories from chapter 1.3 visually explicit (fiat-backed,
+  crypto / RWA-collateralised, synthetic-dollar) and to overlay the
+  regulatory perimeter (GENIUS / MiCA EMT / BoE / NYDFS).
+- `06_flow_diagrams/usdpt_settlement_flow.md` redrawn as a four-swim-lane
+  hypothesis map (customer remittance UX, WU agent network, stablecoin
+  issuance and on-chain transfer, reserve and bank / correspondent
+  settlement) with solid arrows for v0.3-confirmed edges and dashed arrows
+  for the speculative linkages that workflow documentation would need to
+  confirm before any "replaces SWIFT / correspondent banking" framing can
+  be supported.
+- The other four flow diagrams (`correspondent_banking_flow.md`,
+  `western_union_traditional_flow.md`, `reserve_asset_flow.md`,
+  `stablecoin_issuance_redemption_flow.md`) reviewed and found accurate
+  against the v0.3 claim base; not edited.
+
+Tooling:
+
+- New helper script `08_scripts/check_mermaid.py` runs a light structural
+  check on all Mermaid blocks under `06_flow_diagrams/`. All six diagrams
+  pass at the v0.3 cut-off.
+
 ## v0.3 wrap-up — 2026-05-15 (Claude Code chapter 1/9 and exec summary)
 
 Final v0.3 narrative wrap-up ahead of slide-deck handoff. No new claims;
