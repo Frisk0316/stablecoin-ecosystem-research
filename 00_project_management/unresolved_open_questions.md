@@ -1,48 +1,201 @@
-# Open Questions - Phase 1
+# Unresolved Open Questions
 
-## A. 文件缺口
+Last updated: 2026-05-14 (v0.2 interim refresh)
 
-1. NYDFS Guidance on the Issuance of U.S. Dollar-Backed Stablecoins：目前只有 RLUSD / GUSD reserve reports 引用 NYDFS Letter，但獨立原文資料夾仍是空的。
-2. IMF stablecoin papers：03_central_bank_and_academic/imf 是空資料夾，需最後 external fetch 或手動下載。
-3. Federal Reserve stablecoin papers / speeches：03_central_bank_and_academic/fed 是空資料夾。
-4. On-chain market dashboards：05_market_and_onchain_data 是空資料夾，需補 Visa / DeFiLlama / Cambridge / Artemis export 或連結。
-5. USDPT-specific primary docs：目前只有 Western Union / Anchorage / payment rail 背景資料，缺 USDPT product page、launch press release、whitepaper、reserve report、contract addresses、redemption terms。
+This file preserves questions that should not be guessed in the final report.
+If a question is answered, add the supporting claim IDs and source IDs before
+removing it. v0.2 interim pass closed the Paxos-family direct redemption
+(PYUSD/USDP/USDG), GUSD platform-versus-lawful-holder distinction, USDP
+monthly reserve report status, and the six GENIUS Act statutory anchors;
+USDPT and adjusted-volume market-data items are deliberately deferred to
+v0.3 per user decision.
 
-## B. Issuer-specific open questions
+## v0.2 deferrals (frozen for this pass, not unresolved-pending-research)
+
+These items have been deliberately deferred for v0.2 and are not active
+research questions during this pass:
+
+1. USDPT product terms, reserve report, contract addresses, and end-to-end
+   four-layer settlement workflow remain absent from primary documentation.
+   No further extraction or scraping in v0.2 per scope decision; chapter 6
+   conclusions must remain conditional. Move to v0.3 when WU/Anchorage
+   publish primary product documentation.
+2. Visa Onchain Analytics adjusted-volume export, Artemis methodology
+   beyond `CLAIM_054`, and McKinsey/Artemis `MCKINSEY_ARTEMIS_001`
+   (manual_needed) are frozen at current evidence; chapter 7 retains the
+   "raw on-chain volume ≠ payment volume" guardrail. Move to v0.3 only if
+   the corresponding reproducible exports become available.
+
+## v0.3 backlog (next pass)
+
+- BoE systemic stablecoin regime page-level extraction from `BOE_003` and
+  `BOE_004`.
+- ESMA MiCA / CASP guidance page-level extraction from `ESMA_002` and
+  `ESMA_003`.
+- MiCA significant-ART and significant-EMT obligations, and ART
+  recovery/redemption plan provisions.
+- CLARITY Act stablecoin-relevant sections (if any) isolated from
+  market-structure provisions.
+- Federal Reserve / IMF Taiwan-specific synthesis beyond `CLAIM_044` to
+  `CLAIM_050` page-level anchors.
+- DAI/USDS protocol mechanics: RWA collateral, PSM, savings/yield,
+  governance, oracle, liquidation, legal/custody.
+- USDe risk extraction: custodian attestations, exchange exposure,
+  basis/funding risk, reserve fund composition, liquidity unwind.
+
+## External source gaps
+
+1. NYDFS Guidance on the Issuance of U.S. Dollar-Backed Stablecoins is now
+   registered as `NYDFS_001`, locally archived, and partially extracted. The
+   remaining task is page-level citation cleanup before final publication.
+2. MiCA Regulation (EU) 2023/1114 is now registered as `MICA_004` and locally
+   archived as an official PDF. Direct EUR-Lex HTML fetch remains blocked by an
+   anti-bot challenge, so final citations should use the archived PDF unless a
+   clean HTML export is later obtained.
+3. IMF and Federal Reserve stablecoin sources are now registered and partially
+   extracted into `CLAIM_044` to `CLAIM_050`. Remaining work is page-level
+   extraction and Taiwan-specific synthesis.
+4. On-chain market dashboards are partially ingested: Visa dashboard shells,
+   DeFiLlama APIs, Cambridge pages, and Artemis report/docs are archived.
+   Adjusted exports and methodology reconciliation are still needed to separate
+   payment activity from raw transfer volume.
+5. USDPT / UDSPT launch/product evidence is now partially captured
+   (`CLAIM_051` to `CLAIM_053`). Missing items remain product terms, reserve
+   report, contract addresses, direct redemption terms, and end-to-end workflow
+   documentation.
+6. McKinsey/Artemis material remains a manual-needed item because command-line
+   archival timed out or failed.
+
+## Issuer-specific questions
 
 ### USDC
-- Circle Mint / redemption policy 是否清楚區分 retail holders 與 eligible business account holders？
-- USDC reserve fund 的法律結構、託管銀行與 BlackRock fund documentation 是否需要補？
-- MiCA USDC whitepaper 與美國 USDC terms 是否有 redemption rights 差異？
+
+- Circle transparency evidence now supports reserve categories and the broad
+  1:1 redemption statement (`CLAIM_026`, `CLAIM_027`). Circle terms now
+  establish that direct redemption requires a Circle Mint account in good
+  standing, and transferred holders can redeem only if eligible for and
+  registered with Circle Mint (`CLAIM_058`). Remaining question: map Circle
+  Mint eligibility and any region-specific limits.
+- Circle terms now state holders are not entitled to reserve interest/returns
+  and USDC itself does not generate holder yield (`CLAIM_059`).
+- Circle Reserve Fund documentation should be extracted to separate direct
+  Treasuries, repo, MMF shares, and bank deposits.
 
 ### USDT
-- Tether Terms of Service 中誰可以直接 redeem？最低贖回額、費用、地區限制為何？
-- Q1 2026 reserve report 中 T-bills、repo、secured loans、bitcoin、gold、other investments 的精確比例需要表格化。
-- Tether International / El Salvador registration 與 GENIUS-compliant USAT 的差異需建立對照。
+
+- Tether's May 1, 2026 release supports approximate Treasury bill, gold, and
+  Bitcoin figures (`CLAIM_028`, `CLAIM_029`), but the full Q1 2026 reserve
+  table in `USDT_002` still needs extraction.
+- Tether terms now establish that direct issuance/redemption requires verified
+  customer status and that redemption is a personal contractual right
+  (`CLAIM_060`). Remaining question: extract exact fee/minimum timing and any
+  operational delays.
+- Tether terms define prohibited persons/jurisdictions, including U.S. persons
+  except limited discretionary Eligible Contract Participant acceptance,
+  Canadian/Singaporean persons, sanctioned persons, and prohibited
+  jurisdictions (`CLAIM_061`).
+- Tether International / El Salvador registration and any GENIUS-compliant
+  USAT structure should be separated from USDT before making U.S. regulatory
+  claims.
 
 ### PYUSD / USDP / USDG
-- Paxos 各穩定幣的 issuer entity 是否分別為 Paxos Trust Company, N.A.、Paxos Digital Singapore Pte. Ltd. 等？
-- PYUSD rewards 是否構成「穩定幣持有人收益」問題，如何與 GENIUS Act 禁止支付利息比較？
-- USDP 缺具體月份 reserve report PDF，需要補。
+
+- Paxos USD Stablecoin Agreement now resolves entity allocation,
+  direct-redemption gating, no-holder-yield, reserve composition, and
+  all-holders freeze/upgrade scope for the Paxos family (`CLAIM_072` to
+  `CLAIM_076`); these subsume the earlier general restriction claim
+  (`CLAIM_056`).
+- PYUSD: PayPal Hub eligibility (`CLAIM_031`) and Paxos direct redemption
+  (`CLAIM_073`) are now described as two layered channels in chapter 2.
+  Remaining question: end-to-end mapping between PayPal Digital transition
+  (`CLAIM_030`) and Paxos Customer onboarding when a retail PayPal user
+  attempts direct Paxos redemption.
+- USDP: monthly reserve composition reports have been formally discontinued
+  by the issuer (`CLAIM_081`); USDP attestations are issued monthly by KPMG
+  LLP under AICPA examination/attestation standards (`CLAIM_080`).
+  Reclassify the earlier "USDP monthly reserve report PDF is absent" gap
+  from "missing" to "discontinued by issuer".
+- USDG: EU retail USDG redemption route conditions (`CLAIM_068`) and unified
+  Paxos Customer-only direct redemption (`CLAIM_073`) are captured.
+  Remaining question: non-EU institutional and direct-Paxos-Customer USDG
+  workflows beyond the EU retail route, plus any USDG-specific reserve
+  report distinct from the unified Paxos disclosure.
 
 ### RLUSD / GUSD
-- NYDFS guidance 原文需要補齊，因 RLUSD/GUSD reserve reports 直接引用它。
-- Product pages 是否揭露 freeze / blacklist / redemption suspension 權限？
+
+- RLUSD product-page reserve and custody statements are now captured
+  (`CLAIM_032`, `CLAIM_033`), and Ripple user terms now support prohibited-use
+  and suspension/termination consequences (`CLAIM_057`). Direct redeemer
+  eligibility and any contract-level freeze/blacklist powers still need
+  separate extraction (carry to v0.3).
+- GUSD: Gemini Trust User Agreement now resolves the platform-versus-
+  lawful-holder distinction at the contractual layer (`CLAIM_077`),
+  enumerates the three-account-type reserve structure (`CLAIM_078`), and
+  defines the one-Business-Day "Timely" redemption commitment for Customer
+  sell Orders (`CLAIM_079`). Remaining question: smart-contract-level
+  freeze/blacklist specifics and the interaction between NYDFS guidance
+  obligations and Gemini's contractual customer-only redemption gating.
 
 ### FDUSD
-- FDUSD 的持有人直接 redemption rights 與 issuer terms 尚未補齊。
-- Hong Kong trust / BVI issuer / multi-jurisdiction bank accounts 的法律保護程度需精查。
+
+- FDUSD terms now support claim-level extraction for redemption/sale rights,
+  eligible redeemers, FD121 Account gating, suspension/limitation mechanics,
+  and U.S. person exclusion (`CLAIM_062`, `CLAIM_063`, `CLAIM_064`).
+  Remaining question: map the relationship among FD121 (BVI) Limited, Hong
+  Kong trust/custody arrangements, and reserve-account banks.
 
 ### DAI / USDS
-- Sky / Maker 的 RWA collateral、PSM、savings yield、governance controls 需要分開建表。
-- DAI/USDS 是否應與 payment stablecoins 同表，或獨立 crypto-backed / protocol stablecoin 表？
+
+- MCD core mechanics (overcollateralised Maker Vaults, governance, Stability
+  Fee and Liquidation Ratio risk parameters), liquidation auctions
+  (Collateral Auction + Reverse Collateral Auction + Protocol Surplus / MKR
+  dilution backstop), Dai Savings Rate / Sky Savings Rate via sUSDS, and
+  the three external-actor classes (Keepers, Oracles, Global Settlers /
+  Emergency Oracles) are now anchored at `CLAIM_098`-`CLAIM_101`.
+- Sky.money rebrand mapping (USDS / sUSDS / stUSDS / SKY plus 1:1 USDC↔USDS
+  conversion and US-jurisdiction unavailability of yield modules) is
+  anchored at `CLAIM_102`.
+- Keep DAI/USDS categorised as crypto/RWA-collateralised protocol
+  stablecoins, not fiat-backed payment stablecoins.
+- Remaining open question: RWA Vaults inventory, Peg Stability Module
+  contract-level mechanics, and the precise relationship between USDS,
+  sUSDS, stUSDS and the legacy DAI token are not yet extracted at
+  contract or governance-vote level.
+- Data-quality finding: `DAI_USDS_003` (registered as "Sky Protocol
+  technical whitepaper 2025") is in fact a Cardano Layer 2 data
+  availability paper unrelated to the Maker/Sky stablecoin protocol — it
+  has not been used to support any claim and the registry row should be
+  relabelled or removed in v0.4.
 
 ### USDe
-- USDe 與 sUSDe 的權利、收益與風險要嚴格區分。
-- Custodian attestations、exchange exposures、basis trade unwind risk 需建立單獨風險矩陣。
 
-### USDPT
-- USDPT 實際 token 名稱是 USDPT 還是 UDSPT？Anchorage comment letter 使用 UDSPT。
-- 是否已有 reserve trust / attestation / redemption terms？
-- Western Union agents 是否會直接持有 stablecoin，還是只作為後台 treasury settlement asset？
-- USDPT 取代的是 agent settlement / prefunding / nostro liquidity 的哪一層，而不是 SWIFT 訊息層或中央銀行清算層。
+- Distinguish USDe from sUSDe before discussing yield.
+- Ethena terms now establish the Mint User / Holding User distinction,
+  direct redemption gating, U.S. Mint User ineligibility, and no USDe
+  holder yield (`CLAIM_065`, `CLAIM_066`). Ethena overview supports the
+  synthetic-dollar and delta-neutral framing (`CLAIM_067`).
+- v0.3 protocol-mechanics extraction now anchors the peg-stability layer.
+  Delta-neutral hedging at 1:1 collateralisation via short perpetual
+  futures positions of approximately the same notional as the backing
+  asset (`CLAIM_103`); Off-Exchange Settlement custody mitigating but not
+  eliminating exchange-specific counterparty risk (`CLAIM_104`); monthly
+  custodian attestations validating existence/control/value of backing
+  assets and stating none reside directly on exchange partners
+  (`CLAIM_105`); Reserve Fund composition (USDC + USDT + smaller ETH
+  allocation), 4/10 multi-sig control, and Q4 2024 size US$46.6m
+  (`CLAIM_106`).
+- Remaining open question: live exchange-by-exchange exposure breakdown,
+  basis trade scenario analysis, and sustainability of sUSDe APY (19%
+  average in 2024) under sustained negative-funding regimes.
+
+### USDPT / UDSPT
+
+- Confirm whether the product name is USDPT or UDSPT in primary launch
+  documents.
+- Confirm reserve trust, reserve report, contract addresses, and redemption
+  terms. Issuer and launch framing now have primary-source support
+  (`CLAIM_051`, `CLAIM_052`).
+- Do not assume Western Union agents handle retail stablecoin cash-out unless
+  product documentation supports it.
+- Do not frame USDPT as replacing SWIFT or correspondent banking until the
+  actual settlement workflow is documented.

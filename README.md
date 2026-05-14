@@ -20,14 +20,14 @@ This is the first structured delivery package for the stablecoin ecosystem resea
 
 ## Source coverage snapshot
 
-Total source registry rows: **82**
+Total source registry rows: **85**
 
 Category counts:
 
 - archive_reference: 1
 - central_bank: 14
 - issuer: 46
-- law: 13
+- law: 16
 - payment_settlement: 6
 - project_management: 2
 
@@ -36,6 +36,7 @@ Status counts:
 - download_script: 2
 - downloaded: 55
 - html_saved: 25
+- url_only: 3
 
 ## Important limitations of v0.1
 

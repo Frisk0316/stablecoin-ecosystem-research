@@ -10,4 +10,21 @@ This source establishes the baseline problem: cross-border retail payments are o
 This source should be used to distinguish wholesale USD settlement infrastructure from SWIFT messaging and retail payment-service providers.
 
 ## Western Union and Anchorage materials
-These sources will support the USDPT/UDSPT chapter. Current evidence is sufficient to treat USDPT/UDSPT as a high-priority open question, but not sufficient to make definitive statements about product terms, reserve composition, or direct redemption rights.
+These sources now support a stronger but still bounded USDPT/UDSPT chapter.
+Anchorage's comment letter page and PDF support the issuer/brand-partner
+context (`CLAIM_023`). Western Union's 2025 announcement states that USDPT
+would be built on Solana, issued by Anchorage Digital Bank, and paired with a
+Digital Asset Network intended to bridge digital and fiat worlds
+(`CLAIM_051`). Western Union's 2026 launch release states that USDPT launched
+as a U.S. dollar-denominated payment stablecoin, fully backed by U.S. dollars,
+issued by Anchorage Digital Bank N.A., and built on Solana (`CLAIM_052`).
+
+The Fireblocks partnership release supports operational-infrastructure context:
+wallet, settlement, and financial-operations infrastructure; agent settlement
+in USDPT; Dynamic embedded wallets; and TRES translation of onchain data into
+SWIFT MT940/MT942 formats (`CLAIM_053`). This is secondary evidence and should
+not be used as product terms.
+
+Open points remain: direct holder redemption, reserve report, contract
+addresses, customer eligibility, agent cash-out workflow, and whether USDPT
+changes customer-facing remittance rails, back-end treasury settlement, or both.

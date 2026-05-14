@@ -1,13 +1,13 @@
 id,category,title,publisher,priority,action_needed,notes
-NYDFS_STABLECOIN_GUIDANCE,law,NYDFS Guidance on U.S. Dollar-Backed Stablecoins,NYDFS,high,external_fetch_or_manual_download,Needed for RLUSD/GUSD/NYDFS law matrix; original guidance missing from archive
-MICA_ORIGINAL_REGULATION,law,Regulation (EU) 2023/1114 MiCA official text,EU Official Journal,high,external_fetch_or_manual_download,Needed for definitive EU matrix; EBA derivative documents already present
-ESMA_MICA_OVERVIEW,law,ESMA MiCA overview / CASP guidance,ESMA,medium,external_fetch_or_manual_download,Needed for CASP and market infrastructure analysis
-BOE_SYSTEMIC_STABLECOIN_CONSULTATION,law,Bank of England systemic stablecoin consultation,Bank of England,medium,external_fetch_or_manual_download,"BoE FSR/FPC present, but consultation missing"
-IMF_STABLECOIN_CORE_PAPERS,central_bank,"IMF stablecoin papers: statistics, payments, risks",IMF,high,external_fetch_or_manual_download,IMF folder is empty in uploaded archive
-FED_STABLECOIN_PAPERS_SPEECHES,central_bank,Federal Reserve stablecoin papers / speeches,Federal Reserve,high,external_fetch_or_manual_download,Fed folder is empty in uploaded archive
-VISA_ONCHAIN_ANALYTICS,market_data,Visa Onchain Analytics stablecoin dashboard/export,Visa,high,external_fetch_or_manual_download,Needed for adjusted volume and payment/trading distinction
-DEFILLAMA_STABLECOINS,market_data,DeFiLlama stablecoin supply data,DeFiLlama,high,external_fetch_or_manual_download,Needed for supply and chain distribution
-CAMBRIDGE_DIGITAL_MONEY_DASHBOARD,market_data,Cambridge Digital Money Dashboard,Cambridge CCAF,medium,external_fetch_or_manual_download,Needed for market data triangulation
-ARTEMIS_STABLECOIN_DATA,market_data,Artemis stablecoin metrics,Artemis,medium,external_fetch_or_manual_download,Needed for chain and activity analysis
-USDPT_PRODUCT_TERMS,issuer,"Western Union USDPT/UDSPT product page, terms, reserve report",Western Union / Anchorage,high,external_fetch_or_manual_download,Needed before making strong product-level claims
+NYDFS_STABLECOIN_GUIDANCE,law,NYDFS Guidance on U.S. Dollar-Backed Stablecoins,NYDFS,high,archived_extract_page_citations,Registered as NYDFS_001; local HTML archived; page-level citation cleanup remains
+MICA_ORIGINAL_REGULATION,law,Regulation (EU) 2023/1114 MiCA official text,EU Official Journal,high,archived_extract_page_citations,Registered as MICA_004; official PDF archived; direct HTML fetch hit challenge page
+ESMA_MICA_OVERVIEW,law,ESMA MiCA overview / CASP guidance,ESMA,medium,archived_extract_claims,Registered as ESMA_001 to ESMA_004; CASP/MiCA extraction remains
+BOE_SYSTEMIC_STABLECOIN_CONSULTATION,law,Bank of England systemic stablecoin consultation,Bank of England,medium,archived_extract_claims,"Registered as BOE_003 and BOE_004; page-level extraction remains"
+IMF_STABLECOIN_CORE_PAPERS,central_bank,"IMF stablecoin papers: statistics, payments, risks",IMF,high,archived_extract_page_citations,Registered as IMF_001 to IMF_004; CLAIM_049 and CLAIM_050 added; page extraction remains
+FED_STABLECOIN_PAPERS_SPEECHES,central_bank,Federal Reserve stablecoin papers / speeches,Federal Reserve,high,archived_extract_page_citations,Registered as FED_001 to FED_005; CLAIM_044 to CLAIM_048 added; page extraction remains
+VISA_ONCHAIN_ANALYTICS,market_data,Visa Onchain Analytics stablecoin dashboard/export,Visa,high,partial_export_needed,Dashboard shells archived as VISA_001 to VISA_003; adjusted export still needed
+DEFILLAMA_STABLECOINS,market_data,DeFiLlama stablecoin supply data,DeFiLlama,high,archived_extract_dataset,API snapshots archived as DEFILLAMA_001 to DEFILLAMA_004; supply analysis remains
+CAMBRIDGE_DIGITAL_MONEY_DASHBOARD,market_data,Cambridge Digital Money Dashboard,Cambridge CCAF,medium,archived_extract_claims,Registered as CAMBRIDGE_001 and CAMBRIDGE_002; extraction remains
+ARTEMIS_STABLECOIN_DATA,market_data,Artemis stablecoin metrics,Artemis,medium,partial_export_needed,Registered as ARTEMIS_001 to ARTEMIS_003; CLAIM_054 added; reproducible data export remains
+USDPT_PRODUCT_TERMS,issuer,"Western Union USDPT/UDSPT product page, terms, reserve report",Western Union / Anchorage,high,partial_terms_reserve_contracts_needed,Launch and infrastructure materials archived; CLAIM_051 to CLAIM_053 added; terms/reserve/contract/workflow docs remain
 USDP_MONTHLY_RESERVE_REPORT,issuer,USDP specific monthly reserve report PDF,Paxos,medium,external_fetch_or_manual_download,Transparency page exists; concrete monthly PDF not in archive
