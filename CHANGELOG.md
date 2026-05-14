@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.3 wrap-up — 2026-05-15 (Claude Code chapter 1/9 and exec summary)
+
+Final v0.3 narrative wrap-up ahead of slide-deck handoff. No new claims;
+existing 106 claims rolled into finished prose at the report-frame
+boundaries.
+
+Updates:
+
+- `07_final_report/executive_summary.md` rewritten from v0.1 to v0.3
+  state, with headline findings anchored to the 106-claim base and an
+  explicit limitations / unresolved-questions section. Replaces the
+  stale v0.1 wording that flagged NYDFS / IMF / Fed as still
+  outstanding.
+- `05_chapter_drafts/chapter_01_stablecoins_as_onchain_dollar_system.md`
+  expanded from a 13-line working thesis into a full introduction
+  chapter covering framing, motivation (GENIUS Act enactment, MiCA in
+  force, BoE 2025 consultation, USDPT announcement), the three
+  product categories that must be kept separate, five recurring
+  conflations the report guards against, a chapter-by-chapter roadmap,
+  and a note on method and traceability.
+- `05_chapter_drafts/chapter_09_conclusion.md` expanded from an 11-line
+  draft-direction note into a structured conclusion with six
+  high-confidence findings (each anchored to claim ranges), two
+  conditional findings (USDPT, adjusted volume), five unresolved
+  items, three framing points for the reading-group discussion, and
+  suggested v0.4 directions.
+
+User decisions captured for slide handoff:
+
+- Audience: academic-leaning reading-group members.
+- Slide count: unconstrained at this stage; trimming deferred.
+- Language: bilingual delivery — English written documents
+  (executive summary, chapter drafts) and Chinese slides. The
+  English documents in this wrap-up are positioned as the
+  authoritative narrative; the Chinese slides will derive from
+  them in a subsequent step.
+
 ## v0.3 interim — 2026-05-14 (Claude Code protocol + comparison batch)
 
 Phase 1d protocol extraction adding `CLAIM_098` to `CLAIM_106`:

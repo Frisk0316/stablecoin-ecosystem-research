@@ -1,6 +1,6 @@
 # Claude Code Handoff - Stablecoin Research v0.3 Phase
 
-Last updated: 2026-05-14 (v0.3 protocol + comparison batch closed)
+Last updated: 2026-05-15 (v0.3 wrap-up: exec summary + chapter 1/9 closed)
 
 Purpose: this is the working handoff for the remaining v0.3 work after the
 legal batch closed. v0.2 closed Phase 0 cleanup, Phase 1a Paxos-family /
