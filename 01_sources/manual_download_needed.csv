@@ -9,5 +9,5 @@ VISA_ONCHAIN_ANALYTICS,market_data,Visa Onchain Analytics stablecoin dashboard/e
 DEFILLAMA_STABLECOINS,market_data,DeFiLlama stablecoin supply data,high,no_manual_download_needed_now,API snapshots archived; supply analysis remains
 CAMBRIDGE_DIGITAL_MONEY_DASHBOARD,market_data,Cambridge Digital Money Dashboard,medium,no_manual_download_needed_now,Dashboard/about pages archived; extraction remains
 ARTEMIS_STABLECOIN_DATA,market_data,Artemis stablecoin metrics,medium,manual_export_optional_for_dataset,Report/docs archived; reproducible data export remains
-USDPT_PRODUCT_TERMS,issuer,"Western Union USDPT/UDSPT product page, terms, reserve report",high,manual_download_needed_for_missing_terms_reserve_contracts,Launch materials archived; terms/reserve/contract/workflow docs remain
+USDPT_PRODUCT_TERMS,issuer,"Western Union USDPT product page, terms, reserve report",high,manual_download_needed_for_missing_terms_reserve_contracts,Launch materials archived; terms/reserve/contract/workflow docs remain
 USDP_MONTHLY_RESERVE_REPORT,issuer,USDP specific monthly reserve report PDF,medium,only_if_external_fetch_fails,Transparency page exists; concrete monthly PDF not in archive

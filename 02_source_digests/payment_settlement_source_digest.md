@@ -1,4 +1,4 @@
-# Payment and Settlement Source Digest v0.1
+# Payment and Settlement Source Digest v0.3
 
 ## CPMI Correspondent Banking 2016
 This source defines correspondent banking as a network of bank relationships that enables access to cross-border financial services and payments. It is important for distinguishing messaging, banking relationships, compliance/KYC costs, and actual settlement.
@@ -10,7 +10,7 @@ This source establishes the baseline problem: cross-border retail payments are o
 This source should be used to distinguish wholesale USD settlement infrastructure from SWIFT messaging and retail payment-service providers.
 
 ## Western Union and Anchorage materials
-These sources now support a stronger but still bounded USDPT/UDSPT chapter.
+These sources now support a stronger but still bounded USDPT chapter.
 Anchorage's comment letter page and PDF support the issuer/brand-partner
 context (`CLAIM_023`). Western Union's 2025 announcement states that USDPT
 would be built on Solana, issued by Anchorage Digital Bank, and paired with a
@@ -28,3 +28,16 @@ not be used as product terms.
 Open points remain: direct holder redemption, reserve report, contract
 addresses, customer eligibility, agent cash-out workflow, and whether USDPT
 changes customer-facing remittance rails, back-end treasury settlement, or both.
+
+Delivery status after the v0.3 cleanup:
+
+| Layer | Evidence status | Current wording |
+| --- | --- | --- |
+| Customer remittance UX | Not directly documented for USDPT | Existing WU rails only; no USDPT customer workflow claim. |
+| Agent network / last-mile payout | Not directly documented for USDPT | Do not infer agent cash-out or agent USDPT holding. |
+| Internal treasury / agent settlement | Partly documented | Fireblocks materials support wallet, settlement, reporting and agent-settlement infrastructure context. |
+| Reserve / bank / correspondent settlement | Weakest layer | WU release supports broad fully-USD-backed language only; no reserve report or bank-settlement workflow. |
+
+The live USDPT research queue is
+`00_project_management/usdpt_product_terms_research_queue.md`. Use that queue
+before strengthening any Chapter 6 conclusion.

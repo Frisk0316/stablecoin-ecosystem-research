@@ -21,7 +21,7 @@ for i, r in enumerate(rows, start=2):
     if conf not in {'high','medium','low'}:
         errors.append(f'Row {i}: invalid confidence {conf!r}')
     sid = r.get('source_id','').strip()
-    if sid and sid not in source_ids and not sid.endswith('_PENDING') and sid != 'RESEARCH_BRIEF':
+    if sid and sid not in source_ids and not sid.endswith('_PENDING'):
         errors.append(f'Row {i}: source_id not found in registry: {sid}')
 if errors:
     print('\n'.join(errors))

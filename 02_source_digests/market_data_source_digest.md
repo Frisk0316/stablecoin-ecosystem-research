@@ -28,3 +28,18 @@ activity, or chain distribution with real payment demand. Current local data is
 enough to start supply/chain and methodology work, but final payment-demand
 claims still require adjusted-volume exports, dashboard screenshots, or a
 reproducible data pull with access dates.
+
+## Data Exports
+
+The v0.2 data-export pass adds a reproducible local workflow under
+`09_data_exports/`. The script
+`09_data_exports/scripts/build_defillama_exports.py` converts archived
+DeFiLlama JSON snapshots into:
+
+- `09_data_exports/stablecoin_supply/defillama_stablecoin_supply_snapshot.csv`
+- `09_data_exports/stablecoin_supply/defillama_stablecoin_chain_distribution.csv`
+- `09_data_exports/data_manifest.csv`
+
+These outputs remain supply and chain-distribution evidence only. They should
+be cited together with `CLAIM_055` and the data-manifest limitations, not as
+payment-volume evidence.

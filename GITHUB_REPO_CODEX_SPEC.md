@@ -74,9 +74,10 @@ stablecoin-ecosystem-research/
 │
 ├── 07_final_report/
 │   ├── executive_summary.md
-│   ├── stablecoin_ecosystem_research_report_v0_1.md
-│   └── stablecoin_ecosystem_research_report_v0_1.html
+│   ├── stablecoin_academic_report_v1_0.md   # canonical current report
+│   └── archive/                              # superseded v0.1 / v0.2 builds
 │
+
 ├── 08_scripts/
 │   ├── validate_claim_table.py
 │   ├── check_missing_sources.py

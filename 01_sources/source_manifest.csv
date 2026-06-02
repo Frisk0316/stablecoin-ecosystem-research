@@ -1,6 +1,6 @@
 ﻿id,category,publisher,title,asset,year,document_type,local_path,status,priority
-UNKNOWN_001,project_management,Unknown,stablecoin doc downloader fixed,Stablecoins,,download_script,stablecoin_doc_downloader_fixed.ps1,download_script,low
-UNKNOWN_002,project_management,Unknown,stablecoin reg centralbank downloader,Stablecoins,,download_script,stablecoin_reg_centralbank_downloader.ps1,download_script,low
+SCRIPT_DOC_DOWNLOADER_001,project_management,Stablecoin Research Project,Stablecoin source-fetch downloader script (fixed),Stablecoins,,download_script,stablecoin_doc_downloader_fixed.ps1,download_script,low
+SCRIPT_REG_CENTRALBANK_DOWNLOADER_001,project_management,Stablecoin Research Project,Stablecoin regulation and central-bank downloader script,Stablecoins,,download_script,stablecoin_reg_centralbank_downloader.ps1,download_script,low
 USDC_001,issuer,Circle,Circle 2025 Annual Report 2026,USDC,2026,annual_report_or_sec_filing,stablecoin_research_docs/01_circle_usdc/Circle_2025_Annual_Report_2026.pdf,downloaded,high
 USDC_002,issuer,Circle,Circle 2025 Form 10-K SEC,USDC,2025,annual_report_or_sec_filing,stablecoin_research_docs/01_circle_usdc/Circle_2025_Form_10-K_SEC.pdf,downloaded,high
 USDC_003,issuer,Circle,Circle MiCA USDC whitepaper,USDC,,whitepaper,stablecoin_research_docs/01_circle_usdc/Circle_MiCA_USDC_whitepaper.html,html_saved,high
@@ -63,7 +63,7 @@ GUSD_004,issuer,Gemini,GUSD whitepaper,GUSD,,whitepaper,stablecoin_research_docs
 GUSD_005,issuer,Gemini,geminispacestationinc x2026,GUSD,2026,annual_report_or_sec_filing,stablecoin_research_docs/06_gemini_gusd/geminispacestationinc_x2026.pdf,downloaded,high
 DAI_USDS_001,issuer,MakerDAO / Sky,DAI original whitepaper 2017,DAI/USDS,2017,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/DAI_original_whitepaper_2017.pdf,downloaded,high
 DAI_USDS_002,issuer,MakerDAO / Sky,MakerDAO Multi Collateral DAI whitepaper 2020,DAI/USDS,2020,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/MakerDAO_Multi_Collateral_DAI_whitepaper_2020.pdf,downloaded,high
-DAI_USDS_003,issuer,MakerDAO / Sky,Sky Protocol technical whitepaper 2025,DAI/USDS,2025,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/Sky_Protocol_technical_whitepaper_2025.pdf,downloaded,high
+OTHER_CARDANO_SKY_001,archive_reference,Sky Protocol (Cardano L2),Sky Protocol technical whitepaper 2025 (Cardano L2 - unrelated to Maker/Sky),N/A,2025,whitepaper,stablecoin_research_docs/07_maker_sky_dai_usds/Sky_Protocol_technical_whitepaper_2025.pdf,downloaded,low
 DAI_USDS_004,issuer,MakerDAO / Sky,Sky money product page,DAI/USDS,,html_page,stablecoin_research_docs/07_maker_sky_dai_usds/Sky_money_product_page.html,html_saved,high
 USDE_001,issuer,Ethena,Ethena LlamaRisk PoR page,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/Ethena_LlamaRisk_PoR_page.html,html_saved,high
 USDE_002,issuer,Ethena,Ethena audits,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/Ethena_audits.html,html_saved,high
@@ -72,12 +72,12 @@ USDE_004,issuer,Ethena,How USDe works,USDe,,html_page,stablecoin_research_docs/0
 USDE_005,issuer,Ethena,USDe custodian attestations page,USDe,,reserve_report_or_attestation,stablecoin_research_docs/08_ethena_usde/USDe_custodian_attestations_page.html,html_saved,high
 USDE_006,issuer,Ethena,USDe overview,USDe,,html_page,stablecoin_research_docs/08_ethena_usde/USDe_overview.html,html_saved,high
 USDE_007,issuer,Ethena,USDe reserve fund,USDe,,reserve_report_or_attestation,stablecoin_research_docs/08_ethena_usde/USDe_reserve_fund.html,html_saved,high
-UNKNOWN_003,archive_reference,Unknown,BUSD transparency reports page,Stablecoins,,html_page,stablecoin_research_docs/09_archive_deprecated_or_reference/BUSD_transparency_reports_page.html,html_saved,low
-USDPT_001,issuer,Western Union,WU 2025 annual report 2026 proxy,USDPT / UDSPT,2026,annual_report_or_sec_filing,stablecoin_usdpt_research/01_western_union_usdpt/WU_2025_annual_report_2026_proxy.pdf,downloaded,high
-USDPT_002,issuer,Western Union,WU investor day 2025,USDPT / UDSPT,2025,research_paper,stablecoin_usdpt_research/01_western_union_usdpt/WU_investor_day_2025.pdf,downloaded,high
-USDPT_003,issuer,Anchorage Digital Bank,Anchorage OCC GENIUS Act comment letter 2026,USDPT / UDSPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/Anchorage_OCC_GENIUS_Act_comment_letter_2026.pdf,downloaded,high
-USDPT_004,law,OCC,OCC GENIUS Act NPRM 2026,USDPT / UDSPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/OCC_GENIUS_Act_NPRM_2026.pdf,downloaded,high
-BIS_004_DUP,payment_settlement,BIS / CPMI,BIS CPMI correspondent banking 2016,Cross-border payments,2016,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_correspondent_banking_2016.pdf,downloaded,high
-BIS_005_DUP,payment_settlement,BIS / CPMI,BIS CPMI cross border retail payments 2018,Cross-border payments,2018,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_cross_border_retail_payments_2018.pdf,downloaded,high
+BUSD_ARCHIVE_001,archive_reference,Paxos,BUSD transparency reports page (deprecated product archive),BUSD,,html_page,stablecoin_research_docs/09_archive_deprecated_or_reference/BUSD_transparency_reports_page.html,html_saved,low
+USDPT_001,issuer,Western Union,WU 2025 annual report 2026 proxy,USDPT,2026,annual_report_or_sec_filing,stablecoin_usdpt_research/01_western_union_usdpt/WU_2025_annual_report_2026_proxy.pdf,downloaded,high
+USDPT_002,issuer,Western Union,WU investor day 2025,USDPT,2025,research_paper,stablecoin_usdpt_research/01_western_union_usdpt/WU_investor_day_2025.pdf,downloaded,high
+USDPT_003,issuer,Anchorage Digital Bank,Anchorage OCC GENIUS Act comment letter 2026,USDPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/Anchorage_OCC_GENIUS_Act_comment_letter_2026.pdf,downloaded,high
+USDPT_004,law,OCC,OCC GENIUS Act NPRM 2026,USDPT,2026,law_regulatory_document,stablecoin_usdpt_research/02_anchorage_issuer/OCC_GENIUS_Act_NPRM_2026.pdf,downloaded,high
+BIS_004_DUP,payment_settlement,BIS / CPMI,BIS CPMI correspondent banking 2016 (duplicate archive),Cross-border payments,2016,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_correspondent_banking_2016.pdf,downloaded,low
+BIS_005_DUP,payment_settlement,BIS / CPMI,BIS CPMI cross border retail payments 2018 (duplicate archive),Cross-border payments,2018,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/BIS_CPMI_cross_border_retail_payments_2018.pdf,downloaded,low
 FEDWIRE_001,payment_settlement,Federal Reserve / Fedwire,Fedwire Funds PFMI Disclosure,Fedwire,,research_paper,stablecoin_usdpt_research/03_swift_correspondent_banking/Fedwire_Funds_PFMI_Disclosure.pdf,downloaded,high
 WB_RPW_001,payment_settlement,World Bank,WorldBank RPW Q3 2025 report annex,Remittance,2025,research_paper,stablecoin_usdpt_research/04_remittance_cost_data/WorldBank_RPW_Q3_2025_report_annex.pdf,downloaded,high

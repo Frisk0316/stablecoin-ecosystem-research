@@ -57,6 +57,36 @@ responsibility to EBA, imposes Article 45(1)-(4)-style additional
 obligations, and shortens the independent audit cadence to six months
 under Article 58(1) by derogation from Article 36(9) (`CLAIM_097`).
 
+The EMT-side issuer, disclosure and conduct layer is now also claim-backed.
+Article 48 requires EMT issuers to be credit institutions or electronic money
+institutions, to notify and publish the Article 51 white paper, and treats
+EMTs as electronic money under the Electronic Money Directive unless MiCA says
+otherwise (`CLAIM_127`). Article 50 prohibits EMT issuers and CASPs from
+granting interest in relation to EMTs, including time-linked remuneration,
+compensation, discounts, or equivalent benefits (`CLAIM_128`). Article
+51 requires EMT white papers to include issuer, token, offer/admission,
+rights and obligations including redemption conditions, underlying technology,
+risks, and environmental-impact information; the white paper must be fair,
+clear, not misleading and free of material omissions, with a first-page
+no-competent-authority-approval statement, management-body responsibility
+statement, and a summary that states holders' at-any-time par redemption right
+and redemption conditions (`CLAIM_122`). Article 52 is a white-paper liability
+rule, not the marketing-communications rule: the issuer and management bodies
+are liable for loss caused by incomplete, unfair, unclear or misleading Article
+51 information, and contractual exclusions or limitations of that liability
+have no legal effect (`CLAIM_123`). Article 53, not Article 52, requires EMT
+marketing communications to be clearly identifiable, fair, clear, not
+misleading, consistent with the white paper, to state the issuer website and
+contact information, to include an at-any-time par-redemption statement, and
+not to be disseminated before white-paper publication (`CLAIM_124`). Article
+55 applies Title III Chapter 6 recovery and redemption plan requirements to EMT
+issuers, with six-month notification deadlines after offer to the public or
+admission to trading (`CLAIM_125`). Article 56's significant-EMT regime also
+contains a non-euro derogation: where a significant EMT is denominated in a
+non-euro Member State official currency and at least 80% of holders and
+transaction volume are concentrated in the home Member State, supervision does
+not transfer to EBA (`CLAIM_129`).
+
 The Bank of England's systemic stablecoin regime adds a third comparative
 baseline. The 2023 discussion paper's preferred backing-asset model is
 100% central bank deposits at the Bank of England, intended to eliminate
@@ -73,6 +103,14 @@ grows (`CLAIM_090`). The 2025 consultation also imposes quantitative
 holding limits with no GENIUS or MiCA analogue: £20,000 per-coin retail
 limit per individual and £10 million for businesses (`CLAIM_091`).
 
+For cross-border payment use, the BoE 2025 consultation states that wide
+cross-border retail and/or corporate stablecoin use would be jointly regulated
+in the UK by the Bank and FCA and also subject to the home authority's regime
+after HMT recognition (`CLAIM_130`). The consultation's core policy objective
+is that systemic stablecoins purporting to be money provide robust legal
+claim and always-at-par fiat redemption, alongside the backing-asset rule
+above (`CLAIM_131`).
+
 ESMA's January 2025 supervisory briefing for CASP authorisation under MiCA
 states there are no low-risk CASPs and prescribes elevated NCA scrutiny
 for CASPs above quantitative or structural thresholds (>1M EU yearly
@@ -88,7 +126,7 @@ transfer execution (`CLAIM_093`).
 
 The GENIUS Act public-law text (`GENIUS_006`, Public Law 119-27) now anchors
 the U.S. federal payment stablecoin baseline at the statutory layer, separate
-from OCC/Treasury implementation materials. Six statutory anchors define the
+from OCC/Treasury implementation materials. Seven statutory anchors define the
 regime:
 
 - Issuer limitation: only "permitted payment stablecoin issuers" may issue
@@ -127,6 +165,14 @@ regime:
   payment stablecoins held by the issuer take priority over the claims of
   any non-customer, subject only to other customers' claims with respect
   to the same stablecoins (Sec. 11) (`CLAIM_087`).
+- Foreign issuer exception and reciprocity: Section 18 allows foreign payment
+  stablecoin issuers to fall outside the Section 3 prohibitions only if
+  Treasury determines the foreign regime is comparable to GENIUS, including
+  Section 4(a); the issuer registers with the Comptroller; the issuer holds
+  U.S. financial-institution reserves sufficient for U.S. customer liquidity
+  unless a reciprocal arrangement permits otherwise; and the issuer's
+  jurisdiction is not comprehensively sanctioned or a primary money-
+  laundering-concern jurisdiction (`CLAIM_126`).
 
 OCC GENIUS Act NPRM (`GENIUS_004`), Treasury state-level regime principles
 (`GENIUS_005`), and FinCEN/Treasury AML-CFT materials (`GENIUS_001`,
@@ -135,6 +181,23 @@ OCC proposed redemption timing claim (`CLAIM_019`) and Treasury state-level
 similarity principle claim (`CLAIM_020`) should be labelled as proposed or
 implementation materials and not conflated with the GENIUS Act statutory
 text above.
+
+The CLARITY Act is now extracted only for stablecoin-specific
+market-structure treatment. It defines a "permitted payment stablecoin" as a
+national-currency-denominated digital asset designed for payment or settlement,
+issued by a State- or Federal-supervised issuer and either fixed-value
+redeemable/repurchasable or represented as maintaining stable value; it
+excludes national currency, certain securities, deposits, and credit-union
+accounts (`CLAIM_119`). Sec. 301 would exclude permitted payment stablecoins
+from several federal securities-law definitions (`CLAIM_120`). Sec. 302 would
+apply SEC anti-fraud, anti-manipulation and insider-trading authority to
+permitted payment stablecoin transactions only when brokered, traded, or
+custodied by broker/dealers, alternative trading systems, or national
+securities exchanges, while preserving a rule that the section does not
+prohibit other custody arrangements (`CLAIM_121`). The boundary is important:
+CLARITY does not supply the reserve-composition, issuer-eligibility,
+redemption, holder-yield or insolvency baseline that GENIUS supplies for U.S.
+payment stablecoins.
 
 ## Key comparison dimensions
 
@@ -156,28 +219,58 @@ question is unanswered.
 
 | Dimension | GENIUS Act (US federal) | MiCA ART (EU) | MiCA EMT (EU) | BoE systemic (UK) | NYDFS guidance (NY) |
 | --- | --- | --- | --- | --- | --- |
-| Eligible issuer | Permitted payment stablecoin issuer only; Treasury limited safe harbors (`CLAIM_082`); 3-year transition gate for digital asset service providers (`CLAIM_083`) | Authorised ART issuer; significant-ART regime supervised by EBA (`CLAIM_094`) | Credit institution or e-money institution only (MiCA Article 48); significant-EMT regime supervised by EBA (`CLAIM_097`) | Recognised systemic stablecoin issuer under FSMA 2023, jointly regulated by Bank and FCA (`CLAIM_088`, `CLAIM_090`) | DFS-regulated virtual currency entity issuing under DFS supervision (`CLAIM_036`) |
+| Eligible issuer | Permitted payment stablecoin issuer only; Treasury limited safe harbors (`CLAIM_082`); 3-year transition gate plus Section 18 foreign-issuer exception / reciprocity screen (`CLAIM_083`, `CLAIM_126`) | Authorised ART issuer; significant-ART regime supervised by EBA (`CLAIM_094`) | Credit institution or e-money institution only; white paper notification/publication required (`CLAIM_127`); significant-EMT regime supervised by EBA subject to non-euro home-state derogation (`CLAIM_097`, `CLAIM_129`) | Recognised systemic stablecoin issuer under FSMA 2023, jointly regulated by Bank and FCA after HMT recognition; wide cross-border use also subject to home authority regime (`CLAIM_088`, `CLAIM_090`, `CLAIM_130`) | DFS-regulated virtual currency entity issuing under DFS supervision (`CLAIM_036`) |
 | Reserve composition | Exhaustive HQLA list: Fed-account balances, insured deposits, ≤93-day Treasuries, overnight repos / reverse repos, registered MMFs invested solely in those assets, similar approved government-issued assets (`CLAIM_084`) | Reserve of assets at least equal to aggregate holder claims, segregated; significant-ART issuers have ≥60% minimum deposits in each referenced official currency under EBA RTS (`CLAIM_069`, `CLAIM_094`) | At least 30% of funds in separate credit-institution accounts plus remainder in secure, low-risk, highly liquid same-currency assets (`CLAIM_043`) | At least 40% unremunerated BoE central bank deposits + up to 60% short-term sterling-denominated UK government debt; step-up regime up to 95% UK gilts at launch (`CLAIM_090`) | Short-dated U.S. Treasury bills, qualifying overnight reverse repos, U.S.-government MMF shares under DFS limits, deposit accounts under DFS restrictions (`CLAIM_039`) |
-| Redemption right | Issuer must be obligated to convert/redeem/repurchase for fixed monetary value (Sec. 2 definition); rehypothecation prohibited except for narrow purposes (`CLAIM_084` framing) | Permanent redemption right against the issuer; redemption in funds or referenced assets; generally no-fee except under Article 46 (`CLAIM_070`); recovery plan may impose liquidity fees, daily caps, or temporary suspension under competent authority (`CLAIM_095`) | At-any-time, par-value redemption from the issuer (`CLAIM_042`) | Par-value redemption + safeguarding regime to ensure backing assets available to satisfy redemption requests; redemption fees prohibited or cost-reflective only (BOE_003) | Lawful-holder at-par redemption in a timely fashion with default T+2 after a compliant redemption order (`CLAIM_038`) |
+| Redemption right | Issuer must be obligated to convert/redeem/repurchase for fixed monetary value (Sec. 2 definition); rehypothecation prohibited except for narrow purposes (`CLAIM_084` framing) | Permanent redemption right against the issuer; redemption in funds or referenced assets; generally no-fee except under Article 46 (`CLAIM_070`); recovery plan may impose liquidity fees, daily caps, or temporary suspension under competent authority (`CLAIM_095`) | At-any-time, par-value redemption from the issuer (`CLAIM_042`); Article 51/53 white paper and marketing communications must state redemption conditions / par-redemption right (`CLAIM_122`, `CLAIM_124`) | Robust legal claim and always-at-par fiat redemption, with backing assets and recovery/administration design intended to support redemption (`CLAIM_089`, `CLAIM_131`) | Lawful-holder at-par redemption in a timely fashion with default T+2 after a compliant redemption order (`CLAIM_038`) |
 | Insolvency / wind-down | Customer-priority rule: customer claims for held payment stablecoins take priority over non-customer claims in any insolvency proceeding (Sec. 11, `CLAIM_087`) | ART redemption (wind-down) plan with temporary administrator designation triggered by competent authority determination of inability to fulfil obligations (`CLAIM_096`); ART recovery plan separately required (`CLAIM_095`) | Inherits EU credit-institution / EMI resolution framework via Article 48; significant-EMT issuers subject to Article 45-style obligations including six-month independent audits (`CLAIM_097`) | Recovery and administration plan plus shortfall reserve on statutory trust for the benefit of coinholders, in addition to PFMI capital (`CLAIM_089`) | Reserve assertion subject to monthly CPA examinations + annual controls attestation under DFS letter (`CLAIM_040`) |
-| Holder yield / interest | No permitted or foreign payment stablecoin issuer may pay holders any form of interest or yield solely in connection with holding, use, or retention (Sec. 4(11), `CLAIM_086`) | ART issuers and CASPs prohibited from granting interest or holding-time-linked equivalent benefits (Article 40, `CLAIM_071`) | n/a directly at EMT statutory level (Article 49 par-value redemption stands separately); EMI prudential framework applies under Article 48 | Backing-asset CBD component is unremunerated; remunerated assets allowed only in the up-to-60% UK government debt sleeve (`CLAIM_090`) | n/a directly in the 2022 guidance; permitted reserve composition is the operative constraint (`CLAIM_039`) |
-| Significant-token threshold | n/a (no formal significant-token tier) | EBA classification when at least three of the Article 43(1) criteria are met; Article 45 additional obligations and EBA supervision (`CLAIM_094`) | EBA classification when at least three of the Article 43(1) criteria are met; Article 58(1) imposes Article 45(1)-(4)-style obligations plus six-monthly independent audits (`CLAIM_097`) | HMT recognises systemic status on Bank recommendation under FSMA 2023; per-coin holding limits of £20,000 retail and £10 million business (`CLAIM_091`) | n/a |
+| Holder yield / interest | No permitted or foreign payment stablecoin issuer may pay holders any form of interest or yield solely in connection with holding, use, or retention (Sec. 4(11), `CLAIM_086`) | ART issuers and CASPs prohibited from granting interest or holding-time-linked equivalent benefits (Article 40, `CLAIM_071`) | EMT issuers and CASPs may not grant interest; time-linked remuneration, compensation, discounts or equivalent benefits are treated as interest (`CLAIM_128`) | Backing-asset CBD component is unremunerated; remunerated assets allowed only in the up-to-60% UK government debt sleeve (`CLAIM_090`) | n/a directly in the 2022 guidance; permitted reserve composition is the operative constraint (`CLAIM_039`) |
+| Significant-token threshold | n/a (no formal significant-token tier) | EBA classification when at least three of the Article 43(1) criteria are met; Article 45 additional obligations and EBA supervision (`CLAIM_094`) | EBA classification when at least three of the Article 43(1) criteria are met; Article 58(1) imposes Article 45(1)-(4)-style obligations plus six-monthly independent audits, subject to non-euro 80% home-state derogation (`CLAIM_097`, `CLAIM_129`) | HMT recognises systemic status on Bank recommendation under FSMA 2023; per-coin holding limits of £20,000 retail and £10 million business (`CLAIM_091`, `CLAIM_130`) | n/a |
 
-The table is descriptive of the rules anchored to date and is not a
-judgement of regulatory equivalence. Several cross-jurisdiction questions
-remain open: GENIUS Act foreign-issuer treatment (Sec. 3(b)(2), Sec. 18)
-versus MiCA ART/EMT cross-border passporting; whether the BoE up-to-95%
-UK-gilt step-up regime would be recognised as substantially similar to
-GENIUS Act Sec. 4(1)(A) for foreign-issuer reciprocity; and how
-significant-EMT issuers issuing in a non-euro Member State currency
-interact with the Article 56(4) derogation when 80% of holders /
-transaction volume are concentrated in the home Member State.
+## Foreign-issuer equivalence screen
+
+The table above is descriptive. The dedicated working screen is
+`04_matrices/foreign_issuer_equivalence_matrix.csv`. The screen's conclusion
+is not that any foreign regime is already "substantially similar" to GENIUS.
+Rather, GENIUS Section 18 makes foreign access a Treasury comparability,
+registration, U.S. liquidity, sanctions/AML, and lawful-order question
+(`CLAIM_083`, `CLAIM_126`).
+
+The BoE systemic regime is the closest non-U.S. comparison in supervisory
+intensity: HMT recognition, Bank/FCA joint supervision, home-authority
+coordination for cross-border use, central-bank-deposit backing, short-term
+government-debt backing, robust legal claim, always-at-par fiat redemption,
+and recovery / administration planning all point toward a high-standard
+regime (`CLAIM_089` to `CLAIM_091`, `CLAIM_130`, `CLAIM_131`). The fit is
+still indeterminate for Section 18 because the BoE sources do not establish a
+U.S. Treasury comparability determination, Comptroller registration,
+U.S.-customer liquidity reserves, or U.S. lawful-order compliance. The
+95%-UK-gilt launch step-up also requires a separate analysis against GENIUS
+Section 4(a)'s 93-day Treasury and approved-government-asset baseline.
+
+MiCA EMT is the stronger EU comparator for a fiat-currency payment
+stablecoin because the issuer must be a credit institution or EMI, EMTs have
+at-any-time par redemption, Article 50 prohibits EMT interest, Article 54
+sets fund-safeguarding / investment rules, and Articles 51-55 supply white
+paper, liability, marketing, recovery and redemption-plan layers
+(`CLAIM_042`, `CLAIM_043`, `CLAIM_122` to `CLAIM_128`). Significant EMT
+supervision can transfer to EBA, but the non-euro 80% home-state derogation
+keeps some significant EMT supervision at home-state level (`CLAIM_129`).
+MiCA EMT therefore cannot be treated as automatically comparable to GENIUS:
+its reserve architecture and access mechanics differ, and it does not itself
+provide the U.S. Section 18 registration, liquidity-reserve, reciprocal-
+arrangement, or lawful-order pathway.
+
+MiCA ART is weaker for GENIUS payment-stablecoin equivalence because ARTs can
+reference baskets or assets, redemption may be in funds or referenced assets,
+and the recovery plan can include liquidity fees, daily caps, or temporary
+redemption suspension (`CLAIM_069` to `CLAIM_071`, `CLAIM_094` to
+`CLAIM_096`). CLARITY should not be used for equivalence at all; it is a
+market-structure bill for securities-law perimeter and intermediary conduct,
+not a reserve, redemption, or foreign-access regime (`CLAIM_119` to
+`CLAIM_121`).
 
 ## Remaining work
 
-- Isolate any stablecoin-specific sections in the CLARITY Act; do not infer
-  stablecoin conclusions from market-structure provisions.
-- MiCA EMT-side Articles 51 (white paper), 52 (marketing communications),
-  and 55 (additional issuer obligations) page-level extraction.
-- Cross-jurisdiction equivalence analysis (what counts as "substantially
-  similar" for foreign-issuer treatment under each regime).
+- Register and extract enacted Taiwan stablecoin legislation or sub-rules
+  separately if they become available; CBC materials are policy framing, not
+  enacted statute.

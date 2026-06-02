@@ -1,5 +1,14 @@
 # Known Deficiencies - Phase 3
 
+Superseded status note (2026-05-25): this file is retained as a historical
+Phase 3 deficiency snapshot. The live backlog is now
+`00_project_management/unresolved_open_questions.md`. Since this snapshot,
+NYDFS/MiCA local archival, GENIUS/CLARITY/MiCA extraction, GENIUS Section 18
+foreign-issuer equivalence screening, Fed/IMF/CBC
+central-bank extraction, DAI/USDS mechanics, USDe mechanics, DeFiLlama
+exports, and many issuer direct-redemption items have been partially or fully
+closed in the claim table through `CLAIM_131`.
+
 This list separates confirmed deficiencies from ordinary next-step research
 work. A deficiency means the repository currently cannot support a strong
 final-report conclusion in that area.
@@ -19,7 +28,7 @@ final-report conclusion in that area.
    export has been ingested.
 7. Cambridge CCAF digital money dashboard data is absent.
 8. Artemis stablecoin metrics are absent.
-9. Western Union / Anchorage USDPT or UDSPT product documents are absent:
+9. Western Union / Anchorage USDPT product documents are absent:
    product page, launch release, whitepaper, reserve report, contract
    addresses, and redemption terms.
 10. USDP specific monthly reserve report PDF is absent.
@@ -35,7 +44,9 @@ final-report conclusion in that area.
 4. GENIUS Act public-law text has not yet been page-level extracted beyond
    OCC and Treasury implementation materials.
 5. MiCA ART rules have not yet been extracted separately from EMT rules.
-6. CLARITY Act stablecoin-relevant sections have not yet been isolated.
+6. Historical only: CLARITY Act stablecoin-relevant sections were not yet
+   isolated at the Phase 3 snapshot; v0.3.1 closes this at `CLAIM_119` to
+   `CLAIM_121`.
 7. BoE systemic stablecoin consultation is not yet available or extracted.
 8. DAI/USDS RWA collateral, PSM, oracle, liquidation, governance, and savings
    mechanisms are not yet claim-table complete.
@@ -48,7 +59,7 @@ final-report conclusion in that area.
    extraction. It should not be treated as final.
 2. Major conclusions about stablecoins as payments infrastructure remain
    under-supported until adjusted on-chain/payment data is ingested.
-3. Major conclusions about USDPT / UDSPT remain under-supported until primary
+3. Major conclusions about USDPT remain under-supported until primary
    product documentation is available.
 4. Major conclusions about direct holder protections remain under-supported
    until issuer terms and legal redemption policies are extracted.

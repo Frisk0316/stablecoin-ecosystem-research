@@ -205,30 +205,27 @@ methodology note explaining the adjustment.
 ## 9.3 What remains unresolved
 
 The full unresolved set is in
-`00_project_management/unresolved_open_questions.md`. Five items
+`00_project_management/unresolved_open_questions.md`. Four items
 are load-bearing for any final-report conclusion and should be
 flagged explicitly.
 
 1. **USDPT product layer.** As discussed in section 9.2.1.
 2. **Adjusted on-chain payment volume.** As discussed in section 9.2.2.
-3. **CLARITY Act stablecoin-specific provisions.** The CLARITY Act
-   is registered in the archive but its stablecoin-relevant
-   sections have not been isolated from its market-structure
-   provisions. The chapter-4 GENIUS / MiCA / BoE / NYDFS
-   comparison should not be inferred to cover the CLARITY Act
-   without that extraction.
-4. **Foreign-issuer equivalence.** The GENIUS Act conditions
-   foreign-payment-stablecoin-issuer distribution in the U.S. on
-   technological capability and commitment to comply with lawful
-   orders and Section 18 reciprocal arrangements
-   (`CLAIM_083`). The research has not yet evaluated whether the
-   BoE 2025 backing-asset rule, MiCA ART, or MiCA EMT regimes
-   would qualify as "substantially similar" for this purpose.
-5. **Taiwan-specific synthesis.** Central-bank claims at
-   `CLAIM_044`–`CLAIM_050` are general. NTD stablecoin proposals,
-   FX monitoring, digital dollarisation, deposit substitution,
-   and monetary sovereignty implications for Taiwan have not
-   yet been drawn from existing CBC and TWFRC sources.
+3. **Taiwan enacted law / sub-rules.** CBC policy framing is now
+   claim-backed (`CLAIM_112`-`CLAIM_118`), but enacted Taiwan
+   stablecoin legislation or sub-rules have not been registered and
+   extracted as separate legal sources.
+4. **Failure-case timelines and Maker Black Thursday.** The current
+   case-study layer is source-backed for first-pass qualitative claims,
+   but reproducible price/depeg timelines and Maker Black Thursday
+   primary event extraction are still missing.
+
+Foreign-issuer equivalence is no longer a blank unresolved item. Chapter 4 now
+provides a bounded screen: GENIUS Section 18 requires Treasury comparability,
+Comptroller registration, U.S. customer-liquidity reserves unless a reciprocal
+arrangement permits otherwise, and lawful-order capability (`CLAIM_083`,
+`CLAIM_126`). BoE and MiCA can be compared against that screen, but neither is
+treated as automatically equivalent.
 
 ## 9.4 Implications for the reading-group discussion
 
@@ -274,13 +271,9 @@ session.
 
 Subject to user scope decisions, the highest-leverage v0.4 work is:
 
-- **CLARITY Act stablecoin-specific extraction** to close one of
-  the remaining U.S. federal gaps.
-- **Central-bank Taiwan-specific synthesis** using only existing
-  CBC and TWFRC sources to draw the implications most directly
-  relevant to the reading group's domestic policy interest.
-- **MiCA EMT Articles 51 / 52 / 55 page-level extraction** to
-  match the depth now available on the ART side.
+- **Taiwan enacted-law extraction**, if official stablecoin
+  legislation or sub-rules become available, to separate binding
+  law from CBC policy framing.
 - **USDPT product-layer extraction**, conditional on primary
   product terms, reserve report, contract addresses, and a
   workflow document becoming available; otherwise USDPT remains
@@ -289,15 +282,45 @@ Subject to user scope decisions, the highest-leverage v0.4 work is:
   reproducible export from Visa Onchain Analytics, Artemis, or a
   comparable source becoming available; otherwise the chapter-7
   discussion stays at the qualitative level.
-- **Data-quality cleanup**: relabel or remove
-  `DAI_USDS_003` (registered as "Sky Protocol technical
-  whitepaper 2025" but in fact a Cardano Layer 2 data
-  availability paper unrelated to the Maker / Sky stablecoin
-  protocol).
+- ~~**Data-quality cleanup**: relabel or remove
+  `DAI_USDS_003` (Cardano Layer 2 data availability paper unrelated to
+  the Maker / Sky stablecoin protocol).~~ **Resolved 2026-05-15**:
+  relabelled to `OTHER_CARDANO_SKY_001` (`archive_reference`, low priority).
 
-The v0.3 cut-off has 106 claims, 130 registered sources, and a
+The v0.3.2 cut-off has 131 claims, 137 registered sources, and a
 chapter set that is internally consistent with both validation
 scripts passing. The next deliverable is either a v0.3 final
 report consolidation, a slide deck for the reading-group
 session, or a v0.4 extraction pass on the items above. The
 choice among these is a user decision.
+
+## 9.6 Chapter limitations
+
+Section 9.3 lists what remains unresolved in the underlying research. This
+section, by contrast, lists what the conclusion chapter itself cannot do —
+the epistemic boundary readers should hold against the synthesis above:
+
+- **Synthesis depth is bounded by per-chapter depth.** Chapter 5 now includes
+  claim-backed Taiwan CBC synthesis, but chapter 6 (USDPT) and chapter 7
+  (on-chain data) remain conditional. This chapter cannot rescue those
+  evidence gaps; its high-confidence findings (section 9.1) rest most heavily
+  on chapters 2, 3, 4, 5, and 8.
+- **No quantitative payment-adoption synthesis is offered.** Per AGENTS.md
+  rule 5 and chapter 7's documented data gaps, the chapter does not estimate
+  realised payment adoption from supply, dashboard, or raw-transfer figures.
+- **Foreign-issuer equivalence is screened, not adjudicated.** Chapter 4 now
+  compares BoE and MiCA against GENIUS Section 18, but the project still does
+  not make an official Treasury comparability determination.
+- **Taiwan legal implementation remains open.** CBC policy framing is now a
+  project finding, but enacted Taiwan stablecoin legislation, FSC sub-rules,
+  licensing forms, and implementation procedures have not been registered and
+  extracted as binding legal sources.
+- **Conditional findings are conditional.** Section 9.2's USDPT and
+  on-chain-data conclusions are flagged as conditional because they may
+  change once primary product documentation or adjusted-volume exports
+  arrive; they are not stable findings, and the report's executive summary
+  should treat them as such.
+
+The full unresolved-research backlog lives in
+`00_project_management/unresolved_open_questions.md`; the chapter-by-chapter
+limitations sections live in their respective chapters.

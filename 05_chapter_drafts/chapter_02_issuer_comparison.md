@@ -182,3 +182,30 @@ yield-bearing wrapper, stUSDS as SKY-backed-lending risk capital, SKY as
 the governance token, and a 1:1 USDC ↔ USDS conversion route with zero
 fees or slippage; sUSDS, stUSDS, and Sky Ecosystem Rewards are flagged as
 "Currently unavailable in the US" (`CLAIM_102`).
+
+## Chapter limitations
+
+The issuer matrix is anchored on primary issuer terms, attestations, and
+whitepapers. Readers should keep four limitations in view before generalising
+from this chapter:
+
+- **USDPT is evidence-poor.** Reserve composition, direct redemption rights,
+  freeze/upgrade powers, and contract-level mechanics are not yet documented
+  at primary-source level for USDPT. Comparisons involving USDPT should be
+  read together with chapter 6's safe-wording constraint.
+- **Contract-level freeze and blacklist powers are summarised, not extracted
+  byte-for-byte.** USDC, USDT, RLUSD, and the Paxos-family contracts each
+  expose freeze/blacklist semantics that are described from issuer terms and
+  comment letters here, not from on-chain bytecode or governance vote logs.
+- **Attestation language is preserved but auditing distinctions cut across
+  issuers asymmetrically.** USDC and Paxos-family attestations are CPA-firm
+  attestations under AICPA standards; USDT is an ISAE 3000R assurance report;
+  GUSD discloses reserve composition by account type. These are not
+  equivalent disclosures, and the matrix retains the issuer-specific framing
+  rather than flattening them.
+- **Open questions are tracked in
+  `00_project_management/unresolved_open_questions.md`.** Issuer-specific
+  follow-ups (Circle Mint eligibility mapping, Tether Q1 2026 reserve table
+  page-level extraction, PayPal Digital transition mechanics, USDG non-EU
+  institutional workflows, smart-contract freeze details) are listed there,
+  not in this chapter.

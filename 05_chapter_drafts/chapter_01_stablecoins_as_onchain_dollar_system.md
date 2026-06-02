@@ -243,7 +243,7 @@ relevant claim's `confidence` and `notes` fields.
 Where a question cannot be answered from the archive, the open
 question is preserved in
 `00_project_management/unresolved_open_questions.md` rather than
-guessed. The v0.3 cut-off has 106 claims, 130 registered sources,
+guessed. The v0.3.2 cut-off has 131 claims, 137 registered sources,
 and a known set of frozen items (USDPT product terms, adjusted on-
 chain volume, McKinsey / Artemis manual download) which are
 explicitly carried as deferred for v0.4.

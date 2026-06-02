@@ -15,7 +15,7 @@ the final narrative report.
   reserve composition, PayPal crypto-hub eligibility, RLUSD product-page
   reserve statements, and GUSD product-page reserve/redemption statements.
 - Added deficiency-source follow-up claims `CLAIM_051` to `CLAIM_053` for
-  USDPT/UDSPT launch and infrastructure evidence, plus `CLAIM_056` and
+  USDPT launch and infrastructure evidence, plus `CLAIM_056` and
   `CLAIM_057` for Paxos and Ripple restriction/freeze-style issuer terms.
 - Added next-phase issuer-terms claims `CLAIM_058` to `CLAIM_068` covering
   USDC, USDT, FDUSD, USDe, and USDG direct redemption eligibility, user
@@ -288,11 +288,12 @@ in both directions with zero fees or slippage (a PSM-style fiat-backed
 on-ramp/off-ramp). The sUSDS, stUSDS, and Sky Ecosystem Rewards entry
 points are flagged as "Currently unavailable in the US" (`CLAIM_102`).
 
-Source-quality note: `DAI_USDS_003` (registered as "Sky Protocol technical
-whitepaper 2025") is in fact a Cardano Layer 2 data-availability paper that
-shares the "Sky" name but is unrelated to the MakerDAO/Sky stablecoin
-protocol. It is a name collision and has not been used to support any
-claim; the registry row should be flagged for relabelling or removal.
+Source-quality note (resolved 2026-05-15): the file previously catalogued as
+`DAI_USDS_003` ("Sky Protocol technical whitepaper 2025") is in fact a
+Cardano Layer 2 data-availability paper sharing the "Sky" name but unrelated
+to the MakerDAO/Sky stablecoin protocol. It was relabelled to
+`OTHER_CARDANO_SKY_001` (category `archive_reference`, priority `low`); no
+claims cite this source.
 
 Open question (v0.4 candidate): the RWA Vaults inventory, Peg Stability
 Module contract-level mechanics, and the precise relationship between
@@ -345,12 +346,12 @@ funding-rate revenue under sustained negative-funding regimes. USDe must
 also continue to be kept separate from sUSDe in narrative — only sUSDe is
 the reward-accruing token.
 
-## USDPT / UDSPT / Western Union-Anchorage
+## USDPT / Western Union-Anchorage
 
 The current evidence is now stronger for product existence and launch framing,
 but still incomplete for legal terms and operational workflow. Anchorage's
 comment letter states that Anchorage Digital Bank issues USAT, USDGO, and
-USDtb, and expects to begin issuing UDSPT with Western Union as brand partner
+USDtb, and expects to begin issuing USDPT with Western Union as brand partner
 (`CLAIM_023`). Western Union's October 28, 2025 announcement states that USDPT
 would be built on Solana, issued by Anchorage Digital Bank, and supported by a
 Digital Asset Network (`CLAIM_051`). Western Union's March 31, 2026 launch

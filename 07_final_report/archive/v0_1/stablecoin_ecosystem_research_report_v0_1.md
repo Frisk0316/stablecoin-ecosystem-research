@@ -1,5 +1,11 @@
 # Stablecoin Ecosystem Research Report v0.1
 
+Superseded status note: this v0.1 memo is retained for archive/reference only.
+Use `07_final_report/stablecoin_ecosystem_research_report_v0_2.md` for the
+current claim-backed report build. The v0.1 open gaps around NYDFS, Fed, IMF,
+on-chain source intake, and USDPT launch evidence are partly obsolete after the
+source-registry and claim-table updates through `CLAIM_111`.
+
 ## Status
 
 This is a first-version structured research report. It is designed to consolidate the initial findings from the source registry, issuer matrix, claim table, central-bank materials, law/regulation sources, and payment-settlement documents.

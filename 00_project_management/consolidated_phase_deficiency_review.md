@@ -1,14 +1,40 @@
 # Stablecoin Research Consolidated Deficiency Review
 
-Last updated: 2026-05-14 (v0.2 interim close)
+Last updated: 2026-05-26 (v0.3.2 superseding update)
 
 Purpose: this document consolidates the explicit deficiencies, unresolved
-questions, and phase-level gaps. The v0.2 interim pass closed Paxos-family
-direct redemption, GUSD platform-versus-lawful-holder distinction, USDP
-monthly reserve report status, GENIUS Act statutory anchors, and the
-issuer-matrix data-quality regressions left over from earlier mojibake
-recovery. USDPT product/workflow gaps and adjusted-volume market-data gaps
-are now deliberately deferred to v0.3 per user scope decision.
+questions, and phase-level gaps. The rows below preserve the historical
+deficiency trail, but the live backlog is now
+`00_project_management/unresolved_open_questions.md`.
+
+2026-05-25 superseding update: v0.3.1 closes the previous CLARITY
+stablecoin-relevant extraction gap (`CLAIM_119` to `CLAIM_121`), Taiwan CBC
+synthesis gap (`CLAIM_112` to `CLAIM_118`), and MiCA EMT Article 51/52/53/55
+gap (`CLAIM_122` to `CLAIM_125`). DAI/USDS and USDe mechanics are also
+claim-backed at `CLAIM_098` to `CLAIM_106`. Active gaps are now USDPT product
+terms/workflow, adjusted payment-volume exports, foreign-issuer equivalence,
+Taiwan enacted law/sub-rules, failure-case timelines, and selected issuer
+detail extraction.
+
+2026-05-26 superseding update: v0.3.2 closes the blank foreign-issuer
+equivalence gap by adding a GENIUS Section 18 screen and comparison matrix
+(`CLAIM_126` to `CLAIM_131`,
+`04_matrices/foreign_issuer_equivalence_matrix.csv`). Active gaps are now
+USDPT product terms/workflow, adjusted payment-volume exports, Taiwan enacted
+law/sub-rules, failure-case timelines, and selected issuer detail extraction.
+
+Earlier note: the v0.2 interim pass closed Paxos-family direct redemption,
+GUSD platform-versus-lawful-holder distinction, USDP monthly reserve report
+status, GENIUS Act statutory anchors, and issuer-matrix data-quality
+regressions left over from earlier mojibake recovery.
+
+2026-05-15 implementation update: README and final-report status have been
+synchronized to the expanded registry/claim base; failure-case first-pass
+sources and claims were added (`CLAIM_107` to `CLAIM_111`); a v0.2 final
+report build was created; `09_data_exports` now contains a reproducible
+DeFiLlama JSON-to-CSV workflow; and a dedicated USDPT product-terms research
+queue now records the remaining product, reserve, contract, and redemption
+blockers.
 
 Next-agent handoff: see `00_project_management/claude_code_handoff.md` for
 the Claude Code v0.3 task list, validation commands, and research
@@ -63,7 +89,7 @@ blocking gaps are now:
 
 1. Market/on-chain data has been partially ingested, but adjusted exports and
    methodology reconciliation remain under-supported.
-2. USDPT / UDSPT launch evidence is partially supported, but product terms,
+2. USDPT launch evidence is partially supported, but product terms,
    reserve reports, contract addresses, and end-to-end workflow documents are
    still missing.
 3. Direct holder redemption rights and suspension/freeze powers are now partly
@@ -140,7 +166,7 @@ source and extraction gaps.
 | `MICA_004` is URL-only. | archived | high | Official EUR-Lex HTML fetch hit a challenge page, but an official PDF is locally archived and partially extracted. |
 | GENIUS Act public-law text has not been page-level extracted beyond OCC/Treasury implementation materials. | partial | high | Need to separate statutory text from proposed rules and implementation guidance. |
 | MiCA ART rules have not been separately extracted from EMT rules. | partial | medium | ART reserve, redemption, and no-interest rules are now extracted (`CLAIM_069` to `CLAIM_071`); significant-token and recovery/redemption-plan details remain. |
-| CLARITY Act stablecoin-relevant sections have not been isolated. | partial | medium | Avoid overstating stablecoin conclusions from market-structure provisions. |
+| CLARITY Act stablecoin-relevant sections had not been isolated in the earlier snapshot. | closed | medium | v0.3.1 extracts stablecoin-relevant provisions at `CLAIM_119` to `CLAIM_121`; continue avoiding inference from unrelated market-structure provisions. |
 | BoE systemic stablecoin consultation is missing. | archived | medium | BoE systemic stablecoin regime materials are now registered; page-level extraction remains. |
 | ESMA MiCA overview / CASP guidance is missing. | archived | medium | ESMA materials are now registered; CASP and market-infrastructure extraction remains. |
 
@@ -163,7 +189,7 @@ Source files:
 | DeFiLlama stablecoin supply data | archived | high | API snapshots archived; useful for supply, not adjusted payment-volume evidence by itself. |
 | Cambridge CCAF digital money dashboard data | archived | medium | Dashboard/about pages archived; extraction pending. |
 | Artemis stablecoin metrics | partial | medium | Report/docs archived and `CLAIM_054` added; data export/methodology reconciliation pending. |
-| Western Union / Anchorage USDPT or UDSPT documents | partial | high | Launch and infrastructure evidence supports `CLAIM_051` to `CLAIM_053`; terms/reserve/contract/workflow documents missing. |
+| Western Union / Anchorage USDPT documents | partial | high | Launch and infrastructure evidence supports `CLAIM_051` to `CLAIM_053`; terms/reserve/contract/workflow documents missing. |
 | USDP monthly reserve report PDF | missing | medium | Needed for Pax Dollar reserve-composition evidence. |
 | BoE systemic stablecoin consultation | missing | medium | Needed for UK systemic stablecoin analysis. |
 | ESMA MiCA overview / CASP guidance | missing | medium | Needed for EU CASP and market-infrastructure context. |
@@ -189,13 +215,15 @@ Source files:
 | Visa Onchain Analytics export is missing. | partial | high | Dashboard shell archived; adjusted-volume export/methodology still needed. |
 | DeFiLlama supply and chain-distribution data is missing. | archived | high | API snapshots are archived for supply context, but not payment demand. |
 | Cambridge and Artemis datasets are missing. | partial | medium | Cambridge pages and Artemis docs are archived; reproducible exports remain incomplete. |
-| USDPT / UDSPT workflow is not documented from primary sources. | partial | high | Product/launch and infrastructure evidence exists, but do not infer Western Union agent cash-out, SWIFT replacement, or correspondent-banking displacement without workflow documents. |
+| USDPT workflow is not documented from primary sources. | partial | high | Product/launch and infrastructure evidence exists, but do not infer Western Union agent cash-out, SWIFT replacement, or correspondent-banking displacement without workflow documents. |
 
 ## Final Report Deficiencies
 
 Source files:
 
-- `07_final_report/stablecoin_ecosystem_research_report_v0_1.md`
+- `07_final_report/stablecoin_academic_report_v1_0.md` (canonical current report)
+- `07_final_report/archive/v0_1/stablecoin_ecosystem_research_report_v0_1.md` (archived)
+- `07_final_report/archive/v0_2/stablecoin_ecosystem_research_report_v0_2.md` (archived)
 - `07_final_report/executive_summary.md`
 - `00_project_management/known_deficiencies_phase3.md`
 
@@ -203,7 +231,7 @@ Source files:
 | --- | --- | --- | --- |
 | Final report has not been rewritten after Phase 2 and Phase 3 evidence extraction. | partial | high | Treat current final-report files as pre-update drafts. |
 | Payment-infrastructure conclusions remain under-supported. | partial | high | Requires adjusted on-chain/payment datasets. |
-| USDPT / UDSPT conclusions remain under-supported. | missing | high | Requires primary product documentation. |
+| USDPT conclusions remain under-supported. | missing | high | Requires primary product documentation. |
 | Direct holder-protection conclusions remain under-supported. | partial | high | Requires issuer terms and legal redemption policies. |
 | Reserve-market impact conclusions remain partial. | partial | medium | Requires normalized reserve composition across T-bills, repo, MMF shares, deposits, and non-cash assets. |
 
@@ -232,7 +260,7 @@ The next phase should prioritize evidence that blocks multiple chapters:
    data and comparable Artemis/Cambridge methodology notes.
 4. Complete page-level IMF and Federal Reserve extraction and Taiwan-specific
    synthesis.
-5. Fetch remaining USDPT / UDSPT product terms, reserve reports, contract
+5. Fetch remaining USDPT product terms, reserve reports, contract
    addresses, and workflow documents before making settlement-displacement
    claims.
 6. Complete GENIUS, CLARITY, BoE, ESMA, MiCA significant-token, and
@@ -275,3 +303,26 @@ Archive-only historical references:
 - `archive/phase1_outputs/research_phase1_status.md`
 - `archive/phase1_outputs/issuer_open_questions.md`
 - `archive/phase1_outputs/issuer_source_digest_draft.md`
+
+## 2026-05-15 Evidence Portal And Academic Report Update
+
+Two user-facing research outputs have been added after the v0.2 report build.
+
+- `07_final_report/stablecoin_academic_report_v1_0.md` is now the main
+  academic draft. It keeps the thesis that stablecoins are an on-chain
+  extension/reconfiguration of the dollar system and organizes the argument
+  around taxonomy, issuer/redemption rights, reserves, regulation,
+  central-bank views, payment/settlement, on-chain data limits, and failure
+  cases.
+- `10_evidence_portal/` now contains a zero-dependency static evidence portal.
+  The generator joins report paragraphs to `claim_id`, `source_id`, original
+  document metadata, `page_or_section`, evidence summary, confidence, related
+  matrix rows, and source links. The generated site is under
+  `10_evidence_portal/site/index.html`.
+
+Validation after this update:
+
+- `validate_claim_table.py`: `OK: 131 claims validated.` (v0.3.2)
+- `check_missing_sources.py`: no missing archived local files and no
+  high-priority rows needing attention; `MCKINSEY_ARTEMIS_001` and
+  `FAILURE_001`-`FAILURE_006` remain known manual/url-only items.

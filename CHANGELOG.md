@@ -1,5 +1,46 @@
 # Changelog
 
+## v0.3.2 foreign-issuer equivalence screen - 2026-05-26
+
+Current project state:
+
+- Claim table expanded to 131 validated claims (`CLAIM_001` to
+  `CLAIM_131`); source registry remains 137 rows.
+- Added `CLAIM_126` to `CLAIM_131` for GENIUS Section 18 foreign-issuer
+  reciprocity, MiCA EMT issuer/no-interest/supervision details, and BoE 2025
+  cross-border / robust-claim / par-redemption framing.
+- Added `04_matrices/foreign_issuer_equivalence_matrix.csv`.
+- Updated chapter 4 and the law digest with a bounded equivalence screen:
+  BoE and MiCA are comparison cases, not automatically Treasury-recognised
+  equivalent regimes.
+- Removed foreign-issuer equivalence from the live unresolved backlog. It is
+  now "screened, not adjudicated": a future Treasury determination or
+  reciprocal-arrangement source would still be needed for an official
+  equivalence claim.
+
+## v0.3.1 evidence-base cleanup - 2026-05-25
+
+Current project state:
+
+- Claim table expanded to 125 validated claims (`CLAIM_001` to
+  `CLAIM_125`) and source registry synchronized at 137 rows.
+- Rebuilt `07_final_report/slide_script_v0_3.md` and
+  `07_final_report/slide_outline_v0_3.md` after mojibake cleanup.
+- Added DAI/USDS and USDe flow diagrams:
+  `06_flow_diagrams/dai_usds_protocol_flow.md` and
+  `06_flow_diagrams/usde_synthetic_dollar_flow.md`.
+- Added Taiwan CBC synthesis claims (`CLAIM_112` to `CLAIM_118`) and updated
+  the central-bank digest, matrix, chapter 5, and slide 36.
+- Added CLARITY Act claims (`CLAIM_119` to `CLAIM_121`) and MiCA EMT
+  Article 51/52/53/55 claims (`CLAIM_122` to `CLAIM_125`). Article 52 is
+  white-paper liability; Article 53 is marketing communications.
+- Updated USDPT and data-export documentation so unsupported workflow,
+  redemption, contract-address, adjusted-volume, and SWIFT/correspondent-
+  banking displacement claims remain explicit open questions.
+- Active next items: USDPT product documentation, adjusted payment-volume
+  exports, foreign-issuer equivalence, Taiwan enacted law/sub-rules,
+  failure-case timelines, and selected issuer-detail extraction.
+
 ## v0.3 slide script — 2026-05-15 (full speaker script)
 
 Full speaker script for the 2026-06-27 reading-group session, expanded
@@ -22,7 +63,8 @@ Content:
 Coverage statistics:
 
 - 1,379 lines total
-- 73 distinct `CLAIM_XXX` IDs cited (out of 106 claims in the table)
+- 73 distinct `CLAIM_XXX` IDs cited (out of the 106 claims in the table at
+  the 2026-05-15 snapshot; current v0.3.2 table has 131 claims)
 - 31 distinct `KF_XXX` IDs cited (out of 34 in `key_figures.csv`)
 - MD032 lint clean (no heading-to-list adjacency)
 
@@ -33,10 +75,11 @@ data source, DAI/USDS and USDe flow diagrams (not yet in
 options for under-60-minute and over-90-minute sessions, and appendix
 gating.
 
-Remaining v0.4 candidates after this delivery: CLARITY Act stablecoin-
-specific extraction, central-bank Taiwan synthesis, MiCA EMT
-Articles 51 / 52 / 55, and (if obtainable) USDPT product layer plus
-adjusted on-chain volume.
+Superseded by v0.3.1: CLARITY extraction, central-bank Taiwan synthesis,
+and MiCA EMT Article 51/52/53/55 extraction are now closed. Remaining
+forward candidates are USDPT product layer, adjusted on-chain volume,
+foreign-issuer equivalence, Taiwan enacted law/sub-rules, and failure-case
+timelines.
 
 ## v0.3 slide prep extended — 2026-05-15 (key figures + chapter 8 + comparison tables)
 
@@ -118,8 +161,8 @@ Tooling:
 ## v0.3 wrap-up — 2026-05-15 (Claude Code chapter 1/9 and exec summary)
 
 Final v0.3 narrative wrap-up ahead of slide-deck handoff. No new claims;
-existing 106 claims rolled into finished prose at the report-frame
-boundaries.
+the then-existing 106 claims were rolled into finished prose at the
+report-frame boundaries. Current v0.3.2 supersedes this with 131 claims.
 
 Updates:
 
@@ -201,15 +244,13 @@ Downstream artifacts updated:
 Data-quality finding: `DAI_USDS_003` (registered as "Sky Protocol
 technical whitepaper 2025") is actually about a Cardano Layer 2 data
 availability solution and is unrelated to the Maker/Sky stablecoin
-protocol — name collision. No claims were sourced from this file; the
-registry row should be relabelled or removed in a future
-data-management pass.
+protocol — name collision. **Resolved 2026-05-15**: relabelled to
+`OTHER_CARDANO_SKY_001` (category `archive_reference`, priority `low`);
+no claims were sourced from this file.
 
-Remaining v0.3 backlog: CLARITY Act stablecoin-specific extraction,
-central-bank Taiwan-specific synthesis, MiCA EMT Articles 51/52/55
-page-level extraction, and v0.3 final report consolidation snapshot.
-USDPT and adjusted-volume market data remain frozen per the v0.2 scope
-decision.
+Superseded by v0.3.1: CLARITY, central-bank Taiwan synthesis, MiCA EMT
+Article extraction, DAI/USDS, USDe, and report-frame cleanup are now closed.
+USDPT and adjusted-volume market data remain open.
 
 ## v0.3 interim — 2026-05-14 (Claude Code legal batch)
 
@@ -262,11 +303,10 @@ pdfplumber. PyMuPDF (`fitz`) was added as a fallback extractor for those
 sections; the package is installed in the user's local Python 3.12
 environment but is not yet listed in any project requirements file.
 
-Remaining v0.3 backlog: CLARITY Act stablecoin-specific extraction, DAI/USDS
-protocol mechanics, USDe risk extraction, central-bank Taiwan-specific
-synthesis, and the cross-jurisdiction comparison table at the close of
-chapter 4. USDPT and adjusted-volume market data remain frozen per the v0.2
-scope decision unless new primary sources arrive.
+Superseded by v0.3.1: CLARITY extraction, DAI/USDS protocol mechanics, USDe
+risk extraction, central-bank Taiwan synthesis, and the chapter-4 comparison
+table are now closed. USDPT and adjusted-volume market data remain open
+unless new primary sources arrive.
 
 ## v0.2 interim — 2026-05-14 (Claude Code continuation)
 

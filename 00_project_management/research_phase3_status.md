@@ -1,5 +1,12 @@
 # Stablecoin Research Phase 3 Status
 
+Superseded status note (2026-05-25): this file is retained as a historical
+Phase 3 status snapshot. The current package is v0.3.2 with 131 validated
+claims, 137 source-registry rows, CLARITY and MiCA EMT extraction closed,
+Taiwan CBC synthesis added, and foreign-issuer equivalence screened. Use
+`00_project_management/claude_code_handoff.md`
+and `00_project_management/unresolved_open_questions.md` for the live state.
+
 ## Completed in this pass
 
 - Added `NYDFS_001` as URL-only primary source for the June 8, 2022 NYDFS
@@ -19,7 +26,8 @@
 
 ## Validation
 
-- `validate_claim_table.py`: OK, 43 claims validated.
+- Historical snapshot: `validate_claim_table.py` was OK with 43 claims at
+  this phase. Current v0.3.2 validation is OK with 131 claims.
 - `source_registry.csv`: parsed successfully as 85 rows.
 - `law_regulation_comparison_matrix.csv`: parsed successfully as 9 rows and 8
   columns.
@@ -30,7 +38,7 @@
 
 The project now has two strengthened pillars: issuer evidence and regulatory
 evidence. The final report should still not be treated as final because the
-research remains incomplete for on-chain adjusted volume, USDPT / UDSPT, IMF /
+research remains incomplete for on-chain adjusted volume, USDPT, IMF /
 Fed views, direct issuer terms, and normalized reserve composition.
 
 ## Recommended next steps
