@@ -1,6 +1,6 @@
 # Unresolved Open Questions
 
-Last updated: 2026-06-05 (v0.4 targeted gap closure)
+Last updated: 2026-06-10 (v0.4.1 targeted gap pass)
 
 Purpose: this file is the live research backlog. It preserves questions that
 must not be guessed in the final report, slides, evidence portal, or matrices.
@@ -9,20 +9,26 @@ If an item is answered, first register the source in
 `03_claim_tables/claim_table_master.csv`, then update the relevant digest,
 matrix, chapter, slide, and this file.
 
+For slide-level delivery decisions, search timeboxes, and safe-wording
+handling, use `00_project_management/slide_gap_tracker.md`.
+
 Current baseline:
 
-- Claim table: 154 claims (`CLAIM_001` to `CLAIM_154`). Full Python
-  validation passed at 153 claims earlier on 2026-06-05; after `CLAIM_154`,
-  static source / reference checks passed and Python validation rerun is
-  pending.
-- Source registry: 148 rows.
+- Claim table: 157 claims (`CLAIM_001` to `CLAIM_157`). Full Python
+  validation passed at 157 claims on 2026-06-10. The v0.4.1 pass added
+  `CLAIM_155` (Bybit first-exchange USDPT integration), `CLAIM_156` (Iron
+  Finance issuer-postmortem event timeline) and `CLAIM_157` (Visa/Allium
+  published adjusted-volume figure).
+- Source registry: 150 rows.
 - Matrices: 6 CSV files under `04_matrices/`.
 - Evidence portal build source:
   `07_final_report/stablecoin_academic_report_v1_0.md`.
 - Known no-local / deficient rows:
-  `MCKINSEY_ARTEMIS_001` (`manual_needed`); `FAILURE_001` to `FAILURE_008`
-  (`url_only`); `USDPT_010`, `USDPT_011`, and `TAIWAN_VASP_001` to
-  `TAIWAN_VASP_005` (`url_only`).
+  `MCKINSEY_ARTEMIS_001` (`manual_needed`); `FAILURE_001` to `FAILURE_005`,
+  `FAILURE_007`, `FAILURE_008` (`url_only`); `USDPT_010`, `USDPT_011`, and
+  `TAIWAN_VASP_001` to `TAIWAN_VASP_005` (`url_only`). `FAILURE_006`,
+  `USDPT_012` and `VISA_ALLIUM_001` were archived to local HTML on 2026-06-11
+  and are now `html_saved`.
 
 Validation baseline:
 
@@ -35,11 +41,11 @@ Validation baseline:
 
 Expected current results after rerun:
 
-- `validate_claim_table.py`: `OK: 154 claims validated.`
+- `validate_claim_table.py`: `OK: 157 claims validated.`
 - `check_missing_sources.py`: no missing archived local files and no
   high-priority rows needing attention.
 - `check_mermaid.py`: all 8 diagrams structurally pass.
-- `build_portal.py`: `Claims: 154 | Sources: 148 | Matrices: 6`.
+- `build_portal.py`: `Claims: 157 | Sources: 150 | Matrices: 6`.
 
 ## Closed Since Earlier Backlogs
 
@@ -132,6 +138,13 @@ Current supported evidence:
   Reserve trust, ADB sole issuer / sole obligor status, brand partners as
   service providers rather than obligors, par value only for direct Client
   redemption with ADB, and legal/regulatory freeze or restriction powers.
+- `CLAIM_155` (v0.4.1, `USDPT_012` Bybit/WU 2026-06-04 release): Bybit is the
+  first major crypto exchange to integrate USDPT and join WU's global USDPT
+  network; users can buy USDPT via Bybit One-Click Buy and convert back to
+  fiat, launching in selected Latin America markets. This is the first live
+  exchange counterparty for the Digital Asset Network, moving the previously
+  coming-soon exchange-support feature (`CLAIM_142`) to live, but it is
+  exchange/partner news, not USDPT legal product terms or reserve evidence.
 - Dedicated queue:
   `00_project_management/usdpt_product_terms_research_queue.md`.
 
@@ -230,6 +243,12 @@ Current supported evidence:
   country/region-year rows and a 104-row latest non-null benchmark file.
   This is off-chain remittance-cost benchmark context, not stablecoin
   adjusted-volume evidence.
+- `CLAIM_157` (v0.4.1, `VISA_ALLIUM_001`): the Visa/Allium "Making sense of
+  stablecoins" analysis publishes a headline adjustment of trailing-30-day
+  transfer volume from ~US$2.65T raw to ~US$265B adjusted (~10x). This is a
+  published provider order-of-magnitude figure usable to show that raw volume
+  overstates organic activity; it is not a fixed-date metric or a reproducible
+  local export and does not by itself close this gap.
 
 What is still missing:
 
@@ -387,7 +406,13 @@ Current supported evidence:
 - `CLAIM_110`: NYAG Tether / Bitfinex investigation and settlement.
 - `CLAIM_111`: Iron Finance post-mortem characterising the IRON/TITAN event
   as a bank run.
-- Current `FAILURE_001` to `FAILURE_006` rows are `url_only`.
+- `CLAIM_156` (v0.4.1, `FAILURE_006` repointed to canonical Medium post): the
+  Iron Finance post-mortem's own event timeline - 16 June ~10:00 UTC TITAN
+  ~US$65 to ~US$30 in two hours then recovery to ~US$52 in one hour with IRON
+  briefly off peg; ~15:00 UTC second sell-off, spot-below-TWAP feedback loop,
+  collapse toward zero into 17 June. Issuer narrative, not independent OHLCV.
+- `FAILURE_001` to `FAILURE_005` rows are `url_only`; `FAILURE_006` is now
+  `html_saved` (local archive saved 2026-06-11).
 - `CLAIM_148`: `09_data_exports/failure_case_timelines/` now includes a
   reproducible CryptoCompare public hourly OHLCV proxy export: 749 hourly rows
   and a 5-row summary table. USDC, USTC and DAI are usable public hourly
@@ -400,7 +425,8 @@ Current supported evidence:
 What is still missing:
 
 - Usable Iron Finance IRON/TITAN price series from a non-zero historical data
-  source.
+  source. (The issuer event timeline is now captured qualitatively in
+  `CLAIM_156`; what remains missing is independent tick-level OHLCV.)
 - Higher-quality paid or exchange-level historical data for exact depeg
   duration, tick-level trough, recovery time, and liquidity path.
 - Provider methodology comparison between CryptoCompare public OHLCV and
@@ -463,7 +489,10 @@ What is still missing:
 - A MakerDAO Foundation / governance forum / official post-mortem source
   for Black Thursday. The legacy `blog.makerdao.com` URL has been
   redirected to `sky.money` and the original Foundation post is no
-  longer published at the original location.
+  longer published at the original location. Reconfirmed 2026-06-10: the
+  market-collapse blog post still 301-redirects to `sky.money`. Concrete
+  retrieval target: the MakerDAO governance-forum post-mortem published
+  2020-04-29 (authored "MakerMan"), to be pulled via the Wayback Machine.
 - Maker Foundation public statement on final post-event MKR dilution,
   recapitalisation outcome, or claims-process settlement.
 - Page-level mapping of the legacy 2020 MakerDAO Maker Vault / Cat /
@@ -879,7 +908,9 @@ Resolution criteria:
 Current state:
 
 - `MCKINSEY_ARTEMIS_001`: `manual_needed`.
-- `FAILURE_001` to `FAILURE_008`: `url_only`.
+- `FAILURE_001` to `FAILURE_005`, `FAILURE_007`, `FAILURE_008`: `url_only`.
+- `FAILURE_006`, `USDPT_012`, `VISA_ALLIUM_001`: archived to local HTML on
+  2026-06-11 and now `html_saved` (no longer in this backlog).
 - `USDPT_010`: `url_only`, medium-priority Anchorage transparency page;
   no USDPT-specific report is available yet.
 - `USDPT_011`: `url_only`, medium-priority Anchorage Covered Stablecoin

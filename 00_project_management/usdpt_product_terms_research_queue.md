@@ -1,6 +1,6 @@
 # USDPT Product Terms / Reserve / Redemption Research Queue
 
-Last updated: 2026-06-05
+Last updated: 2026-06-10
 
 Purpose: USDPT is valuable for the Western Union cross-border settlement
 chapter, but current evidence supports only a bounded claim: Western Union is
@@ -37,6 +37,12 @@ banking, Fedwire, CHIPS, or Western Union's consumer-facing remittance rails.
   brand partners as service providers rather than obligors, par value only
   for direct Client redemption with ADB, and legal/regulatory freeze or
   restriction powers.
+- `CLAIM_155` (2026-06-04, `USDPT_012`): Bybit is the first major crypto
+  exchange to integrate USDPT and join Western Union's global USDPT network;
+  users can buy USDPT via Bybit One-Click Buy and convert back to fiat in
+  selected Latin America markets. First live exchange counterparty for the
+  Digital Asset Network; still exchange/partner news, not USDPT-specific
+  product terms, fee schedule, or reserve report.
 
 ## Evidence Status Table
 

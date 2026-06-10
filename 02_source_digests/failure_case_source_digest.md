@@ -19,10 +19,16 @@ only a normal-times operating question.
   The press release supports the reserve-disclosure controversy claim
   (`CLAIM_110`); the settlement PDF should be extracted if the report needs
   page-level legal settlement language.
-- `FAILURE_006` - Iron Finance post-mortem mirror. This supports a
-  medium-confidence description of the IRON/TITAN bank-run mechanics
-  (`CLAIM_111`). The original Medium/local archive should still be recovered
-  before this becomes a high-confidence case study.
+- `FAILURE_006` - Iron Finance post-mortem (canonical issuer Medium post,
+  reachable again 2026-06-10; row repointed from the earlier mirror URL). This
+  supports a medium-confidence description of the IRON/TITAN bank-run mechanics
+  (`CLAIM_111`) and now also the protocol's own event timeline (`CLAIM_156`):
+  on 16 June ~10:00 UTC TITAN fell ~US$65 to ~US$30 in two hours and recovered
+  to ~US$52 within one hour while IRON briefly went off peg; a second ~15:00
+  UTC sell-off triggered panic redemption, a spot-below-TWAP feedback loop, and
+  the collapse toward zero into 17 June. This is the issuer narrative, not
+  independent OHLCV; a local archive and a non-zero price series would still be
+  needed for tick-level claims.
 - `FAILURE_007` - Whiterabbit Medium post-mortem of MakerDAO Black Thursday
   2020-03-12. Supports the canonical numerical anchor for the cascade:
   1,462 of 3,994 collateral auctions closed at 100% discount, approximately
@@ -46,7 +52,7 @@ only a normal-times operating question.
 The failure cases now support five distinct risk channels:
 
 - Algorithmic / reflexive death spiral: Terra UST (`CLAIM_107`) and Iron
-  Finance (`CLAIM_111`).
+  Finance (`CLAIM_111`, with the issuer event timeline in `CLAIM_156`).
 - Fiat-backed bank-deposit and custody concentration risk: USDC/SVB
   (`CLAIM_108`, `CLAIM_109`).
 - Reserve-opacity and disclosure risk: Tether / Bitfinex NYAG settlement
@@ -71,15 +77,21 @@ The failure cases now support five distinct risk channels:
 
 - Register a Maker Foundation / governance forum primary source for Black
   Thursday if one is added to the archive; current anchors are community /
-  analyst, which is sufficient for the case-study layer at v0.3.3 but should
-  be upgraded if a primary source becomes available.
+  analyst, which is sufficient for the case-study layer but should be upgraded
+  if a primary source becomes available. Concrete retrieval target confirmed
+  2026-06-10: the official `blog.makerdao.com` market-collapse post now 301
+  redirects to `sky.money`, but the MakerDAO governance-forum post-mortem
+  (published 2020-04-29, authored by "MakerMan") remains the best primary
+  candidate and should be pulled via the Wayback Machine.
 - Higher-quality market-price / depeg timelines remain open for exact
   duration, exchange-level trough and recovery-time claims. The public
   CryptoCompare export now covers USDC/SVB, Terra USTC and Maker DAI at
-  hourly-proxy level, but Iron Finance remains blocked because public
-  IRON/TITAN rows are zero-only. Kaiko, Coin Metrics, Amberdata or a paid
-  CryptoCompare feed would still be needed for precise timeline claims.
+  hourly-proxy level, but Iron Finance market-price data remains blocked
+  because public IRON/TITAN rows are zero-only. The Iron Finance event timeline
+  is now captured qualitatively from the issuer post-mortem (`CLAIM_156`), but
+  Kaiko, Coin Metrics, Amberdata or a paid CryptoCompare feed would still be
+  needed for precise, independent trough/recovery timeline claims.
 - Extract `FAILURE_005` settlement PDF sections before using detailed legal
   settlement language.
-- Treat `FAILURE_006` as medium confidence until the original source is
-  archived.
+- `FAILURE_006` local HTML archived 2026-06-11 (`html_saved`); keep at medium
+  confidence because it is the issuer's own narrative, not independent OHLCV.

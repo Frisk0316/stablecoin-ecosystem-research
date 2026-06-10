@@ -41,7 +41,14 @@ partially strengthens layer 1 and layer 2 by describing coming-soon,
 select-market cash-out at Western Union locations through virtual-currency
 exchange apps, a Visa card mobile app tied to a self-custody USDPT wallet,
 and money transfers received in USDPT (`CLAIM_142`). That is product-page
-direction, not full user terms. Layer 4 (reserve-bank / correspondent /
+direction, not full user terms. A 2026-06-04 joint Bybit / Western Union
+release adds the first live exchange counterparty for the Digital Asset
+Network: Bybit says it is the first major crypto exchange to integrate USDPT,
+with users able to buy USDPT via Bybit One-Click Buy and convert back to fiat
+in selected Latin America markets (`CLAIM_155`). This moves the exchange-access
+feature from coming-soon to live for one named exchange, but it is exchange /
+partner news and still does not establish agent USDPT holding, redemption, or
+the cash-out workflow. Layer 4 (reserve-bank / correspondent /
 clearing settlement) remains the weakest layer: broad reserve categories and
 the official Solana contract address are now disclosed (`CLAIM_140`,
 `CLAIM_141`), and ADB covered-stablecoin terms now provide a reserve-trust /
@@ -188,7 +195,7 @@ supporting the exact statement being added.
 
 - Thirteen USDPT-related claims are now formally anchored (`CLAIM_023`,
   `CLAIM_051`, `CLAIM_052`, `CLAIM_053`, `CLAIM_132`, `CLAIM_133`,
-  `CLAIM_134`, `CLAIM_140`, `CLAIM_141`, `CLAIM_142`, `CLAIM_143`,
+  `CLAIM_134`, `CLAIM_140`, `CLAIM_141`, `CLAIM_142`, `CLAIM_143`, `CLAIM_155`,
   `CLAIM_150`, `CLAIM_151`). They
   cover issuer / chain / fully-USD-backed framing,
   Fireblocks operational context, the Digital Asset Network bridge to

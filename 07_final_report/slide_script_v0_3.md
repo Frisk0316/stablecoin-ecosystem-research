@@ -22,7 +22,7 @@ section, or a project guardrail. Full citations live in
 > 穩定幣不是美元體系之外的替代品  
 > 它是美元資產、支付網絡與監理規則的鏈上重組  
 > 讀書會版本：2026-06-27  
-> v0.4 evidence base: 154 claims, 148 sources
+> v0.4.1 evidence base: 157 claims, 150 sources
 
 **Speaker notes**
 
@@ -735,18 +735,30 @@ evidence that stablecoins already replaced payment firms.
 > NTD stablecoin 如何分類  
 > USD stablecoin 是否帶來數位美元化  
 > 外匯監理如何看待鏈上美元流動  
-> deposit token、CBDC、商業銀行貨幣如何分工
+> deposit token、CBDC、商業銀行貨幣如何分工  
+>  
+> 立法進度（仍非成文法）：  
+> 2026-04-02 行政院通過 FSC VASP 草案並送立法院  
+> 2026-06-03 財委會初審新聞與官方議案進度紀錄  
+> 結論仍待成文法或 FSC / CBC 子規則
 
 **Speaker notes**
 
 The Taiwan synthesis is now backed by CBC claims. It should still be phrased
 carefully: CBC does not treat stablecoins as removing central-bank money from
 the system, but it does identify USD-stablecoin, FX, NTD-stablecoin reserve,
-payment-system and monetary-transmission channels.
+payment-system and monetary-transmission channels. v0.4 adds a legislative-stage
+layer: FSC Chair Peng Jin-lung publicly stated on 2025-12-03 that the first
+regulated stablecoin may launch in H2 2026 at the earliest; the Executive Yuan
+approved the FSC VASP draft and submitted it to the Legislative Yuan on
+2026-04-02; and Finance Committee first-review news plus the official
+Legislative Yuan bill-detail docket record committee-review entries through
+2026-06-03 with gazette production pending. This stays legislative-stage only;
+statutory conclusions must wait for enacted text or official FSC/CBC sub-rules.
 
-中文提示：這張現在可以當作台灣結論頁。重點是：美元穩定幣牽涉美元化與外匯監理，新台幣穩定幣更像電子支付儲值款項的代幣化。
+中文提示：這張現在可以當作台灣結論頁。重點是：美元穩定幣牽涉美元化與外匯監理，新台幣穩定幣更像電子支付儲值款項的代幣化。立法進度只講到行政院通過、送立法院、財委會初審與官方議案紀錄，仍不可講成成文法。
 
-**Source claims**: CLAIM_112, CLAIM_113, CLAIM_114, CLAIM_115, CLAIM_116, CLAIM_117, CLAIM_118
+**Source claims**: CLAIM_112, CLAIM_113, CLAIM_114, CLAIM_115, CLAIM_116, CLAIM_117, CLAIM_118, CLAIM_138, CLAIM_139, CLAIM_144, CLAIM_145, CLAIM_146
 
 # Part 5 - USDPT and Cross-Border Payments
 
@@ -759,6 +771,7 @@ payment-system and monetary-transmission channels.
 > chain：Solana, with official product-page address disclosed  
 > infrastructure：Fireblocks, Digital Asset Network, Treasury and Agent Settlement  
 > ADB terms：Client / Non-Client redemption boundary and reserve-trust framing  
+> exchange：Bybit 為首家整合 USDPT 的主要交易所（2026-06-04，拉美選定市場）  
 >  
 > evidence supports a planned digital-asset settlement layer
 
@@ -771,16 +784,16 @@ Client / Non-Client boundary. We still cannot document the full retail,
 agent cash-out, reserve-attestation, token-control, or bank-clearing
 operating architecture.
 
-中文提示：先說有什麼，不要一開始就說缺什麼。
+中文提示：先說有什麼，不要一開始就說缺什麼。v0.4.1 新增 Bybit 首家交易所整合（CLAIM_155），把「即將推出的交易所支援」推進到一家已上線交易所，但仍非產品條款或儲備報告。
 
-**Source claims**: CLAIM_051, CLAIM_052, CLAIM_053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
+**Source claims**: CLAIM_051, CLAIM_052, CLAIM_053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151, CLAIM_155
 
 ## Slide 38 - Four-Layer Separation / 四層拆解
 
 **Body**
 
 > Layer 1：customer remittance UX / Stable by Western Union consumer layer  
-> Layer 2：Western Union agent network, still missing complete USDPT cash-out evidence  
+> Layer 2：Western Union agent network + exchange access (Bybit 首家整合交易所)，但仍缺完整 USDPT cash-out 證據  
 > Layer 3：stablecoin issuance, on-chain transfer, treasury and agent settlement  
 > Layer 4：reserve assets and bank / correspondent settlement, still missing USDPT-specific report and workflow  
 >  
@@ -797,7 +810,7 @@ and layer 4 remain incomplete.
 
 中文提示：請直接展示 swim-lane 圖。任何替代論都必須先指出替代的是哪一層。
 
-**Source claims**: chapter 6 framing, CLAIM_051-053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
+**Source claims**: chapter 6 framing, CLAIM_051-053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151, CLAIM_155
 **Visual**: `06_flow_diagrams/usdpt_settlement_flow.md`
 
 ## Slide 39 - What Is Not Documented / USDPT 尚未取得文件
@@ -862,16 +875,21 @@ balance-sheet, and bank-settlement claims still cannot be made.
 > internal wallet movement  
 > protocol flows  
 >  
+> Visa/Allium 已公布的量級：30 天 raw ~$2.65T → adjusted ~$265B（約 1/10）  
 > payment demand needs adjusted methodology
 
 **Speaker notes**
 
 This is one of the central guardrails. Transfer volume is useful, but it is
-not equivalent to real-world payment adoption.
+not equivalent to real-world payment adoption. v0.4.1 adds a published
+provider magnitude: Visa/Allium report trailing-30-day transfer volume
+adjusting from about US$2.65T to about US$265B after removing inorganic data
+(`CLAIM_157`) — roughly a tenfold gap. Use it as an order-of-magnitude
+illustration, not a fixed-date or reproducible export.
 
-中文提示：這張要講清楚「看起來很多」不等於「真的拿去付款」。
+中文提示：這張要講清楚「看起來很多」不等於「真的拿去付款」。Visa/Allium 約 10 倍的調整可當量級例子，但仍是供應商口徑、非可重現匯出。
 
-**Source claims**: AGENTS.md rule, chapter 7 framing
+**Source claims**: AGENTS.md rule, chapter 7 framing, CLAIM_157
 
 ## Slide 42 - DeFiLlama Supply Data / DeFiLlama 可以說什麼
 
@@ -906,7 +924,8 @@ payment-demand question by itself.
 > Cambridge numerical export  
 > McKinsey / Artemis local archive  
 >  
-> Now available：World Bank remittance-cost benchmark export
+> Now available：World Bank remittance-cost benchmark export  
+> Now available：Visa/Allium 已公布調整量級 ~$2.65T → ~$265B（非可重現匯出）
 
 **Speaker notes**
 
@@ -917,7 +936,7 @@ archive. v0.4 adds the World Bank off-chain remittance-cost benchmark export
 
 中文提示：這張和 USDPT 缺口一樣，是 freeze 而不是 guess。
 
-**Source claims**: chapter 7, 09_data_exports README, CLAIM_147
+**Source claims**: chapter 7, 09_data_exports README, CLAIM_147, CLAIM_157
 
 # Part 7 - Failure Cases
 
@@ -933,7 +952,7 @@ archive. v0.4 adds the World Bank off-chain remittance-cost benchmark export
 > synthetic-dollar basis and funding risk：USDe mechanism only, no realised event  
 >  
 > public hourly proxy timelines：USDC/SVB, Terra USTC, Maker DAI  
-> Iron Finance remains unresolved
+> Iron Finance：已有 issuer post-mortem 時間軸（CLAIM_156），但獨立 tick-level OHLCV 仍缺
 
 **Speaker notes**
 
@@ -947,7 +966,7 @@ are zero-only.
 
 中文提示：這張不要講成完整歷史事件研究；它是風險分類。
 
-**Source claims**: CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_101, CLAIM_103, CLAIM_106, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149
+**Source claims**: CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_101, CLAIM_103, CLAIM_106, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149, CLAIM_156
 
 ## Slide 45 - Lessons as Guardrails / 事件教訓變成研究護欄
 
@@ -1093,12 +1112,13 @@ This slide codifies the evidence boundaries for the session.
 
 **Body**
 
-> v0.4 source registry：148 rows  
-> claim table：154 claim rows  
+> v0.4.1 source registry：150 rows  
+> claim table：157 claim rows  
 > missing archived local files：none  
 > high-priority rows needing attention：none  
-> validation note：Python rerun pending after CLAIM_154; static source/reference checks passed  
-> known unresolved items：USDPT-specific retail/workflow terms, adjusted stablecoin-volume exports, Taiwan enacted law, Iron Finance / exact failure-case timelines
+> validation note：Full Python validation passes at OK: 157 claims validated (2026-06-10); portal Claims 157 / Sources 150 / Matrices 6  
+> v0.4.1 新增：CLAIM_155 Bybit 首家交易所整合、CLAIM_156 Iron Finance issuer 時間軸、CLAIM_157 Visa/Allium 調整量級  
+> known unresolved items：USDPT-specific retail/workflow terms, reproducible adjusted stablecoin-volume exports, Taiwan enacted law, independent tick-level failure-case timelines, Maker Foundation primary source
 
 **Speaker notes**
 

@@ -1,4 +1,10 @@
-# Slide Outline v0.4 (2026-06-05 targeted gap closure)
+# Slide Outline v0.4.1 (2026-06-10 targeted gap pass)
+
+v0.4.1 update: added `CLAIM_155` (Bybit first major exchange to integrate
+USDPT, 2026-06-04) to USDPT slides 37-38; `CLAIM_156` (Iron Finance issuer
+post-mortem event timeline) to failure slide 44; and `CLAIM_157` (Visa/Allium
+published ~US$2.65T->~US$265B adjusted-volume magnitude) to on-chain data
+slides 41 and 43. Claim table now 157 rows, source registry 150 rows.
 
 Purpose: clean Traditional Chinese slide outline for the 2026-06-27 reading
 group. The expanded speaker script is
@@ -89,8 +95,8 @@ now cites `CLAIM_138` and `CLAIM_139` (legislative-stage VASP Act draft).
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 37 | USDPT 已有證據 | USDPT launch / issuer / chain / Fireblocks infrastructure / Digital Asset Network / Treasury+Agent Settlement / Stable by WU，加上 product-page reserve categories、Solana address、coming-soon select-market features，以及 ADB Client / Non-Client redemption boundary。 | CLAIM_051-053, CLAIM_132-134, CLAIM_140-143, CLAIM_150-151 |
-| 38 | 四層拆解 | USDPT 討論必須拆成 UX、agent network、on-chain transfer、bank settlement；layer 3 已有 treasury+agent settlement，layer 1/2 有 product-page planned select-market cash-out/receive direction，但仍非完整 workflow。 | chapter 6, CLAIM_133, CLAIM_134, CLAIM_142 |
+| 37 | USDPT 已有證據 | USDPT launch / issuer / chain / Fireblocks infrastructure / Digital Asset Network / Treasury+Agent Settlement / Stable by WU，加上 product-page reserve categories、Solana address、coming-soon select-market features，以及 ADB Client / Non-Client redemption boundary；Bybit 為首家整合 USDPT 的主要交易所（2026-06-04）。 | CLAIM_051-053, CLAIM_132-134, CLAIM_140-143, CLAIM_150-151, CLAIM_155 |
+| 38 | 四層拆解 | USDPT 討論必須拆成 UX、agent network、on-chain transfer、bank settlement；layer 3 已有 treasury+agent settlement，layer 1/2 有 product-page planned select-market cash-out/receive direction，但仍非完整 workflow；Bybit 首家交易所整合補強 layer 2 exchange access。 | chapter 6, CLAIM_133, CLAIM_134, CLAIM_142, CLAIM_155 |
 | 39 | USDPT 尚未取得文件 | USDPT-specific retail/user terms、fee schedule、USDPT-specific attestation、exact token controls beyond disclosed Solana address、agent balance-sheet treatment、full workflow 仍缺；ADB terms 只補到 Client boundary。 | unresolved_open_questions, CLAIM_140-143, CLAIM_150-151 |
 | 40 | USDPT 的安全說法 | 可說 regulated digital-asset settlement layer、Solana address、broad reserve categories、coming-soon select-market features、ADB Client/Non-Client boundary；不可說 replaces SWIFT / correspondent banking / Fedwire / CHIPS 或任何 holder 直接贖回。 | chapter 6, CLAIM_132-134, CLAIM_140-143, CLAIM_150-151 |
 
@@ -98,15 +104,15 @@ now cites `CLAIM_138` and `CLAIM_139` (legislative-stage VASP Act draft).
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 41 | 轉帳量不是支付需求 | Raw transfer volume 需要調整，不能直接當 payment demand。 | chapter 7 |
+| 41 | 轉帳量不是支付需求 | Raw transfer volume 需要調整，不能直接當 payment demand；Visa/Allium 已公布 ~$2.65T→~$265B（約 1/10）量級。 | chapter 7, CLAIM_157 |
 | 42 | DeFiLlama 可以說什麼 | DeFiLlama 支撐 supply / chain distribution，不支撐 adjusted payment volume。 | CLAIM_054 |
-| 43 | 還缺哪些 adjusted data | World Bank remittance-cost benchmark 已可重現；Visa、Artemis、Cambridge、McKinsey/Artemis adjusted stablecoin exports 仍缺。 | 09_data_exports README, CLAIM_147 |
+| 43 | 還缺哪些 adjusted data | World Bank remittance-cost benchmark 已可重現；Visa、Artemis、Cambridge、McKinsey/Artemis 可重現 adjusted stablecoin exports 仍缺（Visa/Allium 已公布量級但非可重現匯出）。 | 09_data_exports README, CLAIM_147, CLAIM_157 |
 
 ## Part 7 - Failure Cases
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 44 | 風險分類 | v0.4 支撐 risk taxonomy，含 MakerDAO Black Thursday 的 crypto-collateral / oracle / auction-design risk channel，並新增 USDC/SVB、Terra USTC、Maker DAI 的 public hourly proxy timeline；Iron Finance 與精確 tick-level timeline 仍缺。 | CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_103, CLAIM_106, CLAIM_135-137, CLAIM_148-149 |
+| 44 | 風險分類 | v0.4 支撐 risk taxonomy，含 MakerDAO Black Thursday 的 crypto-collateral / oracle / auction-design risk channel，並新增 USDC/SVB、Terra USTC、Maker DAI 的 public hourly proxy timeline；Iron Finance 已有 issuer post-mortem 時間軸（CLAIM_156），獨立 tick-level timeline 仍缺。 | CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_103, CLAIM_106, CLAIM_135-137, CLAIM_148-149, CLAIM_156 |
 | 45 | 事件教訓變成研究護欄 | Failure cases 強化 attestation、redemption、volume、USDPT、ART/EMT guardrails；Black Thursday 補上 oracle delay、gas spike 與 auction-design 的設計教訓；public hourly proxy 只能當 coarse timeline context。 | CLAIM_107-111, CLAIM_135-137, CLAIM_148-149 |
 
 ## Part 8 - Closing
@@ -124,4 +130,4 @@ now cites `CLAIM_138` and `CLAIM_139` (legislative-stage VASP Act draft).
 | --- | --- | --- | --- |
 | A1 | Claim 對照 | 每個大結論都可追到 claim table 和 source registry。 | PROJECT_METHODOLOGY_001 |
 | A2 | 使用限制 | 非投資建議；USDPT inferred；attestation not audit；volume not demand。 | AGENTS.md |
-| A3 | 資料庫狀態 | 154 claim rows, 148 source rows. Full Python validation passed at 153 before CLAIM_154; post-154 static source/reference checks passed and rerun is pending. v0.4 新增：USDPT product-page/ADB terms 補強、Anchorage report slot、Taiwan Executive Yuan / Finance Committee / Legislative Yuan docket update、World Bank benchmark export、CryptoCompare failure-case hourly proxy export、USDT reserve-table export、USDC risk-factor control extraction。 | README |
+| A3 | 資料庫狀態 | 157 claim rows, 150 source rows. Full Python validation passes at OK: 157 claims validated (2026-06-10); portal Claims 157 / Sources 150 / Matrices 6. v0.4.1 新增：CLAIM_155 Bybit 首家交易所整合、CLAIM_156 Iron Finance issuer 時間軸、CLAIM_157 Visa/Allium 調整量級。v0.4 基礎：USDPT product-page/ADB terms、Anchorage report slot、Taiwan Executive Yuan / Finance Committee / Legislative Yuan docket、World Bank benchmark export、CryptoCompare failure-case hourly proxy、USDT reserve-table export、USDC risk-factor extraction。 | README |

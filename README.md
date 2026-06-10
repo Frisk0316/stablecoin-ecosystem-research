@@ -10,20 +10,20 @@ chapter drafts, and final report are meant to stay traceable to each other.
 
 ## Current Snapshot
 
-Last synchronized: 2026-06-05
+Last synchronized: 2026-06-10
 
-Source registry rows: **148**
+Source registry rows: **150**
 
-Claim table rows: **153**
+Claim table rows: **157**
 
 Category counts:
 
 - archive_reference: 2
 - central_bank: 23
 - failure_case: 8
-- issuer: 64
+- issuer: 65
 - law: 27
-- market_data: 14
+- market_data: 15
 - payment_settlement: 7
 - project_management: 3
 
@@ -33,9 +33,9 @@ Status counts:
 - download_script: 2
 - downloaded: 67
 - dynamic_html_saved: 6
-- html_saved: 53
+- html_saved: 56
 - manual_needed: 1
-- url_only: 15
+- url_only: 14
 
 ## What Changed Since v0.1
 
@@ -234,22 +234,24 @@ Run from the repository root:
 & 'C:\Users\woody\AppData\Local\Programs\Python\Python312\python.exe' 08_scripts\check_missing_sources.py
 ```
 
-Current claim-table target after the `CLAIM_154` addition; Python rerun is
-pending in this execution session:
+Current claim-table target after the `CLAIM_155`-`CLAIM_157` additions;
+full Python validation rerun passed on 2026-06-10:
 
 ```text
-OK: 154 claims validated.
+OK: 157 claims validated.
 ```
 
 `check_missing_sources.py` should report no missing archived local files and
 no high-priority rows needing attention. It will list `MCKINSEY_ARTEMIS_001`
-and the `FAILURE_001` to `FAILURE_008`, `USDPT_010`, `USDPT_011`, and
-`TAIWAN_VASP_001` to `TAIWAN_VASP_005` `url_only` sources as known no-local /
-non-blocking items.
+and the `FAILURE_001` to `FAILURE_005`, `FAILURE_007`, `FAILURE_008`,
+`USDPT_010`, `USDPT_011`, and `TAIWAN_VASP_001` to `TAIWAN_VASP_005` `url_only`
+sources as known no-local / non-blocking items. (`FAILURE_006`, `USDPT_012`,
+and `VISA_ALLIUM_001` were archived to local HTML on 2026-06-11 and are now
+`html_saved`.)
 
-Current portal build target after the `CLAIM_154` addition; Python rerun is
-pending in this execution session:
+Current portal build target after the `CLAIM_155`-`CLAIM_157` additions;
+portal rebuilt on 2026-06-10:
 
 ```text
-Claims: 154 | Sources: 148 | Matrices: 6
+Claims: 157 | Sources: 150 | Matrices: 6
 ```

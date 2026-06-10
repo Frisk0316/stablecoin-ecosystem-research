@@ -11,6 +11,13 @@ still uneven.
 - `VISA_001` and `VISA_002`: dynamic dashboard shells for Visa Onchain
   Analytics and its transactions page. These should not yet be treated as
   quantitative exports.
+- `VISA_ALLIUM_001`: Allium/Visa "Making sense of stablecoins" article behind
+  the dashboard. It publishes a headline adjustment ratio - trailing-30-day
+  stablecoin transfer volume of ~US$2.65T raw vs ~US$265B adjusted after a
+  heuristic that removes inorganic data, roughly a tenfold reduction
+  (`CLAIM_157`). Use as a published, order-of-magnitude illustration of the
+  raw-vs-adjusted gap, not as a fixed-date metric or reproducible export; the
+  full per-filter thresholds and numbers stay on the dynamic dashboard.
 - `DEFILLAMA_001` and `DEFILLAMA_002`: local JSON API snapshots for stablecoin
   supply/price and stablecoin chain distribution. These support supply and
   chain-distribution analysis, not payment-volume conclusions (`CLAIM_055`).
@@ -35,11 +42,14 @@ still uneven.
 ## Interpretation Guardrail
 
 The final report must still not equate raw transfer volume, supply, dashboard
-activity, or chain distribution with real payment demand. Current local data is
-enough to start supply/chain, off-chain remittance-cost benchmark,
-failure-case proxy-timeline and methodology work, but final stablecoin
-payment-demand claims still require adjusted-volume exports, dashboard
-screenshots, or a reproducible data pull with access dates.
+activity, or chain distribution with real payment demand. The Visa/Allium
+~US$2.65T-to-~US$265B adjustment (`CLAIM_157`) is now usable as a published
+order-of-magnitude illustration that raw transfer volume overstates organic
+activity, but it is a trailing-window provider figure, not a reproducible local
+export. Current local data is enough to start supply/chain, off-chain
+remittance-cost benchmark, failure-case proxy-timeline and methodology work,
+but final stablecoin payment-demand claims still require adjusted-volume
+exports, dashboard screenshots, or a reproducible data pull with access dates.
 
 ## Data Exports
 

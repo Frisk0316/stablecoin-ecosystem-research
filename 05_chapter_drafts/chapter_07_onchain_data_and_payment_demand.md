@@ -70,7 +70,15 @@ Two observations follow:
   easily as from payment use.
 - **Visa Onchain Analytics** supports a methodology-anchored adjusted-volume
   framing once the dashboard methodology is extracted and the chart can be
-  exported reproducibly. Until then, treat it as dashboard provenance only.
+  exported reproducibly. The Visa/Allium "Making sense of stablecoins"
+  analysis behind the dashboard publishes a headline magnitude: applying a
+  heuristic that removes inorganic data adjusts trailing-30-day transfer
+  volume from about US$2.65 trillion to about US$265 billion, roughly a
+  tenfold reduction (`CLAIM_157`). Use that figure as a published,
+  order-of-magnitude illustration that raw transfer volume overstates organic
+  activity; it is a trailing-window provider number, not a fixed-date metric
+  or a reproducible local export, so until the dashboard methodology and a
+  chart export are captured, treat the rest as dashboard provenance only.
 - **Cambridge Digital Money Dashboard** supports cross-source triangulation
   once its methodology is extracted.
 - **Artemis** supports filtered transfer-volume analysis at the chain and
@@ -136,7 +144,8 @@ payment-volume side of the comparison.
 
 ## Chapter limitations
 
-- Three claims (`CLAIM_054`, `CLAIM_055`, `CLAIM_147`) anchor this chapter.
+- Four claims (`CLAIM_054`, `CLAIM_055`, `CLAIM_147`, `CLAIM_157`) anchor this
+  chapter.
   Quantitative inference about stablecoin payment demand is still
   deliberately excluded.
 - Visa Onchain Analytics, Cambridge, and Artemis dashboards are archived as

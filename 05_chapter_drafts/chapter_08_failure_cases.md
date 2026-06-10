@@ -64,6 +64,12 @@ maintaining its peg through interchangeability with LUNA, and identified the
 Terra ecosystem collapse as occurring in May 2022 (`CLAIM_107`). Iron
 Finance's post-mortem describes a related reflexive dynamic: liquidity
 withdrawal and selling pushed IRON off peg and collapsed TITAN (`CLAIM_111`).
+The post-mortem also gives the protocol's own event timeline (`CLAIM_156`): on
+16 June 2021 around 10:00 UTC TITAN fell from about US$65 to about US$30 within
+two hours and recovered to about US$52 within one hour; a second sell-off
+around 15:00 UTC triggered panic IRON redemption and a spot-below-TWAP feedback
+loop that collapsed TITAN toward zero into 17 June. This is the issuer
+narrative, not independent tick-level price data.
 
 ### Crypto-Collateral, Oracle, And Auction Risk
 
@@ -139,9 +145,11 @@ incident catalogue. The following limitations apply:
   Maker DAI (`CLAIM_148`, `CLAIM_149`). It does not support exact
   tick-level depeg duration, exchange-level troughs or a usable Iron Finance
   IRON/TITAN timeline.
-- **The Iron Finance source is a mirror.** `CLAIM_111` cites a mirror of the
-  original Medium post-mortem; treat as medium confidence until a more
-  reliable archive is located.
+- **The Iron Finance source is issuer-narrative.** `FAILURE_006` was repointed
+  on 2026-06-10 from the earlier mirror to the canonical issuer Medium
+  post-mortem, which now also supports the event timeline (`CLAIM_156`). Treat
+  as medium confidence: it is the protocol's own narrative, not independent
+  tick-level OHLCV, and no local archive is saved yet.
 - **No regulator-action-vs-economic-loss separation.** The chapter currently
   treats regulatory settlements and economic losses jointly per case;
   cross-case comparison of legal action versus market impact is open.
@@ -159,7 +167,9 @@ For the full backlog see
 - Upgrade the public hourly CryptoCompare proxy into paid or exchange-level
   price/depeg timelines when Kaiko, Coin Metrics, Amberdata or similar data
   becomes available; exact duration/trough/recovery claims should wait for
-  that higher-quality data. Iron Finance remains the main missing timeline
-  because the public CryptoCompare IRON/TITAN export is zero-only.
-- Recover the original Iron Finance post-mortem or triangulate it with a more
-  reliable source before treating `CLAIM_111` as high confidence.
+  that higher-quality data. Iron Finance now has the issuer post-mortem
+  timeline (`CLAIM_156`), but independent tick-level OHLCV remains the main
+  missing piece because the public CryptoCompare IRON/TITAN export is zero-only.
+- Save a local archive of the canonical Iron Finance post-mortem and
+  triangulate it with an independent price series before treating the Iron
+  Finance timeline as high confidence.

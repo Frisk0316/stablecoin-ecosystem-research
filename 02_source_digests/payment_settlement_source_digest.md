@@ -64,6 +64,16 @@ ADB as sole issuer and sole obligor, brand partners as service providers
 rather than obligors, par value only for direct Client redemption with ADB, and
 legal/regulatory freeze or restriction powers (`CLAIM_151`).
 
+Bybit's 2026-06-04 joint press release with Western Union (`USDPT_012`) adds a
+first concrete exchange-integration data point for the Digital Asset Network.
+Bybit states it is the first major crypto exchange to integrate USDPT and to
+join Western Union's global USDPT network, with users able to buy USDPT through
+Bybit One-Click Buy and convert back to fiat at any time, launching in selected
+Latin America markets (`CLAIM_155`). This is partner / exchange news, not USDPT
+legal product terms or reserve documentation, but it moves the previously
+coming-soon exchange-support feature (`CLAIM_142`) to a first live exchange and
+gives the Digital Asset Network (`CLAIM_132`) one named, live counterparty.
+
 Open points remain: USDPT-specific retail product/user terms, fee schedule,
 USDPT reserve report, exact mint/burn or smart-contract controls, customer
 eligibility and supported jurisdictions for Western Union / exchange-app flows,
@@ -78,7 +88,7 @@ Delivery status after the v0.3.3 cascade:
 | Layer | Evidence status | Current wording |
 | --- | --- | --- |
 | Customer remittance UX | Partially supported as planned feature | WU product page says select-market customers will have the option to receive a money transfer in USDPT (`CLAIM_142`); sender flow, custody, fees, KYC and terms remain missing. |
-| Agent network / last-mile payout | Partially supported only for customer exchange-app cash-out | WU product page says exchange customers in select markets will be able to cash out local fiat at WU locations (`CLAIM_142`); it does not say agents hold or redeem USDPT. |
+| Agent network / last-mile payout | Partially supported only for customer exchange-app cash-out | WU product page says exchange customers in select markets will be able to cash out local fiat at WU locations (`CLAIM_142`); Bybit is now a first live exchange integration for buying USDPT and converting back to fiat in selected Latin America markets (`CLAIM_155`); neither establishes that agents hold or redeem USDPT on their own balance sheets. |
 | Internal treasury / agent settlement | Strongest layer | WU IR release explicitly names Treasury and Agent Settlement (`CLAIM_133`) and the Digital Asset Network bridge to licensed VCEs and custodians (`CLAIM_132`); Fireblocks materials add operational infrastructure (`CLAIM_053`). |
 | Reserve / bank / correspondent settlement | Partially supported at ADB terms level; still source-dependent for USDPT-specific workflow | WU product page names broad reserve categories (`CLAIM_140`), Anchorage identifies the USDPT report slot as coming soon (`CLAIM_143`), and ADB Covered Stablecoin Terms describe a reserve trust and ADB sole-obligor role for ADB-issued series (`CLAIM_151`); no USDPT reserve report or bank-settlement workflow yet. |
 

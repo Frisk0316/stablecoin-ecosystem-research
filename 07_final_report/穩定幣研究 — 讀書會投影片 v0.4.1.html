@@ -1,0 +1,403 @@
+<!doctype html><html lang='zh-Hant'><head><meta charset='utf-8'><style>
+@page { size: 13.333in 7.5in; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Microsoft JhengHei","PingFang TC","Noto Sans CJK TC",sans-serif; }
+.slide { width: 13.333in; height: 7.5in; page-break-after: always; position: relative;
+         padding: 0.55in 0.7in 0.45in 0.7in; overflow: hidden; background: #ffffff; color: #1c2733; }
+.slide:last-child { page-break-after: auto; }
+.tag { font-size: 12px; letter-spacing: 2px; color: #2e6ca4; font-weight: 700; text-transform: uppercase; }
+.tag .num { color: #9aa7b4; margin-left: 10px; font-weight: 600; }
+h1 { font-size: 34px; margin: 6px 0 2px 0; color: #14334f; line-height: 1.2; }
+.en { font-size: 14px; color: #7d8a97; margin: 0 0 14px 0; font-weight: 600; }
+.rule { height: 4px; width: 70px; background: #2e6ca4; margin: 10px 0 18px 0; border-radius: 2px; }
+.body { font-size: 22px; line-height: 1.5; color: #21303f; }
+.bline { margin: 2px 0; }
+.spacer { height: 12px; }
+.notes { position: absolute; left: 0.7in; right: 0.7in; bottom: 0.85in;
+         border-left: 3px solid #cdd8e2; padding: 4px 0 4px 12px; }
+.notes .lbl { font-size: 10px; color: #9aa7b4; font-weight: 700; letter-spacing: 1px; }
+.notes p { font-size: 10.5px; line-height: 1.35; color: #5d6b78; margin: 2px 0; }
+.foot { position: absolute; left: 0.7in; right: 0.7in; bottom: 0.3in;
+        font-size: 9.5px; color: #aab4bf; border-top: 1px solid #e6ebf0; padding-top: 4px; }
+.foot b { color: #7d8a97; }
+/* part divider */
+.part { display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+        background: #14334f; color: #ffffff; }
+.part .pk { font-size: 16px; letter-spacing: 4px; color: #7fb1dd; font-weight: 700; }
+.part h1 { font-size: 48px; color: #ffffff; margin-top: 8px; }
+.part .pr { height: 5px; width: 120px; background: #2e6ca4; margin-top: 16px; border-radius: 2px; }
+.cover { background: #14334f; color: #fff; justify-content: center; }
+</style></head><body><div class="slide part"><div class="pk">Slide Script v0.3 Clean Build (2026-05-15)</div><h1>Slide Script v0.3 Clean Build (2026-05-15)</h1><div class="pr"></div></div>
+<div class="slide part"><div class="pk">Part 0</div><h1>Opening</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">1</span></div><h1>穩定幣研究</h1><div class="en">Title</div><div class="rule"></div><div class="body"><div class="bline">穩定幣不是美元體系之外的替代品</div>
+<div class="bline">它是美元資產、支付網絡與監理規則的鏈上重組</div>
+<div class="bline">讀書會版本：2026-06-27</div>
+<div class="bline">v0.4.1 evidence base: 157 claims, 150 sources</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This opening frames stablecoins as a reconfiguration of the dollar system, not as a clean break from it. The point is not to ask whether stablecoins are &quot;real money&quot; in the abstract, but to trace the institutions, assets, contracts, and rules that make them work.</p>
+<p>中文提示：先把聽眾帶進研究問題。今天不是介紹幣種清單，而是拆解穩定幣怎樣把美元資產、金融機構與鏈上轉帳包在一起。</p></div><div class="foot"><b>Source claims</b> chapter 1.1, KF_032, KF_033</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">2</span></div><h1>為什麼 2026 要談</h1><div class="en">Why This Matters Now</div><div class="rule"></div><div class="body"><div class="bline">2026 的穩定幣議題同時發生在三條線上：</div>
+<div class="bline">1. 美國 GENIUS Act 進入聯邦法制</div>
+<div class="bline">2. 歐盟 MiCA ART / EMT 規則已運作</div>
+<div class="bline">3. BoE 系統性穩定幣規則從 100% CBD 轉向 40/60</div>
+<div class="bline">4. Western Union 宣布 USDPT 與 Digital Asset Network</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The reason this is timely is institutional convergence. Stablecoins have moved from a crypto-market instrument into a statutory, central-bank, and payment-infrastructure question.</p>
+<p>中文提示：強調這不是市場熱點而已，而是法規、央行、支付公司同時動起來的時間點。</p></div><div class="foot"><b>Source claims</b> CLAIM_082, CLAIM_069, CLAIM_090, CLAIM_051</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">3</span></div><h1>範圍與方法</h1><div class="en">Scope and Method</div><div class="rule"></div><div class="body"><div class="bline">本研究不是單篇 memo</div>
+<div class="bline">它是一組可追溯研究包：</div>
+<div class="bline">registry -&gt; digest -&gt; claim table -&gt; matrix -&gt; chapter -&gt; slide</div>
+<div class="spacer"></div>
+<div class="bline">截至 v0.4：</div>
+<div class="bline">154 筆 claim</div>
+<div class="bline">148 筆 source registry rows</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The claim table is the control layer. If a major conclusion cannot be traced to a source and a claim ID, it should remain framed as open or conditional.</p>
+<p>中文提示：讓聽眾知道，今天每個大結論都有可回查的 claim ID，不是只靠敘事推論。</p></div><div class="foot"><b>Source claims</b> AGENTS.md rules, KF_032, KF_033</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">4</span></div><h1>三種產品不能混在一起</h1><div class="en">Three Product Categories</div><div class="rule"></div><div class="body"><div class="bline">1. Fiat-backed payment stablecoins</div>
+<div class="bline">USDC, USDT, PYUSD, USDP, USDG, RLUSD, FDUSD, GUSD</div>
+<div class="spacer"></div>
+<div class="bline">2. Crypto / RWA-collateralised protocol stablecoins</div>
+<div class="bline">DAI / USDS</div>
+<div class="spacer"></div>
+<div class="bline">3. Synthetic-dollar instruments</div>
+<div class="bline">USDe / sUSDe</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The most common analytical mistake is aggregating all stablecoins into one risk class. These three categories transmit risk through different balance sheets, contracts, collateral channels, and governance systems.</p>
+<p>中文提示：這張是全場的分類底盤。後面所有比較都要先問：我們談的是哪一類穩定幣？</p></div><div class="foot"><b>Source claims</b> CLAIM_026, CLAIM_098, CLAIM_103</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">5</span></div><h1>五個研究護欄</h1><div class="en">Five Guardrails</div><div class="rule"></div><div class="body"><div class="bline">1. Attestation 不等於 audit</div>
+<div class="bline">2. Product page 不等於直接贖回權</div>
+<div class="bline">3. Raw volume 不等於 payment demand</div>
+<div class="bline">4. USDPT 不等於 SWIFT replacement</div>
+<div class="bline">5. MiCA ART 不等於 MiCA EMT</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>These five distinctions prevent the deck from overstating the evidence. They are not caveats at the margin; they are the method.</p>
+<p>中文提示：把這張講成今天的「防誤讀清單」。後面每個章節都會回到這五點。</p></div><div class="foot"><b>Source claims</b> chapter 1.4, AGENTS.md non-negotiable rules</div></div>
+<div class="slide part"><div class="pk">Part 1</div><h1>Issuer Ecosystem</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">6</span></div><h1>八個法幣擔保發行架構</h1><div class="en">Eight Fiat-Backed Issuers</div><div class="rule"></div><div class="body"><div class="bline">八個 fiat-backed payment stablecoins：</div>
+<div class="bline">USDC, USDT, PYUSD, USDP, USDG, RLUSD, FDUSD, GUSD</div>
+<div class="spacer"></div>
+<div class="bline">共同點：以美元資產支撐</div>
+<div class="bline">差異點：發行實體、監理地、直接贖回資格、凍結權、收益處理</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The fiat-backed category looks uniform from the token holder&#x27;s screen, but the legal architecture differs substantially across issuers.</p>
+<p>中文提示：提醒大家「同樣 1 美元價格」不代表「同樣法律權利」。</p></div><div class="foot"><b>Source claims</b> CLAIM_026-035, CLAIM_058-068, CLAIM_072-081, CLAIM_154, KF_034</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">7</span></div><h1>USDC：Circle Mint 門檻</h1><div class="en">USDC and Circle Mint</div><div class="rule"></div><div class="body"><div class="bline">USDC reserve disclosures support cash, Treasury repo, T-bills and the Circle Reserve Fund</div>
+<div class="bline">直接贖回需要 Circle Mint account in good standing</div>
+<div class="bline">被轉讓取得 USDC 的持有人，不自動取得直接贖回資格</div>
+<div class="bline">USDC 本身不給 holder yield</div>
+<div class="bline">Circle risk factors: address blocking / freeze / blacklisting-policy controls</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>USDC is useful for distinguishing product-page par language from direct issuer redemption. The key institution is Circle Mint. The risk-factor page adds the control layer: address blocking, freeze of associated Circle-custodied USDC, and blacklisting-policy transfer blocking can matter even when reserve backing is otherwise strong.</p>
+<p>中文提示：不要只講「USDC 可 1:1 贖回」，要補上誰可以直接向 Circle 贖回。</p></div><div class="foot"><b>Source claims</b> CLAIM_026, CLAIM_027, CLAIM_058, CLAIM_059, CLAIM_154</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">8</span></div><h1>USDT：驗證客戶與非現金曝險</h1><div class="en">USDT and Non-Cash Exposures</div><div class="rule"></div><div class="body"><div class="bline">Tether Q1 2026 reserve table：</div>
+<div class="bline">US$117.0bn T-bills + US$24.1bn reverse repos</div>
+<div class="bline">US$19.8bn gold + US$6.6bn Bitcoin</div>
+<div class="bline">public equities / other investments / secured loans also present</div>
+<div class="spacer"></div>
+<div class="bline">直接贖回是 verified customer 的個人契約權</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>USDT cannot be modelled as pure cash-equivalent backing. The detailed Q1 2026 reserve table contains Treasury bills, reverse repos, cash/bank deposits, gold, Bitcoin, public equities, other investments and secured loans. Redemption is gated to verified customers.</p>
+<p>中文提示：這張的重點是，USDT 的儲備組合和 USDC 不一樣，贖回資格也不是開放給所有持有人。</p></div><div class="foot"><b>Source claims</b> CLAIM_060, CLAIM_061, CLAIM_152, CLAIM_153 &nbsp;|&nbsp; 關鍵數據 KF_001, KF_002, KF_003, KF_047, KF_048, KF_049</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">9</span></div><h1>Paxos 家族：一組條款管理三種幣</h1><div class="en">Paxos Family</div><div class="rule"></div><div class="body"><div class="bline">Paxos Trust：PYUSD / USDP</div>
+<div class="bline">Paxos Digital + PIE：USDG</div>
+<div class="spacer"></div>
+<div class="bline">直接買回與贖回：Paxos Customer only</div>
+<div class="bline">Non-Customer Token Holder 沒有直接向 Paxos 贖回的同等權利</div>
+<div class="bline">Paxos 條款也涵蓋 no holder yield 與 freeze / upgrade scope</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The Paxos family is an example of a unified contract layer covering several tokens. The holder&#x27;s direct rights come through Paxos Customer status.</p>
+<p>中文提示：把 PYUSD、USDP、USDG 放在一起看，因為它們有共同的 Paxos stablecoin agreement 層。</p></div><div class="foot"><b>Source claims</b> CLAIM_072, CLAIM_073, CLAIM_074, CLAIM_075, CLAIM_076</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">10</span></div><h1>USDP：獨立儲備組成報告已停止</h1><div class="en">USDP Reserve Report Status</div><div class="rule"></div><div class="body"><div class="bline">早期缺口：找不到 USDP monthly reserve composition report</div>
+<div class="bline">v0.3 修正：issuer 已正式停止 separate monthly reserve composition report</div>
+<div class="bline">現有披露：KPMG LLP monthly AICPA attestation</div>
+<div class="bline">仍不可稱為 full financial-statement audit</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This slide is a good example of how a &quot;missing source&quot; can become a substantive finding: the report is not merely absent; the issuer says the separate report was discontinued.</p>
+<p>中文提示：這裡不是說我們漏抓資料，而是 issuer 的披露形式已改變。</p></div><div class="foot"><b>Source claims</b> CLAIM_080, CLAIM_081</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">11</span></div><h1>GUSD：Gemini Customer 權利</h1><div class="en">GUSD and Gemini Customer Rights</div><div class="rule"></div><div class="body"><div class="bline">GUSD creation / redemption is a Gemini Customer pathway</div>
+<div class="bline">Reserve account structure：</div>
+<div class="bline">1. Omnibus Accounts</div>
+<div class="bline">2. Money Market Accounts</div>
+<div class="bline">3. Treasury Accounts</div>
+<div class="spacer"></div>
+<div class="bline">Customer sell order 的 Timely redemption 約束：1 business day</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>GUSD is especially helpful for separating a broader lawful-holder concept from a platform-customer contract pathway.</p>
+<p>中文提示：這張說明 NYDFS 架構不會自動消除 Gemini 條款中的 customer gating。</p></div><div class="foot"><b>Source claims</b> CLAIM_077, CLAIM_078, CLAIM_079 &nbsp;|&nbsp; 關鍵數據 KF_017</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">12</span></div><h1>RLUSD：紐約信託架構</h1><div class="en">RLUSD and NY Trust Structure</div><div class="rule"></div><div class="body"><div class="bline">RLUSD is tied to Standard Custody / NYDFS trust-company framing</div>
+<div class="bline">Product page supports reserve and custody statements</div>
+<div class="bline">Ripple terms support suspension / termination consequences</div>
+<div class="bline">仍需補：直接贖回資格與 smart-contract level freeze powers</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>RLUSD has stronger reserve and custody evidence than direct-redemption evidence. That asymmetry should stay visible.</p>
+<p>中文提示：這裡可以講得保守一點：有 reserve/custody 證據，但直接贖回與合約控制權還沒有完整閉合。</p></div><div class="foot"><b>Source claims</b> CLAIM_032, CLAIM_033, CLAIM_057</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">13</span></div><h1>FDUSD：FD121 帳戶門檻</h1><div class="en">FDUSD and FD121</div><div class="rule"></div><div class="body"><div class="bline">FDUSD terms use the contractual name FDD</div>
+<div class="bline">Direct sale / redemption is gated through FD121 Account status</div>
+<div class="bline">Terms include suspension / limitation mechanics</div>
+<div class="bline">U.S. persons are excluded</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>FDUSD is another example where redemption exists, but only inside a defined account and eligibility perimeter.</p>
+<p>中文提示：FDD 是條款中的名稱，不是另一個不同產品；這點要先說清楚。</p></div><div class="foot"><b>Source claims</b> CLAIM_062, CLAIM_063, CLAIM_064</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">14</span></div><h1>USDS Protocol Mechanics / DAI、USDS：Maker 到 Sky</h1><div class="en">DAI</div><div class="rule"></div><div class="body"><div class="bline">DAI / USDS 不是 fiat-backed payment stablecoin</div>
+<div class="bline">核心機制：</div>
+<div class="bline">Maker Vaults</div>
+<div class="bline">overcollateralisation</div>
+<div class="bline">liquidation auctions</div>
+<div class="bline">MKR / SKY governance</div>
+<div class="bline">DSR / Sky Savings Rate via sUSDS</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>DAI / USDS belongs in the protocol-collateralised category. Its peg and risk mechanics are not issuer-redemption mechanics.</p>
+<p>中文提示：這張要阻止聽眾把 DAI/USDS 的「穩定」想成銀行存款加 T-bill 儲備。</p></div><div class="foot"><b>Source claims</b> CLAIM_098, CLAIM_099, CLAIM_100, CLAIM_101, CLAIM_102 &nbsp;|&nbsp; 圖示 `06_flow_diagrams/dai_usds_protocol_flow.md`</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">15</span></div><h1>USDe：delta-neutral synthetic dollar</h1><div class="en">USDe Synthetic Dollar</div><div class="rule"></div><div class="body"><div class="bline">USDe 不是 fiat-backed payment stablecoin</div>
+<div class="bline">核心機制：</div>
+<div class="bline">spot backing asset</div>
+<div class="bline">short perpetual futures hedge</div>
+<div class="bline">Off-Exchange Settlement custody</div>
+<div class="bline">custodian attestations</div>
+<div class="bline">Reserve Fund</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>USDe is a synthetic-dollar design. The peg depends on hedge execution, custody, funding rates, and reserve-fund governance rather than par redemption from a regulated payment-stablecoin issuer.</p>
+<p>中文提示：把 USDe 講成「現貨資產加空方永續合約」的結構，並提醒 sUSDe 才是收益包裝。</p></div><div class="foot"><b>Source claims</b> CLAIM_065, CLAIM_066, CLAIM_067, CLAIM_103, CLAIM_104, CLAIM_105, CLAIM_106 &nbsp;|&nbsp; 圖示 `06_flow_diagrams/usde_synthetic_dollar_flow.md` &nbsp;|&nbsp; 關鍵數據 KF_018, KF_019, KF_020, KF_021</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">16</span></div><h1>直接贖回權的共同模式</h1><div class="en">Direct Redemption Gating</div><div class="rule"></div><div class="body"><div class="bline">大多數「可贖回」都需要：</div>
+<div class="bline">KYC / AML</div>
+<div class="bline">帳戶狀態良好</div>
+<div class="bline">合格司法管轄區</div>
+<div class="bline">不是 sanctioned / prohibited person</div>
+<div class="bline">issuer 沒有暫停、凍結或限制</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The recurring pattern is that &quot;redeemability&quot; exists, but it is filtered through account status and legal eligibility.</p>
+<p>中文提示：這張把 issuer-by-issuer 的細節收束成一個共同模式。</p></div><div class="foot"><b>Source claims</b> CLAIM_058, CLAIM_060, CLAIM_062, CLAIM_065, CLAIM_073, CLAIM_077</div></div>
+<div class="slide part"><div class="pk">Part 2</div><h1>Reserves and Dollar Money Markets</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">17</span></div><h1>儲備資產比較</h1><div class="en">Reserve Composition</div><div class="rule"></div><div class="body"><div class="bline">Fiat-backed stablecoins 通常連到：</div>
+<div class="bline">bank deposits</div>
+<div class="bline">T-bills</div>
+<div class="bline">repo / reverse repo</div>
+<div class="bline">government MMF shares</div>
+<div class="bline">custodians and trust accounts</div>
+<div class="spacer"></div>
+<div class="bline">但每個 issuer 的資產組合不同</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Reserve composition is the bridge between token supply and the dollar money-market system.</p>
+<p>中文提示：這張要講「鏈上美元」其實牽到鏈下短期安全資產。</p></div><div class="foot"><b>Source claims</b> CLAIM_026, CLAIM_028, CLAIM_075, CLAIM_078, CLAIM_084</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">18</span></div><h1>同樣美元包裝，不同儲備輪廓</h1><div class="en">USDC vs USDT</div><div class="rule"></div><div class="body"><div class="bline">USDC：cash, repo, short T-bills, Circle Reserve Fund</div>
+<div class="bline">USDT：T-bills/repo plus gold, Bitcoin, public equities, other investments and secured loans</div>
+<div class="spacer"></div>
+<div class="bline">不能把所有 fiat-backed stablecoin 都假設成同一個儲備模型</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Both tokens target the dollar, but the reserve composition and disclosure architecture are different.</p>
+<p>中文提示：用 USDC / USDT 做最直觀的對照。</p></div><div class="foot"><b>Source claims</b> CLAIM_026, CLAIM_027, CLAIM_152</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">19</span></div><h1>T-bill 需求通道</h1><div class="en">T-Bill Demand Channel</div><div class="rule"></div><div class="body"><div class="bline">Stablecoin growth can increase demand for short-term safe assets</div>
+<div class="bline">但效果取決於：</div>
+<div class="bline">reserve composition</div>
+<div class="bline">issuer business model</div>
+<div class="bline">banking-system offset</div>
+<div class="bline">regulatory reserve lists</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The safe-asset channel is plausible but conditional. It should not be stated as a mechanical one-dollar-for-one-dollar drain from bank deposits into Treasuries.</p>
+<p>中文提示：這裡要保持央行研究的語氣：有通道，但不是機械結論。</p></div><div class="foot"><b>Source claims</b> CLAIM_084, BIS_003, ECB_003</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">20</span></div><h1>為什麼 DAI、USDe 不能併入同一儲備模型</h1><div class="en">Why DAI and USDe Do Not Aggregate</div><div class="rule"></div><div class="body"><div class="bline">DAI / USDS：Vault collateral, liquidation, governance</div>
+<div class="bline">USDe：spot asset, short perp hedge, reserve fund</div>
+<div class="spacer"></div>
+<div class="bline">這兩類不會以相同方式傳導到 T-bill demand 或 bank deposit substitution</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Aggregating protocol and synthetic-dollar designs with fiat-backed payment stablecoins would distort the reserve-market analysis.</p>
+<p>中文提示：這張是為了保護 chapter 3 的邏輯，不要把不同穩定機制加總成一個數字。</p></div><div class="foot"><b>Source claims</b> CLAIM_098, CLAIM_103, CLAIM_106</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">21</span></div><h1>儲備收益的不對稱</h1><div class="en">Reserve Income Asymmetry</div><div class="rule"></div><div class="body"><div class="bline">Issuers may earn reserve income</div>
+<div class="bline">Holders usually do not receive reserve yield</div>
+<div class="spacer"></div>
+<div class="bline">GENIUS, MiCA ART, Paxos terms, Circle terms, Ethena terms all reinforce this asymmetry in different ways</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Reserve income is central to the stablecoin business model. The legal and contractual architecture often prevents that income from flowing to token holders.</p>
+<p>中文提示：這張可帶到利益結構：誰持有資產、誰拿收益、誰承擔流動性風險。</p></div><div class="foot"><b>Source claims</b> CLAIM_059, CLAIM_066, CLAIM_071, CLAIM_074, CLAIM_086</div></div>
+<div class="slide part"><div class="pk">Part 3</div><h1>Law and Regulation</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">22</span></div><h1>四個監理基準</h1><div class="en">Jurisdiction Map</div><div class="rule"></div><div class="body"><div class="bline">U.S. GENIUS Act</div>
+<div class="bline">EU MiCA ART / EMT</div>
+<div class="bline">UK BoE systemic stablecoin regime</div>
+<div class="bline">New York NYDFS guidance</div>
+<div class="spacer"></div>
+<div class="bline">它們重疊，但不是同一套制度</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The legal chapter is not a single &quot;regulation is coming&quot; story. It is a comparison of distinct baselines, plus a bounded foreign-issuer equivalence screen.</p>
+<p>中文提示：把這張當成法規章的地圖。</p></div><div class="foot"><b>Source claims</b> CLAIM_036-043, CLAIM_069-071, CLAIM_082-097, CLAIM_126-131</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">23</span></div><h1>GENIUS Act：發行人門檻</h1><div class="en">GENIUS Act: Issuer Gate</div><div class="rule"></div><div class="body"><div class="bline">只有 permitted payment stablecoin issuer 可以發行</div>
+<div class="bline">3-year transition gate affects DASP distribution</div>
+<div class="bline">foreign issuer treatment depends on Treasury comparability, registration, U.S. liquidity, and reciprocal arrangements</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The GENIUS Act is not only about reserve assets. It defines who may issue and how non-U.S. issuers may reach the U.S. market.</p>
+<p>中文提示：先講 issuer gate，再講儲備資產，順序會比較清楚。</p></div><div class="foot"><b>Source claims</b> CLAIM_082, CLAIM_083, CLAIM_126, KF_005, KF_007</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">24</span></div><h1>GENIUS Act：儲備資產清單</h1><div class="en">GENIUS Act: Reserves</div><div class="rule"></div><div class="body"><div class="bline">Permitted reserves include：</div>
+<div class="bline">cash and insured deposits</div>
+<div class="bline">Treasury bills / notes / bonds with max 93-day maturity</div>
+<div class="bline">overnight repo / reverse repo</div>
+<div class="bline">government MMF shares</div>
+<div class="bline">central-bank reserves where allowed</div>
+<div class="spacer"></div>
+<div class="bline">monthly disclosure and registered-public-accounting-firm examination</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This is the statutory reserve model. It is broad enough to include several money-market instruments, not just bank deposits.</p>
+<p>中文提示：把 93 天與 monthly examination 說出來，這是量化 anchor。</p></div><div class="foot"><b>Source claims</b> CLAIM_084, CLAIM_085, KF_004, KF_006</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">25</span></div><h1>GENIUS Act：收益禁止與破產順位</h1><div class="en">GENIUS Act: Yield and Insolvency</div><div class="rule"></div><div class="body"><div class="bline">Issuer may not pay holder yield for holding, using, or retaining stablecoins</div>
+<div class="bline">In insolvency, customer claims receive statutory priority</div>
+<div class="spacer"></div>
+<div class="bline">這讓穩定幣更像支付負債，而不是收益型存款產品</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The yield prohibition and insolvency priority help define the legal nature of a payment stablecoin under the Act.</p>
+<p>中文提示：這張可以連回「儲備收益不對稱」。</p></div><div class="foot"><b>Source claims</b> CLAIM_086, CLAIM_087</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">26</span></div><h1>MiCA：ART 與 EMT</h1><div class="en">MiCA ART vs EMT</div><div class="rule"></div><div class="body"><div class="bline">ART：asset-referenced token</div>
+<div class="bline">reserve of assets, permanent redemption, no interest</div>
+<div class="spacer"></div>
+<div class="bline">EMT：e-money token</div>
+<div class="bline">par-value redemption, no interest, 30% credit-institution deposit floor</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>MiCA has two separate token regimes. Treating ART and EMT as one category would lose important legal differences.</p>
+<p>中文提示：這張只做清楚分類，不要把所有 MiCA stablecoin 都叫同一種。</p></div><div class="foot"><b>Source claims</b> CLAIM_042, CLAIM_043, CLAIM_069, CLAIM_070, CLAIM_071, CLAIM_127, CLAIM_128, KF_009</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">27</span></div><h1>MiCA：重大代幣與復原、贖回計畫</h1><div class="en">MiCA Significant Tokens</div><div class="rule"></div><div class="body"><div class="bline">Significant ART：Article 45 additional obligations</div>
+<div class="bline">recovery plan：liquidity fees, redemption caps, suspension options</div>
+<div class="bline">redemption plan：wind-down and temporary administrator</div>
+<div class="bline">Significant EMT：EBA transfer, six-month audit cadence, non-euro home-state derogation</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The significant-token layer creates an additional supervisory regime above ordinary ART and EMT rules.</p>
+<p>中文提示：用 recovery plan 和 redemption plan 說明 MiCA 不只管平常，也管壓力情境。</p></div><div class="foot"><b>Source claims</b> CLAIM_094, CLAIM_095, CLAIM_096, CLAIM_097, CLAIM_129, KF_008, KF_010</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">28</span></div><h1>BoE：從 100% CBD 到 40/60</h1><div class="en">BoE 2023 to 2025</div><div class="rule"></div><div class="body"><div class="bline">2023：preferred 100% central bank deposit backing</div>
+<div class="bline">2025：at least 40% unremunerated CBD</div>
+<div class="bline">up to 60% short-term UK government debt</div>
+<div class="bline">launch step-up can allow up to 95% UK government debt</div>
+<div class="bline">cross-border use remains jointly UK-regulated and subject to home authority</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The BoE shift is important because it shows a central bank balancing singleness-of-money concerns against operational and market structure. It is also the closest non-U.S. comparison case for the foreign-issuer screen, but not an automatic GENIUS equivalent.</p>
+<p>中文提示：這張可以講 BoE 是最明顯把 central bank money 放進穩定幣儲備設計的案例。</p></div><div class="foot"><b>Source claims</b> CLAIM_088, CLAIM_089, CLAIM_090, CLAIM_130, CLAIM_131, KF_011, KF_012, KF_013</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">29</span></div><h1>BoE：持有上限</h1><div class="en">BoE Holding Limits</div><div class="rule"></div><div class="body"><div class="bline">proposed limit：GBP 20,000 per individual per coin</div>
+<div class="bline">proposed business limit：GBP 10 million</div>
+<div class="spacer"></div>
+<div class="bline">這是 UK regime 最特別的工具之一</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Holding limits are not common across the other regimes. They are a specific BoE proposal for managing adoption speed and systemic risk.</p>
+<p>中文提示：把它定位成 UK 特有工具，不要誤說成全球標準。</p></div><div class="foot"><b>Source claims</b> CLAIM_091, KF_014, KF_015</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">30</span></div><h1>ESMA：CASP 與 transfer service</h1><div class="en">ESMA Supervisory Practice</div><div class="rule"></div><div class="body"><div class="bline">ESMA rejects a low-risk CASP assumption</div>
+<div class="bline">elevated scrutiny triggers include：</div>
+<div class="bline">1M EU users</div>
+<div class="bline">EUR 3bn balance sheet</div>
+<div class="bline">200,000 cross-border users</div>
+<div class="spacer"></div>
+<div class="bline">Article 82 transfer-service guidelines connect MiCA to Travel Rule-style controls</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>ESMA materials are useful because they show how MiCA supervision will look in practice, not only in statutory text.</p>
+<p>中文提示：這張把 MiCA 從條文拉到監理實務。</p></div><div class="foot"><b>Source claims</b> CLAIM_092, CLAIM_093, KF_029, KF_030, KF_031</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">31</span></div><h1>跨法域比較：發行人、儲備、贖回</h1><div class="en">Cross-Jurisdiction Table 1</div><div class="rule"></div><div class="body"><div class="bline">比較維度：</div>
+<div class="bline">eligible issuer</div>
+<div class="bline">reserve composition</div>
+<div class="bline">redemption right</div>
+<div class="spacer"></div>
+<div class="bline">GENIUS, MiCA ART, MiCA EMT, BoE, NYDFS 的共同點多，但細節不同</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Use the slide-ready table rather than narrating every cell. The table is designed to show convergence and divergence at the same time.</p>
+<p>中文提示：不要逐格朗讀，用三個維度點出差異。</p></div><div class="foot"><b>Source claims</b> chapter 4 comparison table &nbsp;|&nbsp; 圖示 `07_final_report/comparison_table_slide_31.md`</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">32</span></div><h1>跨法域比較：破產、收益、重大門檻</h1><div class="en">Cross-Jurisdiction Table 2</div><div class="rule"></div><div class="body"><div class="bline">比較維度：</div>
+<div class="bline">insolvency / wind-down</div>
+<div class="bline">holder yield / interest</div>
+<div class="bline">significant-token threshold</div>
+<div class="spacer"></div>
+<div class="bline">holder yield 是少數高度一致的限制方向</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The second comparison table is useful for discussing the economic design of stablecoins: who gets yield, who has priority, and when a token becomes systemically supervised.</p>
+<p>中文提示：把焦點放在「收益被壓住」與「重大代幣門檻不同」。</p></div><div class="foot"><b>Source claims</b> chapter 4 comparison table &nbsp;|&nbsp; 圖示 `07_final_report/comparison_table_slide_32.md`</div></div>
+<div class="slide part"><div class="pk">Part 4</div><h1>Central Bank and Policy Framing</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">33</span></div><h1>Fed：條件式銀行通道</h1><div class="en">Fed IFDP 1334</div><div class="rule"></div><div class="body"><div class="bline">Fed models do not say stablecoins mechanically drain deposits</div>
+<div class="bline">impact depends on：</div>
+<div class="bline">source of demand</div>
+<div class="bline">backing model</div>
+<div class="bline">whether reserves recycle into banks</div>
+<div class="bline">two-tier banking vs narrow-bank design</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The Fed frame is conditional. It avoids the simplistic claim that every stablecoin dollar is a one-for-one loss to bank credit.</p>
+<p>中文提示：這張要講「條件式」，不是單向恐慌敘事。</p></div><div class="foot"><b>Source claims</b> CLAIM_044, CLAIM_047, CLAIM_048</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">34</span></div><h1>IMF：穩定化的代價</h1><div class="en">IMF: Making Stablecoins Stable</div><div class="rule"></div><div class="body"><div class="bline">Safe-asset backing can reduce run risk</div>
+<div class="bline">but may reduce issuer profitability and issuance incentives</div>
+<div class="spacer"></div>
+<div class="bline">policy design is a tradeoff between stability and business viability</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The IMF model clarifies that safer reserves are not free. The economics of the issuer still matter.</p>
+<p>中文提示：這張不要只講「安全資產比較安全」，要補上 issuer incentive 的代價。</p></div><div class="foot"><b>Source claims</b> CLAIM_049</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">35</span></div><h1>IMF：18% 與 US$300bn</h1><div class="en">IMF Event Study</div><div class="rule"></div><div class="body"><div class="bline">U.S. pro-stablecoin policy news was associated with：</div>
+<div class="bline">about 18% decline in listed incumbent payment-firm value</div>
+<div class="bline">about US$300bn market value reduction</div>
+<div class="spacer"></div>
+<div class="bline">this is market expectation, not realised adoption</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This is a powerful figure, but it must be interpreted carefully. It is not evidence that stablecoins already replaced payment firms.</p>
+<p>中文提示：數字很吸睛，但務必加上「市場預期，不是已實現支付採用」。</p></div><div class="foot"><b>Source claims</b> CLAIM_050, KF_027, KF_028</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">36</span></div><h1>台灣場景綜整</h1><div class="en">Taiwan-Specific Synthesis</div><div class="rule"></div><div class="body"><div class="bline">台灣問題不是「要不要有穩定幣」而已</div>
+<div class="bline">更精準的問題是：</div>
+<div class="bline">NTD stablecoin 如何分類</div>
+<div class="bline">USD stablecoin 是否帶來數位美元化</div>
+<div class="bline">外匯監理如何看待鏈上美元流動</div>
+<div class="bline">deposit token、CBDC、商業銀行貨幣如何分工</div>
+<div class="spacer"></div>
+<div class="bline">立法進度（仍非成文法）：</div>
+<div class="bline">2026-04-02 行政院通過 FSC VASP 草案並送立法院</div>
+<div class="bline">2026-06-03 財委會初審新聞與官方議案進度紀錄</div>
+<div class="bline">結論仍待成文法或 FSC / CBC 子規則</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The Taiwan synthesis is now backed by CBC claims. It should still be phrased carefully: CBC does not treat stablecoins as removing central-bank money from the system, but it does identify USD-stablecoin, FX, NTD-stablecoin reserve, payment-system and monetary-transmission channels. v0.4 adds a legislative-stage layer: FSC Chair Peng Jin-lung publicly stated on 2025-12-03 that the first regulated stablecoin may launch in H2 2026 at the earliest; the Executive Yuan approved the FSC VASP draft and submitted it to the Legislative Yuan on 2026-04-02; and Finance Committee first-review news plus the official Legislative Yuan bill-detail docket record committee-review entries through 2026-06-03 with gazette production pending. This stays legislative-stage only; statutory conclusions must wait for enacted text or official FSC/CBC sub-rules.</p>
+<p>中文提示：這張現在可以當作台灣結論頁。重點是：美元穩定幣牽涉美元化與外匯監理，新台幣穩定幣更像電子支付儲值款項的代幣化。立法進度只講到行政院通過、送立法院、財委會初審與官方議案紀錄，仍不可講成成文法。</p></div><div class="foot"><b>Source claims</b> CLAIM_112, CLAIM_113, CLAIM_114, CLAIM_115, CLAIM_116, CLAIM_117, CLAIM_118, CLAIM_138, CLAIM_139, CLAIM_144, CLAIM_145, CLAIM_146</div></div>
+<div class="slide part"><div class="pk">Part 5</div><h1>USDPT and Cross-Border Payments</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">37</span></div><h1>USDPT 已有證據</h1><div class="en">What Is Documented About USDPT</div><div class="rule"></div><div class="body"><div class="bline">Western Union announced USDPT</div>
+<div class="bline">expected issuer：Anchorage Digital Bank</div>
+<div class="bline">chain：Solana, with official product-page address disclosed</div>
+<div class="bline">infrastructure：Fireblocks, Digital Asset Network, Treasury and Agent Settlement</div>
+<div class="bline">ADB terms：Client / Non-Client redemption boundary and reserve-trust framing</div>
+<div class="bline">exchange：Bybit 為首家整合 USDPT 的主要交易所（2026-06-04，拉美選定市場）</div>
+<div class="spacer"></div>
+<div class="bline">evidence supports a planned digital-asset settlement layer</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>USDPT is important, and v0.4 adds product-page and ADB terms evidence. We can document the layer-3 treasury / agent-settlement framing, official Solana address, broad product-page reserve categories, and ADB covered-stablecoin Client / Non-Client boundary. We still cannot document the full retail, agent cash-out, reserve-attestation, token-control, or bank-clearing operating architecture.</p>
+<p>中文提示：先說有什麼，不要一開始就說缺什麼。v0.4.1 新增 Bybit 首家交易所整合（CLAIM_155），把「即將推出的交易所支援」推進到一家已上線交易所，但仍非產品條款或儲備報告。</p></div><div class="foot"><b>Source claims</b> CLAIM_051, CLAIM_052, CLAIM_053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151, CLAIM_155</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">38</span></div><h1>四層拆解</h1><div class="en">Four-Layer Separation</div><div class="rule"></div><div class="body"><div class="bline">Layer 1：customer remittance UX / Stable by Western Union consumer layer</div>
+<div class="bline">Layer 2：Western Union agent network + exchange access (Bybit 首家整合交易所)，但仍缺完整 USDPT cash-out 證據</div>
+<div class="bline">Layer 3：stablecoin issuance, on-chain transfer, treasury and agent settlement</div>
+<div class="bline">Layer 4：reserve assets and bank / correspondent settlement, still missing USDPT-specific report and workflow</div>
+<div class="spacer"></div>
+<div class="bline">Replacement claims must specify which layer is replaced</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The four-layer diagram prevents the phrase &quot;USDPT replaces SWIFT&quot; from collapsing multiple systems into one claim. At v0.4, layer 3 is the strongest documented layer: Western Union&#x27;s release anchors the Digital Asset Network and Treasury and Agent Settlement, while ADB terms add reserve-trust and sole-obligor boundaries. Layer 1 has coming-soon retail features, but layer 2 and layer 4 remain incomplete.</p>
+<p>中文提示：請直接展示 swim-lane 圖。任何替代論都必須先指出替代的是哪一層。</p></div><div class="foot"><b>Source claims</b> chapter 6 framing, CLAIM_051-053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151, CLAIM_155 &nbsp;|&nbsp; 圖示 `06_flow_diagrams/usdpt_settlement_flow.md`</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">39</span></div><h1>USDPT 尚未取得文件</h1><div class="en">What Is Not Documented</div><div class="rule"></div><div class="body"><div class="bline">Not yet in the archive：</div>
+<div class="bline">USDPT-specific product / user terms and fee schedule</div>
+<div class="bline">USDPT-specific reserve report / attestation</div>
+<div class="bline">token controls beyond disclosed Solana address</div>
+<div class="bline">retail / agent eligible-redeemer scope beyond ADB Client status</div>
+<div class="bline">customer-to-customer and agent cash-out workflow</div>
+<div class="bline">agent balance-sheet and bank-settlement workflow</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The missing documents are exactly the ones needed to move from product-page architecture to documented legal and operating terms.</p>
+<p>中文提示：這不是悲觀，而是證據紀律。沒有 workflow 文件就不講替代 SWIFT。</p></div><div class="foot"><b>Source claims</b> unresolved_open_questions.md, usdpt_product_terms_research_queue.md, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">40</span></div><h1>USDPT 的安全說法</h1><div class="en">Conditional USDPT Framing</div><div class="rule"></div><div class="body"><div class="bline">Safe wording：</div>
+<div class="bline">Western Union has announced USDPT issued by Anchorage Digital Bank on Solana</div>
+<div class="bline">as a regulated digital-asset settlement layer for treasury and agent settlement</div>
+<div class="bline">with product-page evidence for broad reserve categories and an official Solana address</div>
+<div class="bline">ADB direct redemption is bounded to Clients under covered-stablecoin terms</div>
+<div class="spacer"></div>
+<div class="bline">Unsafe wording：</div>
+<div class="bline">USDPT replaces SWIFT / correspondent banking / Fedwire / CHIPS / WU retail rails</div>
+<div class="bline">every holder can redeem USDPT directly with ADB</div>
+<div class="bline">Stable by Western Union is identical to USDPT itself</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This slide gives the exact language discipline for discussion and Q&amp;A. The v0.4 anchors let us state the layer-3 treasury / agent-settlement framing, the official Solana address, broad product-page reserve categories, and ADB covered-stablecoin terms. Replacement, retail/agent redemption-scope, USDPT-specific attestation, exact token-control implementation, agent balance-sheet, and bank-settlement claims still cannot be made.</p>
+<p>中文提示：這張是問答時的保護欄。聽眾問替代論時，就回到這裡。</p></div><div class="foot"><b>Source claims</b> chapter 6, AGENTS.md guardrails, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151</div></div>
+<div class="slide part"><div class="pk">Part 6</div><h1>On-Chain Data</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">41</span></div><h1>轉帳量不是支付需求</h1><div class="en">Volume Is Not Payment Demand</div><div class="rule"></div><div class="body"><div class="bline">Raw transfer volume includes：</div>
+<div class="bline">exchange flows</div>
+<div class="bline">bridge flows</div>
+<div class="bline">arbitrage</div>
+<div class="bline">internal wallet movement</div>
+<div class="bline">protocol flows</div>
+<div class="spacer"></div>
+<div class="bline">Visa/Allium 已公布的量級：30 天 raw ~$2.65T → adjusted ~$265B（約 1/10）</div>
+<div class="bline">payment demand needs adjusted methodology</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This is one of the central guardrails. Transfer volume is useful, but it is not equivalent to real-world payment adoption. v0.4.1 adds a published provider magnitude: Visa/Allium report trailing-30-day transfer volume adjusting from about US$2.65T to about US$265B after removing inorganic data (`CLAIM_157`) — roughly a tenfold gap. Use it as an order-of-magnitude illustration, not a fixed-date or reproducible export.</p>
+<p>中文提示：這張要講清楚「看起來很多」不等於「真的拿去付款」。Visa/Allium 約 10 倍的調整可當量級例子，但仍是供應商口徑、非可重現匯出。</p></div><div class="foot"><b>Source claims</b> AGENTS.md rule, chapter 7 framing, CLAIM_157</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">42</span></div><h1>DeFiLlama 可以說什麼</h1><div class="en">DeFiLlama Supply Data</div><div class="rule"></div><div class="body"><div class="bline">DeFiLlama exports support：</div>
+<div class="bline">stablecoin supply snapshot</div>
+<div class="bline">chain distribution</div>
+<div class="bline">market structure context</div>
+<div class="spacer"></div>
+<div class="bline">They do not support：</div>
+<div class="bline">adjusted payment volume</div>
+<div class="bline">merchant adoption</div>
+<div class="bline">real-world remittance volume</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>DeFiLlama data is useful for supply-side analysis, but it cannot answer the payment-demand question by itself.</p>
+<p>中文提示：這張把資料用途和不能用途分開。</p></div><div class="foot"><b>Source claims</b> CLAIM_054, 09_data_exports README</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">43</span></div><h1>還缺哪些 adjusted data</h1><div class="en">Missing Adjusted Exports</div><div class="rule"></div><div class="body"><div class="bline">Still missing：</div>
+<div class="bline">Visa Onchain Analytics adjusted-volume export</div>
+<div class="bline">Artemis reproducible export beyond methodology</div>
+<div class="bline">Cambridge numerical export</div>
+<div class="bline">McKinsey / Artemis local archive</div>
+<div class="spacer"></div>
+<div class="bline">Now available：World Bank remittance-cost benchmark export</div>
+<div class="bline">Now available：Visa/Allium 已公布調整量級 ~$2.65T → ~$265B（非可重現匯出）</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The chapter stays qualitative for stablecoin payment demand because the adjusted stablecoin-volume exports are not reproducible from the current archive. v0.4 adds the World Bank off-chain remittance-cost benchmark export (`CLAIM_147`), which is useful cost context but not stablecoin volume.</p>
+<p>中文提示：這張和 USDPT 缺口一樣，是 freeze 而不是 guess。</p></div><div class="foot"><b>Source claims</b> chapter 7, 09_data_exports README, CLAIM_147, CLAIM_157</div></div>
+<div class="slide part"><div class="pk">Part 7</div><h1>Failure Cases</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">44</span></div><h1>風險分類</h1><div class="en">Risk Taxonomy</div><div class="rule"></div><div class="body"><div class="bline">v0.4 supports a risk taxonomy with public proxy timelines：</div>
+<div class="bline">reserve and custody risk：USDC / SVB 2023-03</div>
+<div class="bline">reserve opacity and disclosure risk：Tether / Bitfinex 2021</div>
+<div class="bline">algorithmic / reflexive death spiral：Terra UST 2022-05, Iron Finance 2021-06</div>
+<div class="bline">crypto-collateral, oracle and auction-design risk：Maker Black Thursday 2020-03-12</div>
+<div class="bline">synthetic-dollar basis and funding risk：USDe mechanism only, no realised event</div>
+<div class="spacer"></div>
+<div class="bline">public hourly proxy timelines：USDC/SVB, Terra USTC, Maker DAI</div>
+<div class="bline">Iron Finance：已有 issuer post-mortem 時間軸（CLAIM_156），但獨立 tick-level OHLCV 仍缺</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The taxonomy is claim-backed. v0.3.3 added MakerDAO Black Thursday as a case-study anchor for crypto-collateral / oracle / auction-design risk. v0.4 adds a public hourly proxy layer through CryptoCompare: USDC/SVB, Terra USTC and Maker DAI now have reproducible coarse hourly timeline context (`CLAIM_148`, `CLAIM_149`). This does not replace tick-level or exchange-level data, and Iron Finance remains unresolved because the public IRON/TITAN rows are zero-only.</p>
+<p>中文提示：這張不要講成完整歷史事件研究；它是風險分類。</p></div><div class="foot"><b>Source claims</b> CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_101, CLAIM_103, CLAIM_106, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149, CLAIM_156</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">45</span></div><h1>事件教訓變成研究護欄</h1><div class="en">Lessons as Guardrails</div><div class="rule"></div><div class="body"><div class="bline">Past failures reinforce the guardrails：</div>
+<div class="bline">attestation vs audit</div>
+<div class="bline">direct right vs product page</div>
+<div class="bline">volume vs payment demand</div>
+<div class="bline">oracle / gas / auction design as risk surface</div>
+<div class="bline">USDPT vs payment-rail replacement</div>
+<div class="bline">ART vs EMT</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Failure cases are not colourful anecdotes. They are why the report is strict about terminology and evidence boundaries. The Maker Black Thursday cluster adds oracle delay, gas-driven keeper failure and auction-design risk, while CryptoCompare adds coarse public hourly context for three selected windows.</p>
+<p>中文提示：把失敗案例拉回研究方法，不要變成故事時間。</p></div><div class="foot"><b>Source claims</b> CLAIM_107-111, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149, chapter 8</div></div>
+<div class="slide part"><div class="pk">Part 8</div><h1>Closing</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num">46</span></div><h1>證據可以支持什麼</h1><div class="en">What the Evidence Supports</div><div class="rule"></div><div class="body"><div class="bline">Stablecoins reconfigure dollar liquidity</div>
+<div class="bline">direct redemption rights are narrower than marketing language</div>
+<div class="bline">attestation is not audit</div>
+<div class="bline">regulation is converging but not identical</div>
+<div class="bline">central-bank channels are conditional</div>
+<div class="bline">DAI / USDS and USDe are different in kind</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>These are the high-confidence findings. They are the safest backbone for the reading-group discussion.</p>
+<p>中文提示：這張是主結論。</p></div><div class="foot"><b>Source claims</b> chapter 9.1</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">47</span></div><h1>哪些結論仍是條件式</h1><div class="en">What Is Conditional</div><div class="rule"></div><div class="body"><div class="bline">Conditional findings：</div>
+<div class="bline">USDPT may become a settlement-layer reconfiguration</div>
+<div class="bline">but primary product documents are missing</div>
+<div class="spacer"></div>
+<div class="bline">Stablecoin payment adoption may grow</div>
+<div class="bline">but adjusted-volume evidence is missing</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The report is strongest when it explicitly marks what is conditional.</p>
+<p>中文提示：這張是誠實標籤，不是削弱研究。</p></div><div class="foot"><b>Source claims</b> chapter 9.2</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">48</span></div><h1>未解問題</h1><div class="en">What Remains Unresolved</div><div class="rule"></div><div class="body"><div class="bline">USDPT product layer</div>
+<div class="bline">adjusted on-chain payment volume</div>
+<div class="bline">Taiwan enacted law / sub-rules</div>
+<div class="bline">Iron Finance / exact failure-case price timelines</div>
+<div class="bline">Maker Black Thursday primary sources</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>The unresolved list is the v0.4 roadmap. None of these should be answered by guessing.</p>
+<p>中文提示：把這張當成後續研究 agenda。</p></div><div class="foot"><b>Source claims</b> unresolved_open_questions.md, chapter 9.3</div></div>
+<div class="slide"><div class="tag">Slide<span class="num">49</span></div><h1>讀書會討論題</h1><div class="en">Discussion Questions</div><div class="rule"></div><div class="body"><div class="bline">1. 穩定幣的主要風險在 holder、issuer、reserve asset 還是 payment rail？</div>
+<div class="bline">2. 法規是在保護持有人，還是在重塑誰能取得美元支付基礎設施？</div>
+<div class="bline">3. 台灣面對的是 NTD stablecoin 問題，還是 USD stablecoin 的數位美元化問題？</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>These questions are designed to keep discussion tied to the evidence. They also connect global regulation back to Taiwan-specific policy concerns.</p>
+<p>中文提示：最後不要只收在技術面，要把討論拉回金融制度與台灣情境。</p></div><div class="foot"><b>Source claims</b> chapter 9.4</div></div>
+<div class="slide part"><div class="pk">Appendix</div><h1>Appendix</h1><div class="pr"></div></div>
+<div class="slide"><div class="tag">Slide<span class="num"></span></div><h1>Claim 對照</h1><div class="en">A1 - Claim Map</div><div class="rule"></div><div class="body"><div class="bline">所有主要結論都可追到：</div>
+<div class="bline">`03_claim_tables/claim_table_master.csv`</div>
+<div class="bline">`01_sources/source_registry.csv`</div>
+<div class="spacer"></div>
+<div class="bline">Claim ID -&gt; source ID -&gt; local archive path -&gt; evidence summary</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>Use this if the audience asks where the evidence is. It also signals that the deck is traceable.</p>
+<p>中文提示：學術型聽眾通常會在意來源，這張可以放在備用頁。</p></div><div class="foot"><b>Source claims</b> PROJECT_METHODOLOGY_001</div></div>
+<div class="slide"><div class="tag">Slide<span class="num"></span></div><h1>使用限制</h1><div class="en">A2 - Disclaimer</div><div class="rule"></div><div class="body"><div class="bline">This is not investment advice</div>
+<div class="bline">USDPT workflow is inferred, not production architecture</div>
+<div class="bline">reserve figures are point-in-time disclosures</div>
+<div class="bline">attestations are not audits</div>
+<div class="bline">volume is not payment demand</div>
+<div class="bline">fiat-backed, crypto/RWA, and synthetic-dollar products are separate categories</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This slide codifies the evidence boundaries for the session.</p>
+<p>中文提示：如果正式上台，這張建議保留在 appendix 或開場備用。</p></div><div class="foot"><b>Source claims</b> AGENTS.md non-negotiable rules</div></div>
+<div class="slide"><div class="tag">Slide<span class="num"></span></div><h1>資料庫狀態</h1><div class="en">A3 - Source Registry</div><div class="rule"></div><div class="body"><div class="bline">v0.4.1 source registry：150 rows</div>
+<div class="bline">claim table：157 claim rows</div>
+<div class="bline">missing archived local files：none</div>
+<div class="bline">high-priority rows needing attention：none</div>
+<div class="bline">validation note：Full Python validation passes at OK: 157 claims validated (2026-06-10); portal Claims 157 / Sources 150 / Matrices 6</div>
+<div class="bline">v0.4.1 新增：CLAIM_155 Bybit 首家交易所整合、CLAIM_156 Iron Finance issuer 時間軸、CLAIM_157 Visa/Allium 調整量級</div>
+<div class="bline">known unresolved items：USDPT-specific retail/workflow terms, reproducible adjusted stablecoin-volume exports, Taiwan enacted law, independent tick-level failure-case timelines, Maker Foundation primary source</div></div><div class="notes"><div class="lbl">講者備註 SPEAKER NOTES</div><p>This is the operational status slide. It distinguishes research gaps from broken repository state.</p>
+<p>中文提示：這張可以回答「資料庫完整嗎？」這類問題。</p></div><div class="foot"><b>Source claims</b> README current snapshot, validation scripts</div></div></body></html>
