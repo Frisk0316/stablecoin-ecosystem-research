@@ -1,8 +1,28 @@
-# Slide Outline v0.3 Clean Build (2026-05-15)
+# Slide Outline v0.4 (2026-06-05 targeted gap closure)
 
 Purpose: clean Traditional Chinese slide outline for the 2026-06-27 reading
 group. The expanded speaker script is
 `07_final_report/slide_script_v0_3.md`.
+
+v0.4 update: USDPT slides (37-40) now cite `CLAIM_132` to `CLAIM_134`
+plus `CLAIM_140` to `CLAIM_143` (Digital Asset Network, Treasury and Agent
+Settlement, Stable by Western Union, product-page reserve categories,
+official Solana contract address, coming-soon customer features, and
+Anchorage USDPT report slot status) plus `CLAIM_150` and `CLAIM_151`
+(ADB covered-stablecoin Client / Non-Client, reserve-trust, sole-obligor,
+brand-partner and legal-control terms). Taiwan slide (36) now cites
+`CLAIM_138`, `CLAIM_139`, `CLAIM_144`, `CLAIM_145`, and `CLAIM_146` (legislative-stage
+VASP Act draft through Executive Yuan approval / Legislative Yuan
+submission, Finance Committee first-review news, and official Legislative
+Yuan docket entries). Failure-case slides (44-45)
+now cite `CLAIM_135` to `CLAIM_137` plus `CLAIM_148` and `CLAIM_149`
+for public hourly proxy timelines.
+
+v0.3.3 update: USDPT slides (37–40) now cite `CLAIM_132` to `CLAIM_134`
+(Digital Asset Network, Treasury and Agent Settlement, Stable by Western
+Union); failure-case slides (44–45) now cite `CLAIM_135` to `CLAIM_137`
+(MakerDAO Black Thursday community / analyst anchors); Taiwan slide (36)
+now cites `CLAIM_138` and `CLAIM_139` (legislative-stage VASP Act draft).
 
 ## Part 0 - Opening
 
@@ -18,9 +38,9 @@ group. The expanded speaker script is
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 6 | 八個法幣擔保發行架構 | 同樣錨定美元，不代表同樣發行人、贖回權、凍結權與收益結構。 | CLAIM_026-035, CLAIM_058-081 |
-| 7 | USDC：Circle Mint 門檻 | USDC 的直接贖回權由 Circle Mint 資格決定。 | CLAIM_026, CLAIM_027, CLAIM_058, CLAIM_059 |
-| 8 | USDT：驗證客戶與非現金曝險 | USDT 有顯著 T-bill、gold、Bitcoin 曝險，直接贖回是 verified customer 權利。 | CLAIM_028, CLAIM_029, CLAIM_060, CLAIM_061 |
+| 6 | 八個法幣擔保發行架構 | 同樣錨定美元，不代表同樣發行人、贖回權、凍結權與收益結構。 | CLAIM_026-035, CLAIM_058-081, CLAIM_154 |
+| 7 | USDC：Circle Mint 門檻 | USDC 的直接贖回權由 Circle Mint 資格決定；Circle risk factors 另列 address blocking / freeze / blacklisting-policy controls。 | CLAIM_026, CLAIM_027, CLAIM_058, CLAIM_059, CLAIM_154 |
+| 8 | USDT：驗證客戶與非現金曝險 | USDT Q1 2026 reserve table 已抽出：T-bills/repo 為主，但也有 gold、Bitcoin、public equities、other investments、secured loans；直接贖回是 verified customer 權利。 | CLAIM_060, CLAIM_061, CLAIM_152, CLAIM_153 |
 | 9 | Paxos 家族 | PYUSD、USDP、USDG 的 Paxos Customer gating 是共同模式。 | CLAIM_072-076 |
 | 10 | USDP：獨立儲備組成報告已停止 | USDP 缺口應重分類為 issuer-discontinued separate report。 | CLAIM_080, CLAIM_081 |
 | 11 | GUSD：Gemini Customer 權利 | GUSD 由 Gemini Customer pathway 與三類 reserve account 支撐。 | CLAIM_077, CLAIM_078, CLAIM_079 |
@@ -35,7 +55,7 @@ group. The expanded speaker script is
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
 | 17 | 儲備資產比較 | Fiat-backed stablecoins 連到 deposits、T-bills、repo、MMF 與 custody。 | CLAIM_026, CLAIM_028, CLAIM_075, CLAIM_078, CLAIM_084 |
-| 18 | USDC vs USDT | 兩者都錨定美元，但儲備輪廓與披露架構不同。 | CLAIM_026-029 |
+| 18 | USDC vs USDT | 兩者都錨定美元，但儲備輪廓與披露架構不同；USDT 詳細表格顯示非純現金等價資產曝險。 | CLAIM_026-027, CLAIM_152 |
 | 19 | T-bill 需求通道 | Stablecoin growth 可能影響短期安全資產需求，但不是機械結論。 | CLAIM_084, BIS_003, ECB_003 |
 | 20 | DAI、USDe 不能併入同一模型 | Protocol / synthetic designs 不應併入 fiat-backed reserve channel。 | CLAIM_098, CLAIM_103, CLAIM_106 |
 | 21 | 儲備收益的不對稱 | Issuer 可獲 reserve income，holder 多半不取得 reserve yield。 | CLAIM_059, CLAIM_066, CLAIM_071, CLAIM_074, CLAIM_086 |
@@ -63,16 +83,16 @@ group. The expanded speaker script is
 | 33 | Fed：條件式銀行通道 | Stablecoin 對銀行影響取決於需求來源、儲備配置與 backing model。 | CLAIM_044, CLAIM_047, CLAIM_048 |
 | 34 | IMF：穩定化的代價 | Safe-asset backing 降低 run risk 但可能壓低 issuer profitability。 | CLAIM_049 |
 | 35 | IMF：18% 與 US$300bn | 這是 payment firms 的市場預期反應，不是已實現 adoption。 | CLAIM_050 |
-| 36 | 台灣場景綜整 | 台灣問題聚焦 NTD stablecoin、USD stablecoin、FX monitoring、dollarisation 與 M2/credit channel。 | CLAIM_112-118 |
+| 36 | 台灣場景綜整 | 台灣問題聚焦 NTD stablecoin、USD stablecoin、FX monitoring、dollarisation 與 M2/credit channel；立法層 VASP Act 已到行政院通過並送立法院、財委會初審新聞與官方議案進度階段，但仍非成文法。 | CLAIM_112-118, CLAIM_138, CLAIM_139, CLAIM_144, CLAIM_145, CLAIM_146 |
 
 ## Part 5 - USDPT and Cross-Border Payments
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 37 | USDPT 已有證據 | USDPT launch / issuer / chain / Fireblocks infrastructure 有初步證據。 | CLAIM_051-053 |
-| 38 | 四層拆解 | USDPT 討論必須拆成 UX、agent network、on-chain transfer、bank settlement。 | chapter 6 |
-| 39 | USDPT 尚未取得文件 | product terms、reserve report、contract addresses、workflow 都仍缺。 | unresolved_open_questions |
-| 40 | USDPT 的安全說法 | 可說 digital-asset settlement layer，不可說 replaces SWIFT。 | chapter 6 |
+| 37 | USDPT 已有證據 | USDPT launch / issuer / chain / Fireblocks infrastructure / Digital Asset Network / Treasury+Agent Settlement / Stable by WU，加上 product-page reserve categories、Solana address、coming-soon select-market features，以及 ADB Client / Non-Client redemption boundary。 | CLAIM_051-053, CLAIM_132-134, CLAIM_140-143, CLAIM_150-151 |
+| 38 | 四層拆解 | USDPT 討論必須拆成 UX、agent network、on-chain transfer、bank settlement；layer 3 已有 treasury+agent settlement，layer 1/2 有 product-page planned select-market cash-out/receive direction，但仍非完整 workflow。 | chapter 6, CLAIM_133, CLAIM_134, CLAIM_142 |
+| 39 | USDPT 尚未取得文件 | USDPT-specific retail/user terms、fee schedule、USDPT-specific attestation、exact token controls beyond disclosed Solana address、agent balance-sheet treatment、full workflow 仍缺；ADB terms 只補到 Client boundary。 | unresolved_open_questions, CLAIM_140-143, CLAIM_150-151 |
+| 40 | USDPT 的安全說法 | 可說 regulated digital-asset settlement layer、Solana address、broad reserve categories、coming-soon select-market features、ADB Client/Non-Client boundary；不可說 replaces SWIFT / correspondent banking / Fedwire / CHIPS 或任何 holder 直接贖回。 | chapter 6, CLAIM_132-134, CLAIM_140-143, CLAIM_150-151 |
 
 ## Part 6 - On-Chain Data
 
@@ -80,14 +100,14 @@ group. The expanded speaker script is
 | --- | --- | --- | --- |
 | 41 | 轉帳量不是支付需求 | Raw transfer volume 需要調整，不能直接當 payment demand。 | chapter 7 |
 | 42 | DeFiLlama 可以說什麼 | DeFiLlama 支撐 supply / chain distribution，不支撐 adjusted payment volume。 | CLAIM_054 |
-| 43 | 還缺哪些 adjusted data | Visa、Artemis、Cambridge、McKinsey/Artemis、World Bank exports 仍缺。 | 09_data_exports README |
+| 43 | 還缺哪些 adjusted data | World Bank remittance-cost benchmark 已可重現；Visa、Artemis、Cambridge、McKinsey/Artemis adjusted stablecoin exports 仍缺。 | 09_data_exports README, CLAIM_147 |
 
 ## Part 7 - Failure Cases
 
 | Slide | Title | Takeaway | Claims |
 | --- | --- | --- | --- |
-| 44 | 風險分類 | v0.3 支撐 risk taxonomy，但不支撐完整 price/depeg timelines。 | CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_103, CLAIM_106 |
-| 45 | 事件教訓變成研究護欄 | Failure cases 強化 attestation、redemption、volume、USDPT、ART/EMT guardrails。 | CLAIM_107-111 |
+| 44 | 風險分類 | v0.4 支撐 risk taxonomy，含 MakerDAO Black Thursday 的 crypto-collateral / oracle / auction-design risk channel，並新增 USDC/SVB、Terra USTC、Maker DAI 的 public hourly proxy timeline；Iron Finance 與精確 tick-level timeline 仍缺。 | CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_103, CLAIM_106, CLAIM_135-137, CLAIM_148-149 |
+| 45 | 事件教訓變成研究護欄 | Failure cases 強化 attestation、redemption、volume、USDPT、ART/EMT guardrails；Black Thursday 補上 oracle delay、gas spike 與 auction-design 的設計教訓；public hourly proxy 只能當 coarse timeline context。 | CLAIM_107-111, CLAIM_135-137, CLAIM_148-149 |
 
 ## Part 8 - Closing
 
@@ -95,7 +115,7 @@ group. The expanded speaker script is
 | --- | --- | --- | --- |
 | 46 | 證據可以支持什麼 | 高信心結論集中在 dollar liquidity、redemption gating、regulatory baselines。 | chapter 9.1 |
 | 47 | 哪些結論仍是條件式 | USDPT 與 payment demand 都仍需要新 primary evidence。 | chapter 9.2 |
-| 48 | 未解問題 | USDPT、adjusted volume、Taiwan enacted law、failure-case timelines、Maker Black Thursday。 | chapter 9.3 |
+| 48 | 未解問題 | USDPT、adjusted volume、Taiwan enacted law、Iron Finance / exact failure-case timelines、Maker Black Thursday primary source。 | chapter 9.3 |
 | 49 | 讀書會討論題 | 討論風險落點、法規目的與台灣的美元化問題。 | chapter 9.4 |
 
 ## Appendix
@@ -104,4 +124,4 @@ group. The expanded speaker script is
 | --- | --- | --- | --- |
 | A1 | Claim 對照 | 每個大結論都可追到 claim table 和 source registry。 | PROJECT_METHODOLOGY_001 |
 | A2 | 使用限制 | 非投資建議；USDPT inferred；attestation not audit；volume not demand。 | AGENTS.md |
-| A3 | 資料庫狀態 | 131 claims validated, 137 source rows, no high-priority missing local files。 | README |
+| A3 | 資料庫狀態 | 154 claim rows, 148 source rows. Full Python validation passed at 153 before CLAIM_154; post-154 static source/reference checks passed and rerun is pending. v0.4 新增：USDPT product-page/ADB terms 補強、Anchorage report slot、Taiwan Executive Yuan / Finance Committee / Legislative Yuan docket update、World Bank benchmark export、CryptoCompare failure-case hourly proxy export、USDT reserve-table export、USDC risk-factor control extraction。 | README |

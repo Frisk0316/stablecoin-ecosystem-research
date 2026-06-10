@@ -1,5 +1,230 @@
 # Changelog
 
+## v0.4 targeted gap closure - 2026-06-05
+
+Current project state:
+
+- Claim table expanded to 154 claims (`CLAIM_001` to `CLAIM_154`).
+- Source registry expanded to 148 rows.
+- Fifteen new claims and seven new source rows were added; no new matrices were
+  added, and the existing six matrices were extended.
+- `validate_claim_table.py`, `check_missing_sources.py`, `check_mermaid.py`
+  and `build_portal.py` passed at 153 claims before the final `CLAIM_154`
+  USDC risk-factor addition. After `CLAIM_154`, static checks confirm the
+  source row and cross-document references; Python validation / portal rerun
+  is pending because the current execution session blocked additional Python
+  runs.
+
+Newly closed or narrowed v0.4 backlog items:
+
+- **P0-1 USDPT product-page and ADB terms layer** (partially closed):
+  added `CLAIM_140` to `CLAIM_143` and `CLAIM_150` to `CLAIM_151`.
+  Western Union's product page now supports 1:1
+  redeemability wording, broad reserve categories, the official Solana
+  contract address, and planned / coming-soon exchange, cash-out, card and
+  receive-in-USDPT features in select markets. Anchorage's reserve
+  transparency page is registered as `USDPT_010`; it states ADB stablecoins
+  are redeemable 1:1 on the Anchorage platform and marks the USDPT report
+  slot as "Coming soon". Anchorage's Covered Stablecoin Terms are registered
+  as `USDPT_011`; they bound Client vs Non-Client redemption rights, reserve
+  trust, ADB sole-obligor status, brand-partner status and legal/control
+  powers for ADB-issued series.
+- **P0-3 Taiwan legislative timeline** (partially closed): added
+  `CLAIM_144` to `CLAIM_146`. `TAIWAN_VASP_003` registers the official
+  Executive Yuan 2026-04-02 approval / Legislative Yuan submission of the
+  FSC draft VASP Act. `TAIWAN_VASP_004` registers 2026-06-03 news reporting
+  that the Legislative Yuan Finance Committee first review passed.
+  `TAIWAN_VASP_005` registers the official Legislative Yuan bill-detail
+  docket for the Executive Yuan draft, including Finance Committee review
+  entries through 2026-06-03 and gazette production pending for June entries.
+- **P0-2 World Bank remittance-cost benchmark** (closed for off-chain
+  benchmark context): added `WB_RPW_002`, `CLAIM_147`, and
+  `09_data_exports/scripts/build_worldbank_remittance_benchmark.py`. The
+  script exports World Bank WDI API indicator `SI.RMT.COST.IB.ZS` into a
+  17,556-row country/region-year CSV and a 104-row latest non-null benchmark
+  CSV. This closes the World Bank benchmark-export piece only; it does not
+  close Visa / Artemis / Cambridge adjusted stablecoin volume.
+- **P1-1 failure-case public hourly proxy timelines** (partially closed):
+  added `CRYPTOCOMPARE_001`, `CLAIM_148`, `CLAIM_149`, and
+  `09_data_exports/scripts/build_failure_case_price_timelines.py`. The
+  script exports 749 public hourly OHLCV rows and a 5-row summary for
+  selected windows. It provides usable coarse proxies for USDC/SVB, Terra
+  USTC and Maker DAI, while Iron Finance remains unresolved because public
+  IRON/TITAN rows are zero-only and exact tick-level or exchange-level
+  timeline claims still require higher-quality data.
+- **P2 USDT Q1 2026 reserve table** (closed for category-level extraction):
+  added `CLAIM_152`, `CLAIM_153`, and
+  `09_data_exports/scripts/build_usdt_q1_2026_reserve_breakdown.py`. The
+  script exports the `USDT_002` reserve breakdown table into a 12-row CSV.
+  This closes the full point-in-time reserve-category table; maturity ladder,
+  custodian/counterparty split, collateral detail, redemption operations and
+  smart-contract controls remain open.
+- **P2 USDC risk-factor controls** (closed at risk-factor / policy layer):
+  added `CLAIM_154` from `USDC_007`. Circle's archived risk-factor page now
+  anchors address blocking, associated Circle-custodied USDC freezing,
+  Blocked Address flow consequences, and extraordinary on-chain transfer
+  blocking under Circle's blacklisting policy. Chain-specific contract-code
+  extraction and Circle Mint eligibility mapping remain open.
+
+Confirmed still-open backlog items at v0.4:
+
+- **USDPT legal and operational terms**: partially narrowed by ADB
+  covered-stablecoin terms, but USDPT-specific retail/user terms, fee
+  schedule, reserve attestation, exact token-control implementation beyond
+  the disclosed Solana address, agent balance-sheet treatment, end-to-end
+  workflow, and bank/clearing route remain unresolved.
+- **Adjusted on-chain payment volume**: still requires reproducible Visa /
+  Artemis / Cambridge exports or paid/manual data access. World Bank now
+  supplies off-chain cost benchmark context, not stablecoin adjusted-volume
+  evidence.
+- **Taiwan enacted statute / FSC sub-rules**: legislative-stage evidence is
+  stronger, but final enacted text, final committee report / gazette text,
+  official sub-rules, and detailed binding issuer obligations remain open.
+- **Failure-case reproducible price / depeg timelines**: partially narrowed
+  by public hourly proxies for USDC/SVB, Terra USTC and Maker DAI; still
+  data-dependent for Iron Finance and exact trough/duration/recovery claims.
+
+Cascaded updates:
+
+- `00_project_management/unresolved_open_questions.md` and
+  `00_project_management/usdpt_product_terms_research_queue.md` updated to
+  distinguish newly supported product-page facts from unresolved legal /
+  operational terms.
+- `02_source_digests/payment_settlement_source_digest.md` and
+  `02_source_digests/law_source_digest.md` updated with v0.4 evidence.
+- `04_matrices/payment_settlement_matrix.csv`,
+  `04_matrices/issuer_comparison_matrix.csv`,
+  `04_matrices/law_regulation_comparison_matrix.csv`, and
+  `04_matrices/central_bank_theme_matrix.csv` updated with the new claim
+  cites and bounded conclusions.
+- `05_chapter_drafts/chapter_04_law_and_regulation.md`,
+  `05_chapter_drafts/chapter_05_central_bank_views.md`, and
+  `05_chapter_drafts/chapter_06_usdpt_and_cross_border_payments.md` updated
+  for the v0.4 source state.
+- `README.md` snapshot counts, validation expectations, and live unresolved
+  gap summary updated.
+- `09_data_exports/README.md`, `09_data_exports/data_manifest.csv`, and the
+  new `09_data_exports/remittance_benchmark/` exports added for World Bank
+  remittance-cost benchmark integration.
+
+## v0.3.3 evidence-base reinforcement - 2026-06-02
+
+Current project state:
+
+- Claim table expanded to 139 validated claims (`CLAIM_001` to `CLAIM_139`).
+- Source registry expanded to 141 rows.
+- Eight new claims and four new source rows from public primary or
+  secondary materials. No new matrices added; the existing six matrices
+  were extended.
+- `validate_claim_table.py`, `check_missing_sources.py`,
+  `check_mermaid.py` and `build_portal.py` all pass: 139 claims, 141
+  sources, 6 matrices, 8 Mermaid diagrams structurally balanced, no
+  archived rows missing local files, no high-priority sources needing
+  attention.
+
+Newly closed v0.3.3 backlog items:
+
+- **P0-1 USDPT product layer** (partially closed): added `CLAIM_132`
+  (Digital Asset Network bridges licensed virtual currency exchanges and
+  custodians to Western Union's global payout and liquidity
+  infrastructure), `CLAIM_133` (Treasury and Agent Settlement use case
+  enables near-instant 24/7 settlement between Western Union and its
+  global agents — the strongest layer-3 anchor now in the archive), and
+  `CLAIM_134` (Stable by Western Union consumer-spend product launching
+  in 2026 in 40+ countries — kept distinct from USDPT issuance). Source:
+  `USDPT_007`, the 2026-05-04 Western Union investor-relations launch
+  release already archived locally. Product terms, reserve report,
+  contract addresses, and retail-redemption / agent-fiat-payout
+  workflow remain unresolved.
+- **P1-2 Maker / DAI Black Thursday** (closed at community / analyst
+  confidence): added `CLAIM_135` (ETH -43% on 2020-03-12, gas spike >6x
+  to approximately 80 Gwei with hourly peaks near 200 Gwei, Medianizer
+  oracle lag of approximately US$36 versus spot — Glassnode chronology),
+  `CLAIM_136` (1,462 of 3,994 collateral auctions closed at 100% discount,
+  62,892.93 ETH and US$8.325 million liquidated for zero DAI bids, 5.67
+  million DAI protocol undercollateralisation — Whiterabbit post-mortem),
+  and `CLAIM_137` (Emergency Shutdown vetoed; lot size raised from 50 to
+  500 ETH; auction duration extended; MKR Debt Auction 2020-03-19 —
+  Glassnode chronology). Sources: `FAILURE_007` (Whiterabbit Medium
+  community post-mortem) and `FAILURE_008` (Glassnode Insights). These
+  are community and analyst, not Maker Foundation primary; the case
+  study should remain medium-confidence.
+- **P0-3 Taiwan legislative timeline** (partially closed): added
+  `CLAIM_138` (FSC Chairman Peng Jin-lung 2025-12-03 public statement
+  that Taiwan's first regulated stablecoin may launch in the latter half
+  of 2026 at the earliest, plus a six-month post-publication buffer for
+  subordinate regulations) and `CLAIM_139` (draft VASP Act submitted to
+  the Executive Yuan in late June 2025 and still under executive review
+  as of 2025-12; prior-approval, reserve, audit, disclosure, and
+  foreign-issued-stablecoin-consent obligations; at least eight
+  subordinate regulations in preparation). Sources: `TAIWAN_VASP_001`
+  (Focus Taiwan / CNA English) and `TAIWAN_VASP_002` (Stellex Law
+  commentary). Both are legislative-stage; enacted statutory text
+  remains unresolved.
+
+Confirmed still-open backlog items at v0.3.3:
+
+- **P0-1 USDPT product terms, reserve, contract addresses, retail
+  redemption, agent cash-out workflow**: source-dependent. Treasury and
+  Agent Settlement is now anchored, but customer UX, agent last-mile,
+  and bank / clearing settlement layers still lack primary terms.
+- **P0-2 Adjusted on-chain payment volume**: data-workflow-dependent
+  and paid-feed-dependent. Cambridge dashboard numerical export, Visa
+  Onchain Analytics adjusted volume, Artemis reproducible adjusted
+  series, World Bank Remittance Prices Worldwide integration, and the
+  `MCKINSEY_ARTEMIS_001` manual archive are still required.
+- **P0-3 Taiwan enacted statute / FSC sub-rules**: source-dependent.
+  `TAIWAN_VASP_001` and `TAIWAN_VASP_002` are legislative-stage; enacted
+  Yuan-passed statutory text or FSC sub-rules would be the next-tier
+  source.
+- **P1-1 Reproducible failure-case price / depeg timelines**:
+  partially narrowed at v0.4. CryptoCompare public hourly proxies now cover
+  USDC/SVB, Terra USTC and Maker DAI, but paid or exchange-level feeds are
+  still required for exact duration/trough/recovery claims and for a usable
+  Iron Finance IRON/TITAN chronology.
+- **P1-2 Maker Foundation primary source for Black Thursday**:
+  source-dependent. Current anchors are community and analyst;
+  Foundation / governance forum upgrade would lift confidence from
+  medium to high.
+- **P1-3 Central-bank / IMF deeper page-level extraction**: continues to
+  be conditional framing rather than blocker.
+- **P2 issuer-specific gaps (USDC, USDT, Paxos family, RLUSD, GUSD,
+  FDUSD, DAI/USDS, USDe, USDPT)**: each requires its own primary terms /
+  contract / attestation source; not blockers for the current report.
+- **P2-10 Foreign-issuer equivalence official Treasury determination**:
+  awaits future Treasury determination, Section 18 reciprocal arrangement
+  or Comptroller registration; not closeable by inference.
+
+Cascaded updates:
+
+- `02_source_digests/payment_settlement_source_digest.md`,
+  `02_source_digests/failure_case_source_digest.md`,
+  `02_source_digests/law_source_digest.md` updated with the new claim
+  cites and v0.3.3 source rows.
+- `04_matrices/payment_settlement_matrix.csv`,
+  `04_matrices/failure_case_matrix.csv`,
+  `04_matrices/law_regulation_comparison_matrix.csv`, and
+  `04_matrices/central_bank_theme_matrix.csv` updated with the new
+  claim cites; matrix count remains 6.
+- `05_chapter_drafts/chapter_04_law_and_regulation.md`,
+  `05_chapter_drafts/chapter_05_central_bank_views.md`,
+  `05_chapter_drafts/chapter_06_usdpt_and_cross_border_payments.md`, and
+  `05_chapter_drafts/chapter_08_failure_cases.md` updated with v0.3.3
+  prose paragraphs and remaining-work pointers.
+- `07_final_report/slide_outline_v0_3.md` slides 36, 37, 38, 39, 40,
+  44, 45 and Appendix A3 updated with the new claim cites and v0.3.3
+  count.
+- `07_final_report/slide_script_v0_3.md` slides 36, 37, 38, 40, 44 and
+  45 rewritten with v0.3.3 body, speaker notes and source-claim
+  pointers.
+- `07_final_report/key_figures.csv` updated: KF_032 and KF_033 refreshed
+  to v0.3.3 counts; KF_035 to KF_040 added for Stable by Western Union
+  country count, Black Thursday auction count / ETH / dollar / DAI
+  figures, and the FSC Chair H2 2026 statement.
+- `00_project_management/unresolved_open_questions.md` rewritten for the
+  v0.3.3 state.
+- `README.md` snapshot counts and "What Changed Since v0.1" updated.
+
 ## v0.3.2 foreign-issuer equivalence screen - 2026-05-26
 
 Current project state:

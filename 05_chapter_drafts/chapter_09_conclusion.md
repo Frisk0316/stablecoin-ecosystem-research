@@ -167,40 +167,49 @@ payment-system implications.
 ## 9.2 What the evidence supports only conditionally
 
 Two findings are central to the policy discussion but supportable
-only under explicit conditions at the v0.3 cut-off.
+only under explicit conditions at the v0.4 cut-off.
 
 ### 9.2.1 USDPT as a payment-system reconfiguration
 
 The Western Union digital-asset network announcement, Anchorage
-Digital Bank as expected issuer per its OCC comment letter, and
-the Fireblocks infrastructure release together support that USDPT
-is being developed as a U.S. dollar payment token on Solana
-intended to bridge digital and fiat workflows
-(`CLAIM_051`–`CLAIM_053`). Beyond that, no claim that USDPT
-replaces SWIFT, correspondent banking, Fedwire, CHIPS, or Western
-Union's consumer-facing remittance rails is supportable, because
-the product terms, reserve report, contract addresses, and
-end-to-end customer-to-customer settlement workflow are not yet
-in the public record. The chapter-6 discussion is therefore
-deliberately conditional. If the missing documents become
-available in v0.4, the framing should move from "planned product"
-to "working system" only along the four-layer separation set out
-in chapter 6 (customer remittance UX, agent network, internal
-and agent settlement, bank or correspondent settlement).
+Digital Bank as expected issuer per its OCC comment letter, the
+Fireblocks infrastructure release, the 2026-05-04 Western Union
+investor-relations launch release, Western Union's product page, and
+Anchorage's reserve-transparency page together support that USDPT is
+being developed as a U.S. dollar payment token on Solana intended to
+bridge digital and fiat workflows (`CLAIM_051` to `CLAIM_053`,
+`CLAIM_132` to `CLAIM_134`, `CLAIM_140` to `CLAIM_143`, `CLAIM_150`,
+`CLAIM_151`). The public record now supports an official Solana contract
+address, broad product-page reserve categories, 1:1 redeemability wording,
+planned / coming-soon select-market exchange, cash-out, card and
+receive-in-USDPT features, and ADB covered-stablecoin terms that bound direct
+ADB redemption to Clients, distinguish Non-Clients, describe a reserve trust
+and ADB sole-obligor role, and reserve legal/control powers. Beyond that, no
+claim that USDPT replaces SWIFT,
+correspondent banking, Fedwire, CHIPS, or Western Union's
+consumer-facing remittance rails is supportable, because USDPT-specific
+retail/user terms, fee schedule, USDPT-specific reserve attestation, exact
+token-control implementation, agent balance-sheet treatment, and the
+end-to-end customer / agent / bank-settlement workflow are not yet in the
+public record. The chapter-6 discussion is therefore deliberately
+conditional along the four-layer separation set out in chapter 6
+(customer remittance UX, agent network, internal and agent settlement,
+bank or correspondent settlement).
 
 ### 9.2.2 Stablecoin payment demand as distinct from on-chain transfer volume
 
 Raw on-chain transfer volume, market capitalisation, and supply
 growth are not direct measures of realised payment usage. The
 adjusted-volume datasets that would address this (Visa Onchain
-Analytics, Artemis methodology beyond `CLAIM_054`, McKinsey /
-Artemis joint analysis) are not in the v0.3 archive. The
-chapter-7 discussion therefore relies on DeFiLlama supply data
-for stablecoin-by-chain composition (`CLAIM_054`-style level) and
-on the qualitative IMF and Fed framing for payment-adoption
-expectations. The final report should not infer realised
-payment-adoption levels from any aggregate volume figure without a
-methodology note explaining the adjustment.
+Analytics, a reproducible Artemis adjusted export beyond `CLAIM_054`,
+Cambridge numerical export, and McKinsey / Artemis joint analysis) are
+still not in the archive. The chapter-7 discussion now relies on
+DeFiLlama supply data for stablecoin-by-chain composition (`CLAIM_055`),
+World Bank remittance-cost benchmark data for off-chain cost context
+(`CLAIM_147`), and qualitative IMF / Fed framing for payment-adoption
+expectations. The final report should not infer realised payment-adoption
+levels from any aggregate volume figure without a methodology note
+explaining the adjustment.
 
 ## 9.3 What remains unresolved
 
@@ -209,16 +218,27 @@ The full unresolved set is in
 are load-bearing for any final-report conclusion and should be
 flagged explicitly.
 
-1. **USDPT product layer.** As discussed in section 9.2.1.
-2. **Adjusted on-chain payment volume.** As discussed in section 9.2.2.
-3. **Taiwan enacted law / sub-rules.** CBC policy framing is now
-   claim-backed (`CLAIM_112`-`CLAIM_118`), but enacted Taiwan
-   stablecoin legislation or sub-rules have not been registered and
-   extracted as separate legal sources.
+1. **USDPT product layer.** As discussed in section 9.2.1, product-page
+   facts and ADB covered-stablecoin terms are now claim-backed, but
+   USDPT-specific retail/user terms, fee schedule, USDPT-specific
+   attestation, exact token-control implementation, agent balance-sheet
+   treatment, and full workflow remain open.
+2. **Adjusted on-chain payment volume.** As discussed in section 9.2.2,
+   World Bank cost benchmark context is now reproducible, but Visa /
+   Artemis / Cambridge adjusted stablecoin-volume exports remain missing.
+3. **Taiwan enacted law / sub-rules.** CBC policy framing is
+   claim-backed (`CLAIM_112`-`CLAIM_118`), and the VASP Act draft is
+   tracked through legislative-stage sources (`CLAIM_138`, `CLAIM_139`,
+   `CLAIM_144`, `CLAIM_145`, `CLAIM_146`), but enacted Taiwan stablecoin legislation
+   or final FSC sub-rules have not been registered and extracted as
+   binding legal sources.
 4. **Failure-case timelines and Maker Black Thursday.** The current
-   case-study layer is source-backed for first-pass qualitative claims,
-   but reproducible price/depeg timelines and Maker Black Thursday
-   primary event extraction are still missing.
+   case-study layer is source-backed for first-pass qualitative claims.
+   Public hourly proxy timelines now cover USDC/SVB, Terra USTC and Maker
+   DAI (`CLAIM_148`, `CLAIM_149`), but Iron Finance still lacks a usable
+   price timeline, exact duration/trough/recovery claims still require
+   higher-quality data, and Maker Black Thursday primary-source extraction
+   remains open.
 
 Foreign-issuer equivalence is no longer a blank unresolved item. Chapter 4 now
 provides a bounded screen: GENIUS Section 18 requires Treasury comparability,
@@ -267,32 +287,37 @@ session.
    whether the regulatory perimeter as drawn matches the
    economic perimeter the instruments occupy.
 
-## 9.5 Suggested directions for v0.4
+## 9.5 Suggested directions after v0.4
 
-Subject to user scope decisions, the highest-leverage v0.4 work is:
+Subject to user scope decisions, the highest-leverage follow-up work is:
 
 - **Taiwan enacted-law extraction**, if official stablecoin
   legislation or sub-rules become available, to separate binding
   law from CBC policy framing.
-- **USDPT product-layer extraction**, conditional on primary
-  product terms, reserve report, contract addresses, and a
-  workflow document becoming available; otherwise USDPT remains
-  frozen.
+- **USDPT product-layer extraction**, conditional on USDPT-specific
+  retail/user terms, fee schedule, reserve attestation, retail/agent eligible
+  redeemer scope beyond ADB Client status, exact token-control documentation,
+  and a workflow document becoming available; otherwise USDPT remains
+  conditional at the v0.4 product-page plus ADB-terms layer.
 - **Adjusted on-chain payment volume**, conditional on a
-  reproducible export from Visa Onchain Analytics, Artemis, or a
-  comparable source becoming available; otherwise the chapter-7
-  discussion stays at the qualitative level.
+  reproducible export from Visa Onchain Analytics, Artemis, Cambridge, or a
+  comparable source becoming available; otherwise the chapter-7 stablecoin
+  payment-demand discussion stays at the qualitative level.
+- **Failure-case data upgrade**, conditional on a paid or exchange-level
+  historical feed becoming available for exact depeg duration, trough and
+  recovery claims, plus a usable Iron Finance IRON/TITAN chronology. The
+  current CryptoCompare export is suitable only as public hourly proxy
+  context.
 - ~~**Data-quality cleanup**: relabel or remove
   `DAI_USDS_003` (Cardano Layer 2 data availability paper unrelated to
   the Maker / Sky stablecoin protocol).~~ **Resolved 2026-05-15**:
   relabelled to `OTHER_CARDANO_SKY_001` (`archive_reference`, low priority).
 
-The v0.3.2 cut-off has 131 claims, 137 registered sources, and a
-chapter set that is internally consistent with both validation
-scripts passing. The next deliverable is either a v0.3 final
-report consolidation, a slide deck for the reading-group
-session, or a v0.4 extraction pass on the items above. The
-choice among these is a user decision.
+The v0.4 cut-off has 154 claims, 148 registered sources, and a
+chapter set that passes the validation scripts and evidence-portal build.
+The next deliverable is
+either a final slide-deck polish pass for the reading-group session or a
+new extraction pass on the source-dependent items above.
 
 ## 9.6 Chapter limitations
 

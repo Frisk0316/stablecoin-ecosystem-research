@@ -14,9 +14,21 @@ Current case anchors:
 - USDC / Silicon Valley Bank depeg (`CLAIM_108`, `CLAIM_109`)
 - Tether / Bitfinex reserve-disclosure controversy (`CLAIM_110`)
 - Iron Finance IRON/TITAN collapse (`CLAIM_111`, medium confidence)
+- MakerDAO Black Thursday 2020-03-12 cascade (`CLAIM_135`, `CLAIM_136`,
+  `CLAIM_137`, medium confidence — community and analyst sources, not
+  Maker Foundation primary)
+- Public hourly proxy timelines for USDC/SVB, Terra USTC and Maker DAI
+  (`CLAIM_148`, `CLAIM_149`; `CRYPTOCOMPARE_001`)
 
-Maker / DAI Black Thursday remains an open case-study target because a primary
-event post-mortem source has not yet been registered.
+The v0.4 failure-case data layer is deliberately bounded. CryptoCompare
+public `histohour` exports provide a reproducible hourly OHLCV proxy for
+selected event windows: USDC/SVB reaches a minimum hourly close of 0.9022
+at 2023-03-11T07:00:00Z, Terra USTC reaches a minimum hourly close of
+0.08716 at 2022-05-13T10:00:00Z, and the Maker DAI Black Thursday window
+shows a maximum hourly high of 1.339 at 2020-03-12T10:00:00Z
+(`CLAIM_149`). These figures are coarse public proxies, not tick-level or
+exchange-level troughs, and the public IRON/TITAN rows are zero-only and
+unusable for Iron Finance timeline claims (`CLAIM_148`).
 
 ## 8.2 Risk Taxonomy
 
@@ -55,10 +67,34 @@ withdrawal and selling pushed IRON off peg and collapsed TITAN (`CLAIM_111`).
 
 ### Crypto-Collateral, Oracle, And Auction Risk
 
-This remains the least complete case-study area. DAI / USDS is already covered
-in the issuer taxonomy as a crypto/RWA-collateralized protocol stablecoin, but
-the project still needs a primary event source for Maker / DAI Black Thursday
-before drafting a concrete failure case.
+DAI / USDS is covered in the issuer taxonomy as a crypto/RWA-collateralized
+protocol stablecoin, and the v0.3.3 update adds MakerDAO Black Thursday
+2020-03-12 as a case study anchored to community and analyst sources. The
+ETH price fell approximately 43% from US$194 to US$111 within a single
+trading day; Ethereum network gas prices spiked over 6x to approximately
+80 Gwei with hourly peaks near 200 Gwei; and the Medianizer price oracle
+lagged the market so the on-chain ETH price showed approximately US$166
+while spot was near US$130, triggering mass undercollateralisation of
+MakerDAO collateralised debt positions (`CLAIM_135`). Because keeper
+scripts could not keep pace with congested gas, 1,462 of 3,994 collateral
+auctions (approximately 36.6%) closed at a 100% discount; approximately
+62,892.93 ETH and a cumulative US$8.325 million were liquidated for zero
+DAI bids, and MakerDAO was left with an estimated 5.67 million DAI of
+undercollateralised loss (`CLAIM_136`). In the days that followed the
+community vetoed an Emergency Shutdown in favour of less drastic
+measures, raised the maximum auction lot size from 50 ETH to 500 ETH and
+extended auction duration, and on 2020-03-19 commenced an MKR Debt
+Auction that minted new MKR for DAI to recapitalise the system
+(`CLAIM_137`). Pair the case with the current Maker / Sky liquidation
+architecture (`CLAIM_098` to `CLAIM_101`) so the historical event is not
+read as a description of current risk: present-day Sky has additional
+governance circuit-breakers and a different collateral mix that the 2020
+architecture did not include.
+
+The Black Thursday anchors are community (Whiterabbit) and analyst
+(Glassnode) sources, not Maker Foundation primary; treat the case as
+medium-confidence and flag the source quality explicitly in any slide or
+report use.
 
 ### Synthetic-Dollar Basis And Funding Risk
 
@@ -88,18 +124,21 @@ The failure-case layer at v0.3 is a first-pass module, not a complete
 incident catalogue. The following limitations apply:
 
 - **Coverage is selective.** Terra UST, USDC/SVB, Tether/Bitfinex, Iron
-  Finance, and DAI are covered (`CLAIM_107`–`CLAIM_111`). Other notable
-  incidents — Maker / DAI Black Thursday, the broader 2022 algorithmic-
-  stablecoin cascade outside Terra, and exchange-driven depegs — are not yet
-  extracted at primary-source level.
+  Finance, and DAI are covered (`CLAIM_107`–`CLAIM_111`); MakerDAO Black
+  Thursday is now covered at community / analyst confidence
+  (`CLAIM_135`–`CLAIM_137`). Other notable incidents — the broader 2022
+  algorithmic-stablecoin cascade outside Terra, and exchange-driven depegs
+  — are not yet extracted.
 - **Some sources are URLs only.** `FAILURE_001`–`FAILURE_006` includes
   several `url_only` entries (Iron Finance post-mortem mirror,
   Tether/Bitfinex settlement PDF, Circle press releases). Page-level
   extraction is incomplete; treat the corresponding claims at the framing
   level rather than as quotable evidence.
-- **No reproducible price/depeg timelines.** Quantitative depeg-duration and
-  recovery-time claims are deferred until the data-export workflow described
-  in chapter 7 produces a reproducible price series.
+- **Public hourly timelines are partial proxies.** `CRYPTOCOMPARE_001`
+  provides reproducible hourly proxy data for USDC/SVB, Terra USTC and
+  Maker DAI (`CLAIM_148`, `CLAIM_149`). It does not support exact
+  tick-level depeg duration, exchange-level troughs or a usable Iron Finance
+  IRON/TITAN timeline.
 - **The Iron Finance source is a mirror.** `CLAIM_111` cites a mirror of the
   original Medium post-mortem; treat as medium confidence until a more
   reliable archive is located.
@@ -112,10 +151,15 @@ For the full backlog see
 
 ## 8.5 Remaining Work
 
-- Register and extract a primary Maker / DAI Black Thursday event source.
+- Upgrade the Maker / DAI Black Thursday anchors from community / analyst
+  (`FAILURE_007`, `FAILURE_008`) to a Maker Foundation or governance-forum
+  primary source if one is added to the archive.
 - Extract `FAILURE_005` settlement PDF sections before writing detailed
   Tether settlement language.
-- Add reproducible price/depeg timelines only after the data export workflow is
-  in place.
+- Upgrade the public hourly CryptoCompare proxy into paid or exchange-level
+  price/depeg timelines when Kaiko, Coin Metrics, Amberdata or similar data
+  becomes available; exact duration/trough/recovery claims should wait for
+  that higher-quality data. Iron Finance remains the main missing timeline
+  because the public CryptoCompare IRON/TITAN export is zero-only.
 - Recover the original Iron Finance post-mortem or triangulate it with a more
   reliable source before treating `CLAIM_111` as high confidence.

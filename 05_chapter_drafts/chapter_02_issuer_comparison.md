@@ -21,15 +21,23 @@ scope: direct issuance/redemption requires a Circle Mint account in good
 standing, and subsequent holders can redeem only if eligible for and registered
 with Circle Mint (`CLAIM_058`). USDC holders are not entitled to reserve
 interest or returns, and USDC itself does not generate holder yield
-(`CLAIM_059`).
+(`CLAIM_059`). Circle's USDC risk factors add an issuer-control boundary:
+Circle may block certain USDC addresses, freeze associated Circle-custodied
+USDC, treat Blocked Address flows as grounds for freeze / account termination,
+and block on-chain transfers to and from an address in extraordinary
+circumstances under its blacklisting policy (`CLAIM_154`).
 
 For USDT, the Q1 2026 reserve report remains the stronger source for assurance
 scope and excess-reserve claims (`CLAIM_002`, `CLAIM_003`). Tether's May 1,
 2026 release adds reserve-composition context: approximately US$141bn of
 direct and indirect U.S. Treasury bill exposure, about US$20bn of physical
 gold, and about US$7bn of Bitcoin (`CLAIM_028`, `CLAIM_029`). These reserve
-composition items should be treated as medium-confidence issuer-release
-claims until reconciled with the full report table.
+composition items are now reconciled against the detailed reserve-table export
+from `USDT_002` (`CLAIM_152`): the report records total reserves/assets of
+US$191.768bn, with US$141.223bn in cash equivalents and other short-term
+deposits, plus precious metals, Bitcoin, public equities, other investments,
+and secured loans. This supports treating USDT as reserve-backed but not as a
+pure cash-equivalent instrument.
 
 Tether terms now narrow direct redemption. Users must be verified Tether
 customers to cause tokens to be issued or redeemed, and the redemption right is
@@ -37,6 +45,11 @@ a personal contractual right (`CLAIM_060`). The same terms define prohibited
 persons/jurisdictions, including U.S. persons except limited discretionary ECP
 acceptance, Canadian/Singaporean persons, sanctioned persons, and prohibited
 jurisdictions (`CLAIM_061`).
+The Q1 2026 report also bounds the issuer/jurisdiction and chain-support
+picture: it describes Tether International as an El Salvador S.A. de C.V.,
+FinCEN MSB, and authorised Stablecoin Issuer / Digital Assets Service Provider
+under El Salvador law, and lists 13 approved blockchains with several legacy
+network redemption obligations already ended (`CLAIM_153`).
 
 For the Paxos family (PYUSD, USDP, USDG), the unified Paxos USD Stablecoin
 Agreement now resolves the issuer-entity, direct-redemption, holder-yield,

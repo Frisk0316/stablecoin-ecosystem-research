@@ -33,7 +33,7 @@ redeem directly, what assets sit behind the liability, where the reserves are
 held, who receives the reserve income, which controls can freeze or suspend
 transfers, and what rights a holder has in stress (`CLAIM_058`, `CLAIM_060`,
 `CLAIM_062`, `CLAIM_065`, `CLAIM_068`, `CLAIM_073`, `CLAIM_077`,
-`CLAIM_086`, `CLAIM_087`). This report therefore treats stablecoins as a
+`CLAIM_086`, `CLAIM_087`, `CLAIM_154`). This report therefore treats stablecoins as a
 legal, balance-sheet, market-infrastructure, and data problem rather than only
 a cryptoasset taxonomy problem.
 
@@ -131,9 +131,9 @@ this structure for USDC, GUSD, Paxos-family stablecoins, RLUSD, and FDUSD
 through issuer reports, terms, or reserve-related claims (`CLAIM_026`,
 `CLAIM_027`, `CLAIM_034`, `CLAIM_075`, `CLAIM_078`, `CLAIM_010`). USDT shares
 the broad reserve-backed framing but has additional asset-mix and disclosure
-issues because issuer-release evidence includes Treasury exposure as well as
-gold and Bitcoin exposure (`CLAIM_002`, `CLAIM_003`, `CLAIM_028`,
-`CLAIM_029`).
+issues because its detailed Q1 2026 table includes Treasury bills, reverse
+repos, cash/bank deposits, precious metals, Bitcoin, public equities, other
+investments, and secured loans (`CLAIM_002`, `CLAIM_003`, `CLAIM_152`).
 
 Crypto/RWA-collateralized stablecoins such as DAI / USDS require a different
 model. Their stability comes from collateral, vaults, liquidation mechanisms,
@@ -171,14 +171,26 @@ repo, short Treasury bills, and Circle Reserve Fund exposure (`CLAIM_026`,
 a Circle Mint account in good standing, and transferred holders can redeem
 directly only if they are eligible for and registered with Circle Mint
 (`CLAIM_058`). USDC holders are not entitled to reserve interest or returns
-(`CLAIM_059`).
+(`CLAIM_059`). Circle's USDC risk factors also add the control layer: Circle
+may block addresses, freeze associated Circle-custodied USDC, and block
+on-chain transfers to and from an address in extraordinary circumstances under
+its blacklisting policy (`CLAIM_154`).
 
 USDT shows a different structure. Tether's Q1 2026 materials are an ISAE 3000R
 assurance report limited to point-in-time financial figures and reserve
 statements, not full financial statements (`CLAIM_002`). Tether terms state
 that issuance/redemption with Tether requires verified-customer status and
 define restrictions around prohibited persons and jurisdictions (`CLAIM_060`,
-`CLAIM_061`).
+`CLAIM_061`). The detailed Q1 2026 reserve-table export from `USDT_002`
+records total reserves/assets of US$191.768bn, including US$117.036bn U.S.
+Treasury bills, US$19.335bn overnight reverse repos, US$4.746bn term reverse
+repos, US$107.0m cash/bank deposits, US$19.838bn precious metals,
+US$6.624bn Bitcoin, US$3.408bn public equities, US$4.843bn other investments,
+and US$15.830bn secured loans (`CLAIM_152`). The same report describes
+Tether International as an El Salvador S.A. de C.V., FinCEN MSB, and
+authorised Stablecoin Issuer / Digital Assets Service Provider under El
+Salvador law, and lists 13 approved blockchains with several discontinued or
+scheduled-to-end redemption obligations (`CLAIM_153`).
 
 Paxos-family stablecoins also require careful separation of product identity
 and holder rights. Paxos terms identify the issuer allocation across USDP,
@@ -223,10 +235,11 @@ reserve managers, custodians, and banking partners.
 
 USDT's reserve profile is not identical to those issuer models. Tether
 materials support point-in-time assurance and reserve-surplus claims
-(`CLAIM_002`, `CLAIM_003`), while issuer-release evidence adds large U.S.
-Treasury exposure plus gold and Bitcoin exposure (`CLAIM_028`, `CLAIM_029`).
-The asset mix therefore matters for both liquidity analysis and disclosure
-analysis.
+(`CLAIM_002`, `CLAIM_003`), and the detailed reserve-table extraction adds
+U.S. Treasury bills, overnight and term reverse repos, cash/bank deposits,
+precious metals, Bitcoin, public equities, other investments, and secured
+loans (`CLAIM_152`). The asset mix therefore matters for both liquidity
+analysis and disclosure analysis.
 
 Reserve-income allocation is central. A fiat-backed stablecoin may be marketed
 as stable for the holder, but reserve returns generally accrue to the issuer or
@@ -339,6 +352,15 @@ coordination (`CLAIM_115`, `CLAIM_118`). CBC also expects current domestic
 payment, M2, bank-credit and monetary-policy effects to be limited under
 current market conditions (`CLAIM_116`, `CLAIM_117`).
 
+The legal layer remains legislative-stage rather than enacted law. The record
+now supports a timeline from FSC public timing statements and draft-law
+commentary (`CLAIM_138`, `CLAIM_139`) through Executive Yuan approval /
+Legislative Yuan submission on 2026-04-02 (`CLAIM_144`), 2026-06-03
+committee-stage news (`CLAIM_145`), and an official Legislative Yuan docket
+showing Finance Committee review entries through 2026-06-03 with gazette
+production pending (`CLAIM_146`). This does not establish final statutory
+requirements or FSC sub-rules.
+
 ## 7. Stablecoins In Payment And Settlement
 
 Stablecoins can improve some payment workflows, but the analysis must separate
@@ -358,15 +380,32 @@ announcement and launch materials state that USDPT is built on Solana, issued
 by Anchorage Digital Bank or Anchorage Digital Bank N.A., fully backed by U.S.
 dollars, and intended for real-world payment systems (`CLAIM_051`,
 `CLAIM_052`). Fireblocks material adds wallet, settlement, agent-settlement,
-treasury/operations, and MT940/MT942 reporting context (`CLAIM_053`).
+treasury/operations, and MT940/MT942 reporting context (`CLAIM_053`). The
+2026-05-04 Western Union investor-relations launch release adds a Digital
+Asset Network, Treasury and Agent Settlement use case, and separate Stable by
+Western Union consumer-spend layer (`CLAIM_132` to `CLAIM_134`). Western
+Union's product page adds broad reserve categories, 1:1 redeemability wording,
+the official Solana contract address, and planned / coming-soon select-market
+exchange, cash-out, card and receive-in-USDPT features (`CLAIM_140` to
+`CLAIM_142`). Anchorage's transparency page identifies the USDPT reserve
+report slot but marks it "Coming soon" (`CLAIM_143`).
+Anchorage Digital Bank's Covered Stablecoin Terms add an ADB-level legal
+boundary: ADB-issued series are issued and redeemed directly only to Clients,
+Non-Clients are not ADB customers under the terms, the reserve is described as
+a Covered Stablecoin Reserve trust, ADB is sole issuer and sole obligor, brand
+partners are service providers rather than obligors, par value applies only to
+direct Client redemption with ADB, and ADB reserves legal/regulatory freeze or
+restriction powers (`CLAIM_150`, `CLAIM_151`).
 
 The current defensible conclusion is that Western Union is attempting to use
 USDPT and related infrastructure to build a regulated digital-asset settlement
 layer. It is not yet defensible to claim that USDPT replaces SWIFT,
 correspondent banking, Fedwire, CHIPS, Western Union's consumer front end, or
-all traditional remittance rails. Product terms, reserve reports, contract
-addresses, direct redemption mechanics, and end-to-end workflow documents
-remain blockers.
+all traditional remittance rails. USDPT-specific retail/user terms, fee
+schedule, a USDPT-specific reserve attestation, exact token-control
+implementation, retail/agent eligible-redeemer scope beyond ADB Client status,
+agent balance-sheet treatment, and end-to-end workflow documents remain
+blockers.
 
 ## 8. On-Chain Data And Payment Demand
 
@@ -380,6 +419,11 @@ transaction, supply, and address-level schemas with filter categories
 analysis (`CLAIM_055`). The repository now includes reproducible DeFiLlama
 exports under `09_data_exports`, but those exports should be treated as supply
 and chain-distribution evidence rather than adjusted payment-flow evidence.
+The repository also now includes a reproducible World Bank remittance-cost
+benchmark export using WDI API indicator `SI.RMT.COST.IB.ZS`, with 17,556
+country/region-year rows and a 104-row latest non-null benchmark file
+(`CLAIM_147`). That benchmark is useful for off-chain cost context, not for
+measuring stablecoin payment adoption.
 
 The methodological problem is that raw transfers can include exchange
 deposits/withdrawals, internal treasury operations, bridge movements,
@@ -433,7 +477,21 @@ reserve composition beyond the source.
 DAI / USDS requires a collateral, oracle, liquidation, and governance stress
 framework. Current claims support vaults, auctions, keepers, oracles,
 governance, and loss-absorption structure (`CLAIM_098` to `CLAIM_102`), but
-Maker Black Thursday remains an important open extraction target.
+Maker Black Thursday now has community / analyst event anchors for the ETH
+price shock, gas spike, oracle lag, zero-bid auction losses, governance
+response and 2020-03-19 MKR Debt Auction (`CLAIM_135` to `CLAIM_137`). A
+Maker Foundation or governance-forum primary source would still upgrade the
+case-study confidence.
+
+The repository now also includes public hourly failure-case proxy timelines
+from CryptoCompare (`CRYPTOCOMPARE_001`). These exports support coarse
+event-window context for USDC/SVB, Terra USTC and Maker DAI (`CLAIM_148`,
+`CLAIM_149`): for example, the selected windows show a USDC minimum hourly
+close of 0.9022 on 2023-03-11T07:00:00Z, a USTC minimum hourly close of
+0.08716 on 2022-05-13T10:00:00Z, and a Maker DAI maximum hourly high of
+1.339 on 2020-03-12T10:00:00Z. These figures should not be treated as
+tick-level or exchange-level troughs, and the public IRON/TITAN rows are
+zero-only and unusable for Iron Finance timeline claims.
 
 USDe requires a synthetic-dollar stress framework. The relevant risks are not
 limited to reserve backing. Evidence points to hedging, off-exchange custody,
@@ -466,14 +524,24 @@ source-grounded CBC framing: USD stablecoins raise digital-dollarisation and
 FX-monitoring concerns, while NTD stablecoins are closer to tokenized
 electronic-payment stored value with reserve, disclosure, no-yield and
 rulemaking constraints (`CLAIM_112`-`CLAIM_118`).
+The VASP Act draft is now traceable through Executive Yuan submission and
+Legislative Yuan committee-stage docket evidence (`CLAIM_138`-`CLAIM_146`),
+but Taiwan enacted-law conclusions still require enacted statutory text and
+final FSC sub-rules.
 
-The next research priorities are clear. First, complete USDPT product terms,
-reserve-report, contract-address, and redemption-mechanics extraction. Second,
+The next research priorities are clear. First, complete USDPT-specific
+retail/user terms, fee schedule, USDPT-specific reserve attestation,
+retail/agent eligible redeemer scope beyond ADB Client status, exact
+token-control and workflow extraction. Second,
 build adjusted on-chain payment-demand exports rather than relying on raw
-volume. Third, extract Taiwan enacted-law/sub-rule materials if official
-texts become available. Fourth, complete Maker Black Thursday and additional
-USDe stress evidence. Fifth, maintain the evidence portal so every major
-paragraph can be audited back to its claim and source.
+volume; World Bank cost context is now available, but Visa / Artemis /
+Cambridge adjusted stablecoin exports are still missing. Third, extract
+Taiwan enacted-law/sub-rule materials if official texts become available.
+Fourth, upgrade failure-case timelines from public hourly proxies to
+higher-quality or paid feeds where exact duration, trough and recovery claims
+are required, and obtain a usable Iron Finance IRON/TITAN chronology. Fifth,
+complete additional USDe stress evidence. Sixth, maintain the evidence portal
+so every major paragraph can be audited back to its claim and source.
 
 ## Appendix A - Issuer Comparison Matrix
 
@@ -486,7 +554,7 @@ sources, and confidence.
 
 For the current report, the most important issuer-comparison anchors are USDC
 reserve and Circle Mint redemption claims (`CLAIM_026`, `CLAIM_027`,
-`CLAIM_058`, `CLAIM_059`), Tether reserve and verified-customer redemption
+`CLAIM_058`, `CLAIM_059`, `CLAIM_154`), Tether reserve and verified-customer redemption
 claims (`CLAIM_002`, `CLAIM_003`, `CLAIM_028`, `CLAIM_029`, `CLAIM_060`,
 `CLAIM_061`), Paxos-family terms (`CLAIM_072` to `CLAIM_076`), GUSD terms
 (`CLAIM_077` to `CLAIM_079`), FDUSD terms (`CLAIM_062` to `CLAIM_064`), DAI /
@@ -537,7 +605,7 @@ important claim groups for this report are:
 | `CLAIM_026`-`CLAIM_034` | Reserve and issuer evidence for major fiat-backed stablecoins |
 | `CLAIM_036`-`CLAIM_043` | NYDFS and MiCA baseline rules |
 | `CLAIM_046`-`CLAIM_050` | Fed and IMF views on banking, credit, run risk, and payment competition |
-| `CLAIM_051`-`CLAIM_053` | Western Union USDPT and payment-settlement infrastructure |
+| `CLAIM_051`-`CLAIM_053` | Western Union USDPT launch and payment-settlement infrastructure |
 | `CLAIM_054`-`CLAIM_055` | On-chain data and DeFiLlama supply/chain evidence |
 | `CLAIM_058`-`CLAIM_079` | Issuer terms, redemption eligibility, yield, controls, and reserve terms |
 | `CLAIM_082`-`CLAIM_097` | GENIUS Act, BoE, ESMA/EBA, and MiCA significant-token rules |
@@ -547,6 +615,16 @@ important claim groups for this report are:
 | `CLAIM_119`-`CLAIM_121` | CLARITY Act stablecoin-specific market-structure provisions |
 | `CLAIM_122`-`CLAIM_125` | MiCA EMT white-paper, liability, marketing, and recovery/redemption rules |
 | `CLAIM_126`-`CLAIM_131` | GENIUS foreign-issuer screen, MiCA EMT eligibility/no-interest/supervision, and BoE cross-border equivalence screen |
+| `CLAIM_132`-`CLAIM_134` | Western Union Digital Asset Network, Treasury and Agent Settlement, and Stable by WU layer separation |
+| `CLAIM_135`-`CLAIM_137` | Maker / DAI Black Thursday community and analyst event anchors |
+| `CLAIM_138`-`CLAIM_139` | Taiwan VASP Act legislative-stage timing and draft-law commentary |
+| `CLAIM_140`-`CLAIM_143` | USDPT product-page reserve categories, official Solana address, customer-feature direction, and Anchorage report-slot status |
+| `CLAIM_144`-`CLAIM_146` | Taiwan Executive Yuan / Legislative Yuan Finance Committee / official docket legislative-stage update |
+| `CLAIM_147` | World Bank remittance-cost benchmark data export |
+| `CLAIM_148`-`CLAIM_149` | CryptoCompare public hourly failure-case proxy timeline export and selected summary metrics |
+| `CLAIM_150`-`CLAIM_151` | Anchorage Digital Bank covered-stablecoin Client / Non-Client, reserve-trust, sole-obligor, brand-partner and legal-control terms |
+| `CLAIM_152`-`CLAIM_153` | USDT Q1 2026 detailed reserve-table extraction and Tether International entity/blockchain boundary |
+| `CLAIM_154` | Circle USDC risk-factor address-blocking, freezing and blacklisting-policy controls |
 
 ## Appendix E - Source Registry
 

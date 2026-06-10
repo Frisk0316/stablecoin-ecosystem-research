@@ -1,0 +1,105 @@
+country_id,country_name,countryiso3code,year,indicator_id,indicator_name,value_percent,unit,obs_status,decimal
+AF,Afghanistan,AFG,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),9.0243334,,,2
+AO,Angola,AGO,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),12.784,,,2
+AL,Albania,ALB,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.60000025,,,2
+AM,Armenia,ARM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.363333,,,2
+AZ,Azerbaijan,AZE,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.33333,,,2
+BJ,Benin,BEN,2020,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),17.35026,,,2
+BD,Bangladesh,BGD,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),7.65472241666667,,,2
+BG,Bulgaria,BGR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.45964275,,,2
+BA,Bosnia and Herzegovina,BIH,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.863333,,,2
+BY,Belarus,BLR,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.31667,,,2
+BO,Bolivia,BOL,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.4495835,,,2
+BR,Brazil,BRA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.422778,,,2
+BW,Botswana,BWA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),8.412857,,,2
+CN,China,CHN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.826364625,,,2
+CI,Cote d'Ivoire,CIV,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.743333,,,2
+CM,Cameroon,CMR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.023333,,,2
+CD,"Congo, Dem. Rep.",COD,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.98,,,2
+CO,Colombia,COL,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.434,,,2
+KM,Comoros,COM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.743333,,,2
+CV,Cabo Verde,CPV,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.4375,,,2
+CR,Costa Rica,CRI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.26,,,2
+CU,Cuba,CUB,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),19.63,,,2
+DO,Dominican Republic,DOM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.51977766666667,,,2
+DZ,Algeria,DZA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),7.83,,,2
+EC,Ecuador,ECU,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.29555566666667,,,2
+EG,"Egypt, Arab Rep.",EGY,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.30309514285714,,,2
+ER,Eritrea,ERI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),9.16,,,2
+EE,Estonia,EST,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.75,,,2
+ET,Ethiopia,ETH,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.41479175,,,2
+FJ,Fiji,FJI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.2245835,,,2
+GE,Georgia,GEO,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.8475,,,2
+GH,Ghana,GHA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.0085,,,2
+GM,"Gambia, The",GMB,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),6.76,,,2
+GT,Guatemala,GTM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.556667,,,2
+GY,Guyana,GUY,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),7.925,,,2
+HN,Honduras,HND,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.6233335,,,2
+HR,Croatia,HRV,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.266,,,2
+HT,Haiti,HTI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.70020825,,,2
+HU,Hungary,HUN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.613889,,,2
+ID,Indonesia,IDN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.43805555555556,,,2
+IN,India,IND,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.75675,,,2
+JM,Jamaica,JAM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.59333333333333,,,2
+JO,Jordan,JOR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.35166666666667,,,2
+KZ,Kazakhstan,KAZ,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.16667,,,2
+KE,Kenya,KEN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.85997216666667,,,2
+KG,Kyrgyz Republic,KGZ,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.22,,,2
+KH,Cambodia,KHM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.12,,,2
+LA,Lao PDR,LAO,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.873333,,,2
+LB,Lebanon,LBN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.278541625,,,2
+LR,Liberia,LBR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.833333,,,2
+LK,Sri Lanka,LKA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.1860001,,,2
+LS,Lesotho,LSO,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.82,,,2
+LT,Lithuania,LTU,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.4,,,2
+LV,Latvia,LVA,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.08,,,2
+MA,Morocco,MAR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.173619,,,2
+MD,Moldova,MDA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.0141665,,,2
+MG,Madagascar,MDG,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.925,,,2
+MX,Mexico,MEX,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.653333,,,2
+MK,North Macedonia,MKD,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.105,,,2
+ML,Mali,MLI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.72666666666667,,,2
+MM,Myanmar,MMR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.04,,,2
+MZ,Mozambique,MOZ,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.785,,,2
+MW,Malawi,MWI,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),-49.693334,,,2
+MY,Malaysia,MYS,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.98375,,,2
+NG,Nigeria,NGA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.63537033333333,,,2
+NI,Nicaragua,NIC,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.333333,,,2
+NP,Nepal,NPL,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.5303125,,,2
+PK,Pakistan,PAK,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.13861108333333,,,2
+PA,Panama,PAN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.49,,,2
+PE,Peru,PER,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.56916675,,,2
+PH,Philippines,PHL,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.67202385714286,,,2
+PL,Poland,POL,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.8733335,,,2
+PY,Paraguay,PRY,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.66,,,2
+PS,West Bank and Gaza,PSE,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.965,,,2
+RO,Romania,ROU,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.87333325,,,2
+RW,Rwanda,RWA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.75833325,,,2
+SD,Sudan,SDN,2016,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.66914333333333,,,2
+SN,Senegal,SEN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.72,,,2
+SL,Sierra Leone,SLE,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),10.34,,,2
+SV,El Salvador,SLV,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2,,,2
+SO,"Somalia, Fed. Rep.",SOM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),6.0086666,,,2
+RS,Serbia,SRB,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.937,,,2
+SS,South Sudan,SSD,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),6.47,,,2
+SR,Suriname,SUR,2017,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.83512,,,2
+SZ,Eswatini,SWZ,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),1.82,,,2
+SY,Syrian Arab Republic,SYR,2016,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),10.71429,,,2
+TG,Togo,TGO,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.06125,,,2
+TH,Thailand,THA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.024,,,2
+TJ,Tajikistan,TJK,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),10.33,,,2
+TO,Tonga,TON,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.096667,,,2
+TN,Tunisia,TUN,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.5366665,,,2
+TR,Turkiye,TUR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.34041675,,,2
+TZ,Tanzania,TZA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.29555533333333,,,2
+UG,Uganda,UGA,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),8.861667,,,2
+UA,Ukraine,UKR,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),0.7175,,,2
+UZ,Uzbekistan,UZB,2021,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.08667,,,2
+VN,Viet Nam,VNM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.45576391666667,,,2
+VU,Vanuatu,VUT,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),9.4916665,,,2
+WS,Samoa,WSM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.5941665,,,2
+XK,Kosovo,XKX,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),3.42125,,,2
+YE,"Yemen, Rep.",YEM,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),2.805,,,2
+ZA,South Africa,ZAF,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),4.5541665,,,2
+ZM,Zambia,ZMB,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),8.1283335,,,2
+ZW,Zimbabwe,ZWE,2023,SI.RMT.COST.IB.ZS,Average transaction cost of sending remittances to a specific country (%),5.2595,,,2

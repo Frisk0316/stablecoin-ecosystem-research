@@ -1,11 +1,13 @@
 # Chapter 7 - On-chain Data and Payment Demand
 
-Working status: partially upgraded after deficiency-source recovery (v0.3).
+Working status: partially upgraded after deficiency-source recovery and v0.4
+data-export work.
 This chapter is **not** ready to support final quantitative conclusions
 about realised payment demand. Adjusted-volume exports and methodology
 reconciliation between data providers are still incomplete. The chapter's
-contribution at v0.3 is therefore a **methodology guardrail and a data-source
-map**, not a payment-adoption study.
+contribution at v0.4 is therefore a **methodology guardrail, a data-source
+map, and an off-chain remittance-cost benchmark**, not a payment-adoption
+study.
 
 ## Core methodological position
 
@@ -45,7 +47,7 @@ map, not a quality ranking:
 | Visa Onchain Analytics | Stablecoin transactions and volume dashboards | Yes (methodology not yet extracted) | `VISA_001`, `VISA_002` | No — dynamic dashboard shells only |
 | Cambridge Digital Money Dashboard | Cross-protocol digital-money activity | Methodology page archived | `CAMBRIDGE_001`, `CAMBRIDGE_002` | No |
 | Artemis | Transfer volume, transactions, supply, addresses across 18+ chains with `None`, `ARTEMIS`, `P2P` filters | Yes (filter framework documented) | `ARTEMIS_001`, `ARTEMIS_003` | No |
-| World Bank Remittance Prices Worldwide | Off-chain remittance corridor pricing | N/A — off-chain benchmark | `WB_RPW_001` | No |
+| World Bank remittance cost indicator | Off-chain remittance-cost benchmark | N/A - off-chain benchmark | `WB_RPW_001`, `WB_RPW_002` | Yes - `09_data_exports/remittance_benchmark/` |
 | McKinsey / Artemis joint piece | Adjusted-volume methodology essay | Yes | `MCKINSEY_ARTEMIS_001` | Status: `manual_needed` |
 
 Two observations follow:
@@ -54,9 +56,11 @@ Two observations follow:
    claim level is Artemis (`CLAIM_054`), which describes its `None`,
    `ARTEMIS`, and `P2P` filters. Visa's adjusted methodology is referenced
    on the dashboard but not yet extracted into a claim.
-2. The only reproducible export currently in this repo is the DeFiLlama
-   supply and chain-distribution layer (`CLAIM_055`). That layer is supply
-   evidence, not adjusted payment-volume evidence.
+2. The reproducible exports currently in this repo are the DeFiLlama
+   supply and chain-distribution layer (`CLAIM_055`) and the World Bank
+   remittance-cost benchmark (`CLAIM_147`). The DeFiLlama layer is supply
+   evidence, while the World Bank layer is off-chain cost context; neither is
+   adjusted stablecoin payment-volume evidence.
 
 ## What each source can support
 
@@ -72,24 +76,32 @@ Two observations follow:
 - **Artemis** supports filtered transfer-volume analysis at the chain and
   filter level (`CLAIM_054`), but the project does not yet have a
   reproducible Artemis export.
-- **World Bank Remittance Prices Worldwide** supports **off-chain** corridor
-  pricing benchmarks, not stablecoin usage evidence. Use only as a cost
-  comparator, never as direct adoption evidence.
+- **World Bank remittance cost benchmark** supports **off-chain** remittance
+  cost context. The v0.4 export uses WDI API indicator `SI.RMT.COST.IB.ZS`
+  and writes a 17,556-row country/region-year CSV plus a 104-row latest
+  non-null benchmark file (`CLAIM_147`). Use it only as a cost comparator,
+  never as direct stablecoin usage evidence.
 
 ## Reproducible exports currently shipped
 
-The v0.2 data-export pass adds a reproducible local workflow:
+The data-export layer now ships reproducible local workflows:
 
 - `09_data_exports/scripts/build_defillama_exports.py`
 - `09_data_exports/notebooks/stablecoin_market_data_workflow.ipynb`
 - `09_data_exports/stablecoin_supply/defillama_stablecoin_supply_snapshot.csv`
 - `09_data_exports/stablecoin_supply/defillama_stablecoin_chain_distribution.csv`
+- `09_data_exports/scripts/build_worldbank_remittance_benchmark.py`
+- `09_data_exports/remittance_benchmark/worldbank_si_rmt_cost_ib_zs_raw.json`
+- `09_data_exports/remittance_benchmark/worldbank_remittance_cost_by_country_year.csv`
+- `09_data_exports/remittance_benchmark/worldbank_remittance_cost_latest_by_country.csv`
 - `09_data_exports/data_manifest.csv`
 
-These outputs are **supply and chain-distribution evidence only**. They
-should be cited together with `CLAIM_055` and the data-manifest limitations.
-The folder README (`09_data_exports/README.md`) carries the standing warning
-not to use these exports for payment-demand claims.
+The DeFiLlama outputs are **supply and chain-distribution evidence only** and
+should be cited together with `CLAIM_055`. The World Bank outputs are
+**off-chain remittance-cost benchmark evidence only** and should be cited
+together with `CLAIM_147`. The folder README (`09_data_exports/README.md`)
+carries the standing warning not to use either export for stablecoin
+payment-demand claims.
 
 ## Claims explicitly **not** supported in this build
 
@@ -105,7 +117,9 @@ out of the final report unless adjusted-volume exports become available:
 
 Each of these statements requires a paired (i) adjusted-volume methodology
 that is cited and reproducible and (ii) a comparable off-chain benchmark
-with matching definitions and time windows. The project has neither at v0.3.
+with matching definitions and time windows. The project now has an off-chain
+World Bank cost benchmark, but still lacks the adjusted stablecoin
+payment-volume side of the comparison.
 
 ## Open methodology questions
 
@@ -122,14 +136,15 @@ with matching definitions and time windows. The project has neither at v0.3.
 
 ## Chapter limitations
 
-- Only two claims (`CLAIM_054`, `CLAIM_055`) anchor this chapter. All
-  quantitative inference about payment demand is therefore deliberately
-  excluded.
+- Three claims (`CLAIM_054`, `CLAIM_055`, `CLAIM_147`) anchor this chapter.
+  Quantitative inference about stablecoin payment demand is still
+  deliberately excluded.
 - Visa Onchain Analytics, Cambridge, and Artemis dashboards are archived as
   shells; their adjusted-volume series are not reproducible from this repo.
 - `MCKINSEY_ARTEMIS_001` is `manual_needed` and remains unfetched.
-- World Bank remittance data is registered but not extracted; corridor-level
-  comparisons are not yet possible.
+- World Bank remittance-cost benchmark data is now reproducibly exported, but
+  stablecoin corridor-flow data is not. Corridor-level stablecoin-versus-RPW
+  comparisons are therefore still not possible.
 - AGENTS.md rule 5 is the load-bearing red line here: do not equate raw
   on-chain transfer volume with real payment volume.
 
@@ -144,5 +159,6 @@ with matching definitions and time windows. The project has neither at v0.3.
 - Add a single common-definition table that records, for each provider,
   what counts as "payment" and what is excluded, so the report can compare
   series like-for-like rather than headline-to-headline.
-- Add World Bank corridor pricing only as an off-chain benchmark, never as
-  direct stablecoin usage evidence.
+- If corridor-level RPW pricing is needed beyond the WDI benchmark indicator,
+  obtain or manually download the full RPW Excel dataset and document the
+  transformation separately.

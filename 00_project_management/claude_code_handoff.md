@@ -144,16 +144,23 @@ Updated:
 
 ## Remaining Priority Work
 
-1. USDPT primary documentation: product terms, reserve report, contract
-   addresses, direct redemption eligibility, and customer-to-customer
-   settlement workflow.
+1. USDPT primary documentation: USDPT-specific retail/user terms, fee
+   schedule, reserve report, supported chain/network details beyond the
+   disclosed Solana address, retail/agent direct redemption eligibility beyond
+   ADB Client status, exact token-control implementation, and
+   customer-to-customer settlement workflow. ADB Covered Stablecoin Terms are
+   now registered as `USDPT_011` / `CLAIM_150` / `CLAIM_151`.
 2. Adjusted payment-volume exports: Visa adjusted volume, Artemis
-   reproducible methodology, Cambridge numerical export, World Bank
-   benchmark export, and McKinsey / Artemis local archive.
+   reproducible methodology, Cambridge numerical export, and McKinsey /
+   Artemis local archive. The World Bank off-chain remittance-cost benchmark
+   export is now available, but it is not adjusted stablecoin payment volume.
 3. Taiwan enacted legal text and sub-rules if official statutory or FSC/CBC
    materials become available after the CBC policy papers.
-4. Failure-case data workflows: reproducible price/depeg timelines and Maker
-   / DAI Black Thursday primary event extraction.
+4. Failure-case data workflows: Iron Finance still lacks a usable price
+   timeline, exact trough/duration/recovery claims still require higher-quality
+   data, and Maker / DAI Black Thursday primary event extraction remains open.
+   Public hourly proxy timelines are now available for USDC/SVB, Terra USTC
+   and Maker DAI.
 5. Remaining issuer details: USDT full reserve table, Circle Reserve Fund
    breakdown, RLUSD/GUSD smart-contract control terms, FDUSD entity/custody
    map, Maker RWA/PSM mechanics, and USDe exchange-exposure scenarios.

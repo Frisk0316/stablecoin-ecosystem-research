@@ -15,12 +15,15 @@ bills, repo, and government money market fund infrastructure.
 
 USDT evidence now distinguishes assurance scope from reserve composition. The
 Q1 2026 reserve report supports point-in-time assurance and reserve surplus
-claims (`CLAIM_002`, `CLAIM_003`). Tether's May 1, 2026 official release adds
-medium-confidence composition claims: about US$141bn of direct and indirect
-U.S. Treasury bill exposure, about US$20bn of physical gold, and about US$7bn
-of Bitcoin (`CLAIM_028`, `CLAIM_029`). This means USDT should not be modeled
-as a pure Treasury-bill cash substitute; the reserve-backed category includes
-non-cash and non-Treasury exposures.
+claims (`CLAIM_002`, `CLAIM_003`). The detailed reserve table is now exported
+from `USDT_002` (`CLAIM_152`): total reserves/assets were US$191.768bn at
+2026-03-31 23:59 UTC, including US$117.036bn U.S. Treasury bills,
+US$19.335bn overnight reverse repos, US$4.746bn term reverse repos,
+US$107.0m cash/bank deposits, US$19.838bn precious metals, US$6.624bn Bitcoin,
+US$3.408bn public equities, US$4.843bn other investments, and US$15.830bn
+secured loans. This means USDT should not be modeled as a pure Treasury-bill
+cash substitute; the reserve-backed category includes non-cash and
+non-Treasury exposures.
 
 GUSD reserve evidence now identifies deposits at FDIC-insured banks, money
 market funds invested only in U.S. Treasury obligations, and U.S. Treasury
@@ -97,8 +100,8 @@ when estimating stablecoin-driven T-bill demand.
 - Which issuers hold direct T-bills versus MMF shares versus repo exposure?
 - How much reserve liquidity is held in uninsured bank deposits?
 - How quickly could redemptions force asset liquidation?
-- Can Tether's Q1 2026 full reserve table be extracted from `USDT_002` to
-  reconcile issuer-release composition figures?
+- For Tether, which custodian, repo counterparty, maturity ladder, and
+  liquidity-stress details sit behind the extracted Q1 2026 reserve categories?
 - Which product terms define the legally enforceable direct redemption right,
   and how do they differ from broad issuer transparency statements?
 - How should reserve-income capture by issuers be compared with explicit

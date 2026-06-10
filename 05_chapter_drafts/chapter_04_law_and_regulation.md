@@ -269,8 +269,44 @@ market-structure bill for securities-law perimeter and intermediary conduct,
 not a reserve, redemption, or foreign-access regime (`CLAIM_119` to
 `CLAIM_121`).
 
+## Taiwan VASP Act (legislative-stage)
+
+Taiwan's draft Virtual Asset Service Provider (VASP) Act is now claim-backed
+at legislative-stage rather than enacted-text level. FSC Chairman Peng
+Jin-lung publicly stated on 2025-12-03 that Taiwan's first regulated
+stablecoin may enter the market in the latter half of 2026 at the earliest
+and that an additional six-month buffer will be required after the FSC
+announces subordinate regulations before the law takes effect (`CLAIM_138`).
+Earlier draft-mechanics commentary describes domestic stablecoin issuance
+approval, consent before foreign-issued stablecoins can be traded on Taiwan's
+VASP platforms, reserve / audit / disclosure obligations, and subordinate
+regulations in preparation (`CLAIM_139`).
+
+The official Executive Yuan update dated 2026-04-02 moves the draft from
+executive review to cabinet approval and submission to the Legislative Yuan;
+the release states that the proposed act covers VASPs and stablecoin issuers
+and aims to strengthen financial soundness, segregated custody and
+unfair-trading safeguards (`CLAIM_144`). As of 2026-06-03, local press
+reporting states that the Legislative Yuan Finance Committee completed first
+review of the draft and that the committee-stage draft includes stablecoin
+licensing, full reserves separated from issuer assets, and fraud /
+manipulation penalties (`CLAIM_145`). The official Legislative Yuan bill
+detail for the Executive Yuan draft records Finance Committee review entries
+on 2026-05-07, 2026-06-01 and 2026-06-03, with gazette production pending
+for the June entries (`CLAIM_146`).
+
+Research boundary: all five Taiwan VASP anchors (`TAIWAN_VASP_001` to
+`TAIWAN_VASP_005`) are legislative-stage sources. They support
+legislative-timeline framing only. They do not establish binding rules at the
+level of GENIUS, MiCA, BoE or NYDFS, and should not be presented as enacted
+Taiwan stablecoin law. Pair them with the CBC policy synthesis at
+`CLAIM_112` to `CLAIM_118` in chapter 5 but keep both layers separate.
+
 ## Remaining work
 
-- Register and extract enacted Taiwan stablecoin legislation or sub-rules
-  separately if they become available; CBC materials are policy framing, not
-  enacted statute.
+- Register enacted Taiwan VASP Act statutory text or FSC sub-rules
+  separately from `TAIWAN_VASP_001` to `TAIWAN_VASP_005` if and when they
+  become available; the legislative-stage anchors should be upgraded but not
+  retroactively reclassified as enacted text.
+- Supplement `TAIWAN_VASP_004` / `TAIWAN_VASP_005` with the final Legislative
+  Yuan committee report, gazette text or consolidated bill text if available.

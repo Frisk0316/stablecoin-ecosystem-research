@@ -1,4 +1,4 @@
-# Payment and Settlement Source Digest v0.3
+# Payment and Settlement Source Digest v0.3.3
 
 ## CPMI Correspondent Banking 2016
 This source defines correspondent banking as a network of bank relationships that enables access to cross-border financial services and payments. It is important for distinguishing messaging, banking relationships, compliance/KYC costs, and actual settlement.
@@ -19,24 +19,68 @@ Digital Asset Network intended to bridge digital and fiat worlds
 as a U.S. dollar-denominated payment stablecoin, fully backed by U.S. dollars,
 issued by Anchorage Digital Bank N.A., and built on Solana (`CLAIM_052`).
 
+The 2026-05-04 Western Union investor-relations launch release (`USDPT_007`)
+now also supports three further architectural claims at primary-source level:
+the **Digital Asset Network** is described as the component bridging licensed
+virtual currency exchanges and custodians to Western Union's global payout and
+liquidity infrastructure (`CLAIM_132`); **Treasury and Agent Settlement** is
+named as a USDPT use case enabling near-instant 24/7 settlement between
+Western Union and its global agents, which anchors USDPT evidence to the
+internal-treasury and agent-reconciliation layer rather than to the retail
+cash-out layer (`CLAIM_133`); and **Stable by Western Union** is announced as
+a separate consumer-facing spend capability launching in 2026 in 40+
+countries, which must be kept distinct from USDPT issuance and settlement
+(`CLAIM_134`).
+
 The Fireblocks partnership release supports operational-infrastructure context:
 wallet, settlement, and financial-operations infrastructure; agent settlement
 in USDPT; Dynamic embedded wallets; and TRES translation of onchain data into
 SWIFT MT940/MT942 formats (`CLAIM_053`). This is secondary evidence and should
 not be used as product terms.
 
-Open points remain: direct holder redemption, reserve report, contract
-addresses, customer eligibility, agent cash-out workflow, and whether USDPT
-changes customer-facing remittance rails, back-end treasury settlement, or both.
+The Western Union USDPT product page (`USDPT_005`) now closes several earlier
+document gaps at product-page level. It states that USDPT is redeemable 1:1,
+issued by Anchorage Digital Bank N.A. on Solana, and backed by equal USD
+reserves including bank deposits, U.S. Treasury bills, and similar cash
+equivalents (`CLAIM_140`). It also discloses the official Solana contract
+address and no-government-guarantee / no-FDIC-insurance disclaimer
+(`CLAIM_141`). Finally, it describes coming-soon exchange availability,
+select-market cash-out through a virtual-currency-exchange app at Western
+Union locations, a self-custody USDPT wallet plus Visa payment-card mobile app,
+and select-market receipt of money transfers in USDPT (`CLAIM_142`).
 
-Delivery status after the v0.3 cleanup:
+Anchorage's stablecoin reserve-transparency page (`USDPT_010`) gives a
+platform-level statement that ADB-issued stablecoins are redeemable 1:1 on
+Anchorage's platform and that monthly reserve attestations are published, but
+the USDPT entry itself is still marked "Coming soon" (`CLAIM_143`). This means
+the reserve-report location is now identified, while the USDPT-specific reserve
+report remains unavailable.
+
+Anchorage's Covered Stablecoin Terms (`USDPT_011`) add a legal-rights boundary
+for ADB-issued stablecoin series. The terms distinguish ADB Clients from
+Non-Clients and state that direct ADB issuance and redemption are exclusive to
+Clients (`CLAIM_150`). They also describe a Covered Stablecoin Reserve trust,
+ADB as sole issuer and sole obligor, brand partners as service providers
+rather than obligors, par value only for direct Client redemption with ADB, and
+legal/regulatory freeze or restriction powers (`CLAIM_151`).
+
+Open points remain: USDPT-specific retail product/user terms, fee schedule,
+USDPT reserve report, exact mint/burn or smart-contract controls, customer
+eligibility and supported jurisdictions for Western Union / exchange-app flows,
+operational agent cash-out workflow, and whether USDPT changes
+customer-facing remittance rails or only back-end treasury settlement. The
+product-page, ADB terms, and layer-3 anchors (`CLAIM_140` to `CLAIM_143`,
+`CLAIM_150`, `CLAIM_151`, plus `CLAIM_132` to `CLAIM_134`) narrow those gaps
+but do not remove the need for USDPT-specific workflow documentation.
+
+Delivery status after the v0.3.3 cascade:
 
 | Layer | Evidence status | Current wording |
 | --- | --- | --- |
-| Customer remittance UX | Not directly documented for USDPT | Existing WU rails only; no USDPT customer workflow claim. |
-| Agent network / last-mile payout | Not directly documented for USDPT | Do not infer agent cash-out or agent USDPT holding. |
-| Internal treasury / agent settlement | Partly documented | Fireblocks materials support wallet, settlement, reporting and agent-settlement infrastructure context. |
-| Reserve / bank / correspondent settlement | Weakest layer | WU release supports broad fully-USD-backed language only; no reserve report or bank-settlement workflow. |
+| Customer remittance UX | Partially supported as planned feature | WU product page says select-market customers will have the option to receive a money transfer in USDPT (`CLAIM_142`); sender flow, custody, fees, KYC and terms remain missing. |
+| Agent network / last-mile payout | Partially supported only for customer exchange-app cash-out | WU product page says exchange customers in select markets will be able to cash out local fiat at WU locations (`CLAIM_142`); it does not say agents hold or redeem USDPT. |
+| Internal treasury / agent settlement | Strongest layer | WU IR release explicitly names Treasury and Agent Settlement (`CLAIM_133`) and the Digital Asset Network bridge to licensed VCEs and custodians (`CLAIM_132`); Fireblocks materials add operational infrastructure (`CLAIM_053`). |
+| Reserve / bank / correspondent settlement | Partially supported at ADB terms level; still source-dependent for USDPT-specific workflow | WU product page names broad reserve categories (`CLAIM_140`), Anchorage identifies the USDPT report slot as coming soon (`CLAIM_143`), and ADB Covered Stablecoin Terms describe a reserve trust and ADB sole-obligor role for ADB-issued series (`CLAIM_151`); no USDPT reserve report or bank-settlement workflow yet. |
 
 The live USDPT research queue is
 `00_project_management/usdpt_product_terms_research_queue.md`. Use that queue

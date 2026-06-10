@@ -47,8 +47,17 @@ also state that holders are not entitled to interest or returns earned on USDC
 reserves, and USDC itself does not generate interest or return for holders
 (`CLAIM_059`).
 
+Circle's archived risk-factor page adds the compliance-control layer. The
+Blocked Addresses and Blacklisting sections say Circle may block USDC
+addresses, freeze associated Circle-custodied USDC, treat interactions with a
+Blocked Address as grounds for freeze / account termination, and block
+on-chain transfer to and from an address in extraordinary circumstances under
+its blacklisting policy (`CLAIM_154`).
+
 Remaining open question: Circle Mint eligibility and any region-specific terms
-should still be mapped before making a universal direct-redeemer statement.
+should still be mapped before making a universal direct-redeemer statement;
+contract-code-level controls should be extracted by chain if the report needs
+byte-for-byte smart-contract analysis.
 
 ## USDT / Tether
 
@@ -63,6 +72,17 @@ exposure (`CLAIM_028`), plus about US$20bn of physical gold and about US$7bn
 of Bitcoin (`CLAIM_029`). These are issuer-release claims and should be used
 with medium confidence unless confirmed against the detailed reserve report.
 
+The detailed reserve-table extraction from `USDT_002` is now registered as
+`CLAIM_152` and exported under
+`09_data_exports/issuer_details/usdt_q1_2026_reserve_breakdown.csv`. The table
+records total reserves/assets of US$191.768bn as of 2026-03-31 23:59 UTC,
+including US$117.036bn U.S. Treasury bills, US$19.335bn overnight reverse
+repos, US$4.746bn term reverse repos, US$107.0m cash/bank deposits,
+US$19.838bn precious metals, US$6.624bn Bitcoin, US$3.408bn public equities,
+US$4.843bn other investments, and US$15.830bn secured loans. This upgrades the
+May 1 press-release composition claims by tying them to the management reserve
+table in the assurance package.
+
 Tether terms now support direct redemption eligibility constraints. A user must
 be a verified Tether customer to cause Tether Tokens to be issued or redeemed
 by Tether, and the purchase/redemption right is a personal contractual right
@@ -71,9 +91,12 @@ except certain Eligible Contract Participants accepted by Tether in its
 discretion, Canadian Persons, Singaporean Persons, sanctioned persons, and
 persons in prohibited jurisdictions (`CLAIM_061`).
 
-Open question: extract the full Q1 2026 reserve table from `USDT_002`,
-including repo, secured loans, precious metals, Bitcoin, other investments,
-public equities, and any maturity or custodian detail. Smart-contract-level
+`CLAIM_153` adds the Q1 2026 report's entity and blockchain boundary:
+Tether International, S.A. de C.V. is described as an El Salvador company,
+FinCEN MSB, and authorised Stablecoin Issuer / Digital Assets Service Provider
+under El Salvador's Digital Asset Issuance Law. The note lists 13 approved
+blockchains at the reporting date and identifies networks/tokens for which
+redemption obligations have ceased or will cease. Smart-contract-level
 freeze/blacklist controls still need separate extraction.
 
 ## PYUSD / PayPal-Paxos
@@ -348,8 +371,9 @@ the reward-accruing token.
 
 ## USDPT / Western Union-Anchorage
 
-The current evidence is now stronger for product existence and launch framing,
-but still incomplete for legal terms and operational workflow. Anchorage's
+The current evidence is now stronger for product existence, launch framing,
+and ADB covered-stablecoin legal terms, but still incomplete for USDPT-specific
+retail terms and operational workflow. Anchorage's
 comment letter states that Anchorage Digital Bank issues USAT, USDGO, and
 USDtb, and expects to begin issuing USDPT with Western Union as brand partner
 (`CLAIM_023`). Western Union's October 28, 2025 announcement states that USDPT
@@ -361,8 +385,26 @@ by U.S. dollars, issued by Anchorage Digital Bank N.A., and built on Solana
 settlement, wallet infrastructure, compliance tooling, and MT940/MT942
 translation (`CLAIM_053`).
 
-Product terms, reserve reports, contract addresses, direct redemption rights,
-and end-to-end settlement workflow documents are still missing.
+The v0.4 product-page evidence adds broad reserve categories, 1:1
+redeemability wording, the official Solana contract address, coming-soon /
+select-market customer features, and an Anchorage reserve-transparency slot
+for USDPT (`CLAIM_140` to `CLAIM_143`). Remaining gaps are now narrower:
+USDPT-specific retail/product terms, fee schedule, reserve attestation,
+retail/agent eligibility beyond the ADB Client / Non-Client boundary, exact
+token-control implementation, agent balance-sheet treatment, and end-to-end
+settlement workflow documents are still missing.
+
+`USDPT_011` adds Anchorage Digital Bank's Covered Stablecoin Terms at the ADB
+covered-stablecoin level. Those terms apply to all ADB-issued payment
+stablecoin series, distinguish Clients from Non-Clients, and limit direct ADB
+issuance/redemption to Clients (`CLAIM_150`). They also describe a Covered
+Stablecoin Reserve trust, ADB sole issuer / sole obligor status, brand
+partners as service providers rather than obligors, par value only for direct
+Client redemption with ADB, and legal/regulatory freeze or restriction powers
+(`CLAIM_151`). Use this to bound USDPT legal rights because USDPT is identified
+as ADB-issued, but do not treat it as a USDPT-specific fee schedule, retail
+Western Union user agreement, reserve attestation, or smart-contract-control
+audit.
 
 Open question: do not infer that Western Union agents will directly handle
 stablecoin retail cash-out or that USDPT replaces correspondent banking until

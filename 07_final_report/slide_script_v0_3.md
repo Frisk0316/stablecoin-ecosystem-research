@@ -22,7 +22,7 @@ section, or a project guardrail. Full citations live in
 > 穩定幣不是美元體系之外的替代品  
 > 它是美元資產、支付網絡與監理規則的鏈上重組  
 > 讀書會版本：2026-06-27  
-> v0.3.2 evidence base: 131 claims, 137 sources
+> v0.4 evidence base: 154 claims, 148 sources
 
 **Speaker notes**
 
@@ -63,9 +63,9 @@ payment-infrastructure question.
 > 它是一組可追溯研究包：  
 > registry -> digest -> claim table -> matrix -> chapter -> slide  
 >  
-> 截至 v0.3：  
-> 131 筆 claim  
-> 137 筆 source registry rows
+> 截至 v0.4：  
+> 154 筆 claim  
+> 148 筆 source registry rows
 
 **Speaker notes**
 
@@ -137,7 +137,7 @@ the legal architecture differs substantially across issuers.
 
 中文提示：提醒大家「同樣 1 美元價格」不代表「同樣法律權利」。
 
-**Source claims**: CLAIM_026-035, CLAIM_058-068, CLAIM_072-081, KF_034
+**Source claims**: CLAIM_026-035, CLAIM_058-068, CLAIM_072-081, CLAIM_154, KF_034
 
 ## Slide 7 - USDC and Circle Mint / USDC：Circle Mint 門檻
 
@@ -146,37 +146,43 @@ the legal architecture differs substantially across issuers.
 > USDC reserve disclosures support cash, Treasury repo, T-bills and the Circle Reserve Fund  
 > 直接贖回需要 Circle Mint account in good standing  
 > 被轉讓取得 USDC 的持有人，不自動取得直接贖回資格  
-> USDC 本身不給 holder yield
+> USDC 本身不給 holder yield  
+> Circle risk factors: address blocking / freeze / blacklisting-policy controls
 
 **Speaker notes**
 
 USDC is useful for distinguishing product-page par language from direct
-issuer redemption. The key institution is Circle Mint.
+issuer redemption. The key institution is Circle Mint. The risk-factor page
+adds the control layer: address blocking, freeze of associated
+Circle-custodied USDC, and blacklisting-policy transfer blocking can matter
+even when reserve backing is otherwise strong.
 
 中文提示：不要只講「USDC 可 1:1 贖回」，要補上誰可以直接向 Circle 贖回。
 
-**Source claims**: CLAIM_026, CLAIM_027, CLAIM_058, CLAIM_059
+**Source claims**: CLAIM_026, CLAIM_027, CLAIM_058, CLAIM_059, CLAIM_154
 
 ## Slide 8 - USDT and Non-Cash Exposures / USDT：驗證客戶與非現金曝險
 
 **Body**
 
-> Tether 2026-05-01 issuer release：  
-> 約 US$141bn T-bill exposure  
-> 約 US$20bn gold  
-> 約 US$7bn Bitcoin  
+> Tether Q1 2026 reserve table：  
+> US$117.0bn T-bills + US$24.1bn reverse repos  
+> US$19.8bn gold + US$6.6bn Bitcoin  
+> public equities / other investments / secured loans also present  
 >  
 > 直接贖回是 verified customer 的個人契約權
 
 **Speaker notes**
 
-USDT cannot be modelled as pure cash-equivalent backing. The issuer release
-contains material gold and Bitcoin exposures, and redemption is gated.
+USDT cannot be modelled as pure cash-equivalent backing. The detailed Q1 2026
+reserve table contains Treasury bills, reverse repos, cash/bank deposits,
+gold, Bitcoin, public equities, other investments and secured loans.
+Redemption is gated to verified customers.
 
 中文提示：這張的重點是，USDT 的儲備組合和 USDC 不一樣，贖回資格也不是開放給所有持有人。
 
-**Source claims**: CLAIM_028, CLAIM_029, CLAIM_060, CLAIM_061
-**Key figures**: KF_001, KF_002, KF_003
+**Source claims**: CLAIM_060, CLAIM_061, CLAIM_152, CLAIM_153
+**Key figures**: KF_001, KF_002, KF_003, KF_047, KF_048, KF_049
 
 ## Slide 9 - Paxos Family / Paxos 家族：一組條款管理三種幣
 
@@ -370,7 +376,7 @@ money-market system.
 **Body**
 
 > USDC：cash, repo, short T-bills, Circle Reserve Fund  
-> USDT：T-bills plus gold and Bitcoin exposures  
+> USDT：T-bills/repo plus gold, Bitcoin, public equities, other investments and secured loans  
 >  
 > 不能把所有 fiat-backed stablecoin 都假設成同一個儲備模型
 
@@ -381,7 +387,7 @@ architecture are different.
 
 中文提示：用 USDC / USDT 做最直觀的對照。
 
-**Source claims**: CLAIM_026, CLAIM_027, CLAIM_028, CLAIM_029
+**Source claims**: CLAIM_026, CLAIM_027, CLAIM_152
 
 ## Slide 19 - T-Bill Demand Channel / T-bill 需求通道
 
@@ -750,39 +756,48 @@ payment-system and monetary-transmission channels.
 
 > Western Union announced USDPT  
 > expected issuer：Anchorage Digital Bank  
-> chain：Solana  
-> infrastructure：Fireblocks wallet / settlement / reporting stack  
+> chain：Solana, with official product-page address disclosed  
+> infrastructure：Fireblocks, Digital Asset Network, Treasury and Agent Settlement  
+> ADB terms：Client / Non-Client redemption boundary and reserve-trust framing  
 >  
 > evidence supports a planned digital-asset settlement layer
 
 **Speaker notes**
 
-USDPT is important, but the evidence base is narrow. We can document launch
-framing and infrastructure partners, not the full operating architecture.
+USDPT is important, and v0.4 adds product-page and ADB terms evidence. We can
+document the layer-3 treasury / agent-settlement framing, official Solana
+address, broad product-page reserve categories, and ADB covered-stablecoin
+Client / Non-Client boundary. We still cannot document the full retail,
+agent cash-out, reserve-attestation, token-control, or bank-clearing
+operating architecture.
 
 中文提示：先說有什麼，不要一開始就說缺什麼。
 
-**Source claims**: CLAIM_051, CLAIM_052, CLAIM_053
+**Source claims**: CLAIM_051, CLAIM_052, CLAIM_053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
 
 ## Slide 38 - Four-Layer Separation / 四層拆解
 
 **Body**
 
-> Layer 1：customer remittance UX  
-> Layer 2：Western Union agent network  
-> Layer 3：stablecoin issuance and on-chain transfer  
-> Layer 4：reserve assets and bank / correspondent settlement  
+> Layer 1：customer remittance UX / Stable by Western Union consumer layer  
+> Layer 2：Western Union agent network, still missing complete USDPT cash-out evidence  
+> Layer 3：stablecoin issuance, on-chain transfer, treasury and agent settlement  
+> Layer 4：reserve assets and bank / correspondent settlement, still missing USDPT-specific report and workflow  
 >  
 > Replacement claims must specify which layer is replaced
 
 **Speaker notes**
 
 The four-layer diagram prevents the phrase "USDPT replaces SWIFT" from
-collapsing multiple systems into one claim.
+collapsing multiple systems into one claim. At v0.4, layer 3 is the strongest
+documented layer: Western Union's release anchors the Digital Asset Network
+and Treasury and Agent Settlement, while ADB terms add reserve-trust and
+sole-obligor boundaries. Layer 1 has coming-soon retail features, but layer 2
+and layer 4 remain incomplete.
 
 中文提示：請直接展示 swim-lane 圖。任何替代論都必須先指出替代的是哪一層。
 
-**Source claims**: chapter 6 framing, CLAIM_051-053
+**Source claims**: chapter 6 framing, CLAIM_051-053, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
 **Visual**: `06_flow_diagrams/usdpt_settlement_flow.md`
 
 ## Slide 39 - What Is Not Documented / USDPT 尚未取得文件
@@ -790,40 +805,49 @@ collapsing multiple systems into one claim.
 **Body**
 
 > Not yet in the archive：  
-> product terms  
-> reserve report  
-> contract addresses  
-> direct redemption policy  
-> customer-to-customer workflow  
-> agent cash-out workflow
+> USDPT-specific product / user terms and fee schedule  
+> USDPT-specific reserve report / attestation  
+> token controls beyond disclosed Solana address  
+> retail / agent eligible-redeemer scope beyond ADB Client status  
+> customer-to-customer and agent cash-out workflow  
+> agent balance-sheet and bank-settlement workflow
 
 **Speaker notes**
 
-The missing documents are exactly the ones needed to move from "planned
-product" to "documented operating system."
+The missing documents are exactly the ones needed to move from product-page
+architecture to documented legal and operating terms.
 
 中文提示：這不是悲觀，而是證據紀律。沒有 workflow 文件就不講替代 SWIFT。
 
-**Source claims**: unresolved_open_questions.md, usdpt_product_terms_research_queue.md
+**Source claims**: unresolved_open_questions.md, usdpt_product_terms_research_queue.md, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
 
 ## Slide 40 - Conditional USDPT Framing / USDPT 的安全說法
 
 **Body**
 
 > Safe wording：  
-> Western Union is attempting to use USDPT and a Digital Asset Network  
-> to build a regulated digital-asset settlement layer  
+> Western Union has announced USDPT issued by Anchorage Digital Bank on Solana  
+> as a regulated digital-asset settlement layer for treasury and agent settlement  
+> with product-page evidence for broad reserve categories and an official Solana address  
+> ADB direct redemption is bounded to Clients under covered-stablecoin terms  
 >  
 > Unsafe wording：  
-> USDPT replaces SWIFT / correspondent banking / Fedwire / CHIPS / WU retail rails
+> USDPT replaces SWIFT / correspondent banking / Fedwire / CHIPS / WU retail rails  
+> every holder can redeem USDPT directly with ADB  
+> Stable by Western Union is identical to USDPT itself
 
 **Speaker notes**
 
-This slide gives the exact language discipline for discussion and Q&A.
+This slide gives the exact language discipline for discussion and Q&A. The
+v0.4 anchors let us state the layer-3 treasury / agent-settlement framing,
+the official Solana address, broad product-page reserve categories, and
+ADB covered-stablecoin terms. Replacement, retail/agent redemption-scope,
+USDPT-specific attestation, exact token-control implementation, agent
+balance-sheet, and bank-settlement claims still cannot be made.
 
 中文提示：這張是問答時的保護欄。聽眾問替代論時，就回到這裡。
 
-**Source claims**: chapter 6, AGENTS.md guardrails
+**Source claims**: chapter 6, AGENTS.md guardrails, CLAIM_132, CLAIM_133, CLAIM_134, CLAIM_140, CLAIM_141, CLAIM_142, CLAIM_143, CLAIM_150, CLAIM_151
 
 # Part 6 - On-Chain Data
 
@@ -881,16 +905,19 @@ payment-demand question by itself.
 > Artemis reproducible export beyond methodology  
 > Cambridge numerical export  
 > McKinsey / Artemis local archive  
-> World Bank remittance-cost benchmark export
+>  
+> Now available：World Bank remittance-cost benchmark export
 
 **Speaker notes**
 
-The chapter stays qualitative because the adjusted-volume exports are not
-reproducible from the current archive.
+The chapter stays qualitative for stablecoin payment demand because the
+adjusted stablecoin-volume exports are not reproducible from the current
+archive. v0.4 adds the World Bank off-chain remittance-cost benchmark export
+(`CLAIM_147`), which is useful cost context but not stablecoin volume.
 
 中文提示：這張和 USDPT 缺口一樣，是 freeze 而不是 guess。
 
-**Source claims**: chapter 7, 09_data_exports README
+**Source claims**: chapter 7, 09_data_exports README, CLAIM_147
 
 # Part 7 - Failure Cases
 
@@ -898,43 +925,52 @@ reproducible from the current archive.
 
 **Body**
 
-> v0.3 can support a risk taxonomy：  
-> reserve risk  
-> redemption gate risk  
-> collateral liquidation risk  
-> liquidity stress risk  
-> oracle / governance risk  
-> basis and funding risk  
-> regulatory and wind-down risk
+> v0.4 supports a risk taxonomy with public proxy timelines：  
+> reserve and custody risk：USDC / SVB 2023-03  
+> reserve opacity and disclosure risk：Tether / Bitfinex 2021  
+> algorithmic / reflexive death spiral：Terra UST 2022-05, Iron Finance 2021-06  
+> crypto-collateral, oracle and auction-design risk：Maker Black Thursday 2020-03-12  
+> synthetic-dollar basis and funding risk：USDe mechanism only, no realised event  
+>  
+> public hourly proxy timelines：USDC/SVB, Terra USTC, Maker DAI  
+> Iron Finance remains unresolved
 
 **Speaker notes**
 
-The taxonomy is claim-backed. Detailed case timelines are a v0.4 task unless
-the project ingests a reproducible price and event-data workflow.
+The taxonomy is claim-backed. v0.3.3 added MakerDAO Black Thursday as a
+case-study anchor for crypto-collateral / oracle / auction-design risk. v0.4
+adds a public hourly proxy layer through CryptoCompare: USDC/SVB, Terra USTC
+and Maker DAI now have reproducible coarse hourly timeline context
+(`CLAIM_148`, `CLAIM_149`). This does not replace tick-level or exchange-level
+data, and Iron Finance remains unresolved because the public IRON/TITAN rows
+are zero-only.
 
 中文提示：這張不要講成完整歷史事件研究；它是風險分類。
 
-**Source claims**: CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_101, CLAIM_103, CLAIM_106
+**Source claims**: CLAIM_069, CLAIM_075, CLAIM_084, CLAIM_090, CLAIM_094, CLAIM_098, CLAIM_101, CLAIM_103, CLAIM_106, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149
 
 ## Slide 45 - Lessons as Guardrails / 事件教訓變成研究護欄
 
 **Body**
 
-> Past failures reinforce the five guardrails：  
+> Past failures reinforce the guardrails：  
 > attestation vs audit  
 > direct right vs product page  
 > volume vs payment demand  
+> oracle / gas / auction design as risk surface  
 > USDPT vs payment-rail replacement  
 > ART vs EMT
 
 **Speaker notes**
 
-Failure cases are not just colourful anecdotes. They are why the report is
-strict about terminology and evidence boundaries.
+Failure cases are not colourful anecdotes. They are why the report is strict
+about terminology and evidence boundaries. The Maker Black Thursday cluster
+adds oracle delay, gas-driven keeper failure and auction-design risk, while
+CryptoCompare adds coarse public hourly context for three selected windows.
 
 中文提示：把失敗案例拉回研究方法，不要變成故事時間。
 
-**Source claims**: CLAIM_107-111, chapter 8
+**Source claims**: CLAIM_107-111, CLAIM_135, CLAIM_136, CLAIM_137, CLAIM_148, CLAIM_149, chapter 8
 
 # Part 8 - Closing
 
@@ -984,7 +1020,7 @@ The report is strongest when it explicitly marks what is conditional.
 > USDPT product layer  
 > adjusted on-chain payment volume  
 > Taiwan enacted law / sub-rules  
-> failure-case price/depeg timelines  
+> Iron Finance / exact failure-case price timelines  
 > Maker Black Thursday primary sources
 
 **Speaker notes**
@@ -1057,11 +1093,12 @@ This slide codifies the evidence boundaries for the session.
 
 **Body**
 
-> v0.3.2 source registry：137 rows  
-> claim table：131 validated claims  
+> v0.4 source registry：148 rows  
+> claim table：154 claim rows  
 > missing archived local files：none  
 > high-priority rows needing attention：none  
-> known unresolved items：USDPT documents, adjusted-volume exports, Taiwan enacted law, failure-case timelines
+> validation note：Python rerun pending after CLAIM_154; static source/reference checks passed  
+> known unresolved items：USDPT-specific retail/workflow terms, adjusted stablecoin-volume exports, Taiwan enacted law, Iron Finance / exact failure-case timelines
 
 **Speaker notes**
 

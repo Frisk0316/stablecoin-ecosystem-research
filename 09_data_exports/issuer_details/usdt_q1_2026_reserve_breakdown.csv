@@ -1,0 +1,13 @@
+sort_order,section,category,amount_usd,share_of_total_assets_pct,source_id,source_page,source_note
+1.1,Cash & Cash Equivalent & Other Short-Term Deposits,U.S. Treasury Bills,117035732050,61.0299,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+1.2,Cash & Cash Equivalent & Other Short-Term Deposits,Overnight Reverse Repurchase Agreements,19334717169,10.0824,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+1.3,Cash & Cash Equivalent & Other Short-Term Deposits,Term Reverse Repurchase Agreements,4745558242,2.4746,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+1.4,Cash & Cash Equivalent & Other Short-Term Deposits,Cash & Bank Deposits,107021630,0.0558,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+1.5,Cash & Cash Equivalent & Other Short-Term Deposits,Subtotal: Cash Equivalent & Other Short-Term Deposits,141223029091,73.6427,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+2,Other Reserve Assets,Corporate Bonds,3000586,0.0016,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+3,Other Reserve Assets,Precious Metals,19837696372,10.3446,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+4,Other Reserve Assets,Bitcoin,6624160893,3.4543,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+5,Other Reserve Assets,Public Equities,3407550615,1.7769,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+6,Other Reserve Assets,Other Investments,4842567748,2.5252,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+7,Other Reserve Assets,Secured Loans,15829736190,8.2546,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.
+8,Total,Total Assets (1+2+3+4+5+6+7),191767741495,100.0000,USDT_002,Financial Figures and Reserves Report p. 4,Assets at 31 March 2026 reserve breakdown table.

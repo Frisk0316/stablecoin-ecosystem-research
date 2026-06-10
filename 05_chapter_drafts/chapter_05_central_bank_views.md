@@ -180,6 +180,33 @@ are expected to be limited under current market conditions, but the conclusion
 is conditional on the size of issuance and the development of NTD-denominated
 tokenized assets.
 
+The CBC policy synthesis above is now complemented by a separate
+legislative-timeline layer. FSC Chairman Peng Jin-lung publicly stated on
+2025-12-03 that Taiwan's first regulated stablecoin may enter the market in
+the latter half of 2026 at the earliest and that an additional six-month
+buffer is required after the FSC publishes subordinate regulations before the
+law takes effect (`CLAIM_138`). Earlier draft-mechanics commentary describes
+domestic stablecoin issuance approval, foreign-stablecoin trading consent,
+reserve / audit / disclosure obligations, and subordinate regulations in
+preparation (`CLAIM_139`).
+
+The official Executive Yuan update dated 2026-04-02 states that the cabinet
+approved the FSC draft VASP Act and submitted it to the Legislative Yuan,
+covering VASPs and stablecoin issuers with financial-soundness, segregated-
+custody and unfair-trading safeguards (`CLAIM_144`). A 2026-06-03 local press
+report states that the Legislative Yuan Finance Committee completed first
+review of the draft, including stablecoin licensing, full reserve segregation,
+and fraud / manipulation provisions (`CLAIM_145`). The official Legislative
+Yuan bill-detail page for the Executive Yuan draft records Finance Committee
+review entries through 2026-06-03 with gazette production pending for the
+June entries (`CLAIM_146`). These legislative-stage
+claims should be cited alongside the CBC policy claims above, but they should
+not be merged: CBC framing describes monetary-architecture and risk-channel
+reasoning, while the VASP Act draft describes the legal gateway that will
+govern issuance once enacted. Until enacted statutory text or FSC sub-rules
+are registered, Taiwan should not be treated as having an in-force stablecoin
+regime.
+
 ## Guardrails
 
 - Do not state that stablecoins mechanically reduce bank lending. The
@@ -202,9 +229,11 @@ tokenized assets.
   monetary-sovereignty argument, or the FSB implementation-gap finding as
   formally claim-backed.
 - IMF_002 and IMF_004 are registered but unextracted.
-- The Taiwan-specific synthesis is claim-backed for CBC_002-CBC_004, but
-  enacted Taiwan statutory text has not been extracted as a separate legal
-  source.
+- The Taiwan-specific synthesis is claim-backed for CBC_002-CBC_004 and
+  now also has a legislative-stage layer at `CLAIM_138`, `CLAIM_139`,
+  `CLAIM_144`, `CLAIM_145`, and `CLAIM_146` using `TAIWAN_VASP_001` to
+  `TAIWAN_VASP_005`. Enacted Taiwan statutory text or FSC sub-rules have
+  not been registered.
 - See `00_project_management/unresolved_open_questions.md` for the full
   central-bank backlog.
 
@@ -217,7 +246,8 @@ tokenized assets.
 - Promote FSB_001/003 implementation-gap findings to `CLAIM_XXX` entries.
 - Extract page-level Federal Reserve and IMF claims where the current entries
   are still abstract/summary based.
-- If Taiwan's stablecoin legislation or sub-rules become available, register
-  and extract the enacted text separately from CBC policy framing.
+- If Taiwan's enacted VASP Act text or FSC sub-rules become available,
+  register them separately from `TAIWAN_VASP_001` and `TAIWAN_VASP_002`
+  (which remain legislative-stage) and from CBC policy framing.
 - Normalise Treasury-market and safe-asset demand claims against issuer
   reserve data in the reserve-assets chapter.

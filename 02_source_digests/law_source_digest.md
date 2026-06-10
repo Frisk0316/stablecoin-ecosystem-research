@@ -333,9 +333,51 @@ Guidelines also require TOFR (Regulation EU 2023/1113, the EU Travel
 Rule equivalent) Article 14 compliance before transfer initiation or
 execution (`CLAIM_093`).
 
+## Taiwan VASP Act draft (legislative-stage)
+
+Taiwan's draft Virtual Asset Service Provider (VASP) Act now has four
+registered sources, all at legislative-stage rather than enacted-text level.
+FSC Chairman Peng Jin-lung publicly stated on 2025-12-03 that Taiwan's first
+regulated stablecoin may enter the market in the latter half of 2026 at the
+earliest and that an additional six-month buffer will be required after the
+FSC announces subordinate regulations before the law takes effect
+(`CLAIM_138`, `TAIWAN_VASP_001`, Focus Taiwan / CNA English). Stellex Law
+Firm reports that the FSC submitted the draft VASP Act to the Executive Yuan
+in late June 2025 and describes draft prior-approval, foreign-stablecoin
+trading consent, reserve, audit and disclosure obligations (`CLAIM_139`,
+`TAIWAN_VASP_002`).
+
+The official Executive Yuan English press release dated 2026-04-02 upgrades
+the pipeline from executive review to cabinet approval and submission to the
+Legislative Yuan. It says the proposed act covers VASPs and stablecoin
+issuers, and includes financial soundness, segregated custody and
+unfair-trading safeguards (`CLAIM_144`, `TAIWAN_VASP_003`). A 2026-06-03
+Economic Daily News / UDN report says the Legislative Yuan Finance Committee
+completed first review of the draft and summarises committee-stage stablecoin
+requirements including licensing, full reserve assets separated from issuer
+assets, and anti-fraud / anti-manipulation penalties (`CLAIM_145`,
+`TAIWAN_VASP_004`). The official Legislative Yuan bill-detail page for the
+Executive Yuan draft lists the case as referred for review, assigned to the
+Finance Committee, and records committee-review entries on 2026-05-07,
+2026-06-01 and 2026-06-03 with gazette production pending for the June
+entries (`CLAIM_146`, `TAIWAN_VASP_005`).
+
+Research boundary: these sources are legislative-stage, not enacted
+statutory text. They support the legislative-timeline framing only. They
+do **not** support a claim that Taiwan has an enacted stablecoin regime,
+they do not establish binding reserve, audit, disclosure or approval
+rules at the level of GENIUS / MiCA / BoE / NYDFS, and they do not by
+themselves resolve treatment of offshore USD stablecoins offered to
+Taiwan users. Pair these claims with the CBC policy synthesis at
+`CLAIM_112` to `CLAIM_118` and keep both layers separate.
+
 ## Remaining Legal Research Gaps
 
-- Taiwan enacted stablecoin legislation or sub-rules, once available, should
-  be registered separately from CBC policy framing.
-- Keep the cross-jurisdiction comparison table synchronized when later
+- Enacted Taiwan VASP Act statutory text or FSC sub-rules, once published,
+  should be registered separately from `TAIWAN_VASP_001` to
+  `TAIWAN_VASP_005`, which remain legislative-stage at v0.4.
+- Replace or supplement `TAIWAN_VASP_004` / `TAIWAN_VASP_005` with the final
+  Legislative Yuan committee minutes, committee report, gazette text, or
+  consolidated bill text when produced.
+- Keep the cross-jurisdiction comparison table synchronized when enacted
   Taiwan statutory sources are added.

@@ -1,11 +1,25 @@
 # Stablecoin Research Consolidated Deficiency Review
 
-Last updated: 2026-05-26 (v0.3.2 superseding update)
+Last updated: 2026-06-05 (v0.4 superseding update)
 
 Purpose: this document consolidates the explicit deficiencies, unresolved
 questions, and phase-level gaps. The rows below preserve the historical
 deficiency trail, but the live backlog is now
 `00_project_management/unresolved_open_questions.md`.
+
+2026-06-05 superseding update: v0.4 narrows the USDPT product-layer gap by
+adding product-page reserve categories, 1:1 redeemability wording, the
+official Solana contract address, coming-soon / select-market customer-feature
+direction, and Anchorage report-slot status (`CLAIM_140` to `CLAIM_143`).
+It also adds Anchorage Digital Bank covered-stablecoin terms for ADB Client /
+Non-Client redemption boundary, reserve-trust, sole-obligor, brand-partner and
+legal/control terms (`CLAIM_150`, `CLAIM_151`). It extends Taiwan VASP legislative-stage tracking through Executive Yuan
+approval / Legislative Yuan submission and Finance Committee first review
+news (`CLAIM_144`, `CLAIM_145`). Active gaps are now USDPT-specific
+retail/user terms, fee schedule, reserve attestation, exact token-control
+implementation, agent balance-sheet treatment and full workflow; adjusted
+payment-volume exports; Taiwan enacted law/sub-rules; failure-case timelines;
+and selected issuer detail extraction.
 
 2026-05-25 superseding update: v0.3.1 closes the previous CLARITY
 stablecoin-relevant extraction gap (`CLAIM_119` to `CLAIM_121`), Taiwan CBC
@@ -89,9 +103,12 @@ blocking gaps are now:
 
 1. Market/on-chain data has been partially ingested, but adjusted exports and
    methodology reconciliation remain under-supported.
-2. USDPT launch evidence is partially supported, but product terms,
-   reserve reports, contract addresses, and end-to-end workflow documents are
-   still missing.
+2. USDPT launch, product-page evidence, and ADB covered-stablecoin terms are
+   partially supported, including the official Solana contract address and ADB
+   Client / Non-Client redemption boundary, but USDPT-specific retail/user
+   terms, fee schedule, reserve attestation, exact token-control
+   implementation, agent balance-sheet treatment, and end-to-end workflow
+   documents are still missing.
 3. Direct holder redemption rights and suspension/freeze powers are now partly
    extracted for USDC, USDT, Paxos/USDG, RLUSD, FDUSD, and USDe, but GUSD,
    USDP, PYUSD-specific Paxos flow, DAI/USDS, and USDPT remain incomplete.
@@ -116,7 +133,7 @@ remaining Phase 1 gaps are mostly handoff items into later phases.
 | Issuer redemption rights and reserve composition were not yet extracted at page level. | partial | high | Phase 2 started this, but direct redemption rights remain incomplete. |
 | Law matrix for GENIUS, CLARITY, MiCA, BoE, and NYDFS was not yet complete. | partial | high | Phase 3 added NYDFS and MiCA EMT claims, but GENIUS, CLARITY, BoE, ART, and ESMA remain incomplete. |
 | Central-bank theme matrix lacked IMF and Fed sources. | partial | high | IMF and Fed source sets are now registered and partially extracted into `CLAIM_044` to `CLAIM_050`; page-level extraction remains. |
-| USDPT settlement analysis lacked primary product evidence. | partial | high | Launch/product and infrastructure evidence now support `CLAIM_051` to `CLAIM_053`; terms, reserve report, contract addresses, and redemption terms remain absent. |
+| USDPT settlement analysis lacked primary product evidence. | partial | high | Launch/product and infrastructure evidence now support `CLAIM_051` to `CLAIM_053`, `CLAIM_132` to `CLAIM_143`, and `CLAIM_150` to `CLAIM_151`; official Solana contract address, broad product-page reserve categories, ADB Client / Non-Client redemption boundary, reserve-trust framing, sole-obligor role and legal/control powers are now supported, while USDPT-specific retail/user terms, fee schedule, attestation, exact token-control implementation and full workflow remain absent. |
 | External fetch queue remained unresolved. | partial | high | New deficiency downloads reduced the queue, but adjusted datasets and manual-needed items remain. |
 
 ## Phase 2 Deficiencies

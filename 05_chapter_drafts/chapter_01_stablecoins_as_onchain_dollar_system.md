@@ -78,10 +78,16 @@ In parallel, a planned Western Union payment-stablecoin product
 announced in 2026 and is being positioned as part of a "Digital
 Asset Network" connecting digital and fiat worlds. The research
 treats USDPT as a deliberately conditional case: launch and
-infrastructure evidence is documented, but product terms, reserve
-report, contract addresses, and an end-to-end settlement workflow
-are not yet in the archive. The chapter on USDPT (chapter 6)
-therefore frames USDPT as a planned product rather than a working
+infrastructure evidence is documented, and v0.4 product-page evidence
+now supports broad reserve categories, 1:1 redeemability wording, the
+official Solana contract address, and planned / coming-soon select-market
+customer features. ADB covered-stablecoin terms now partially bound direct
+ADB redemption to Clients, reserve-trust structure, ADB sole-obligor role,
+brand-partner status, and legal/control powers. USDPT-specific retail/user
+terms, fee schedule, reserve attestation, exact token-control implementation,
+agent balance-sheet treatment, and an end-to-end settlement workflow are still
+not in the archive. The chapter on USDPT (chapter 6) therefore frames USDPT as
+a conditional product architecture rather than a proven working remittance
 system.
 
 ## 1.3 Three product categories that must be kept separate
@@ -168,9 +174,14 @@ the chapter drafts, the claim table, and the source digests.
    the methodologies are not interchangeable and the underlying
    exports are not in this project's archive at v0.3.
 4. **USDPT as a working remittance system versus USDPT as a
-   planned product.** Without product terms, a reserve report, on-chain
-   contract addresses, and an end-to-end customer-to-customer
-   settlement workflow, no claim about USDPT replacing SWIFT,
+   conditional product architecture.** Product-page evidence now supports
+   an official Solana address and coming-soon / select-market customer
+   features, and ADB covered-stablecoin terms now partially bound direct ADB
+   redemption to Clients and ADB's issuer / reserve-trust role. Without
+   USDPT-specific retail/user terms, fee schedule, USDPT-specific reserve
+   attestation, exact token-control implementation, retail/agent eligible
+   redeemer scope beyond ADB Client status, and an end-to-end customer /
+   agent / bank-settlement workflow, no claim about USDPT replacing SWIFT,
    correspondent banking, Fedwire, CHIPS, or Western Union's
    consumer-facing remittance rails is supportable. The chapter-6
    discussion is therefore conditional.
@@ -243,7 +254,11 @@ relevant claim's `confidence` and `notes` fields.
 Where a question cannot be answered from the archive, the open
 question is preserved in
 `00_project_management/unresolved_open_questions.md` rather than
-guessed. The v0.3.2 cut-off has 131 claims, 137 registered sources,
-and a known set of frozen items (USDPT product terms, adjusted on-
-chain volume, McKinsey / Artemis manual download) which are
-explicitly carried as deferred for v0.4.
+guessed. The v0.4 working cut-off has 154 claims and 148 registered
+sources. It narrows several earlier deferred items: USDPT product-page
+and ADB covered-stablecoin terms evidence, Taiwan legislative-stage docket
+evidence, a World Bank off-chain remittance-cost benchmark export, and public
+hourly failure-case proxy timelines are now claim-backed, while USDPT-specific
+retail/workflow terms, adjusted stablecoin-volume exports, Taiwan enacted
+law/sub-rules, Iron Finance timeline data, and exact failure-case
+trough/duration/recovery claims remain open.

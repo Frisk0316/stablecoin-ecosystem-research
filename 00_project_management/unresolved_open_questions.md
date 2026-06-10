@@ -1,6 +1,6 @@
 # Unresolved Open Questions
 
-Last updated: 2026-05-26 (v0.3.2 comprehensive backlog refresh)
+Last updated: 2026-06-05 (v0.4 targeted gap closure)
 
 Purpose: this file is the live research backlog. It preserves questions that
 must not be guessed in the final report, slides, evidence portal, or matrices.
@@ -11,14 +11,18 @@ matrix, chapter, slide, and this file.
 
 Current baseline:
 
-- Claim table: 131 validated claims (`CLAIM_001` to `CLAIM_131`).
-- Source registry: 137 rows.
+- Claim table: 154 claims (`CLAIM_001` to `CLAIM_154`). Full Python
+  validation passed at 153 claims earlier on 2026-06-05; after `CLAIM_154`,
+  static source / reference checks passed and Python validation rerun is
+  pending.
+- Source registry: 148 rows.
 - Matrices: 6 CSV files under `04_matrices/`.
 - Evidence portal build source:
   `07_final_report/stablecoin_academic_report_v1_0.md`.
 - Known no-local / deficient rows:
-  `MCKINSEY_ARTEMIS_001` (`manual_needed`) and `FAILURE_001` to
-  `FAILURE_006` (`url_only`).
+  `MCKINSEY_ARTEMIS_001` (`manual_needed`); `FAILURE_001` to `FAILURE_008`
+  (`url_only`); `USDPT_010`, `USDPT_011`, and `TAIWAN_VASP_001` to
+  `TAIWAN_VASP_005` (`url_only`).
 
 Validation baseline:
 
@@ -29,13 +33,13 @@ Validation baseline:
 & 'C:\Users\woody\AppData\Local\Programs\Python\Python312\python.exe' 10_evidence_portal\scripts\build_portal.py
 ```
 
-Expected current results:
+Expected current results after rerun:
 
-- `validate_claim_table.py`: `OK: 131 claims validated.`
+- `validate_claim_table.py`: `OK: 154 claims validated.`
 - `check_missing_sources.py`: no missing archived local files and no
   high-priority rows needing attention.
 - `check_mermaid.py`: all 8 diagrams structurally pass.
-- `build_portal.py`: 131 claims, 137 sources, 6 matrices.
+- `build_portal.py`: `Claims: 154 | Sources: 148 | Matrices: 6`.
 
 ## Closed Since Earlier Backlogs
 
@@ -52,6 +56,14 @@ question.
 | USDP monthly reserve report missing status | `CLAIM_080`, `CLAIM_081` | Reclassified from missing to issuer-discontinued; do not keep asking for a discontinued standalone USDP report unless Paxos resumes publication. |
 | Paxos-family direct redemption gating | `CLAIM_072` to `CLAIM_076` | Remaining PYUSD/PayPal question is operational mapping, not basic Paxos Customer-only gating. |
 | Gemini GUSD customer-only redemption and timing | `CLAIM_077` to `CLAIM_079` | Remaining GUSD question is smart-contract control and NYDFS-lawful-holder interaction. |
+| USDPT layer-3 architecture (Treasury and Agent Settlement; Digital Asset Network; Stable by WU consumer-spend layer) | `CLAIM_132` to `CLAIM_134` (via `USDPT_007` WU IR launch release) | Layer-3 architecture is anchored; product terms, reserve report, retail redemption and complete agent fiat cash-out workflow remain open under P0-1 below. |
+| USDPT product-page reserve categories, official Solana address, coming-soon retail features, and ADB covered-stablecoin terms | `CLAIM_140` to `CLAIM_143`; `CLAIM_150`, `CLAIM_151` (via `USDPT_005` WU product page, `USDPT_010` Anchorage reserve-transparency page, and `USDPT_011` ADB Covered Stablecoin Terms) | Official Solana contract address, product-page features, ADB Client / Non-Client redemption boundary, reserve-trust framing, ADB sole-obligor role, brand-partner status and legal/control powers are anchored; USDPT-specific retail terms, fee schedule, attestation, exact token-control implementation and operational workflow remain open. |
+| Maker / DAI Black Thursday case-study (community / analyst confidence) | `CLAIM_135` to `CLAIM_137` (via `FAILURE_007` Whiterabbit; `FAILURE_008` Glassnode) | Case study is closed at community / analyst level. A Maker Foundation primary source would upgrade confidence; public hourly DAI proxy is now available under P1-1, but exact duration/trough/recovery still require higher-quality data. |
+| Taiwan VASP Act legislative-stage framing | `CLAIM_138`, `CLAIM_139`, `CLAIM_144`, `CLAIM_145`, `CLAIM_146` | Legislative-stage now runs through Executive Yuan approval/submission to Legislative Yuan (2026-04-02), Finance Committee first-review news (2026-06-03), and the official Legislative Yuan bill-detail docket showing committee-review entries through 2026-06-03 with gazette production pending. Enacted statutory text / FSC sub-rules remain under P0-3 below. |
+| World Bank remittance-cost benchmark export | `CLAIM_147`; `WB_RPW_002`; `09_data_exports/remittance_benchmark/` | Reproducible off-chain remittance-cost benchmark is now available. It does not close Visa / Artemis / Cambridge adjusted stablecoin payment-volume evidence. |
+| Failure-case public hourly proxy timelines | `CLAIM_148`, `CLAIM_149`; `CRYPTOCOMPARE_001`; `09_data_exports/failure_case_timelines/` | Reproducible public hourly proxy timelines are now available for USDC/SVB, Terra USTC and Maker DAI. Iron Finance remains unresolved because public IRON/TITAN rows are zero-only, and exact tick-level duration/trough/recovery still require higher-quality data. |
+| USDT Q1 2026 detailed reserve-table extraction | `CLAIM_152`; `USDT_002`; `09_data_exports/issuer_details/usdt_q1_2026_reserve_breakdown.csv` | Full point-in-time reserve-category amounts are now extracted and rebuildable. Maturity ladder, custodian/counterparty split, collateral composition and smart-contract controls remain open. |
+| USDC risk-factor address blocking / freeze / blacklisting-policy controls | `CLAIM_154`; `USDC_007` | Risk-factor / policy-control language is now anchored. Circle Mint eligibility, region-specific terms and chain-specific contract-code details remain open. |
 
 ## Priority Legend
 
@@ -65,7 +77,13 @@ question.
 
 ### P0-1. USDPT Product Layer And Workflow
 
-Status: unresolved; source-dependent.
+Status: partially closed at v0.4. Layer 3 is anchored; the official Solana
+contract-address gap is closed; coming-soon/select-market customer cash-out
+and receive-in-USDPT direction is now supported at product-page level. Legal
+terms, fee schedule, USDPT-specific attestation, exact token-control
+implementation and full workflow remain source-dependent; ADB covered-
+stablecoin terms now partially bound Client / Non-Client redemption rights,
+reserve-trust structure, issuer-obligor role and legal/control powers.
 
 Current supported evidence:
 
@@ -82,20 +100,61 @@ Current supported evidence:
 - `CLAIM_053`: Fireblocks / Dynamic / TRES materials support wallet,
   settlement, agent-settlement, financial-operations, and MT940/MT942
   reporting infrastructure claims.
+- `CLAIM_132` (v0.3.3): WU 2026-05-04 IR launch release describes Digital
+  Asset Network as the component bridging licensed virtual currency
+  exchanges and custodians to WU's payout and liquidity infrastructure.
+- `CLAIM_133` (v0.3.3): same release names Treasury and Agent Settlement
+  as a USDPT use case enabling near-instant 24/7 settlement between WU and
+  its global agents. Strongest layer-3 anchor in the archive.
+- `CLAIM_134` (v0.3.3): Stable by Western Union announced as a separate
+  consumer-spend product launching in 2026 in 40+ countries; kept
+  distinct from USDPT issuance and settlement.
+- `CLAIM_140` (v0.4, `USDPT_005` Western Union product page): USDPT is
+  described as redeemable 1:1, issued by Anchorage Digital Bank N.A. on
+  Solana, and backed by equal USD reserves including bank deposits, U.S.
+  Treasuries, and similar cash equivalents.
+- `CLAIM_141` (v0.4, `USDPT_005`): the product page discloses the official
+  Solana contract address and states that no government or FDIC insurance
+  applies.
+- `CLAIM_142` (v0.4, `USDPT_005`): Western Union describes planned or
+  coming-soon exchange support, cash-out at Western Union locations through
+  a virtual-currency-exchange app in select markets, a self-custody wallet
+  and Visa card app in select markets, and money-transfer receipt in USDPT
+  in select markets.
+- `CLAIM_143` (v0.4, `USDPT_010` Anchorage reserve-transparency page):
+  Anchorage states that ADB stablecoins are redeemable 1:1 on its platform
+  and that monthly reserve attestations are published, while the USDPT
+  report slot is still marked "Coming soon."
+- `CLAIM_150` (v0.4, `USDPT_011` ADB Covered Stablecoin Terms): ADB terms
+  apply to ADB-issued payment-stablecoin series, distinguish Clients from
+  Non-Clients, and limit direct ADB issuance/redemption to Clients.
+- `CLAIM_151` (v0.4, `USDPT_011`): ADB terms describe a Covered Stablecoin
+  Reserve trust, ADB sole issuer / sole obligor status, brand partners as
+  service providers rather than obligors, par value only for direct Client
+  redemption with ADB, and legal/regulatory freeze or restriction powers.
 - Dedicated queue:
   `00_project_management/usdpt_product_terms_research_queue.md`.
 
 What is still missing:
 
-- USDPT product terms / user terms.
-- Anchorage Digital Bank USDPT issuance agreement or program terms.
-- USDPT reserve report, attestation, reserve trust agreement, or reserve
-  composition disclosure.
-- Contract addresses on Solana and any official token metadata.
-- Direct redemption policy and eligible redeemer scope.
+- USDPT-specific product terms / user terms, fee schedule, and retail risk
+  disclosure.
+- Anchorage Digital Bank USDPT-specific series supplement, if any.
+- USDPT-specific reserve report, attestation, or detailed reserve composition
+  disclosure beyond product-page reserve categories and ADB general reserve
+  trust terms.
+- Token metadata and exact mint / burn / freeze-control implementation beyond
+  the disclosed official Solana contract address and ADB general legal-control
+  powers.
+- Direct retail / agent redemption policy and eligible redeemer scope beyond
+  ADB Client / Non-Client boundary.
 - End-to-end customer-to-customer or customer-to-agent workflow.
-- Whether Western Union agents hold, cash out, receive, or settle in USDPT.
-- Whether USDPT is used only in back-office treasury / liquidity management.
+- Stable by Western Union product terms, eligible jurisdictions list, and
+  the operational relationship between Stable by WU and USDPT.
+- Whether Western Union agents hold, redeem, or settle USDPT on their own
+  balance sheets. Product-page evidence only supports planned / coming-soon
+  customer cash-out at WU locations through exchange-app rails in select
+  markets.
 - Actual settlement route between USDPT on-chain transfer and bank,
   correspondent, Fedwire, CHIPS, or local payout rails.
 
@@ -104,25 +163,38 @@ Do not claim:
 - USDPT replaces SWIFT.
 - USDPT replaces correspondent banking.
 - USDPT replaces Fedwire or CHIPS.
-- Western Union agents directly cash out USDPT.
-- Any holder can redeem USDPT 1:1.
+- Western Union agents themselves hold, redeem, or cash out USDPT.
+- Any holder can redeem USDPT 1:1; current ADB terms limit direct ADB
+  redemption to Clients.
 - USDPT reserve composition is equivalent to USDC / Paxos / GENIUS reserves.
 - USDPT is a fully operational production remittance architecture beyond what
   WU / Anchorage / Fireblocks materials state.
+- The disclosed Solana address proves circulating supply, mint / burn
+  controls, freeze controls, sanctions controls, or reserve adequacy.
+- Coming-soon / select-market customer features are already live globally.
 
-Safe current wording:
+Safe current wording (v0.4):
 
-> Western Union is attempting to use USDPT and a Digital Asset Network to
-> build a regulated digital-asset settlement layer, but the public archive
-> does not yet support direct holder redemption, reserve composition,
-> contract-address, agent cash-out, or SWIFT / correspondent-banking
-> replacement claims.
+> Western Union has launched USDPT issued by Anchorage Digital Bank N.A.
+> on Solana as a regulated digital-asset settlement layer for Treasury
+> and Agent Settlement. The product page now supports 1:1 redeemability
+> wording, broad reserve categories, an official Solana contract address,
+> and planned / coming-soon exchange, cash-out, card and receive-in-USDPT
+> customer features in select markets. ADB covered-stablecoin terms now bound
+> direct ADB redemption to Clients, distinguish Non-Clients, describe a
+> reserve trust and ADB sole-obligor role, and reserve legal/control powers.
+> The public archive still does not support USDPT-specific retail/user terms,
+> a USDPT-specific attestation report, exact mint / burn / freeze-control
+> implementation, agent balance-sheet treatment, full operational workflow,
+> or SWIFT / correspondent-banking replacement claims.
 
 Resolution criteria:
 
 1. Add new primary source(s) as `USDPT_###` or `ANCHORAGE_###`.
-2. Add claim rows for reserve structure, redemption scope, contract address,
-   workflow, and agent / treasury role.
+2. Add claim rows for USDPT-specific retail/user terms, fee schedule,
+   USDPT-specific reserve report, retail/agent eligible redeemer scope beyond
+   ADB Client status, exact token-control metadata, workflow, and agent /
+   treasury role.
 3. Update:
    - `00_project_management/usdpt_product_terms_research_queue.md`
    - `02_source_digests/payment_settlement_source_digest.md`
@@ -136,7 +208,13 @@ Resolution criteria:
 
 ### P0-2. Adjusted Payment-Volume Evidence
 
-Status: unresolved; data-workflow-dependent.
+Status: partially narrowed at v0.4. The World Bank off-chain remittance-cost
+benchmark export is now reproducible from the World Bank API (`CLAIM_147`),
+but this does not close the adjusted stablecoin payment-volume gap. Visa
+Onchain Analytics adjusted-volume export, Artemis Pro adjusted-volume export,
+Cambridge Digital Money Dashboard numerical export, and McKinsey/Artemis
+report still require subscriptions, manual licensed acquisition, or a
+reproducible export.
 
 Current supported evidence:
 
@@ -147,6 +225,11 @@ Current supported evidence:
   chain-distribution analysis, not adjusted payment-volume evidence.
 - `09_data_exports/` includes reproducible DeFiLlama exports for supply /
   chain distribution.
+- `CLAIM_147`: World Bank API indicator `SI.RMT.COST.IB.ZS` is now exported
+  reproducibly under `09_data_exports/remittance_benchmark/`, with 17,556
+  country/region-year rows and a 104-row latest non-null benchmark file.
+  This is off-chain remittance-cost benchmark context, not stablecoin
+  adjusted-volume evidence.
 
 What is still missing:
 
@@ -154,7 +237,6 @@ What is still missing:
 - Reproducible Artemis adjusted-volume export beyond the existing schema /
   methodology claim.
 - Cambridge Digital Money Dashboard numerical export.
-- World Bank remittance price benchmark export integration.
 - `MCKINSEY_ARTEMIS_001` local archive or equivalent primary / licensed copy.
 - A documented transformation notebook or script that separates raw transfer
   volume from adjusted payment-like flows.
@@ -171,10 +253,10 @@ Do not claim:
 
 Safe current wording:
 
-> The project can support supply and chain-distribution analysis, and it can
-> explain why raw transfer volume overstates payment demand. It cannot yet
-> estimate realised stablecoin payment volume without reproducible adjusted
-> exports and methodology reconciliation.
+> The project can support supply, chain-distribution and off-chain remittance
+> cost benchmark context, and it can explain why raw transfer volume overstates
+> payment demand. It cannot yet estimate realised stablecoin payment volume
+> without reproducible adjusted exports and methodology reconciliation.
 
 Resolution criteria:
 
@@ -193,7 +275,8 @@ Resolution criteria:
 
 ### P0-3. Taiwan Enacted Law And Sub-Rules
 
-Status: unresolved; source-dependent.
+Status: legislative-stage anchored through v0.4; enacted statute and FSC
+sub-rules remain unresolved and source-dependent.
 
 Current supported evidence:
 
@@ -202,12 +285,43 @@ Current supported evidence:
   digital-dollarisation / FX-management risk, NTD-stablecoin stored-value
   framing, 100% reserve design, no-yield treatment, disclosure, asset
   segregation, audit/assurance, and FSC-CBC consultation.
+- `CLAIM_138` (v0.3.3, `TAIWAN_VASP_001` Focus Taiwan / CNA English): FSC
+  Chairman Peng Jin-lung 2025-12-03 publicly stated that Taiwan's first
+  regulated stablecoin may launch in H2 2026 at the earliest and that a
+  six-month buffer applies after subordinate regulations are published.
+- `CLAIM_139` (v0.3.3, `TAIWAN_VASP_002` Stellex Law commentary): draft
+  Virtual Asset Service Provider (VASP) Act was submitted to the
+  Executive Yuan in late June 2025 and remained under executive review
+  as of 2025-12; draft requires domestic stablecoin issuance to obtain
+  prior approval from the competent authority, requires foreign-issued
+  stablecoins to obtain consent before trading on Taiwan VASP platforms,
+  imposes reserve / audit / disclosure obligations, and is accompanied
+  by at least eight subordinate regulations in preparation.
+- `CLAIM_144` (v0.4, `TAIWAN_VASP_003` Executive Yuan): the Executive
+  Yuan approved the FSC draft VASP Act on 2026-04-02 and submitted it to
+  the Legislative Yuan; the official release says the draft covers VASPs
+  and stablecoin issuers and includes financial-soundness, segregated
+  custody, and unfair-trading safeguards.
+- `CLAIM_145` (v0.4, `TAIWAN_VASP_004` UDN / Economic Daily News):
+  news coverage reports that the Legislative Yuan Finance Committee first
+  review of the VASP draft passed on 2026-06-03, including licensing,
+  full reserve segregation, and fraud / manipulation penalties. Treat as
+  committee-stage news until an official Legislative Yuan record or
+  enacted text is registered.
+- `CLAIM_146` (v0.4, `TAIWAN_VASP_005` Legislative Yuan): the official
+  bill-detail page for the Executive Yuan draft lists the case as referred
+  for review, assigned to the Finance Committee, and records committee
+  review entries on 2026-05-07, 2026-06-01, and 2026-06-03 with gazette
+  production pending for the June entries.
 
 What is still missing:
 
-- Enacted Taiwan stablecoin statute, if enacted.
-- FSC sub-rules, licensing forms, consultation documents, or official
-  explanatory notes.
+- Enacted Taiwan VASP Act statutory text from the Legislative Yuan /
+  Presidential Office gazette, once passed.
+- Final Legislative Yuan committee report / gazette text for the 2026-06-03
+  committee stage, once produced.
+- Final FSC sub-rules, licensing forms, consultation documents, or
+  official explanatory notes.
 - CBC / FSC joint reserve-management rules.
 - Issuer qualification details, reserve custody requirements, disclosure
   templates, audit/assurance cadence, redemption timing, and enforcement
@@ -222,11 +336,18 @@ Do not claim:
 - NTD stablecoins are approved products.
 - Taiwan's rules are equivalent to GENIUS, MiCA, BoE, or NYDFS.
 
-Safe current wording:
+Safe current wording (v0.4):
 
-> CBC materials support a Taiwan policy synthesis, not a final enacted-law
-> analysis. Taiwan statutory conclusions should wait for enacted text or
-> official FSC/CBC sub-rules.
+> CBC materials support a Taiwan policy synthesis. The draft VASP Act is
+> claim-backed at legislative-stage only: FSC Chair Peng Jin-lung
+> publicly stated on 2025-12-03 that the first regulated stablecoin may
+> launch in H2 2026 at the earliest; the Executive Yuan approved the FSC
+> draft and submitted it to the Legislative Yuan on 2026-04-02; 2026-06-03
+> news reports say the Legislative Yuan Finance Committee first review
+> passed; and the official Legislative Yuan bill-detail page records
+> committee-review entries through 2026-06-03 with gazette production
+> pending. Taiwan statutory conclusions should still wait for enacted text
+> or official FSC/CBC sub-rules.
 
 Resolution criteria:
 
@@ -249,7 +370,13 @@ Resolution criteria:
 
 ### P1-1. Failure-Case Price / Depeg Timelines
 
-Status: unresolved; data-workflow-dependent.
+Status: partially narrowed at v0.4. CoinGecko now returns 401 without an API
+key for tested historical range requests, but CryptoCompare's public
+`histohour` endpoint produced a reproducible hourly proxy export for selected
+USDC/SVB 2023, Terra USTC 2022, and Maker DAI Black Thursday 2020 windows
+(`CLAIM_148`, `CLAIM_149`). Iron Finance remains unresolved at price-timeline
+level because the public CryptoCompare IRON/TITAN rows are zero-only and
+CoinPaprika historical OHLCV returned HTTP 402 in spot tests.
 
 Current supported evidence:
 
@@ -261,30 +388,40 @@ Current supported evidence:
 - `CLAIM_111`: Iron Finance post-mortem characterising the IRON/TITAN event
   as a bank run.
 - Current `FAILURE_001` to `FAILURE_006` rows are `url_only`.
+- `CLAIM_148`: `09_data_exports/failure_case_timelines/` now includes a
+  reproducible CryptoCompare public hourly OHLCV proxy export: 749 hourly rows
+  and a 5-row summary table. USDC, USTC and DAI are usable public hourly
+  proxies; IRON/TITAN are zero-only and not usable as Iron Finance price
+  timelines.
+- `CLAIM_149`: the public hourly proxy provides coarse USDC/SVB, Terra USTC,
+  and Maker DAI event-window metrics. Use as public hourly context only, not
+  exact depeg duration / tick-level trough evidence.
 
 What is still missing:
 
-- Reproducible price / peg time series for Terra UST, USDC/SVB, Iron
-  Finance, and any additional cases.
-- Source selection for price data (CoinGecko, Kaiko, Chainlink, DeFiLlama,
-  exchange candles, issuer data, or other reproducible datasets).
-- Time-zone-normalised event windows.
-- Rules for selecting intraday vs daily frequency.
-- Data-cleaning notebook or script and exported CSVs.
+- Usable Iron Finance IRON/TITAN price series from a non-zero historical data
+  source.
+- Higher-quality paid or exchange-level historical data for exact depeg
+  duration, tick-level trough, recovery time, and liquidity path.
+- Provider methodology comparison between CryptoCompare public OHLCV and
+  paid feeds such as Kaiko, Coin Metrics, Amberdata or CryptoCompare Pro.
 - Local archive for the currently `url_only` failure sources if strict local
   reproducibility is desired.
 
 Do not claim:
 
-- Exact depeg duration, trough, recovery time, or liquidity path without a
-  reproducible data series.
+- Exact depeg duration, tick-level trough, recovery time, or liquidity path
+  from the CryptoCompare public hourly proxy alone.
+- Iron Finance price timeline from the zero-only IRON/TITAN public proxy rows.
 - Terra / Iron / USDC / Tether cases are mechanically equivalent.
 - Current reserve condition from historical failure-case sources.
 
 Safe current wording:
 
-> Failure-case sources support qualitative risk channels, but not yet
-> reproducible price/depeg timelines.
+> Failure-case sources support qualitative risk channels, and the project now
+> has public hourly proxy timelines for USDC/SVB, Terra USTC and Maker DAI.
+> Exact depeg duration, tick-level trough/recovery, and Iron Finance price
+> timeline claims still require a better historical data source.
 
 Resolution criteria:
 
@@ -300,38 +437,52 @@ Resolution criteria:
    - slides 44 to 45
    - evidence portal
 
-### P1-2. Maker / DAI Black Thursday
+### P1-2. Maker / DAI Black Thursday Maker Foundation Primary Source
 
-Status: unresolved; primary-event-source-dependent.
+Status: case study closed at v0.3.3 at community / analyst confidence;
+Maker Foundation primary source still missing and source-dependent.
 
 Current supported evidence:
 
 - `CLAIM_098` to `CLAIM_102` support Maker / Sky core mechanics: vaults,
   collateralisation, auctions, DSR / Sky Savings Rate, Keepers, Oracles,
   Global Settlers, and USDS / sUSDS / stUSDS mapping at product-page level.
-- `04_matrices/failure_case_matrix.csv` explicitly marks Maker Black Thursday
-  as pending.
+- `CLAIM_135` (v0.3.3, `FAILURE_008` Glassnode): ETH -43% on 2020-03-12
+  ($194 → $111), gas spike >6x to ~80 Gwei with hourly peaks ~200 Gwei,
+  Medianizer oracle showed ~$166 versus spot ~$130.
+- `CLAIM_136` (v0.3.3, `FAILURE_007` Whiterabbit): 1,462 of 3,994
+  collateral auctions (~36.6%) closed at 100% discount; 62,892.93 ETH and
+  US$8.325 million liquidated for zero DAI bids; 5.67 million DAI of
+  protocol undercollateralisation.
+- `CLAIM_137` (v0.3.3, `FAILURE_008` Glassnode): community vetoed
+  Emergency Shutdown; max lot size raised 50 → 500 ETH; auction duration
+  extended; MKR Debt Auction commenced 2020-03-19 to recapitalise.
 
 What is still missing:
 
-- Primary MakerDAO / Maker Foundation / governance / forum / post-mortem
-  source for Black Thursday.
-- Event timeline, oracle / gas / auction / keeper failure mechanics.
-- Quantitative losses, zero-bid auctions, collateral shortfall, MKR dilution,
-  or governance response claims from primary sources.
-- Relationship between legacy MakerDAO event mechanics and current Sky /
-  USDS architecture.
+- A MakerDAO Foundation / governance forum / official post-mortem source
+  for Black Thursday. The legacy `blog.makerdao.com` URL has been
+  redirected to `sky.money` and the original Foundation post is no
+  longer published at the original location.
+- Maker Foundation public statement on final post-event MKR dilution,
+  recapitalisation outcome, or claims-process settlement.
+- Page-level mapping of the legacy 2020 MakerDAO Maker Vault / Cat /
+  Flopper / Vow architecture to the current Sky LSE / Spark architecture.
 
 Do not claim:
 
-- Exact Black Thursday losses, zero-bid amounts, auction failures, or MKR
-  dilution outcomes without a registered primary source.
-- Current Sky risk is identical to 2020 Maker risk.
+- A Maker Foundation primary post-mortem exists in the local archive.
+- Current Sky risk is identical to 2020 Maker risk; pair the case with
+  current Sky governance circuit breakers and collateral mix.
+- Black Thursday auction figures should be upgraded to high confidence
+  while only community and analyst sources are anchored.
 
 Safe current wording:
 
-> Maker / Sky mechanics are claim-backed, but Black Thursday is not yet a
-> claim-backed case study in this repository.
+> MakerDAO Black Thursday 2020-03-12 is claim-backed in this repository
+> via Whiterabbit and Glassnode community / analyst sources at medium
+> confidence. A Maker Foundation primary source would upgrade the case
+> study but is not currently archived.
 
 Resolution criteria:
 
@@ -427,17 +578,23 @@ Current supported evidence:
   gold, and Bitcoin.
 - `CLAIM_060`, `CLAIM_061`: verified-customer redemption and prohibited
   persons / jurisdictions.
+- `CLAIM_152`: Q1 2026 reserve-table extraction from `USDT_002`, with total
+  reserves/assets and category-level amounts for Treasury bills, repos,
+  cash/bank deposits, precious metals, Bitcoin, public equities, other
+  investments and secured loans.
+- `CLAIM_153`: Tether International entity / El Salvador regulatory framing,
+  13 approved blockchains at the reporting date, and discontinued redemption
+  obligations for legacy networks/tokens.
 
 Open questions:
 
-- Full Q1 2026 reserve table in `USDT_002`, including exact categories,
-  maturity / liquidity notes, secured loans, other investments, and issuer
-  distinctions.
+- Maturity ladder, custodian/counterparty split, liquidity-stress details, and
+  loan collateral composition behind the extracted Q1 2026 reserve categories.
 - Redemption fee, minimum, timing, operational delay, and bank-transfer
   mechanics.
 - Smart-contract freeze / blacklist / pause powers.
-- Separation among USDT, Tether International / El Salvador registration,
-  and any future GENIUS-compliant USAT structure.
+- Separation among USDT, Tether International / El Salvador registration, and
+  any future GENIUS-compliant USAT structure beyond the Q1 2026 report note.
 
 Do not claim:
 
@@ -447,8 +604,10 @@ Do not claim:
 
 Resolution criteria:
 
-- Add claims from `USDT_002`, `USDT_007`, contract documentation, and any
-  official USAT / Tether International materials.
+- Add claims from contract documentation and any official USAT / Tether
+  International materials that address smart-contract controls, fees,
+  redemption operations, custodian/counterparty detail or USAT/USDT
+  separation.
 - Update issuer digest, issuer matrix, chapter 2, chapter 3, and slides 8,
   19, and reserve-risk sections.
 
@@ -647,12 +806,17 @@ not miss USDPT.
 
 Open questions:
 
-- Product name and ticker stability: confirm whether all primary documents
-  use USDPT consistently.
-- Issuer legal entity and any co-branding / program-manager structure.
-- Reserve trust, reserve report, and attestation cadence.
-- Contract addresses and mint / burn controls.
-- Direct redemption rights and eligible redeemers.
+- Product name and ticker stability: primary rows mostly use USDPT, but
+  `USDPT_001` retains a UDSPT spelling in the Anchorage comment-letter
+  archive and should be treated as source spelling rather than silently
+  normalised.
+- Issuer legal entity is now anchored as Anchorage Digital Bank N.A.; any
+  co-branding / program-manager structure still needs product terms.
+- Reserve trust, USDPT-specific reserve report, and attestation cadence.
+- Token metadata and mint / burn controls beyond the disclosed official
+  Solana contract address.
+- Direct redemption rights and eligible redeemers beyond broad 1:1
+  redeemability statements.
 - Freeze / blacklist / suspension / sanctions controls.
 - Holder yield / reserve-yield treatment.
 
@@ -660,7 +824,8 @@ Do not claim:
 
 - USDPT can be compared issuer-by-issuer with USDC, USDT, Paxos, GUSD,
   FDUSD, RLUSD on redemption or reserve composition until product terms and
-  reserve reports exist.
+  reserve reports exist. The product page narrows the gap but does not close
+  issuer-comparison parity.
 
 Resolution criteria:
 
@@ -714,7 +879,16 @@ Resolution criteria:
 Current state:
 
 - `MCKINSEY_ARTEMIS_001`: `manual_needed`.
-- `FAILURE_001` to `FAILURE_006`: `url_only`.
+- `FAILURE_001` to `FAILURE_008`: `url_only`.
+- `USDPT_010`: `url_only`, medium-priority Anchorage transparency page;
+  no USDPT-specific report is available yet.
+- `USDPT_011`: `url_only`, medium-priority Anchorage Covered Stablecoin
+  Terms page; not a USDPT-specific fee schedule or reserve report.
+- `TAIWAN_VASP_001` to `TAIWAN_VASP_005`: `url_only`, legislative-stage
+  Taiwan sources. `TAIWAN_VASP_003` is official Executive Yuan;
+  `TAIWAN_VASP_004` is committee-stage news; `TAIWAN_VASP_005` is the
+  official Legislative Yuan bill-detail docket, with June committee gazette
+  text still pending.
 
 Action if local copies are obtained:
 

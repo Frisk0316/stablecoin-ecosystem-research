@@ -30,9 +30,16 @@ The project separates three product categories:
    hedging and off-exchange custody of backing assets.
 
 USDPT is treated separately. The archive supports the launch announcement,
-issuer identity, Solana deployment, and infrastructure partners, but does
-not yet support product terms, reserve reports, contract addresses, direct
-redemption rules, or a customer-to-customer settlement workflow.
+issuer identity, Solana deployment, infrastructure partners, product-page
+reserve categories, the official Solana contract address, and planned /
+coming-soon select-market exchange, cash-out, card and receive-in-USDPT
+features. Anchorage Digital Bank covered-stablecoin terms now partially
+bound direct ADB redemption to Clients, distinguish Non-Clients, describe a
+reserve trust and ADB sole-obligor role, and reserve legal/control powers. It
+does not yet support USDPT-specific retail/user terms, fee schedule, a
+USDPT-specific reserve attestation, exact token-control implementation, agent
+balance-sheet treatment, or a full customer / agent / bank-settlement
+workflow.
 
 ## Headline Findings
 
@@ -40,14 +47,17 @@ redemption rules, or a customer-to-customer settlement workflow.
    money-market and banking-system instruments.** USDC reserve evidence
    supports bank deposits, overnight reverse Treasury repo, sub-three-month
    Treasuries, and the Circle Reserve Fund (`CLAIM_026`, `CLAIM_027`). USDT
-   evidence supports large direct and indirect Treasury-bill exposure plus
-   material gold and Bitcoin exposure, so USDT should not be modelled as a
-   pure cash equivalent (`CLAIM_028`, `CLAIM_029`). Paxos-family stablecoins
+   evidence now includes the Q1 2026 reserve table, with Treasury bills,
+   reverse repos, cash/bank deposits, precious metals, Bitcoin, public
+   equities, other investments, and secured loans, so USDT should not be
+   modelled as a pure cash equivalent (`CLAIM_152`). Paxos-family stablecoins
    and Gemini Dollar have more tightly specified reserve categories in their
    governing documentation (`CLAIM_075`, `CLAIM_078`).
 
 2. **Direct redemption is contractual and gated.** USDC direct redemption
-   requires a Circle Mint account in good standing (`CLAIM_058`); USDT
+   requires a Circle Mint account in good standing (`CLAIM_058`), and Circle
+   risk factors identify address-blocking, freezing and blacklisting-policy
+   controls (`CLAIM_154`); USDT
    requires verified-customer status and excludes prohibited persons and
    jurisdictions (`CLAIM_060`, `CLAIM_061`); FDUSD requires an FD121 Account
    and excludes U.S. individuals (`CLAIM_062`, `CLAIM_064`); Paxos limits
@@ -112,14 +122,20 @@ redemption rules, or a customer-to-customer settlement workflow.
 
 The research is not a complete final publication. The active open items are:
 
-- USDPT product terms, reserve report, contract addresses, redemption rules,
-  and end-to-end settlement workflow.
-- Visa adjusted on-chain payment-volume export, Artemis methodology beyond
-  the current archive, and McKinsey / Artemis `MCKINSEY_ARTEMIS_001`.
+- USDPT-specific retail/user terms, fee schedule, USDPT-specific reserve
+  attestation, exact token-control implementation beyond the disclosed Solana
+  address, direct retail/agent redemption scope beyond ADB Client status,
+  agent balance-sheet treatment, and end-to-end settlement workflow.
+- Visa adjusted on-chain payment-volume export, Artemis reproducible export,
+  Cambridge numerical export, and McKinsey / Artemis
+  `MCKINSEY_ARTEMIS_001`. World Bank remittance-cost benchmark context is now
+  reproducibly exported, but it is not adjusted stablecoin payment volume.
 - Taiwan enacted statutory text and sub-rules if the draft VASP / stablecoin
   regime is later enacted or officially supplemented.
-- Maker / DAI Black Thursday primary-source extraction and reproducible
-  failure-case price/depeg timelines.
+- Maker / DAI Black Thursday primary-source extraction, a usable Iron
+  Finance price timeline, and higher-quality failure-case price/depeg data
+  for exact duration/trough/recovery claims. Public hourly proxy timelines
+  for USDC/SVB, Terra USTC and Maker DAI are now available.
 
 ## Method Commitments
 
@@ -132,10 +148,12 @@ The research is not a complete final publication. The active open items are:
 - MiCA ART and MiCA EMT rules remain separate.
 - Unsupported questions stay open rather than being filled by inference.
 
-The v0.3.2 claim table contains 131 entries (`CLAIM_001` through
-`CLAIM_131`). The source registry contains 137 rows. Validation scripts
-`08_scripts/validate_claim_table.py`, `08_scripts/check_missing_sources.py`,
-and `08_scripts/check_mermaid.py` pass at this cut-off.
+The v0.4 claim table contains 154 entries (`CLAIM_001` through
+`CLAIM_154`). The source registry contains 148 rows. Full Python validation
+and portal build passed at 153 claims before the final `CLAIM_154` USDC
+risk-factor addition; post-154 static checks confirm the `USDC_007` source row
+and cross-document references, while Python validation / portal rerun is
+pending in the current execution session.
 
 ## How To Read This Package
 
