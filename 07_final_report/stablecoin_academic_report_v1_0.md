@@ -3,9 +3,9 @@
 Issuer Design, Reserve Assets, Regulation, Payment Infrastructure, and
 Systemic Risk
 
-Status: **canonical academic report — v1.0** (current main version)
+Status: **canonical academic report — v1.1 evidence update** (current main version)
 
-Last updated: 2026-05-15
+Last updated: 2026-07-13
 
 This is the canonical version of the final report for the 2026-06-27 reading
 group delivery. Earlier versions are preserved for historical reference at
@@ -15,7 +15,8 @@ are superseded and should not be cited as the project's current findings.
 
 This report is claim-backed. Major assertions are anchored to
 `03_claim_tables/claim_table_master.csv`. Source metadata is tracked in
-`01_sources/source_registry.csv`.
+`01_sources/source_registry.csv`. The 2026-07-13 P0 update is summarised in
+`00_project_management/stablecoin_gap_update_2026-07-13.md`.
 
 ## Abstract
 
@@ -387,8 +388,10 @@ Western Union consumer-spend layer (`CLAIM_132` to `CLAIM_134`). Western
 Union's product page adds broad reserve categories, 1:1 redeemability wording,
 the official Solana contract address, and planned / coming-soon select-market
 exchange, cash-out, card and receive-in-USDPT features (`CLAIM_140` to
-`CLAIM_142`). Anchorage's transparency page identifies the USDPT reserve
-report slot but marks it "Coming soon" (`CLAIM_143`).
+`CLAIM_142`). Anchorage's transparency page previously identified the USDPT
+reserve report slot as "Coming soon" (`CLAIM_143`); Deloitte's subsequently
+published 2026-05-31 examination reports 1,500,372 redeemable USDPT,
+US$1,603,106 reserves and US$102,734 surplus (`CLAIM_158`, `CLAIM_159`).
 Anchorage Digital Bank's Covered Stablecoin Terms add an ADB-level legal
 boundary: ADB-issued series are issued and redeemed directly only to Clients,
 Non-Clients are not ADB customers under the terms, the reserve is described as
@@ -402,10 +405,12 @@ USDPT and related infrastructure to build a regulated digital-asset settlement
 layer. It is not yet defensible to claim that USDPT replaces SWIFT,
 correspondent banking, Fedwire, CHIPS, Western Union's consumer front end, or
 all traditional remittance rails. USDPT-specific retail/user terms, fee
-schedule, a USDPT-specific reserve attestation, exact token-control
-implementation, retail/agent eligible-redeemer scope beyond ADB Client status,
-agent balance-sheet treatment, and end-to-end workflow documents remain
-blockers.
+schedule, exact contract/key control implementation, retail/agent eligible-
+redeemer scope beyond ADB Client status, agent balance-sheet treatment, and
+end-to-end workflow documents remain blockers. ADB's general fee schedule has
+no USDPT row, and issuer-level freeze/block/burn capability does not disclose
+the exact USDPT program implementation (`CLAIM_160`, `CLAIM_161`,
+`CLAIM_170`).
 
 ## 8. On-Chain Data And Payment Demand
 
@@ -424,6 +429,18 @@ benchmark export using WDI API indicator `SI.RMT.COST.IB.ZS`, with 17,556
 country/region-year rows and a 104-row latest non-null benchmark file
 (`CLAIM_147`). That benchmark is useful for off-chain cost context, not for
 measuring stablecoin payment adoption.
+
+The 2026-07-13 source pass adds current but carefully bounded snapshots. Visa
+displayed US$100.1 trillion total and US$14.7 trillion adjusted transfer volume
+over the prior 12 months; its filters still leave exchange, lending, mint/burn
+and ramp activity, so the metric is not payments-only (`CLAIM_162`,
+`CLAIM_163`). Artemis displayed US$229.0 billion average daily transfer volume
+but does not label that headline as payment volume, and its CSV/API access is
+account/product gated (`CLAIM_164`, `CLAIM_165`). Cambridge's locally archived
+public JSON yields US$2.531847 trillion and 122,153,423 adjusted transfers for
+June 2026 across six token/chain series (`CLAIM_166`). These sources do not
+collectively provide a complete, anonymously downloadable, market-wide
+adjusted stablecoin payments dataset (`CLAIM_167`).
 
 The methodological problem is that raw transfers can include exchange
 deposits/withdrawals, internal treasury operations, bridge movements,
@@ -524,19 +541,18 @@ source-grounded CBC framing: USD stablecoins raise digital-dollarisation and
 FX-monitoring concerns, while NTD stablecoins are closer to tokenized
 electronic-payment stored value with reserve, disclosure, no-yield and
 rulemaking constraints (`CLAIM_112`-`CLAIM_118`).
-The VASP Act draft is now traceable through Executive Yuan submission and
-Legislative Yuan committee-stage docket evidence (`CLAIM_138`-`CLAIM_146`),
-but Taiwan enacted-law conclusions still require enacted statutory text and
-final FSC sub-rules.
+The Virtual Asset Service Act passed third reading on 2026-06-30. As of
+2026-07-13, official sources had not yet verified promulgation or effectiveness,
+and final FSC/CBC stablecoin subordinate rules had not been issued
+(`CLAIM_168`, `CLAIM_169`).
 
 The next research priorities are clear. First, complete USDPT-specific
-retail/user terms, fee schedule, USDPT-specific reserve attestation,
-retail/agent eligible redeemer scope beyond ADB Client status, exact
-token-control and workflow extraction. Second,
-build adjusted on-chain payment-demand exports rather than relying on raw
-volume; World Bank cost context is now available, but Visa / Artemis /
-Cambridge adjusted stablecoin exports are still missing. Third, extract
-Taiwan enacted-law/sub-rule materials if official texts become available.
+retail/user terms and fee schedule, retail/agent eligible redeemer scope beyond
+ADB Client status, exact token-control and workflow extraction. Second, obtain
+a genuinely payments-classified market-wide dataset if a provider publishes
+one; current Visa, Artemis and Cambridge series are transfer or sampled/model
+evidence. Third, register Taiwan promulgated text and final subordinate rules
+when official sources publish them.
 Fourth, upgrade failure-case timelines from public hourly proxies to
 higher-quality or paid feeds where exact duration, trough and recovery claims
 are required, and obtain a usable Iron Finance IRON/TITAN chronology. Fifth,

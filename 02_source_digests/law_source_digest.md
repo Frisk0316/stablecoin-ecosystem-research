@@ -381,3 +381,13 @@ Taiwan users. Pair these claims with the CBC policy synthesis at
   consolidated bill text when produced.
 - Keep the cross-jurisdiction comparison table synchronized when enacted
   Taiwan statutory sources are added.
+
+## 2026-07-13 Taiwan legislative update
+
+Official Legislative Yuan records now establish that the Virtual Asset
+Service Act passed third reading on 2026-06-30 (`CLAIM_168`). As of the
+2026-07-13 access date, the official passed-bills list still lacked full and
+promulgated text and the Presidential Gazette index did not list the Act;
+therefore the safe label is “passed third reading,” not “promulgated” or “in
+force.” Final FSC/CBC stablecoin subordinate rules were still under joint
+drafting (`CLAIM_169`).

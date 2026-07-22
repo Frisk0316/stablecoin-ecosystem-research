@@ -95,3 +95,15 @@ Delivery status after the v0.3.3 cascade:
 The live USDPT research queue is
 `00_project_management/usdpt_product_terms_research_queue.md`. Use that queue
 before strengthening any Chapter 6 conclusion.
+
+## 2026-07-13 USDPT update
+
+Deloitte's 2026-05-31 point-in-time examination is now archived as
+`USDPT_014` and closes the missing-attestation gap for that timestamp
+(`CLAIM_158`, `CLAIM_159`). It reports 1,500,372 redeemable USDPT,
+US$1,603,106 reserves and US$102,734 surplus. This is an attestation, not a
+financial-statement audit or control-effectiveness opinion. ADB's general fee
+schedule has no USDPT row (`CLAIM_160`), while its Treasury comment letter
+supports issuer-level issue/redeem and required freeze/block/burn capability
+without exposing exact USDPT contract roles or key governance (`CLAIM_161`).
+The full agent/bank/clearing workflow remains unpublished (`CLAIM_170`).

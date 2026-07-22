@@ -1,0 +1,447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=EDGE;">
+<title>立法院最新通過議案</title>
+<link href="/lynewbill/css/css.css" rel="stylesheet" type="text/css" />
+<script src="/lynewbill/js/jquery-min.js"></script>
+<script type="text/javascript" src="/lynewbill/js/iframeheight.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+$.iframeHeightExternal();
+window.top.postMessage("scrollTop", "*");
+}
+);
+</script>
+<script type="text/javascript">
+$(function(){
+$("#top").bind('click', function (event) {
+window.top.postMessage("scrollTop", "*");
+});
+});
+</script>
+<script type="text/javascript">
+var isOutSide = "false";
+function url(url,menutarget) {
+var menu=$("iframe")[0].contentWindow.$("a#"+menutarget).parent().parent().parent().parent().index();
+var menup=$("iframe")[0].contentWindow.$("#menu h2 a").index($("iframe")[0].contentWindow.$("#"+menutarget));
+$.cookie("menu",menu);
+$.cookie("menuP",menup);
+window.open(url);
+}
+</script>
+<script type="text/javascript">
+function showhide3(id)
+{
+if(document.getElementById(id).style.display=="none")
+{
+document.getElementById(id).style.display="";	
+document.cookie=id+"open";
+}
+else if(document.getElementById(id).style.display=="")
+{
+document.getElementById(id).style.display="none";
+document.cookie=id+"close";
+}
+}
+</script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script type="text/javascript">
+function MM_showHideLayers() { //v9.0
+var i,p,v,obj,args=MM_showHideLayers.arguments;
+for (i=0; i<(args.length-2); i+=3)
+with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+obj.visibility=v; }
+}
+</script>
+<script type="text/javascript">
+function selAll()
+{
+var patt1=new RegExp("_0_10_S");
+var taginput=document.getElementsByTagName("input");
+var i=0
+for(i;i<taginput.length;i++)
+{
+if(patt1.test(taginput[i].name)==true)
+taginput[i].checked=true;
+}
+}
+function unselAll()
+{
+var patt1=new RegExp("_0_10_S");
+var taginput=document.getElementsByTagName("input");
+var i=0;
+for(i;i<taginput.length;i++)
+{
+if(patt1.test(taginput[i].name)==true)
+taginput[i].checked=false;
+}
+}
+</script>
+<!--下載區E-mail列表開合-->
+<script type="text/javascript">
+function optionopen(self,selnum,id)
+{
+if(self==selnum)
+document.getElementById(id).style.display="";
+else
+document.getElementById(id).style.display="none";
+}
+</script>
+<script type="text/javascript" src="/lynewbill/js/jquery.placeholder.js"></script>
+<style type="text/css">
+/* 設定提示字的文字顏色 */
+::-webkit-input-placeholder {
+color: #B5B5B5;
+}
+:-moz-placeholder {
+color: #B5B5B5;
+}
+.placeholder {
+color: #B5B5B5;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+// 幫有 placeholder 屬性的輸入框加上提示效果
+$('input[placeholder]').placeholder();
+});
+</script>
+</head>
+<body topmargin=0 rightmargin=0 leftmargin=0>
+<form   method=post action="/lynewbillc/newbillkm?@@841661085" name=KM onload="javascript:window.focus()"  >
+<a name=kmtop></a>
+<input type=hidden name=INFO value=0004CE3B0000210100000000000000A001000000000000000>
+<div id="block20"></div><table border=0 cellspacing=0 cellpadding=0 width=1000 align=center><tr><td valign=top><table border=0 cellspacing=0 cellpadding=0 align=center><tr><td valign=top class=search_bg><table width=675 border=0 align=right cellpadding=0 cellspacing=0><tr><td><input type=hidden name=@_1_0_T value="T_XX">
+<input type=text name=_1_0_T  placeholder="不限欄位，可使用AND、OR、NOT布林邏輯查詢，例如：文化 AND 教育" style="font-size:14px" value=''>
+</td><td align=left nowrap><input type=image name="_IMG_查詢" title="查詢" src="/lynewbill/img/search_btn.png" class=button border="0" >
+&nbsp;&nbsp<input type=image name="_IMG_清除" title="清除" src="/lynewbill/img/clear_btn.png" class=button border="0" >
+</td></tr><tr><td colspan=2><table border=0 width=475 cellpadding=0 cellspacing=0><tr><td width=80 valign=left nowrap>通過日期：</td><td align=left><input type=hidden name=@_1_5_Y value="Y6_DA">
+<table cellspacing=0 cellpadding=0><tr><td><table cellspacing=0 cellpadding=0><tr><td><select name=_1_5_Y_0_3><option><option value=115>115
+<option value=114>114
+<option value=113>113
+<option value=112>112
+<option value=111>111
+<option value=110>110
+<option value=109>109
+</select>
+<td>年<td><select name=_1_5_Y_3_2><option><option value=01>1
+<option value=02>2
+<option value=03>3
+<option value=04>4
+<option value=05>5
+<option value=06>6
+<option value=07>7
+<option value=08>8
+<option value=09>9
+<option value=10>10
+<option value=11>11
+<option value=12>12
+</select>
+<td>月<td><select name=_1_5_Y_5_2><option><option value=01>1
+<option value=02>2
+<option value=03>3
+<option value=04>4
+<option value=05>5
+<option value=06>6
+<option value=07>7
+<option value=08>8
+<option value=09>9
+<option value=10>10
+<option value=11>11
+<option value=12>12
+<option value=13>13
+<option value=14>14
+<option value=15>15
+<option value=16>16
+<option value=17>17
+<option value=18>18
+<option value=19>19
+<option value=20>20
+<option value=21>21
+<option value=22>22
+<option value=23>23
+<option value=24>24
+<option value=25>25
+<option value=26>26
+<option value=27>27
+<option value=28>28
+<option value=29>29
+<option value=30>30
+<option value=31>31
+</select>
+<td>日<td><td>&nbsp～&nbsp<td><select name=_1_5_Y_7_3><option><option value=115>115
+<option value=114>114
+<option value=113>113
+<option value=112>112
+<option value=111>111
+<option value=110>110
+<option value=109>109
+</select>
+<td>年<td><select name=_1_5_Y_10_2><option><option value=01>1
+<option value=02>2
+<option value=03>3
+<option value=04>4
+<option value=05>5
+<option value=06>6
+<option value=07>7
+<option value=08>8
+<option value=09>9
+<option value=10>10
+<option value=11>11
+<option value=12>12
+</select>
+<td>月<td><select name=_1_5_Y_12_2><option><option value=01>1
+<option value=02>2
+<option value=03>3
+<option value=04>4
+<option value=05>5
+<option value=06>6
+<option value=07>7
+<option value=08>8
+<option value=09>9
+<option value=10>10
+<option value=11>11
+<option value=12>12
+<option value=13>13
+<option value=14>14
+<option value=15>15
+<option value=16>16
+<option value=17>17
+<option value=18>18
+<option value=19>19
+<option value=20>20
+<option value=21>21
+<option value=22>22
+<option value=23>23
+<option value=24>24
+<option value=25>25
+<option value=26>26
+<option value=27>27
+<option value=28>28
+<option value=29>29
+<option value=30>30
+<option value=31>31
+</select>
+<td>日</table>
+</table></td></tr></table></td></tr></table></td></tr><tr><td><img src="/lynewbill/img/search_bg_sd.png" border=0></td></tr><tr><td class=date>資料範圍：115/03/06 ~ 115/07/07&nbsp;&nbsp;&nbsp;&nbsp;更新日期：115/07/13</td></tr><tr><td align=center></td></tr></table><div id="block20"></div></td></tr><tr><td valign=top><table border=0 cellspacing=0 cellpadding=0 width=990 align=center><tr><td class="tab" valign=top colspan=2><table class=tab_law border=0 cellspacing=0 cellpadding=0><tr><td><tr><td class=stay><a href=/lynewbillc/newbillkm?.15d600C3B00200000000100C8000^10000000000A00000010100E4041b7 >法律案 (20)</a>
+</td>
+<td><a href=/lynewbillc/newbillkm?.dd1a04C0002010000000A0200000000^20008C000000000010B3E004242 >預算案 (9)</a>
+</td>
+<td><a href=/lynewbillc/newbillkm?.6608400100000A000008^000008C00080000000000001200B3EC0004207 >同意權行使事項 (3)</a>
+</td>
+<td><a href=/lynewbillc/newbillkm?.3e0d004000210000000000000000010^0008C00A0A000000100B3EC04419 >其他 (5)</a>
+</td>
+</td></tr></table></td></tr><tr><td><table border=0><tr><td><table border=0 align=center><tr><td nowrap>本頁：</td><td nowrap><input type=image name="_IMG_本頁全選" title="本頁全選" src="/lynewbill/img/page_select.png" class=button border="0" >
+</td><td><input type=image name="_IMG_本頁全不選" title="本頁全不選" src="/lynewbill/img/page_unselect.png" class=button border="0" >
+</td><td nowrap>本次：</td><td nowrap><input type=image name="_IMG_全部清除" title="全部清除" src="/lynewbill/img/page_unselect.png" class=button border="0" >
+</td><td><span style="vertical-align:top;line-height:22px"></span></td></tr></table></td><td><table border=0><tr><td><input type=image name="_IMG_列印" title="列印" src="/lynewbill/img/print_icon.png" class=button border="0" >
+</td><td><input type=image name="_IMG_存檔" title="存檔" src="/lynewbill/img/save_btn.png" class=button border="0" >
+</td></tr></table></td></tr></table></td><td align=right><table border="0" cellspacing="0" align="right"><tr><td><input type=image name="_IMG_最新首頁" title="最新首頁" src="/lynewbill/img/first.png" class=button border="0" >
+</td><td></td><td><table cellspacing=0 cellpadding=0 border=0><tr><td class=nsf0><td class=nsf1>&nbsp;<td align=center class=nsf1><font color=red><b>&nbsp;1&nbsp;</b><font>
+<td class=nsf1>&nbsp;<td align=center class=nsf1><a href=/lynewbillc/newbillkm?.54610E302001000A00C0000^00000A0001000000000011000BC4003fe1 class=linkpage target=_self>
+2
+</a>
+<td class=nsf0>&nbsp;<td class=nsf0></table></td><td><input type=image name="_IMG_最新次頁" title="最新次頁" src="/lynewbill/img/page_next.png" class=button border="0" >
+</td><td><input type=image name="_IMG_最新末頁" title="最新末頁" src="/lynewbill/img/last.png" class=button border="0" >
+</td></tr></table></td></td></tr><tr><td colspan=2 height=400 valign=top><div id="block10"></div><table border=0 align="center" cellspacing="0" class="sumtab"><tr><td><table class=sumtab width=100%><tr><td class=sumth0>序號<td class=sumth1>
+通過日期<td class=sumth1>
+議案名稱<td class=sumth1>
+全文<td class=sumth1>
+公布條文<td class=sumth1>
+通過會次<td class=sumth1>
+備註<tr class=sumtr1><td class=sumtd1><nobr><script language=JavaScript>
+function instback(selObj){
+window.open(selObj.options[selObj.selectedIndex].value,"_self");}
+function instback_win(selObj,win){
+window.open(selObj.options[selObj.selectedIndex].value,win);}
+function clickselect(who,db,rec,curt)
+{  if(who.checked==true)
+{ $.ajax({url:"/lynewbillc/newbillkm?0004CE3B0000210100000000000000A001000001000000000^S^"+db+"_"+rec+"_"+curt+"_1^",async:false,cache:false});
+    who.setAttribute("checked", "true"); }else
+{ $.ajax({url:"/lynewbillc/newbillkm?0004CE3B0000210100000000000000A001000001000000000^S^"+db+"_"+rec+"_"+curt+"_0^",async:false,cache:false});
+   who.removeAttribute("checked", "true"); }}
+function changepage1(who,dirs,page){
+ $.ajax({url:"/lynewbillc/newbillkm?0004CE3B0000210100000000000000A001000001000000000^P^"+dirs+"_"+page+"_0^",async:false,cache:false});
+}
+function hyperlink2button(hexstr,func,win)
+{
+ var dd=document.getElementsByTagName('input');
+var msg="";
+for(i=0;i<dd.length;i++)
+{
+if(dd[i].type=="submit")continue;
+if(dd[i].type=="button")continue;
+if(dd[i].type=="image")continue;
+if(dd[i].type=="password")continue;
+if(dd[i].type=="reset")continue;
+if(dd[i].type=="hidden"){ if(dd[i].name=='INFO'){continue;} }
+if(dd[i].type=="checkbox") { if(dd[i].checked==false) continue; }
+if(dd[i].type=="radio") { if(dd[i].checked==false) continue; }
+if(!(dd[i].value)||!(dd[i].name))continue;
+msg=msg+"~A"+dd[i].name+"~B";
+for (var n = 0 ; n< dd[i].value.length ; n++){ msg=msg+'%'+(dd[i].value.charCodeAt(n)).toString(16); }
+}
+window.location="newbillkm?"+hexstr+"^N^"+func+msg,win;
+}
+</script>
+<input type=hidden value=1 name=@R0004CE3B0000210100000000000100A001000001000000000_0_1_1><input type=checkbox name=R0004CE3B0000210100000000000100A001000001000000000_0_1_1 id=0_1_1 onclick="clickselect(this,0,1,1)">1</nobr></td><td class=sumtd2000>
+1150707
+</td>
+<td class=sumtd2001>
+中華民國刑法修正第八十條條文
+</td>
+<td class=sumtd2002>
+&nbsp;&nbsp;<td class=sumtd2003>
+&nbsp;&nbsp;<td class=sumtd2004>
+立法院第11屆第5會期第16次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000200A001000001000000000_0_2_2><input type=checkbox name=R0004CE3B0000210100000000000200A001000001000000000_0_2_2 id=0_2_2 onclick="clickselect(this,0,2,2)">2</nobr></td><td class=sumtd2000>
+1150707
+</td>
+<td class=sumtd2001>
+中華民國刑法施行法修正第八條之二條文
+</td>
+<td class=sumtd2002>
+&nbsp;&nbsp;<td class=sumtd2003>
+&nbsp;&nbsp;<td class=sumtd2004>
+立法院第11屆第5會期第16次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000300A001000001000000000_0_4_3><input type=checkbox name=R0004CE3B0000210100000000000300A001000001000000000_0_4_3 id=0_4_3 onclick="clickselect(this,0,4,3)">3</nobr></td><td class=sumtd2000>
+1150630
+</td>
+<td class=sumtd2001>
+制定虛擬資產服務法
+</td>
+<td class=sumtd2002>
+&nbsp;&nbsp;<td class=sumtd2003>
+&nbsp;&nbsp;<td class=sumtd2004>
+立法院第11屆第5會期第15次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000400A001000001000000000_0_5_4><input type=checkbox name=R0004CE3B0000210100000000000400A001000001000000000_0_5_4 id=0_5_4 onclick="clickselect(this,0,5,4)">4</nobr></td><td class=sumtd2000>
+1150623
+</td>
+<td class=sumtd2001>
+國民體育法修正部分條文
+</td>
+<td class=sumtd2002>
+&nbsp;&nbsp;<td class=sumtd2003>
+&nbsp;&nbsp;<td class=sumtd2004>
+立法院第11屆第5會期第14次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000500A001000001000000000_0_14_5><input type=checkbox name=R0004CE3B0000210100000000000500A001000001000000000_0_14_5 id=0_14_5 onclick="clickselect(this,0,14,5)">5</nobr></td><td class=sumtd2000>
+1150616
+</td>
+<td class=sumtd2001>
+廢棄物清理法增訂部分條文；刪除第二十一條、第六十一條及第六十四條條文；並修正第二章章名及部分條文
+</td>
+<td class=sumtd2002>
+&nbsp;&nbsp;<td class=sumtd2003>
+&nbsp;&nbsp;<td class=sumtd2004>
+立法院第11屆第5會期第14次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000600A001000001000000000_0_15_6><input type=checkbox name=R0004CE3B0000210100000000000600A001000001000000000_0_15_6 id=0_15_6 onclick="clickselect(this,0,15,6)">6</nobr></td><td class=sumtd2000>
+1150612
+</td>
+<td class=sumtd2001>
+公職人員選舉罷免法修正第二十六條條文
+</td>
+<td class=sumtd2002>
+<a href="/lglawc/lawsingle?0^6206C0999906686006C0812F06606426D8819A26626EE6C48918" target="_blank"><img src=/lynewbill/img/html_icon.png border=0></a>
+</td>
+<td class=sumtd2003>
+<a href=https://lis.ly.gov.tw/lgcgi/ttspdf2?7869:4-7 target=_blank><img src=/lynewbill/img/view.png border=0></a></td>
+<td class=sumtd2004>
+立法院第11屆第5會期第14次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000700A001000001000000000_0_16_7><input type=checkbox name=R0004CE3B0000210100000000000700A001000001000000000_0_16_7 id=0_16_7 onclick="clickselect(this,0,16,7)">7</nobr></td><td class=sumtd2000>
+1150609
+</td>
+<td class=sumtd2001>
+文化資產保存法修正第四條、第九十八條及第一百十二條條文
+</td>
+<td class=sumtd2002>
+<a href="/lglawc/lawsingle?0^6206C0999906686006C0812F06607206D8819A26626206E49118" target="_blank"><img src=/lynewbill/img/html_icon.png border=0></a>
+</td>
+<td class=sumtd2003>
+<a href=https://lis.ly.gov.tw/lgcgi/ttspdf2?7869:3-4 target=_blank><img src=/lynewbill/img/view.png border=0></a></td>
+<td class=sumtd2004>
+立法院第11屆第5會期第13次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000800A001000001000000000_0_17_8><input type=checkbox name=R0004CE3B0000210100000000000800A001000001000000000_0_17_8 id=0_17_8 onclick="clickselect(this,0,17,8)">8</nobr></td><td class=sumtd2000>
+1150609
+</td>
+<td class=sumtd2001>
+市區道路條例修正第二十三條條文
+</td>
+<td class=sumtd2002>
+<a href="/lglawc/lawsingle?0^6206C0999906686006C0812F06607206D8819A266264C6C48918" target="_blank"><img src=/lynewbill/img/html_icon.png border=0></a>
+</td>
+<td class=sumtd2003>
+<a href=https://lis.ly.gov.tw/lgcgi/ttspdf2?7869:2-2 target=_blank><img src=/lynewbill/img/view.png border=0></a></td>
+<td class=sumtd2004>
+立法院第11屆第5會期第13次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000900A001000001000000000_0_19_9><input type=checkbox name=R0004CE3B0000210100000000000900A001000001000000000_0_19_9 id=0_19_9 onclick="clickselect(this,0,19,9)">9</nobr></td><td class=sumtd2000>
+1150602
+</td>
+<td class=sumtd2001>
+宗教團體以自然人名義登記不動產處理暫行條例修正第五條條文
+</td>
+<td class=sumtd2002>
+<a href="/lglawc/lawsingle?0^6206C0999906686006C0812F06606406D8819A26626E46C8B918" target="_blank"><img src=/lynewbill/img/html_icon.png border=0></a>
+</td>
+<td class=sumtd2003>
+<a href=https://lis.ly.gov.tw/lgcgi/ttspdf2?7865:2-2 target=_blank><img src=/lynewbill/img/view.png border=0></a></td>
+<td class=sumtd2004>
+立法院第11屆第5會期第12次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;<tr class=sumtr1><td class=sumtd1><nobr><input type=hidden value=1 name=@R0004CE3B0000210100000000000A00A001000001000000000_0_20_10><input type=checkbox name=R0004CE3B0000210100000000000A00A001000001000000000_0_20_10 id=0_20_10 onclick="clickselect(this,0,20,10)">10</nobr></td><td class=sumtd2000>
+1150602
+</td>
+<td class=sumtd2001>
+「資源回收再利用法」名稱修正為「資源循環推動法」；並修正條文
+</td>
+<td class=sumtd2002>
+<a href="/lglawc/lawsingle?0^6206C0999906686006C0812F06606406D8819A26626A46DC9918" target="_blank"><img src=/lynewbill/img/html_icon.png border=0></a>
+</td>
+<td class=sumtd2003>
+<a href=https://lis.ly.gov.tw/lgcgi/ttspdf2?7867:2-23 target=_blank><img src=/lynewbill/img/view.png border=0></a></td>
+<td class=sumtd2004>
+立法院第11屆第5會期第12次會議
+</td>
+<td class=sumtd2005>
+&nbsp;&nbsp;</table>
+</td></tr></table></td></tr></table></td></tr></td></tr><tr><td><table border=0 cellspacing=0 cellpadding=0 width=1000 align=center><tr><td valign=top class=bottom02>歷屆通過議案請參考<a href="javascript:url('/do/www/lawStatistics?first=y&blockId=1&titleName=%E8%AD%B0%E6%A1%88%E7%B5%B1%E8%A8%88','議案統計')" onclick=window.open('http://npl.ly.gov.tw/do/www/lawStatistics?first=y&blockId=1&titleName=%E8%AD%B0%E6%A1%88%E7%B5%B1%E8%A8%88','議案統計')>議案統計</a></td><td valign=top><a href="#" id="top"><img src="/lylegiscom/images/icon_top.gif" width="53" height="20" border="0" alt="回到最上面"></a></td></tr></table></td></tr><tr><td valign=top class=bottom01></td></tr></table><input type=hidden name=INFO value=0004CE3B0000210100000000000000A001000000000000000>
+</form></body></html>

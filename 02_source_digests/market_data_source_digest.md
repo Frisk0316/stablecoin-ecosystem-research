@@ -78,3 +78,14 @@ World Bank outputs are off-chain remittance-cost benchmark evidence only.
 CryptoCompare outputs are public hourly proxy failure-case evidence only. Cite
 them together with `CLAIM_055`, `CLAIM_147`, `CLAIM_148`, `CLAIM_149`, and the
 data-manifest limitations, not as payment-volume evidence.
+
+## 2026-07-13 adjusted-transfer update
+
+Current snapshots and definitions are now claim-backed at `CLAIM_162` to
+`CLAIM_167`. Visa and Cambridge expose adjusted **transfer** metrics, not
+payments-only volume. Artemis' current overview also labels its headline as
+transfer volume; its payments estimate is a non-comprehensive sampled/modelled
+series. Cambridge June 2026 is reproducible from the locally archived public
+JSON at `09_data_exports/gap_update_2026-07-13/`, but covers only six
+token/chain series and excludes CEX off-chain activity. No complete anonymous-
+downloadable market-wide adjusted payments dataset was found.

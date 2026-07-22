@@ -1,6 +1,6 @@
 # Stablecoin Ecosystem Research
 
-Current status: v1.0 academic draft / evidence portal build / v0.4 targeted gap closure
+Current status: v1.1 academic report / evidence portal build / v0.5 official-source gap closure
 
 This repository is a reproducible research package for stablecoins, dollar
 money markets, issuer balance sheets, regulation, central-bank views,
@@ -10,32 +10,34 @@ chapter drafts, and final report are meant to stay traceable to each other.
 
 ## Current Snapshot
 
-Last synchronized: 2026-06-10
+Last synchronized: 2026-07-13
 
-Source registry rows: **150**
+Source registry rows: **166**
 
-Claim table rows: **157**
+Claim table rows: **170**
 
 Category counts:
 
 - archive_reference: 2
 - central_bank: 23
 - failure_case: 8
-- issuer: 65
-- law: 27
-- market_data: 15
+- issuer: 69
+- law: 32
+- market_data: 21
 - payment_settlement: 7
-- project_management: 3
+- project_management: 4
 
 Status counts:
 
-- api_saved: 4
+- api_saved: 5
 - download_script: 2
-- downloaded: 67
+- downloaded: 70
 - dynamic_html_saved: 6
-- html_saved: 56
+- dynamic_url_only: 1
+- html_saved: 62
+- internal_synthesis: 1
 - manual_needed: 1
-- url_only: 14
+- url_only: 18
 
 ## What Changed Since v0.1
 
@@ -234,11 +236,11 @@ Run from the repository root:
 & 'C:\Users\woody\AppData\Local\Programs\Python\Python312\python.exe' 08_scripts\check_missing_sources.py
 ```
 
-Current claim-table target after the `CLAIM_155`-`CLAIM_157` additions;
-full Python validation rerun passed on 2026-06-10:
+Current claim-table target after the `CLAIM_158`-`CLAIM_170` additions;
+full Python validation rerun passed on 2026-07-13:
 
 ```text
-OK: 157 claims validated.
+OK: 170 claims validated.
 ```
 
 `check_missing_sources.py` should report no missing archived local files and
@@ -249,9 +251,9 @@ sources as known no-local / non-blocking items. (`FAILURE_006`, `USDPT_012`,
 and `VISA_ALLIUM_001` were archived to local HTML on 2026-06-11 and are now
 `html_saved`.)
 
-Current portal build target after the `CLAIM_155`-`CLAIM_157` additions;
-portal rebuilt on 2026-06-10:
+Current portal build target after the `CLAIM_158`-`CLAIM_170` additions;
+portal rebuilt on 2026-07-13:
 
 ```text
-Claims: 157 | Sources: 150 | Matrices: 6
+Claims: 170 | Sources: 166 | Matrices: 7
 ```

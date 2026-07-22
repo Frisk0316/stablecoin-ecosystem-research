@@ -1,6 +1,6 @@
 # Unresolved Open Questions
 
-Last updated: 2026-06-10 (v0.4.1 targeted gap pass)
+Last updated: 2026-07-13 (v0.5 official-source gap pass)
 
 Purpose: this file is the live research backlog. It preserves questions that
 must not be guessed in the final report, slides, evidence portal, or matrices.
@@ -14,12 +14,11 @@ handling, use `00_project_management/slide_gap_tracker.md`.
 
 Current baseline:
 
-- Claim table: 157 claims (`CLAIM_001` to `CLAIM_157`). Full Python
-  validation passed at 157 claims on 2026-06-10. The v0.4.1 pass added
-  `CLAIM_155` (Bybit first-exchange USDPT integration), `CLAIM_156` (Iron
-  Finance issuer-postmortem event timeline) and `CLAIM_157` (Visa/Allium
-  published adjusted-volume figure).
-- Source registry: 150 rows.
+- Claim table: 170 claims (`CLAIM_001` to `CLAIM_170`). The 2026-07-13 pass
+  added point-in-time USDPT reserve evidence, current Visa/Artemis/Cambridge
+  method and snapshot claims, and Taiwan third-reading / not-yet-promulgated
+  boundaries.
+- Source registry: 166 rows.
 - Matrices: 6 CSV files under `04_matrices/`.
 - Evidence portal build source:
   `07_final_report/stablecoin_academic_report_v1_0.md`.
@@ -41,11 +40,11 @@ Validation baseline:
 
 Expected current results after rerun:
 
-- `validate_claim_table.py`: `OK: 157 claims validated.`
+- `validate_claim_table.py`: `OK: 170 claims validated.`
 - `check_missing_sources.py`: no missing archived local files and no
   high-priority rows needing attention.
 - `check_mermaid.py`: all 8 diagrams structurally pass.
-- `build_portal.py`: `Claims: 157 | Sources: 150 | Matrices: 6`.
+- `build_portal.py`: `Claims: 170 | Sources: 166 | Matrices: 7`.
 
 ## Closed Since Earlier Backlogs
 
@@ -83,15 +82,25 @@ question.
 
 ### P0-1. USDPT Product Layer And Workflow
 
-Status: partially closed at v0.4. Layer 3 is anchored; the official Solana
-contract-address gap is closed; coming-soon/select-market customer cash-out
-and receive-in-USDPT direction is now supported at product-page level. Legal
-terms, fee schedule, USDPT-specific attestation, exact token-control
-implementation and full workflow remain source-dependent; ADB covered-
-stablecoin terms now partially bound Client / Non-Client redemption rights,
-reserve-trust structure, issuer-obligor role and legal/control powers.
+Status: partially closed at v0.5. The 2026-05-31 USDPT reserve attestation is
+now archived and claim-backed (`CLAIM_158`, `CLAIM_159`). Layer 3, the official
+Solana address and issuer-level freeze/block/burn capability are anchored.
+USDPT-specific retail terms and fees, exact contract/key controls, direct
+retail/agent redemption and the complete agent/bank/clearing workflow remain
+source-dependent (`CLAIM_160`, `CLAIM_161`, `CLAIM_170`).
 
 Current supported evidence:
+
+- `CLAIM_158`, `CLAIM_159`: Deloitte's point-in-time 2026-05-31 examination
+  reports 1,500,372 redeemable USDPT, US$1,603,106 reserves and US$102,734
+  surplus, while expressly remaining an attestation rather than a financial-
+  statement audit or control-effectiveness opinion.
+- `CLAIM_160`: ADB's general fee schedule has no USDPT row; a USDtb no-fee
+  row cannot be applied to USDPT.
+- `CLAIM_161`: ADB states issuer-level issue/redeem and required freeze,
+  block or burn capabilities, but exact USDPT implementation remains open.
+- `CLAIM_170`: high-level 24/7 treasury/agent settlement is supported; full
+  balance-sheet, clearing, reconciliation and redemption workflow is not.
 
 - `CLAIM_023`: Anchorage comment letter says Anchorage Digital Bank issues
   USAT, USDGO and USDtb, and expects to begin issuing USDPT with Western
@@ -221,15 +230,24 @@ Resolution criteria:
 
 ### P0-2. Adjusted Payment-Volume Evidence
 
-Status: partially narrowed at v0.4. The World Bank off-chain remittance-cost
-benchmark export is now reproducible from the World Bank API (`CLAIM_147`),
-but this does not close the adjusted stablecoin payment-volume gap. Visa
-Onchain Analytics adjusted-volume export, Artemis Pro adjusted-volume export,
-Cambridge Digital Money Dashboard numerical export, and McKinsey/Artemis
-report still require subscriptions, manual licensed acquisition, or a
-reproducible export.
+Status: feasibility audit completed at v0.5, but the desired dataset remains
+unavailable. Visa and Cambridge provide adjusted **transfer** metrics rather
+than payments-only volume; Artemis' live headline is transfer volume and its
+payments estimate is sample/model based. Cambridge June 2026 is now locally
+reproducible from public JSON, while Visa and Artemis raw exports remain
+dynamic or account-gated. No complete anonymous-downloadable market-wide
+adjusted payments dataset was found (`CLAIM_162` to `CLAIM_167`).
 
 Current supported evidence:
+
+- `CLAIM_162`, `CLAIM_163`: Visa current trailing-window values and filter
+  method; adjusted and retail-sized transfers are not payment proof.
+- `CLAIM_164`, `CLAIM_165`: Artemis current dashboard, method, access limits
+  and the non-comprehensive 2025 payment-estimate boundary.
+- `CLAIM_166`: locally archived Cambridge JSON yields June 2026 adjusted
+  transfers of US$2.531847T and 122,153,423 transfers across six series.
+- `CLAIM_167`: cross-source conclusion that definitions, coverage and access
+  do not produce a complete market-wide payments dataset.
 
 - `CLAIM_054`: Artemis documentation supports a schema for stablecoin
   transfer volume, transactions, supply, addresses, and filter categories
@@ -294,10 +312,18 @@ Resolution criteria:
 
 ### P0-3. Taiwan Enacted Law And Sub-Rules
 
-Status: legislative-stage anchored through v0.4; enacted statute and FSC
-sub-rules remain unresolved and source-dependent.
+Status: third reading passed on 2026-06-30 and is claim-backed at v0.5. As of
+2026-07-13, promulgation/effectiveness was not verified in the official passed-
+bills list or Presidential Gazette, and final FSC/CBC stablecoin sub-rules had
+not been issued (`CLAIM_168`, `CLAIM_169`).
 
 Current supported evidence:
+
+- `CLAIM_168`: official Legislative Yuan records establish third reading on
+  2026-06-30; official promulgated-text fields and Gazette evidence remained
+  absent at the 2026-07-13 access date.
+- `CLAIM_169`: an official 2026-07-09 Legislative Yuan source records ongoing
+  FSC/CBC stablecoin-rule drafting; policy comments are not final regulations.
 
 - `CLAIM_112` to `CLAIM_118` support CBC policy framing for:
   private tokenised money, central-bank-money anchor, USD-stablecoin
